@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.ts"],"names":[],"mappings":";AACoC,aADpC,IAAI,EAAO,SAAS,eAAe,QAC/B,IAAM,EAAK,UAAY","file":"src.a53b3ad5.js","sourceRoot":"..\\src","sourcesContent":["var test = document.getElementById('test')\r\nif (test) test.innerText = \"xdddddd\"\r\n"]}
