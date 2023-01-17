@@ -1,0 +1,86 @@
+.headerfade {
+  opacity: .5;
+  background-color: black;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  position: absolute;
+}
+
+.header {
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipNv3m32eXw2ZWYBlkgQj84WcNgqPt6nBAa_X3oH=h1440");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.header h1 {
+  padding-right: 104px;
+  padding-left: 104px;
+  background: rgba(0, 39, 53, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin: 0;
+  color: #0090C5;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+}
+
+.header h1 span {
+  border-left: 2px solid #0090C5;
+  padding-left: 15px;
+  margin-left: 15px;
+  color: #c9c9c9;
+}
+
+.header-btns {
+  position: absolute;
+  top: 10px;
+  right: 104px;
+  width: 100%;
+}
+
+.header-btns .header-btn {
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  float: right;
+  z-index: 99;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #TitleText {
+    font-size: 25px;
+  }
+
+  .header {
+    padding: 5px 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #TitleText {
+    font-size: 15px;
+  }
+
+  .header {
+    padding: 0px 0px;
+  }
+}
