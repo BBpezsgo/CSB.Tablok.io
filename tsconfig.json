@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "moduleResolution": "node",
-        "newLine": "LF",
+        "newLine": "CRLF",
         "outDir": "./lib/",
         "target": "es5",
         "sourceMap": true,

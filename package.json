@@ -4,7 +4,7 @@
     ],
     "scripts": {
         "start": "parcel serve src/index.html",
-        "build": "call remove-dist && cross-env NODE_ENV=production parcel build src/index.html --public-url ."
+        "build": "node \"./before-build.js\" && cross-env NODE_ENV=production parcel build \"src/index.html\" \"docs\" --public-url . --no-source-maps && node \"./after-build.js\""
     },
     "devDependencies": {
         "cross-env": "^5.2.0",
