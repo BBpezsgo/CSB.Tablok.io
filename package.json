@@ -1,14 +1,8 @@
 {
-    "files": [
-        "src/"
-    ],
     "scripts": {
-        "start": "parcel serve src/index.html",
-        "build": "node \"./before-build.js\" && cross-env NODE_ENV=production parcel build \"src/index.html\" \"docs\" --public-url . --no-source-maps && node \"./after-build.js\""
+        "build": "tsc -p ./src"
     },
     "devDependencies": {
-        "cross-env": "^5.2.0",
-        "parcel-bundler": "^1.9.7",
         "typescript": "^2.9.2"
     }
 }
