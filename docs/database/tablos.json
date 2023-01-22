@@ -1,13 +1,18 @@
 [
     {
-        "evfolyam":
+        "grade":
         {
-            "evfolyam": 12,
-            "alevfolyam": "B"
+            "grade": 10,
+            "sub": "B"
         },
-        "vegzett": 1023,
+        "finishedAt": 1023,
         "ofo": 10,
-        "szak": 2,
-        "diakok": []
+        "department": 2,
+        "students": [
+            {
+                "surname": ["Bánszky"],
+                "firstname": ["Balázs"]
+            }
+        ]
     }
 ]

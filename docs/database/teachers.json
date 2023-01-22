@@ -1,3 +1,9 @@
 [
-    
+    {
+        "id": 0,
+        "name": {
+            "surname": ["Asd"],
+            "firstname": ["XD"]
+        }
+    }
 ]

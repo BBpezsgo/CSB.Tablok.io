@@ -28,7 +28,7 @@
     </div>
     <div class="header-btns">
         <button class="header-btn" style="background-image: url(img/info.svg)"     id="header-btn-creators" onclick="document.getElementById('id01').style.display='block'"></button>
-        <button class="header-btn" style="background-image: url(img/feedback.svg)" id="header-btn-creators" onclick="document.getElementById('id01').style.display='block'"></button>
+        <button class="header-btn" style="background-image: url(img/feedback.svg)" id="header-btn-creators" onclick="document.getElementById('id02').style.display='block'"></button>
     </div>
 
     <div class="navbar">
@@ -39,6 +39,7 @@
     </div>
 
     <div class="row">
+        <!--
         <div id="sidebar" class="side sideHidden">
             <div class="sidebarMainClose">
                 <div class="sidebarMainCloseButton"
@@ -50,14 +51,19 @@
                 
             </div>
         </div>
+        -->
 
         <div class="main">
+            <input id="search" type="text" maxlength="64" placeholder="Keresés">
+
             <div id="tablos">
+                
+            </div>
+            <div id="teachers">
                 
             </div>
         </div>
     </div>
-
 
     <!-- Form Creators -->
     <div id="id01" class="modal">
@@ -140,51 +146,9 @@
     </p>
 
     <script>
-        function Feedback() {
-            const title = 'Visszajelzés'
-            const desc = document.getElementById('feedback-form-desc').value
-            const spinner = document.getElementById('feedback-upload-spinner')
-
-            var xhr = new XMLHttpRequest()
-            xhr.onreadystatechange = function () {
-                const state = {
-                    0: 'UNSENT',
-                    1: 'OPENED',
-                    2: 'HEADERS_RECEIVED',
-                    3: 'LOADING',
-                    4: 'DONE'
-                }
-                stateElement.innerText = 'readyState:' + state[xhr.readyState] + ' statusText: ' + xhr.statusText + ' status: ' + xhr.status
-                if (xhr.readyState == 4) {
-                    spinner.style.display = 'none'
-                } else {
-                    spinner.style.display = 'block'
-                }
-            }
-            xhr.open("POST", 'https://api.trello.com/1/cards/?idList=631c1b304028e8138251b52e&token=84de6f5cbc9e3fb5df77596358352cc839e1dea58d8dbb0857919f39b6143acf&key=16160910964e82904e57646c84c9fb69&name=' + title + '&desc=' + desc, true)
-            xhr.setRequestHeader('Content-Type', 'application/json')
-            xhr.send()
-        }
-
-        const form = document.querySelector('form')
-        const thankYouMessage = document.getElementById("feedback-upload-done")
-        const formBody = document.getElementById("feedback-upload-form")
-        form.addEventListener('submit', (e) => {
-            e.preventDefault()
-            thankYouMessage.style.display = "block"
-            formBody.style.display = "none"
-        })
-
-        function FeedbackGoBack() {
-            thankYouMessage.style.display = "none"
-            formBody.style.display = "block"
-            document.getElementById('feedback-form-desc').value = ''
-        }
-    </script>
-
-    <script>
         const modals = [
-            document.getElementById('id01')
+            document.getElementById('id01'),
+            document.getElementById('id02'),
         ]
 
         window.onclick = function (event) {
@@ -195,16 +159,15 @@
         }
     </script>
 
-    <script type="text/javascript">
-        function ShowForm(title, context) {
-            document.getElementById('CustomFormTitle').textContent = title
-            document.getElementById('CustomFormContext').textContent = context
-            document.getElementById('id02').style.display = 'block'
+    <script>
+        {
+            /** @type {NodeListOf<HTMLInputElement>} */
+            const allInputs = document.querySelectorAll('input[type=text]')
+            allInputs.forEach(input => { input.addEventListener("keydown", (e) => { if (e.keyCode == 65 && e.ctrlKey) e.target.select() }) })
         }
     </script>
-
-    <script>var exports={};</script>
-    <script src="./index.js" type="module"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/feedback.js"></script>
 </body>
 
 </html>

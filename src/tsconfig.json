@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "CommonJS",
+        "module": "ES6",
         "moduleResolution": "Classic",
         "newLine": "CRLF",
         "outDir": "../docs/",
