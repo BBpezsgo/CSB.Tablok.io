@@ -16,6 +16,24 @@ body {
   flex-direction: column;
 }
 
+.body{
+  text-align: center;
+}
+
+.body h2 {
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+}
+
+.kep {
+  border: 5px solid black;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
