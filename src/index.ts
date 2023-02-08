@@ -1,44 +1,46 @@
-import { Tablo, Name } from "./datatypes"
+import { DataBase } from "./datatypes"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
 
-async function Main() {
-    const tablos: Tablo[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
-    const teachers: Name[] = JSON.parse(await HTTP.GetAsync('./database/teachers.json'))
+async function DownloadDatabase() {
+    const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
+    const teachers: any[] = JSON.parse(await HTTP.GetAsync('./database/teachers.json'))
     const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
 
-    for (let i = 0; i < teachers.length; i++)
-    {
-        teachers[i] = Object.assign(new Name(), teachers[i])
-    }
-    for (let i = 0; i < tablos.length; i++)
-    {
-        Utilities.AssignObjects(tablos[i].students, () => new Name())
+    return new DataBase(tablos, teachers, departments)
+}
 
-        tablos[i].departmentText = departments[tablos[i].department]
-        tablos[i].ofoText = teachers[tablos[i].ofo]
+async function Main() {
+    var Database: DataBase
+    try {
+        Database = await DownloadDatabase()
+    } catch (error: any) {
+        console.error('Failed to download the database', error)
+        return
     }
 
     const tablosElement = Utilities.GetElement('tablos')
     const teachersElement = Utilities.GetElement('teachers')
 
-    for (let i = 0; i < tablos.length; i++) {
-        const tablo = tablos[i]
+    if (!tablosElement || !teachersElement) return
+
+    for (let i = 0; i < Database.tablos.length; i++) {
+        const tablo = Database.tablos[i]
         tablosElement.appendChild(Utilities.Template('tablo', tablo))
     }
-    for (let i = 0; i < teachers.length; i++) {
-        const teacher = teachers[i]
+    for (let i = 0; i < Database.teachers.length; i++) {
+        const teacher = Database.teachers[i]
         teachersElement.appendChild(Utilities.Template('teacher', teacher))
     }
 
     Utilities.GetElement('search').addEventListener('input', () => {
         Utilities.ClearElement(teachersElement)
         const input = Utilities.NormalizeString(Utilities.GetInputElement('search').value)
-        var teachersCopy = teachers.slice()
-        teachersCopy.sort((a, b) => Utilities.LevenshteinDistance(Utilities.NormalizeString(a.ToString()), input) - Utilities.LevenshteinDistance(Utilities.NormalizeString(b.ToString()), input))
+        const teachersCopy = Database.teachers.slice()
+        teachersCopy.sort((a, b) => Utilities.LevenshteinDistance(Utilities.NormalizeString(a.Name.ToString()), input) - Utilities.LevenshteinDistance(Utilities.NormalizeString(b.Name.ToString()), input))
         for (let i = 0; i < teachersCopy.length; i++) {
             const teacher = teachersCopy[i]
-            if (!Utilities.CompareString(teacher.ToString(), input, 3, true)) { continue }
+            if (!Utilities.CompareString(teacher.Name.ToString(), input, 3, true)) { continue }
             teachersElement.appendChild(Utilities.Template('teacher', teacher))
         }
     })

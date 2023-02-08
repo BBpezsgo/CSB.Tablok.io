@@ -21,16 +21,22 @@ export function Template(name: string, values: object) {
     return CreateElement(html)
 }
 
+export function TryGetElement(id: string) { return document.getElementById(id) }
+
 export function GetElement(id: string) {
-    const element =  document.getElementById(id)
+    const element =  TryGetElement(id)
     if (!element)
     { throw new Error(`Element with id "${id}" not found`) }
     return element
 }
 
-export function GetInputElement(id: string) {
+export function TryGetInputElement(id: string) {
     const elements = document.getElementsByTagName('input')
-    const element =  elements.namedItem(id)
+    return elements.namedItem(id)
+}
+
+export function GetInputElement(id: string) {
+    const element =  TryGetInputElement(id)
     if (!element)
     { throw new Error(`Element with id "${id}" not found`) }
     return element

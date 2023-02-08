@@ -1,17 +1,17 @@
 [
     {
-        "grade":
+        "Grade":
         {
-            "grade": 10,
-            "sub": "B"
+            "Grade": 10,
+            "Sub": "B"
         },
-        "finishedAt": 1023,
-        "ofo": 10,
-        "department": 2,
-        "students": [
+        "FinishedAt": 1023,
+        "Ofo": 10,
+        "Department": 2,
+        "Students": [
             {
-                "surname": ["Bánszky"],
-                "firstname": ["Balázs"]
+                "Surname": ["Bánszky"],
+                "Firstname": ["Balázs"]
             }
         ]
     }
