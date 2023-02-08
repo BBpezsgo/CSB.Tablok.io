@@ -8,13 +8,12 @@
 }
 
 .header {
-  padding: 10px 0px;
   text-align: center;
   color: white;
   background-image: url("https://lh5.googleusercontent.com/p/AF1QipNv3m32eXw2ZWYBlkgQj84WcNgqPt6nBAa_X3oH=h1440");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  padding: 150px 0px;
 }
 
 .header h1 {
@@ -72,7 +71,7 @@
   }
 
   .header {
-    padding: 5px 0px;
+    padding: 150px 0px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -81,6 +80,6 @@
   }
 
   .header {
-    padding: 0px 0px;
+    padding: 60px 0px;
   }
 }
