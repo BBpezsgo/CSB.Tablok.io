@@ -23,15 +23,15 @@ body {
 .body h2 {
   border: 2px solid black;
   border-radius: 25px;
-  margin-left: 30%;
-  margin-right: 30%;
-  padding: 1%;
+  margin-left: 32em;
+  margin-right: 32em;
+  margin-top: 1em;
+  padding: 0.3%;
 }
 
 .kep {
   border: 5px solid black;
-  margin-left: 45%;
-  margin-right: 45%;
+  text-align: center;
 }
 
 .row {  
