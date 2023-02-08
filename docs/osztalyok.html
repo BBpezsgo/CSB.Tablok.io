@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    <link rel="icon" type="image/x-icon" href="https://www.nemesgszi.hu/components/images/favicon.png">
+    <title>Tablók | Békéscsabai SZC Nemes Tihamér Technikum és Kollégium | GSZI |</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d70969805a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext" rel="stylesheet" type="screen">
+</head>
+<body>
+    <div class="header" style="z-index: -1;">
+        <div class="headerfade" style="z-index: -1;"></div>
+        <div>
+            <h1 id="TitleText">Békéscsabai SZC Nemes Tihamér Technikum és Kollégium<span>Tablók</span></h1>            
+        </div>
+    </div>
+    <div class="header-btns">
+        <button class="header-btn" style="background-image: url(img/info.svg)"     id="header-btn-creators" onclick="document.getElementById('id01').style.display='block'"></button>
+        <button class="header-btn" style="background-image: url(img/feedback.svg)" id="header-btn-creators" onclick="document.getElementById('id02').style.display='block'"></button>
+    </div>
+
+    <div class="navbar">
+        <div class="links">
+            <a class="navbar_items" href="osztalyok.html">Osztályok</a>
+            <a class="navbar_items" href="evfolyamok.html">Évfolyamok</a>
+            <a class="navbar_items" href="osztalyfonok.html">Osztályfőnökök</a>
+            <a class="navbar_items" href="index.html">Főoldal</a>
+        </div>
+        <a style="float: right;" onclick="document.getElementById('sidebar').classList.toggle('sideHidden')"
+            class="mobileMenuToggleButton">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="row">
+    <!--Ezt majd egy ilyen felső navbarnak vagy egy oldalsó menünek tudom elképzelni-->
+        <div class="body">
+            <div class="menu">
+                <a>A osztály</a> <!--Ezek majd átdobnak egy weblapra ahol fel lesznek sorolva, hogy melyik években voltak A osztályok, B osztályok stb..-->
+                <a>B osztály</a> <!--vagy ha ezt az oldalon belül is meg tudjuk oldani nekem úgy is jó csak ahhoz nem értek XD-->
+                <a>C osztály</a>
+                <a>D osztály</a>
+                <a>E osztály</a>
+            </div>
+    <!--Itt alapértelmezetten majd a legfrissebben ballagott osztályok legyenek szerintem-->
+            <div class="focim">
+                <h2>Legfrissebb ballagottjaink</h2>
+            </div>
+            <div class="fokepek">
+                <img src="img/12D_2017_2021.jpg" class="kep">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
