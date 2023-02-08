@@ -1,33 +1,14 @@
-<div style="border: 1px solid #888; margin: 8px; padding: 0px 8px; display: inline-block;">
-    <p>Évfolyam: {{grade.grade}}/{{grade.sub}}</p>
-    <p>
-        Szak:
-        {{#if departmentText}}
-        {{departmentText}}
-        {{else}}
-        ID-{{department}}
-        {{/if}}
-    </p>
-    <p>
-        Ofő:
-        {{#if ofoText}}
-        {{ofoText}}
-        {{else}}
-        ID-{{ofo}}
-        {{/if}}
-    </p>
-    <p>Végzett: {{finishedAt}}-ban/ben</p>
-    <p>Diákok:</p>
-    <ul>
-        {{#each students}}
-        <li>
-            {{#each this.surname}}
-            {{this}}
-            {{/each}}
-            {{#each this.firstname}}
-            {{this}}
-            {{/each}}
-        </li>
-        {{/each}}
-    </ul>
+<div class="tablo" style="background-image: url({{Image}});">
+    <div>
+        <p>Évfolyam: {{grade.grade}}/{{grade.sub}}</p>
+        <p>
+            Szak:
+            {{#if DepartmentText}}
+            {{DepartmentText}}
+            {{else}}
+            ID-{{Department}}
+            {{/if}}
+        </p>
+        <p>Végzett: {{FinishedAt}}-ban/ben</p>
+    </div>
 </div>

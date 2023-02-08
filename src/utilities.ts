@@ -42,7 +42,7 @@ export function GetInputElement(id: string) {
     return element
 }
 
-export function ClearElement(element: HTMLElement) { while (element.lastChild) { element.removeChild(element.lastChild) } }
+export function ClearElement(element: HTMLElement) { if (!element) return; while (element.lastChild) { element.removeChild(element.lastChild) } }
 
 /** @author Angelos Chalaris @link https://www.30secondsofcode.org/js/s/levenshtein-distance */
 export function LevenshteinDistance(s: string, t: string) {

@@ -1,21 +1,16 @@
 import * as Utilities from './utilities'
 
-export type Tablo =
-{
-    Grade:
-    {
-        /** e.g: 10, 11, 12 */
+export type Tablo = {
+    FinishedAt: number
+    Grade: {
         Grade: number
-        /** e.g: A, B, C */
         Sub: string
     }
-    /** e.g: 2017 */
-    FinishedAt: number
-    Ofo: number
-    Department: number
-    Students: Name[]
-
-    ImgURL: string
+    Type: 'SCHOOL' | 'TECHNICAL' | undefined
+    Image: string | undefined
+    Department: number | undefined
+    Ofo: number | undefined
+    Students: Name[] | undefined
 }
 
 export type TabloProcessed = Tablo & {
@@ -67,21 +62,28 @@ export class DataBase {
         this.departments = departments
         
         for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Firstname, teachers[i].Name.Surname)
-        for (let i = 0; i < tablos.length; i++) for (let j = 0; j < tablos[i].Students.length; j++) tablos[i].Students[j] = new Name(tablos[i].Students[j].Firstname, tablos[i].Students[j].Surname)
+        for (let i = 0; i < tablos.length; i++) {
+            const tablo = tablos[i]
+            if (tablo.Students) for (let j = 0; j < tablo.Students.length; j++) {
+                tablo.Students[j] = new Name(tablo.Students[j].Firstname, tablo.Students[j].Surname)
+            }
+            tablos[i] = tablo
+        }
 
         for (let i = 0; i < tablos.length; i++)
         {
-            const tablo: Tablo = tablos[i]
+            const tablo = tablos[i]
+            
             this.tablos.push({
                 Department: tablo.Department,
                 FinishedAt: tablo.FinishedAt,
                 Students: tablo.Students,
                 Ofo: tablo.Ofo,
-                ImgURL: tablo.ImgURL,
+                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
                 Grade: tablo.Grade,
-
-                DepartmentText: departments[tablo.Department] ?? `Unknown Department Index ${tablo.Department}`,
-                OfoText: teachers[tablo.Ofo] ? teachers[tablo.Ofo].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
+                Type: tablo.Type,
+                DepartmentText: departments[tablo.Department ?? -1] ?? `Unknown Department Index ${tablo.Department}`,
+                OfoText: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
             })
         }
     }

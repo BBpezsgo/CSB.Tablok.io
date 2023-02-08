@@ -19,20 +19,25 @@ async function Main() {
         return
     }
 
-    const tablosElement = Utilities.GetElement('tablos')
-    const teachersElement = Utilities.GetElement('teachers')
+    const tablosElement = Utilities.TryGetElement('tablos')
+    const teachersElement = Utilities.TryGetElement('teachers')
 
-    if (!tablosElement || !teachersElement) return
+    if (tablosElement)
+    Utilities.ClearElement(tablosElement)
 
+    if (tablosElement)
     for (let i = 0; i < Database.tablos.length; i++) {
         const tablo = Database.tablos[i]
         tablosElement.appendChild(Utilities.Template('tablo', tablo))
     }
+
+    if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {
         const teacher = Database.teachers[i]
         teachersElement.appendChild(Utilities.Template('teacher', teacher))
     }
 
+    if (teachersElement)
     Utilities.GetElement('search').addEventListener('input', () => {
         Utilities.ClearElement(teachersElement)
         const input = Utilities.NormalizeString(Utilities.GetInputElement('search').value)

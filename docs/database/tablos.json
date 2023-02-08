@@ -13,6 +13,452 @@
                 "Surname": ["Bánszky"],
                 "Firstname": ["Balázs"]
             }
-        ]
+        ],
+        "Image": ""
+    },
+    {
+        "Grade":
+        {
+            "Grade": 12,
+            "Sub": "D"
+        },
+        "StartedAt": 2017,
+        "FinishedAt": 2021,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [ ],
+        "Image": "img/12D_2017_2021.jpg"
+    },
+    {
+        "FinishedAt": 1990,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1991,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1992,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1992,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1993,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1993,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1994,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1994,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1995,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1995,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1995,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1996,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1996,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1996,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1999,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 1999,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2000,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2000,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2000,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2001,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2001,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2001,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2003,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2003,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2004,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2004,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2004,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2005,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2005,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2005,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2006,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2006,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2006,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2008,
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "Type": "SCHOOL"
+    },
+    {
+        "FinishedAt": 2008,
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "Type": "SCHOOL"
+    },
+
+
+
+
+
+
+    
+    {
+        "FinishedAt": 1991,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1992,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1993,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1993,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1994,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1994,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1995,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1995,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1996,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1996,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1997,
+        "Grade": { "Grade": 13, "Sub": "C" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1998,
+        "Grade": { "Grade": 13, "Sub": "C" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1999,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 1999,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2000,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2000,
+        "Grade": { "Grade": "2/14", "Sub": "C" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2001,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2001,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 13, "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 13, "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2002,
+        "Grade": { "Grade": 13, "Sub": "C" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2003,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2003,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2004,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2004,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2005,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2005,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2006,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2006,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": "1/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2007,
+        "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2008,
+        "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Type": "TECHNICAL"
+    },
+    {
+        "FinishedAt": 2008,
+        "Grade": { "Grade": "1/14", "Sub": "A" },
+        "Type": "TECHNICAL"
     }
 ]

@@ -18,22 +18,16 @@ body {
 
 .body{
   text-align: center;
-  background-color: #cacaca;
 }
 
 .body h2 {
-  border: 2px solid black;
-  border-radius: 25px;
-  margin-left: 32em;
-  margin-right: 32em;
-  margin-top: 1em;
-  padding: 0.3%;
-  background-color: #a5a5a5c4;
-}
-
-.kep {
-  border: 5px solid black;
-  text-align: center;
+  padding: 20px 0;
+  background-color: #00BBFF;
+  margin: 0;
+  font-size: 23px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #fff;
 }
 
 .row {  
@@ -47,7 +41,7 @@ body {
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: #cacaca;
+  background-color: #fff;
 }
 
 .main iframe {
@@ -96,4 +90,47 @@ input[type=submit]:active {
   background-color: #b1b1b1;
   transition: background-color 100ms, box-shadow 10ms;
   box-shadow: #0006 0px 0px 3px;
+}
+
+.tablo {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: #000 0px 0px 8px;
+  background-color: #888;
+  font-weight: 1000;
+  font-size: 24px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  overflow: hidden;
+  text-overflow: clip;
+  height: 300px;
+  border-radius: 3px;
+  box-shadow: #0008 0px 0px 4px;
+}
+
+#tablos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-columns: 33%;
+  grid-gap: 5px;
+  place-items: center;
+  width: calc(100% - 10px);
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  #tablos {
+    grid-template-columns: 50% 50%;
+    grid-auto-columns: 50%;
+    width: calc(100% - 5px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #tablos {
+    grid-template-columns: 100%;
+    grid-auto-columns: 100%;
+  }
 }
