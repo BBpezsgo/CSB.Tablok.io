@@ -1,5 +1,5 @@
 # School Project
 
 Made by:
-- Csökmei Péter
+- Csökmei Péter István
 - [Bánszky Balázs](https://github.com/BBpezsgo)
