@@ -33,12 +33,27 @@ export class Name
     Surname: string[]
     Firstname: string[]
 
-    constructor() {
+    constructor(surname: string | string[] | null = null, firstname: string | string[] | null = null) {
         this.Surname = []
         this.Firstname = []
+
+        if (surname) {
+            if (typeof surname === 'string') {
+                this.Surname = [ surname ]
+            } else {
+                this.Surname = surname
+            }
+        }
+        if (firstname) {
+            if (typeof firstname === 'string') {
+                this.Firstname = [ firstname ]
+            } else {
+                this.Firstname = firstname
+            }
+        }
     }
     
-    ToString(): string { return (this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ') }
+    ToString(): string { return ((this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ')).trim() }
 }
 
 export class DataBase {
@@ -51,8 +66,8 @@ export class DataBase {
         this.teachers = teachers
         this.departments = departments
         
-        for (let i = 0; i < this.teachers.length; i++) teachers[i] = Object.assign(new Name(), teachers[i])
-        for (let i = 0; i < tablos.length; i++) Utilities.AssignObjects(tablos[i].Students, () => new Name())
+        for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Firstname, teachers[i].Name.Surname)
+        for (let i = 0; i < tablos.length; i++) for (let j = 0; j < tablos[i].Students.length; j++) tablos[i].Students[j] = new Name(tablos[i].Students[j].Firstname, tablos[i].Students[j].Surname)
 
         for (let i = 0; i < tablos.length; i++)
         {
@@ -66,7 +81,7 @@ export class DataBase {
                 Grade: tablo.Grade,
 
                 DepartmentText: departments[tablo.Department] ?? `Unknown Department Index ${tablo.Department}`,
-                OfoText: teachers[tablo.Ofo] ? teachers[tablo.Ofo].Name : null,
+                OfoText: teachers[tablo.Ofo] ? teachers[tablo.Ofo].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
             })
         }
     }

@@ -1,0 +1,2 @@
+// DON'T TOUCH IT!!!
+if (typeof document.onselectstart!="undefined"){document.onselectstart=()=>false}else{document.onmousedown=(e)=>{if(["input","textarea","select"].join("|").indexOf(e.target.tagName.toLowerCase())==-1)return false};document.onmouseup=()=>true}
