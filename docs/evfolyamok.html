@@ -15,6 +15,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d70969805a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext" rel="stylesheet" type="screen">
+    <style>
+        #grades {
+            display: block;
+            width: fit-content;
+            background-color: #333;
+            color: #ddd;
+            padding: 8px;
+            position: fixed;
+            margin: 16px;
+            box-shadow: #0008 2px 2px 4px;
+            max-height: 50%;
+            overflow-y: auto;
+        }
+
+        #grades > a {
+            display: block;
+            text-align: left;
+            margin: 4px;
+            padding: 4px;
+            cursor: pointer;
+        }
+
+        #grades > a:hover {
+            background-color: #fff4;
+            color: #fff;
+        }
+
+        #grades > a:active {
+            background-color: #fff8;
+        }
+        
+        @media screen and (max-width: 700px) {
+            #grades {
+                display: block;
+                position: unset;
+                margin: 0px;
+                width: 100%;
+                box-shadow: none;
+                max-height: unset;
+                overflow-y: unset;
+            }
+
+            #grades > a {
+                text-align: center;
+            }
+
+            #grades.hidden {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header" style="z-index: -1;">
@@ -30,12 +81,12 @@
 
     <div class="navbar">
         <div class="links">
-            <a class="navbar_items" href="osztalyok.html">Osztályok</a>
-            <a class="navbar_items" href="evfolyamok.html">Évfolyamok</a>
-            <a class="navbar_items" href="osztalyfonok.html">Osztályfőnökök</a>
-            <a class="navbar_items" href="index.html">Főoldal</a>
+            <a class="navbar_items" href="./osztalyok.html">Osztályok</a>
+            <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>
+            <a class="navbar_items" href="./osztalyfonok.html">Osztályfőnökök</a>
+            <a class="navbar_items" href="./index.html">Főoldal</a>
         </div>
-        <a style="float: right;" onclick="document.getElementById('sidebar').classList.toggle('sideHidden')"
+        <a style="float: right;" onclick="document.getElementById('grades').classList.toggle('hidden')"
             class="mobileMenuToggleButton">
             <i class="fa fa-bars"></i>
         </a>
@@ -44,7 +95,7 @@
     <div class="row">
     <!--Ezt majd egy ilyen felső navbarnak vagy egy oldalsó menünek tudom elképzelni-->
         <div class="body">
-            <div class="menu">
+            <div id="grades">
                 <a>2000-2004</a> <!--Ezek majd átdobnak egy weblapra ahol fel lesznek sorolva az osztályok a különféle években-->
                 <a>2001-2005</a> <!--vagy ha ezt az oldalon belül is meg tudjuk oldani nekem úgy is jó csak ahhoz nem értek XD-->
                 <a>2002-2006</a>
@@ -56,9 +107,26 @@
                 <h2>Legfrissebb ballagottjaink</h2>
             </div>
             <div class="fokepek">
-                <img src="img/12D_2017_2021.jpg" class="kep">
+                <img src="img/12D_2017_2021.jpg" style="max-width: 100%;" class="kep">
             </div>
         </div>
     </div>
+    
+    <script>
+        const modals = [
+            document.getElementById('id01'),
+            document.getElementById('id02'),
+        ]
+
+        window.onclick = function (event) {
+            modals.forEach(modal => {
+                if (event.target == modal)
+                { modal.style.display = "none" }
+            })
+        }
+    </script>
+    <script src="scripts/select-all.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/reveal.js"></script>
 </body>
 </html>

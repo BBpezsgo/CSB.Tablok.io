@@ -73,3 +73,10 @@ span.psw {
   from {transform: scale(.7); opacity: 0;} 
   to {transform: scale(1); opacity: 1;}
 }
+
+.modal iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: none;
+}

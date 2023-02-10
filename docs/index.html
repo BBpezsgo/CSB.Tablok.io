@@ -35,10 +35,10 @@
 
     <div class="navbar">
         <div class="links">
-            <a class="navbar_items" href="osztalyok.html">Osztályok</a>
-            <a class="navbar_items" href="evfolyamok.html">Évfolyamok</a>
-            <a class="navbar_items" href="osztalyfonok.html">Osztályfőnökök</a>
-            <a class="navbar_items" href="index.html">Főoldal</a>
+            <a class="navbar_items" href="./osztalyok.html">Osztályok</a>
+            <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>
+            <a class="navbar_items" href="./osztalyfonok.html">Osztályfőnökök</a>
+            <a class="navbar_items" href="./index.html">Főoldal</a>
         </div>
         <a style="float: right;" onclick="document.getElementById('sidebar').classList.toggle('sideHidden')"
             class="mobileMenuToggleButton">
@@ -84,84 +84,15 @@
         </div>
     </div>
 
-    <!-- Form Creators -->
-    <div id="id01" class="modal">
-        <div class="modal-content animate">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Bezár"></span>
-            </div>
-
-            <div class="container" style="font-size: 20px;">
-                <h3>Készítők <span style="opacity: .5;">(11.C)</span></h3>
-                <ul>
-                    <li>Csökmei Péter István</li>
-                    <li>Bánszky Balázs</li>
-                </ul>
-                <p style="font-size: .9em; opacity: .7;">
-                    11-ben csináltuk
-                </p>
-                <!-- Icons by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Form Feedback -->
-    <div id="id02" class="modal">
-        <div class="modal-content animate">
-            <div class="imgcontainer">
-                <span onclick="FeedbackGoBack(); document.getElementById('id02').style.display='none'" class="close"
-                    title="Bezár"></span>
-            </div>
-
-            <div class="container" style="font-size: 20px;">
-                <div id="feedback-upload-form">
-                    <h3>Visszajelzés küldése</h3>
-                    <p>
-                        Ha valami hibát tapasztal, vagy új funkciót ajánlana, itt megteheti!
-                    </p>
-                    <form onsubmit="Feedback(); return false" method="post">
-                        <div class="mb-3 mt-3">
-                            <textarea required maxlength="1024" id="feedback-form-desc" name="desc"
-                                placeholder="Visszajelzés szövege"></textarea>
-                        </div>
-                        <input class="btn btn-primary" type="submit" value="Feltölt">
-                    </form>
-                </div>
-                <div id="feedback-upload-done" style="display: none;">
-                    <i class="fas fa-check-circle" style="font-size: 32px; display: inline; color: #0eb833;"></i>
-                    <h2 style="display: inline;">Köszönjük a visszajelzést!</h2>
-                    <div id="feedback-upload-spinner">
-                        <img width="32" height="32" src="img/spinner.gif" style="display: inline-block;">
-                        Feltöltés...
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Anti select -->
     <p style="position:absolute; top: 0;">
         <script src="scripts/anti-select.js" type="text/javascript"></script>
     </p>
 
-    <script>
-        const modals = [
-            document.getElementById('id01'),
-            document.getElementById('id02'),
-        ]
-
-        window.onclick = function (event) {
-            modals.forEach(modal => {
-                if (event.target == modal)
-                { modal.style.display = "none" }
-            })
-        }
-    </script>
-
+    <script src="scripts/setup.js"></script>
     <script src="scripts/select-all.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/reveal.js"></script>
-    <script src="scripts/feedback.js"></script>
 </body>
 
 </html>
