@@ -1,8 +1,9 @@
-import { DataBase } from "./datatypes"
+import { DataBase } from "./database"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
 
 async function DownloadDatabase() {
+    // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
     const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
     const teachers: any[] = JSON.parse(await HTTP.GetAsync('./database/teachers.json'))
     const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
@@ -10,33 +11,40 @@ async function DownloadDatabase() {
     return new DataBase(tablos, teachers, departments)
 }
 
+/** Main function: this will be called when the document is loaded */
 async function Main() {
+    /** Database manager */
     var Database: DataBase
     try {
+        // It tries to download the database from the JSON files
         Database = await DownloadDatabase()
     } catch (error: any) {
         console.error('Failed to download the database', error)
         return
     }
 
+    // Get the container elements
     const tablosElement = Utilities.TryGetElement('tablos')
     const teachersElement = Utilities.TryGetElement('teachers')
 
-    if (tablosElement)
-    Utilities.ClearElement(tablosElement)
+    // If "tablosElement" exists, it deletes its content
+    if (tablosElement) Utilities.ClearElement(tablosElement)
 
+    // If "tablosElement" exists, it fills up with some content
     if (tablosElement)
     for (let i = 0; i < Database.tablos.length; i++) {
         const tablo = Database.tablos[i]
         tablosElement.appendChild(Utilities.Template('tablo', tablo))
     }
 
+    // If "teachersElement" exists, it fills up with some content
     if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {
         const teacher = Database.teachers[i]
         teachersElement.appendChild(Utilities.Template('teacher', teacher))
     }
 
+    // Some search tests... This will be deleted (I hope)
     if (teachersElement)
     Utilities.GetElement('search').addEventListener('input', () => {
         Utilities.ClearElement(teachersElement)

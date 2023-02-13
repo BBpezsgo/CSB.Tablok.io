@@ -1,14 +1,21 @@
-import * as Utilities from './utilities'
+// #region Type definitions
 
 export type Tablo = {
+    /** Year number */
     FinishedAt: number
+    /** ie. 11 C */
     Grade: {
+        /** ie. 11 */
         Grade: number
+        /** ie. C */
         Sub: string
     }
     Type: 'SCHOOL' | 'TECHNICAL' | undefined
+    /** Image URL */
     Image: string | undefined
+    /** Department ID */
     Department: number | undefined
+    /** Ofo ID */
     Ofo: number | undefined
     Students: Name[] | undefined
 }
@@ -51,6 +58,8 @@ export class Name
     ToString(): string { return ((this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ')).trim() }
 }
 
+// #endregion
+
 export class DataBase {
     readonly tablos: TabloProcessed[]
     readonly teachers: Teacher[]
@@ -61,6 +70,7 @@ export class DataBase {
         this.teachers = teachers
         this.departments = departments
         
+        // This converts objects into class instances
         for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Firstname, teachers[i].Name.Surname)
         for (let i = 0; i < tablos.length; i++) {
             const tablo = tablos[i]
@@ -70,6 +80,7 @@ export class DataBase {
             tablos[i] = tablo
         }
 
+        // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]

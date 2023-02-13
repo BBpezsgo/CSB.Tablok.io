@@ -1,3 +1,5 @@
+// Some HTTP utilities
+
 export function Get(url: string, timeout: number = 0): string { return Request(url, 'GET', timeout) }
 export function GetAsync(url: string, timeout: number = 0): Promise<string> { return RequestAsync(url, 'GET', timeout) }
 

@@ -1,3 +1,5 @@
+// Some basic utilities
+
 import * as HTTP from './http'
 import { compile } from './handlebars.js'
 
