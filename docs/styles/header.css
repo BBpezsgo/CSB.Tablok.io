@@ -8,12 +8,11 @@
 }
 
 .header {
-  text-align: center;
   color: white;
   background-image: url("https://lh5.googleusercontent.com/p/AF1QipNv3m32eXw2ZWYBlkgQj84WcNgqPt6nBAa_X3oH=h1440");
   background-position: center;
   background-size: cover;
-  padding: 150px 0px;
+  padding: 75px 0px 150px 0px;
 }
 
 .header h1 {
@@ -63,14 +62,36 @@
   margin-left: 8px;
 }
 
+#logo-gszi, #logo-bszc {
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+}
+#logo-gszi {
+  left: 155px;
+}
+#logo-bszc {
+  left: 250px;
+}
+
+#logo-gszi>img, #logo-bszc>img {
+  width: 85px;
+  filter: drop-shadow(5px 5px 4px #000a);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   .header h1 {
     font-size: 25px;
   }
 
   .header {
-    padding: 150px 0px;
+    padding: 100px 0px 150px 0px;
   }
+  #logo-gszi, #logo-bszc { top: 70px; }
+  #logo-gszi { left: 155px; }
+  #logo-bszc { left: 250px; }
 }
 
 @media screen and (max-width: 992px) {
@@ -86,6 +107,13 @@
   }
   
   .header {
-    padding: 60px 0px;
+    padding: 60px 0px 60px 0px;
   }
+
+  #logo-gszi>img, #logo-bszc>img {
+    width: 45px;
+  }
+  #logo-gszi, #logo-bszc { top: 40px; }
+  #logo-gszi { left: 125px; }
+  #logo-bszc { left: 175px; }
 }
