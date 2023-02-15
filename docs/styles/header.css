@@ -17,8 +17,7 @@
 }
 
 .header h1 {
-  padding-right: 104px;
-  padding-left: 104px;
+  padding: 10px 110px;
   background: rgba(0, 39, 53, 0.55);
   position: absolute;
   top: 0;
@@ -28,11 +27,11 @@
   margin: 0;
   color: #0090C5;
   font-size: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   font-weight: normal;
   font-family: 'Oswald', sans-serif;
   text-align: left;
+  padding-right: 160px !important;
+  min-height: 48px;
 }
 
 .header h1 span {
@@ -64,9 +63,8 @@
   margin-left: 8px;
 }
 
-
 @media screen and (max-width: 1200px) {
-  #TitleText {
+  .header h1 {
     font-size: 25px;
   }
 
@@ -74,11 +72,19 @@
     padding: 150px 0px;
   }
 }
-@media screen and (max-width: 700px) {
-  #TitleText {
-    font-size: 15px;
-  }
 
+@media screen and (max-width: 992px) {
+  .header h1 {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .header h1 {
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+  
   .header {
     padding: 60px 0px;
   }

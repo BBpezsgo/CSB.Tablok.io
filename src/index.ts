@@ -1,4 +1,4 @@
-import { DataBase } from "./database"
+import { DataBase, TabloProcessed } from "./database"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
 
@@ -13,6 +13,8 @@ async function DownloadDatabase() {
 
 /** Main function: this will be called when the document is loaded */
 async function Main() {
+    console.log('he')
+
     /** Database manager */
     var Database: DataBase
     try {
@@ -24,19 +26,29 @@ async function Main() {
     }
 
     // Get the container elements
-    const tablosElement = Utilities.TryGetElement('tablos')
+    const tablosElement = Utilities.TryGetElement('tablos-container')
     const teachersElement = Utilities.TryGetElement('teachers')
 
     // If "tablosElement" exists, it deletes its content
     if (tablosElement) Utilities.ClearElement(tablosElement)
 
     // If "tablosElement" exists, it fills up with some content
-    if (tablosElement)
-    for (let i = 0; i < Database.tablos.length; i++) {
-        const tablo = Database.tablos[i]
-        tablosElement.appendChild(Utilities.Template('tablo', tablo))
-    }
+    if (tablosElement) {
+        tablosElement.appendChild(Utilities.Template('year-panel', { year: Database.tablos[0].FinishedAt }))
+        let container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+        let lastYearPanel = Database.tablos[0].FinishedAt
+        for (let i = 0; i < Database.tablos.length; i++) {
+            const tablo = Database.tablos[i]
 
+            if (tablo.FinishedAt - lastYearPanel < -3) {
+                tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
+                container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                lastYearPanel = tablo.FinishedAt
+            }
+            
+            container.appendChild(Utilities.Template('tablo', tablo))
+        }
+    }
     // If "teachersElement" exists, it fills up with some content
     if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {

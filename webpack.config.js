@@ -19,4 +19,11 @@ module.exports = {
     filename: 'scripts.js',
     path: path.resolve(__dirname, 'docs', 'scripts'),
   },
+  devServer: {
+    static: {      
+      directory: path.join(__dirname, 'docs'),
+    },
+    compress: true,
+    port: 9000,
+  }
 };
