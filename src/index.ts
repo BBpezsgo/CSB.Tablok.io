@@ -13,8 +13,6 @@ async function DownloadDatabase() {
 
 /** Main function: this will be called when the document is loaded */
 async function Main() {
-    console.log('he')
-
     /** Database manager */
     var Database: DataBase
     try {
@@ -71,4 +69,4 @@ async function Main() {
     })
 }
 
-Main()
+document.addEventListener('DOMContentLoaded', () => { Main() })

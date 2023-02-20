@@ -51,8 +51,6 @@ function CreateElement(htmlString) {
 }
 
 async function Setup() {
-    console.log('Setup')
-
     const modal1 = await GetAsync('./modals/creators.html')
     const modal2 = await GetAsync('./modals/feedback.html')
 

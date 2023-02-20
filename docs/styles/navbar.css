@@ -1,7 +1,6 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  /* flex: 10px; */
   flex: 54px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -39,14 +38,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  /*
-  .navbar {
-    flex: 54px;
-    flex-shrink: 0;
-    flex-grow: 0;
-  }
-  */
-
   .mobileMenuToggleButton {
     visibility: visible;
   }

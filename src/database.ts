@@ -66,8 +66,6 @@ export class DataBase {
     readonly departments: string[]
 
     constructor(tablos: Tablo[], teachers: Teacher[], departments: string[]) {
-        console.log('Load database')
-
         this.tablos = []
         this.teachers = teachers
         this.departments = departments
@@ -99,7 +97,6 @@ export class DataBase {
                 OfoText: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
             })
         }
-        console.log('Sorting tablos')
         this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)
     }
 }
