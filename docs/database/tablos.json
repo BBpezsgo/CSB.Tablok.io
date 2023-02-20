@@ -1,27 +1,7 @@
 [
     {
         "Grade":
-        {
-            "Grade": 10,
-            "Sub": "B"
-        },
-        "FinishedAt": 2023,
-        "Ofo": 10,
-        "Department": 2,
-        "Students": [
-            {
-                "Surname": ["Bánszky"],
-                "Firstname": ["Balázs"]
-            }
-        ],
-        "Image": ""
-    },
-    {
-        "Grade":
-        {
-            "Grade": 12,
-            "Sub": "D"
-        },
+        { "Grade": 12, "Sub": "D" },
         "StartedAt": 2017,
         "FinishedAt": 2021,
         "Ofo": -1,
