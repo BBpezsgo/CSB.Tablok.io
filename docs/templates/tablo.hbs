@@ -1,14 +1,15 @@
 <div class="tablo" style="background-image: url({{Image}});">
     <div>
-        <p>Évfolyam: {{grade.grade}}/{{grade.sub}}</p>
+        <p>{{Grade.Grade}}.{{Grade.Sub}}</p>
         <p>
-            Szak:
             {{#if DepartmentText}}
             {{DepartmentText}}
             {{else}}
             ID-{{Department}}
             {{/if}}
+            szak
         </p>
-        <p>Végzett: {{FinishedAt}}-ban/ben</p>
+        <p>{{StartedAt}}-tól/től {{FinishedAt}}-ig</p>
+        <p>{{OfoText}}</p>
     </div>
 </div>

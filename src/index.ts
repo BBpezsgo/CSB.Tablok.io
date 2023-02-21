@@ -1,6 +1,7 @@
 import { DataBase, TabloProcessed } from "./database"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
+import * as Checker from './checker'
 
 async function DownloadDatabase() {
     // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
@@ -23,6 +24,8 @@ async function Main() {
         return
     }
 
+    Checker.CheckDatabase(Database)
+
     // Get the container elements
     const tablosElement = Utilities.TryGetElement('tablos-container')
     const teachersElement = Utilities.TryGetElement('teachers')
@@ -43,8 +46,14 @@ async function Main() {
                 container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
                 lastYearPanel = tablo.FinishedAt
             }
-            
-            container.appendChild(Utilities.Template('tablo', tablo))
+        
+            const newElement = Utilities.Template('tablo', tablo)
+            if (false && tablo.Image) {
+                const img = new Image()
+                img.onload = () => { newElement.style.height = (img.height / newElement.clientWidth) + 'px' }
+                img.src = tablo.Image ?? ''
+            }
+            container.appendChild(newElement)
         }
     }
     // If "teachersElement" exists, it fills up with some content

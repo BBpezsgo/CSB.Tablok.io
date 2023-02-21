@@ -3,10 +3,12 @@
 export type Tablo = {
     /** Year number */
     FinishedAt: number
+    /** Year number */
+    StartedAt: number | undefined
     /** ie. 11 C */
     Grade: {
         /** ie. 11 */
-        Grade: number
+        Grade: number | string
         /** ie. C */
         Sub: string
     }
@@ -21,8 +23,9 @@ export type Tablo = {
 }
 
 export type TabloProcessed = Tablo & {
-    OfoText: Name | null
-    DepartmentText: string
+    OfoReference: Name
+    OfoText: string | null
+    DepartmentText: string | null
 }
 
 export type Teacher = {
@@ -84,17 +87,30 @@ export class DataBase {
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]
+
+            if (!tablo.StartedAt && tablo.Grade.Grade) {
+                if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 11) {
+                    tablo.StartedAt = tablo.FinishedAt - tablo.Grade.Grade
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade} = ${tablo.StartedAt}`, tablo)
+                } else if (typeof tablo.Grade.Grade === 'string' && tablo.Grade.Grade.includes('/')) {
+                    const n = Number.parseInt(tablo.Grade.Grade.split('/')[1])
+                    tablo.StartedAt = tablo.FinishedAt - n
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n} = ${tablo.StartedAt}`, tablo)
+                }
+            }
             
             this.tablos.push({
                 Department: tablo.Department,
                 FinishedAt: tablo.FinishedAt,
+                StartedAt: tablo.StartedAt,
                 Students: tablo.Students,
                 Ofo: tablo.Ofo,
                 Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
                 Grade: tablo.Grade,
                 Type: tablo.Type,
-                DepartmentText: departments[tablo.Department ?? -1] ?? `Unknown Department Index ${tablo.Department}`,
-                OfoText: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
+                DepartmentText: departments[tablo.Department ?? -1] ?? null,
+                OfoReference: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
+                OfoText: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name.ToString() : null,
             })
         }
         this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)

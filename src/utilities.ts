@@ -14,13 +14,13 @@ export function CreateElement(htmlString: string): Element {
 export async function TemplateAsync(name: string, values: object) {
     const hbs = await HTTP.GetAsync('./templates/' + name + '.hbs')
     const html = compile(hbs)(values)
-    return CreateElement(html)
+    return CreateElement(html) as HTMLElement
 }
 
 export function Template(name: string, values: object) {
     const hbs = HTTP.Get('./templates/' + name + '.hbs')
     const html = compile(hbs)(values)
-    return CreateElement(html)
+    return CreateElement(html) as HTMLElement
 }
 
 export function TryGetElement(id: string) { return document.getElementById(id) }
