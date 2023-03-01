@@ -1,83 +1,65 @@
-﻿# Az iskola végzős tanulói (1990-2008) 
-1990 IV.B 
- 
-1991 IV.B 
- 
-1992 IV.A 
-Osztályfőnök: Óváriné Jámbor Éva, Mochnács Mihály 
- 
+﻿# Az iskola végzős tanulói (1990-2008)
+1990 IV.B
+
+1991 IV.B
+
+1992 IV.A
+
 IV. B
- 
+
 1993 IV.A
 
-IV.B 
+IV.B
 
- 
-1994 IV.A 
+1994 IV.A
 
+IV.B
 
-IV.B 
-Osztályfőnökök: Kovácsné Hajdú Ágnes, Kiss Ferenc 
+1995 IV.A
 
- 
-1995 IV.A 
+IV.B
 
- 
-IV.B 
+IV.C
 
+1996 IV.A
 
-IV.C 
-Osilyfőnökök: Kocsis Márta, Sanusi József 
+IV.B
 
- 
-1996 IV.A 
-Osztályfőnökök: Babáné Koltai Gabriella, Boros László, Sarusi Ildikó 
+IV.C
 
- 
-IV.B 
+1997 12. A
 
- 
-IV.C 
- 
-1997 12. A 
-Osztályfőnökök: Wolfné Borsi Julianna, Galoviczné Hornok Anikó 
- 
-12. B 
+12. B
 
-12. C 
-Osztályfőnökök: Tulkán Zsolt, Domokos Tamás 
- 
-1998 12. A 
- 
-12. B 
- 
-12. C 
- 
-1999 12. A 
+12. C
 
-12. B 
- 
-2000 12. A 
- 
-12. B 
-Osztályfőnökök: Surinásné Tóth Olga, Zimmermann József 
- 
-12. C 
- 
-2001 12. A 
-Osztályfőnökök: Sarusi Ildikó, Gyulafalvi Ernő 
+1998 12. A
 
-12. B 
-Osztályfőnökök: Kocsis Márta, Keliger Istvánné, Rákóczi István Péter 
+12. B
 
- 
-12. C 
+12. C
 
-2002 12. A 
- 
-12. B 
- 
-12. C 
+1999 12. A
+
+12. B
+
+2000 12. A
+
+12. B
+
+12. C
+
+2001 12. A
+
+12. B
+
+12. C
+
+2002 12. A
+
+12. B
+
+12. C
 
 2003 12. A
 
@@ -104,14 +86,12 @@ Osztályfőnökök: Kocsis Márta, Keliger Istvánné, Rákóczi István Péter
 2007 12. A
 
 12. B
-Osztályfőnökök: Kissné Virág Barbara, Papp Béla
 
 12. C
 
 2008 12. A
 
 12. B
-
  
 # A szakképző évfolyamokon szakképesítést szereztek (1991-2008)
 
@@ -129,210 +109,66 @@ V.B
 
 1995 V.A
 
-V.B 
-
+V.B
 
 1996 V.A
-Osztályfőnök:  
-Gépgyártás-technológia szak: 
-Arányi Attila, 
-Bánszki Szilvia, Barányi Zsolt, Baukó Tamás, Boros László, Dékány Attila, 
-Felföldi Attila, Horváth Gergely Mihály, Pintér Zoltán, Rá gyánszki Krisztián, 
-Veres Antal, Zelenyánszki Péter, Zsilák Edit
-Információ-és számítástechnikai szak: 
-Bognár Zoltán, Csipke Krisztina, Darvas Kornél, 
-Galló Erika, Kávási Norbert, Kovács Beáta, Nagy Zoltán, Ódor Balázs, 
-Pásztor István, Pla- vecz Péter, Surányi Zsolt, Vaszkó Péter
-
 
 V.B
-: 
-
-
 
 1997 13. A
- szak: 
-
-
 
 13. B
-Osztályfőnök: 
-i szak: 
-
-
 
 13.C
- szak: 
 
-
-
-1998 13. A 
-
-
+1998 13. A
 
 13. B
-Osztályfőnök:  
-Mechatronika szak: 
-Bakonyi 
-Imre, Balog Róbert, Gérus Sándor, Hévizi János, Ipacs At- tila, Kiss 
-Norbert, Nyiri József, Paluska Zsolt, Séllei Zoltán, Szatmári Gábor, Szín 
-Zoltán Lajos, Volent László, Vozár István 
-Épületgépész: 
-Börner Miklós 
-András, Palotai István Sándor, Süli Bertalan, Tóth Tamás 
-
 
 13. C
-: 
-
 
 1999 13.A
-Épületgépész: 
-Bencze János, 
-Holecska László, Kis József, Kmotricza Igor Mihály, Kovács Zoltán, Laczó 
-György, Szentesi Szabolcs 
-Gépésztechnikus szak: 
-Ancsin Viktor, Balogh 
-István, Ébellai Géza, Erdei Gyula, Laczkó László, Nagy Sándor, Rideg 
-Miklós, Sebestyén István 
-Anyagvizsgáló és minőségbiztosítási technikus: 
-Besztercei Zsolt Ádám, Geisel József, Far- kas Brigitta, Kacsala Gábor, 
-Tóth Gábor, Uhrin Tamás György 
-
 
 13. B
-: 
-
 
 13. C
- szak: 
 
 2000 13. A
-Osztályfőnök:  
-Anyagvizsgáló és minőségbiztosítási technikus: 
-Aszódi János, Boldog István Ferenc, Czva- linga Ákos Pál, Deák 
-Katalin, Dohány Gergely, Erdődi Sándor, Kiss András Károly, Ko- valovszki 
-Imre, Lapis Zoltán, Pataki István, Szekeres Sándor 
-Épületgépész: 
-Czégény 
-Attila, Dékány Zsigmond, Németh István, Zsiros Norbert 
-
 
 2/14 C
-: 
-
 
 2001 2/14. A
-: 
-
 
 2/14 B
-: 
-
 
 2002 14. A
- szak: 
-
 
 14. B
-: 
-
 
 14. C
-: 
-
 
 2003 2/14. A
- szak: 
 
 2/14 B
-Osztályfőnök:  
-Műszaki informatikus: 
-Benecz 
-Tamás, Kajári Gábor Miklós, Mészáros Norbert Gábor, Virág Attila 
-Rendszerinformatikus: 
-Ancsin Pál, Focht Árpád, Gerencsér Ferenc, 
-Hrabovszki Péter Bá- lint, Létai Mihály, Márki István, Papp Lajos, Rusznák 
-István, Szabó Péter, Szatmári Balázs, Zahorán Csaba 
-
 
 2004 2/14 A
-Osztályfőnök: 
-Épületgépész technikus szak: 
-Borek István, Hidvégi Gábor, Lászlóffy Arnold, Mihály Fe- renc, Mihály 
-László, Morár Péter Dániel, Pusztai Tamás, Rajki Csaba, Serbán György, 
-Uhrin Zsolt, Váradi Lajos
-Rendszerinformatikus: 
-Győri Attila, Győri 
-Krisztián, Németi Norbert, Stella Péter, Sze- keres András, Tóth Róbert 
-
 
 2/14 B
- szak: 
-
 
 2005 2/14 A
-Osztályfőnök:  
-Épületgépész-technikus szak: 
-Csikai Ferenc, Fekete János, Gellai László, Jánoska Gábor, Kincses 
-Mihály, Komlósi Sándor, Kovalovszki Lajos, Perecz György Krisztián, 
-Sovány Ágnes, Szűcs Mihály, Varga Pál 
-Multimédia-fejlesztő: 
-Asztalos 
-Dóra, Bélteki Lajos, Kis Béla, Kotroczó Zsuzsanna, Pengő Tamás László, 
-Pribelszky Péter, Obetkó Györgyi, Szabó Tibor, Zelenyánszki Gabriella 
-
 
 2/14 B
- szak: 
-
 
 2006 2/14 A
-: 
 
 2/14 B
-Osztályfőnök: 
-Multimédia-fejlesztő: 
-Gál Zsolt, Hajdú 
-István, Hegedűs Tibor András, Horváth Tibor, Ko- pányi Károly, Kovács 
-Dénes László, Muhari Géza, Piller György, Sándor Attila, Szóró Péter 
-Rendszerinformatikus: 
-Ágoston Róbert, Birta Miklós, Brhlik Csaba, 
-Dorotovics László, Kiss Tamás, Vári Szabolcs 
-
 
 2007 1/14. A
-Osztályfőnök: 
-Épületgépész szak: 
-Boldizsár 
-Gyula Attila, Borbély György, Csóti György, Grósz Csaba, Lustyik Gábor, 
-Markos Tamás, Podmaniczki Gergely, Rómer Péter, Sárközi Tamás Márk, 
-Tobai Mihály, Zelenyánszki Tamás, Zsibrita Pál 
-Rendszerinformatikus: 
-Behán Attila, Csatári Lajos, Ficza Gergő Tamás, Kelemen Zoltán, Kisari 
-Norbert, Majoros Péter, Máté Gábor, Petrovszki Tamás Róbert, Pleskó Pál, 
-Szuro- vecz Zsolt, Varga Tibor 
 
 2/14 A
 
 2/14. B
 
 2008 2/14 A
-Osztályfőnök:  
-Multimédia-fejlesztő szak:
-Csulik 
-László, Egeresi Norbert, Fenyvesi Csaba, Glózik Attila, Jass Norbert, 
-Kesjár Mária, Pájer Nándor, Rusz Dávid, Schihlgrúber Angelika, Sutyinszki 
-János, Tóth Imre, Tóth László 
-Rendszerinformatikus szak:
-Kiszely János, 
-Nagy János Ferenc, Uhrin Tamás, Veress Norbert 
 
 1/14 A
-Osztályfőnök: 
-Fémipari-anyagtechnikus szak: 
-Görgényi László, Harangozó Balázs, Krajcsó Zsolt, Lu- kács Tamás, 
-Sztraka Gergely, Tóth István
-Rendszerinformatikus szak: 
-Georg Lajos, 
-Molnár László

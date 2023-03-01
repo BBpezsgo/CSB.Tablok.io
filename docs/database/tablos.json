@@ -359,7 +359,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1992,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Óváriné Jámbor Éva", "Mochnács Mihály" ],
         "Students": [
             "Apáti Anikó", 
             "Barna János", 
@@ -552,7 +552,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1994,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Kovácsné Hajdú Ágnes", "Kiss Ferenc" ],
         "Students": [
             "Antal Richárd", 
             "Bencsik Tamás János", 
@@ -652,7 +652,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1995,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Kocsis Márta", "Sanusi József" ],
         "Students": [
             "Bognár Zoltán", 
             "Csipke Krisztina", 
@@ -683,7 +683,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1996,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Babáné Koltai Gabriella", "Boros László", "Sarusi Ildikó" ],
         "Students": [
             "Bereczki Árpád", 
             "Beregi Zsolt", 
@@ -784,7 +784,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1997,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Wolfné Borsi Julianna", "Galoviczné Hornok Anikó" ],
         "Students": [
             "Bajkai Ferenc", 
             "Balla László", 
@@ -857,7 +857,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1997,
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Tulkán Zsolt", "Domokos Tamás" ],
         "Students": [
             "Árgyelán Krisztián", 
             "Báló Sándor", 
@@ -1094,7 +1094,7 @@
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": 12, "Sub": "B" },
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Surinásné Tóth Olga", "Zimmermann József" ],
         "Students": [
             "Ancsin Zsolt", 
             "Atyimov Marianna", 
@@ -1174,7 +1174,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "A" },
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Sarusi Ildikó", "Gyulafalvi Ernő" ],
         "Students": [
             "Annaházi Lóránt", 
             "Balázs Péter", 
@@ -1215,7 +1215,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "B" },
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Kocsis Márta", "Keliger Istvánné", "Rákóczi István Péter" ],
         "Students": [
             "Aleszka András Csaba", 
             "Antovszki László", 
@@ -1839,7 +1839,7 @@
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": 12, "Sub": "B" },
-        "Ofo": "aaaaaaaaaaaaaaaaaaaa",
+        "Ofo": [ "Kissné Virág Barbara", "Papp Béla" ],
         "Students": [
             "Ancsin Dániel", 
             "Bauer Tamás", 
@@ -2185,7 +2185,43 @@
         "FinishedAt": 1996,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": "Mochnács Mihály",
-        "Department": "",
+        "Students": [
+            {
+                "Department": "Gépgyártás-technológia",
+                "Students": [
+                    "Arányi Attila", 
+                    "Bánszki Szilvia", 
+                    "Barányi Zsolt", 
+                    "Baukó Tamás", 
+                    "Boros László", 
+                    "Dékány Attila", 
+                    "Felföldi Attila", 
+                    "Horváth Gergely Mihály", 
+                    "Pintér Zoltán", 
+                    "Rá gyánszki Krisztián", 
+                    "Veres Antal", 
+                    "Zelenyánszki Péter", 
+                    "Zsilák Edit"
+                ]
+            },
+            {
+                "Department": "Információ-és számítástechnika",
+                "Students": [
+                    "Bognár Zoltán", 
+                    "Csipke Krisztina", 
+                    "Darvas Kornél", 
+                    "Galló Erika", 
+                    "Kávási Norbert", 
+                    "Kovács Beáta", 
+                    "Nagy Zoltán", 
+                    "Ódor Balázs", 
+                    "Pásztor István", 
+                    "Pla- vecz Péter", 
+                    "Surányi Zsolt", 
+                    "Vaszkó Péter"
+                ]
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2313,7 +2349,35 @@
         "FinishedAt": 1998,
         "Grade": { "Grade": 13, "Sub": "B" },
         "Ofo": "Halmosiné Kiss Erzsébet",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Bakonyi Imre", 
+                    "Balog Róbert", 
+                    "Gérus Sándor", 
+                    "Hévizi János", 
+                    "Ipacs At- tila", 
+                    "Kiss Norbert", 
+                    "Nyiri József", 
+                    "Paluska Zsolt", 
+                    "Séllei Zoltán", 
+                    "Szatmári Gábor", 
+                    "Szín Zoltán Lajos", 
+                    "Volent László", 
+                    "Vozár István"
+                ],
+                "Department": "Mechatronika"
+            },
+            {
+                "Students": [
+                    "Börner Miklós András", 
+                    "Palotai István Sándor", 
+                    "Süli Bertalan", 
+                    "Tóth Tamás"
+                ],
+                "Department": "Épületgépész"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2347,7 +2411,38 @@
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": 36,
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Bencze János", 
+                    "Holecska László", 
+                    "Kis József", 
+                    "Kmotricza Igor Mihály", 
+                    "Kovács Zoltán", 
+                    "Laczó György", 
+                    "Szentesi Szabolcs"
+                ],
+                "Department": "Épületgépész"
+            },
+            {
+                "Students": [
+                    "Ancsin Viktor", 
+                    "Balogh István", 
+                    "Ébellai Géza", 
+                    "Erdei Gyula", 
+                    "Laczkó László", 
+                    "Nagy Sándor", 
+                    "Rideg Miklós", 
+                    "Sebestyén István Anyagvizsgáló és minőségbiztosítási technikus: Besztercei Zsolt Ádám", 
+                    "Geisel József", 
+                    "Far- kas Brigitta", 
+                    "Kacsala Gábor", 
+                    "Tóth Gábor", 
+                    "Uhrin Tamás György"
+                ],
+                "Department": "Gépésztechnikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2395,7 +2490,33 @@
         "FinishedAt": 2000,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": "Kiss Ferenc",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Aszódi János", 
+                    "Boldog István Ferenc", 
+                    "Czva- linga Ákos Pál", 
+                    "Deák Katalin", 
+                    "Dohány Gergely", 
+                    "Erdődi Sándor", 
+                    "Kiss András Károly", 
+                    "Ko- valovszki Imre", 
+                    "Lapis Zoltán", 
+                    "Pataki István", 
+                    "Szekeres Sándor"
+                ],
+                "Department": "Anyagvizsgáló és minőségbiztosítási technikus"
+            },
+            {
+                "Students": [
+                    "Czégény Attila", 
+                    "Dékány Zsigmond", 
+                    "Németh István", 
+                    "Zsiros Norbert"
+                ],
+                "Department": "Épületgépész"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2530,14 +2651,68 @@
         "FinishedAt": 2003,
         "Grade": { "Grade": "2/14", "Sub": "B" },
         "Ofo": "Kovács Levente",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Benecz Tamás", 
+                    "Kajári Gábor Miklós", 
+                    "Mészáros Norbert Gábor", 
+                    "Virág Attila"
+                ],
+                "Department": "Műszaki informatikus"
+            },
+            {
+                "Students": [
+                    "Ancsin Pál", 
+                    "Focht Árpád", 
+                    "Gerencsér Ferenc", 
+                    "Hrabovszki Péter Bá- lint", 
+                    "Létai Mihály", 
+                    "Márki István", 
+                    "Papp Lajos", 
+                    "Rusznák István", 
+                    "Szabó Péter", 
+                    "Szatmári Balázs", 
+                    "Zahorán Csaba"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Palotai Tibor",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Borek István", 
+                    "Hidvégi Gábor", 
+                    "Lászlóffy Arnold", 
+                    "Mihály Ferenc", 
+                    "Mihály László", 
+                    "Morár Péter Dániel", 
+                    "Pusztai Tamás", 
+                    "Rajki Csaba", 
+                    "Serbán György", 
+                    "Uhrin Zsolt", 
+                    "Váradi Lajos"
+                ],
+                "Department": "Épületgépész technikus szak"
+            },
+            {
+                "Students": [
+                    "Győri Attila", 
+                    "Győri Krisztián", 
+                    "Németi Norbert", 
+                    "Stella Péter", 
+                    "Szekeres András", 
+                    "Tóth Róbert"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2566,7 +2741,38 @@
         "FinishedAt": 2005,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Tímár Károly",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Csikai Ferenc", 
+                    "Fekete János", 
+                    "Gellai László", 
+                    "Jánoska Gábor", 
+                    "Kincses Mihály", 
+                    "Komlósi Sándor", 
+                    "Kovalovszki Lajos", 
+                    "Perecz György Krisztián", 
+                    "Sovány Ágnes", 
+                    "Szűcs Mihály", 
+                    "Varga Pál"
+                ],
+                "Department": "Épületgépész-technikus"
+            },
+            {
+                "Students": [
+                    "Asztalos Dóra", 
+                    "Bélteki Lajos", 
+                    "Kis Béla", 
+                    "Kotroczó Zsuzsanna", 
+                    "Pengő Tamás László", 
+                    "Pribelszky Péter", 
+                    "Obetkó Györgyi", 
+                    "Szabó Tibor", 
+                    "Zelenyánszki Gabriella"
+                ],
+                "Department": "Multimédia-fejlesztő"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2608,14 +2814,75 @@
         "FinishedAt": 2006,
         "Grade": { "Grade": "2/14", "Sub": "B" },
         "Ofo": "Szikora Zsolt",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Gál Zsolt", 
+                    "Hajdú István", 
+                    "Hegedűs Tibor András", 
+                    "Horváth Tibor", 
+                    "Ko- pányi Károly", 
+                    "Kovács Dénes László", 
+                    "Muhari Géza", 
+                    "Piller György", 
+                    "Sándor Attila", 
+                    "Szóró Péter"
+                ],
+                "Department": "Multimédia-fejlesztő"
+            },
+            {
+                "Students": [
+                    "Ágoston Róbert", 
+                    "Birta Miklós", 
+                    "Brhlik Csaba", 
+                    "Dorotovics László", 
+                    "Kiss Tamás", 
+                    "Vári Szabolcs"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": "1/14", "Sub": "A" },
         "Ofo": "Béládi Csaba",
-        "Department": "",
+        "Students": [
+            {
+                "Students": [
+                    "Boldizsár Gyula Attila", 
+                    "Borbély György", 
+                    "Csóti György", 
+                    "Grósz Csaba", 
+                    "Lustyik Gábor", 
+                    "Markos Tamás", 
+                    "Podmaniczki Gergely", 
+                    "Rómer Péter", 
+                    "Sárközi Tamás Márk", 
+                    "Tobai Mihály", 
+                    "Zelenyánszki Tamás", 
+                    "Zsibrita Pál"
+                ],
+                "Department": "Épületgépész"
+            },
+            {
+                "Students": [
+                    "Behán Attila", 
+                    "Csatári Lajos", 
+                    "Ficza Gergő Tamás", 
+                    "Kelemen Zoltán", 
+                    "Kisari Norbert", 
+                    "Majoros Péter", 
+                    "Máté Gábor", 
+                    "Petrovszki Tamás Róbert", 
+                    "Pleskó Pál", 
+                    "Szuro- vecz Zsolt", 
+                    "Varga Tibor"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
@@ -2667,14 +2934,60 @@
         "FinishedAt": 2008,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Krámer Judit",
-        "Department": "",
+        "Students": [            
+            {
+                "Students": [
+                    "Csulik László", 
+                    "Egeresi Norbert", 
+                    "Fenyvesi Csaba", 
+                    "Glózik Attila", 
+                    "Jass Norbert", 
+                    "Kesjár Mária", 
+                    "Pájer Nándor", 
+                    "Rusz Dávid", 
+                    "Schihlgrúber Angelika", 
+                    "Sutyinszki János", 
+                    "Tóth Imre", 
+                    "Tóth László"
+                ],
+                "Department": "Multimédia-fejlesztő"
+            },
+            {
+                "Students": [
+                    "Kiszely János", 
+                    "Nagy János Ferenc", 
+                    "Uhrin Tamás", 
+                    "Veress Norbert"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2008,
         "Grade": { "Grade": "1/14", "Sub": "A" },
         "Ofo": "Tímár Károly",
-        "Department": "",
+        "Students": [            
+            {
+                "Students": [
+                    "Görgényi László", 
+                    "Harangozó Balázs", 
+                    "Krajcsó Zsolt", 
+                    "Lu- kács Tamás", 
+                    "Sztraka Gergely", 
+                    "Tóth István"
+                ],
+                "Department": "Fémipari-anyagtechnikus"
+            },
+            {
+                "Students": [
+                    "Georg Lajos", 
+                    "Molnár László"
+                ],
+                "Department": "Rendszerinformatikus"
+            }
+        ],
         "Type": "TECHNICAL"
     }
 ]
