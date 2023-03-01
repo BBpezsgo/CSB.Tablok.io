@@ -284,7 +284,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1990,
-        "School": [
+        "Ofo": 1000000000000000,
+        "Students": [
             "Andrej Zoltán", 
             "Balogh József Zoltán", 
             "Bereczki Zoltán", 
@@ -321,6 +322,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1991,
+        "Ofo": 1000000000000000,
         "Students": [
             "Antal Ferenc", 
             "Babcsák János", 
@@ -357,6 +359,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1992,
+        "Ofo": 1000000000000000,
         "Students": [
             "Apáti Anikó", 
             "Barna János", 
@@ -387,6 +390,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1992,
+        "Ofo": 1000000000000000,
         "Students": [
             "Bacsó Attila", 
             "Baka György", 
@@ -424,6 +428,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1993,
+        "Ofo": 36,
         "Students": [
             "Aradi Árpád", 
             "Aradszki János", 
@@ -468,6 +473,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1993,
+        "Ofo": 1000000000000000,
         "Students": [
             "Árkus György László", 
             "Bagó Lajos", 
@@ -509,6 +515,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1994,
+        "Ofo": 1000000000000000,
         "Students": [
             "Baukó Tamás", 
             "Benedek Tamás Ferenc", 
@@ -545,6 +552,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1994,
+        "Ofo": 1000000000000000,
         "Students": [
             "Antal Richárd", 
             "Bencsik Tamás János", 
@@ -581,6 +589,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1995,
+        "Ofo": 1000000000000000,
         "Students": [
             "Alberti Zoltán", 
             "Arányi Attila", 
@@ -613,6 +622,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1995,
+        "Ofo": 1000000000000000,
         "Students": [
             "Ancsin István Balázs", 
             "Bagi Attila", 
@@ -642,6 +652,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1995,
+        "Ofo": 1000000000000000,
         "Students": [
             "Bognár Zoltán", 
             "Csipke Krisztina", 
@@ -672,6 +683,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1996,
+        "Ofo": 1000000000000000,
         "Students": [
             "Bereczki Árpád", 
             "Beregi Zsolt", 
@@ -706,6 +718,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1996,
+        "Ofo": 1000000000000000,
         "Students": [
             "Anda Kálmán", 
             "Bagosi Sándor", 
@@ -737,6 +750,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1996,
+        "Ofo": 1000000000000000,
         "Students": [
             "Balla András", 
             "Berényi László", 
@@ -770,6 +784,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1997,
+        "Ofo": 1000000000000000,
         "Students": [
             "Bajkai Ferenc", 
             "Balla László", 
@@ -804,6 +819,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1997,
+        "Ofo": 1000000000000000,
         "Students": [
             "Bakonyi Imre", 
             "Balog Róbert", 
@@ -841,6 +857,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1997,
+        "Ofo": 1000000000000000,
         "Students": [
             "Árgyelán Krisztián", 
             "Báló Sándor", 
@@ -872,6 +889,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 36,
         "Students": [
             "Ancsin Viktor", 
             "Balogh István", 
@@ -901,6 +919,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Ancsin Éva", 
             "Belicza János Zsolt", 
@@ -938,6 +957,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bálint Károly", 
             "Bellágh Attila", 
@@ -975,6 +995,7 @@
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Aszódi János", 
             "Boldog István Ferenc", 
@@ -1004,6 +1025,7 @@
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Andrusik Viktor", 
             "Babós András", 
@@ -1039,6 +1061,7 @@
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Báder Erzsébet", 
             "Bali Zoltán", 
@@ -1071,6 +1094,7 @@
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Ancsin Zsolt", 
             "Atyimov Marianna", 
@@ -1111,6 +1135,7 @@
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bali Norbert", 
             "Benkó Lajos", 
@@ -1149,6 +1174,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Annaházi Lóránt", 
             "Balázs Péter", 
@@ -1189,6 +1215,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Aleszka András Csaba", 
             "Antovszki László", 
@@ -1233,6 +1260,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bordács Róbert", 
             "Bukva Viktor", 
@@ -1276,6 +1304,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bánszki Pál", 
             "Belinczky Zoltán", 
@@ -1312,6 +1341,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Barabás László", 
             "Baukó György", 
@@ -1353,6 +1383,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Berki Antal Gábor", 
             "Botta Péter", 
@@ -1391,6 +1422,7 @@
     {
         "FinishedAt": 2003,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Atyimov József", 
             "Eszenyi József", 
@@ -1422,6 +1454,7 @@
     {
         "FinishedAt": 2003,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Aleksza Miklós", 
             "Bakay Sebestyén", 
@@ -1460,6 +1493,7 @@
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Aradszki Árpád", 
             "Bak Imre", 
@@ -1495,6 +1529,7 @@
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Albert Dániel", 
             "Árgyelán Roland János", 
@@ -1532,6 +1567,7 @@
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bácskai Tamás", 
             "Bagó Róbert", 
@@ -1567,6 +1603,7 @@
     {
         "FinishedAt": 2005,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Baji Péter", 
             "Boros Imre", 
@@ -1595,6 +1632,7 @@
     {
         "FinishedAt": 2005,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Ágoston Róbert", 
             "Dina Anna", 
@@ -1626,6 +1664,7 @@
     {
         "FinishedAt": 2005,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bálint János", 
             "Bozó Péter", 
@@ -1656,6 +1695,7 @@
     {
         "FinishedAt": 2006,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Áchim Bence Ákos", 
             "Baracsi Mihály", 
@@ -1689,6 +1729,7 @@
     {
         "FinishedAt": 2006,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Balogh Ervin", 
             "Balogh Lajos Attila", 
@@ -1727,6 +1768,7 @@
     {
         "FinishedAt": 2006,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Behán Attila", 
             "Bokor Zsolt", 
@@ -1765,6 +1807,7 @@
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Balda Dávid", 
             "Balda György Tamás", 
@@ -1796,6 +1839,7 @@
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Ancsin Dániel", 
             "Bauer Tamás", 
@@ -1832,6 +1876,7 @@
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": 12, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Androletti Pál", 
             "Bartolák Pál Gergő", 
@@ -1865,6 +1910,7 @@
     {
         "FinishedAt": 2008,
         "Grade": { "Grade": 12, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Balázs Gábor", 
             "Bodzás Ferenc", 
@@ -1896,6 +1942,7 @@
     {
         "FinishedAt": 2008,
         "Grade": { "Grade": 12, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Students": [
             "Bugyi Dániel", 
             "Butyka Szabolcs", 
@@ -1938,6 +1985,7 @@
     {
         "FinishedAt": 1991,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Andrej Zoltán", 
@@ -1967,6 +2015,7 @@
     {
         "FinishedAt": 1992,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Babcsák János", 
@@ -1993,6 +2042,7 @@
     {
         "FinishedAt": 1993,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Barna János", 
@@ -2020,6 +2070,7 @@
     {
         "FinishedAt": 1993,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Erdei Szabolcs", 
@@ -2045,6 +2096,7 @@
     {
         "FinishedAt": 1994,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 36,
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Aradi Árpád", 
@@ -2068,6 +2120,7 @@
     {
         "FinishedAt": 1994,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Árkus György László", 
@@ -2092,6 +2145,7 @@
     {
         "FinishedAt": 1995,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Gyomai Zoltán", 
@@ -2114,6 +2168,7 @@
     {
         "FinishedAt": 1995,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Antal Richárd", 
@@ -2136,12 +2191,14 @@
     {
         "FinishedAt": 1996,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 1996,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Épületgépész",
         "Students": [
             "Ancsin István Balázs", 
@@ -2163,6 +2220,7 @@
     {
         "FinishedAt": 1997,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépgyártás-technológia",
         "Students": [
             "Blaskó Zoltán", 
@@ -2188,6 +2246,7 @@
     {
         "FinishedAt": 1997,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Gépipari minőségbiztosítás-számítástechnika",
         "Students": [
             "Bohák János", 
@@ -2210,6 +2269,7 @@
     {
         "FinishedAt": 1997,
         "Grade": { "Grade": 13, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Department": "Információ-és számítástechnika",
         "Students": [
             "Balla András", 
@@ -2235,6 +2295,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépipari minőségbiztosítás- számítástechnika",
         "Students": [
             "Boér Gábor", 
@@ -2258,12 +2319,14 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 13, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Department": "Információ- és számítástechnika",
         "Students": [
             "Árgyelán Krisztián", 
@@ -2290,12 +2353,14 @@
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 36,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Számítástechnikai programozó és szoftverüzemeltető",
         "Students": [
             "Csarnai Gábor", 
@@ -2318,6 +2383,7 @@
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Department": "Ipari informatikai technikus",
         "Students": [
             "Belicza János Zsolt", 
@@ -2335,12 +2401,14 @@
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": 13, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2000,
         "Grade": { "Grade": "2/14", "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Department": "Műszaki informatikus",
         "Students": [
             "Ardeleán László", 
@@ -2356,6 +2424,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Benecz Tamás", 
@@ -2369,6 +2438,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Rendszerinformatikus",
         "Students": [
             "Babós András", 
@@ -2390,6 +2460,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 14, "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Dénes Sándor", 
@@ -2405,6 +2476,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 14, "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Rendszerinformatikus",
         "Students": [
             "Bálint Péter", 
@@ -2427,6 +2499,7 @@
     {
         "FinishedAt": 2002,
         "Grade": { "Grade": 14, "Sub": "C" },
+        "Ofo": 1000000000000000,
         "Department": "Műszaki informatikus",
         "Students": [
             "Balogh János", 
@@ -2443,6 +2516,7 @@
     {
         "FinishedAt": 2003,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Gépipari mérnökasszisztens",
         "Students": [
             "Annaházi Lóránt", 
@@ -2462,18 +2536,21 @@
     {
         "FinishedAt": 2003,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2004,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Multimédia-fejlesztő",
         "Students": [
             "Bordács Róbert", 
@@ -2495,12 +2572,14 @@
     {
         "FinishedAt": 2005,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2005,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Rendszerinformatikus",
         "Students": [
             "Bagó Sándor", 
@@ -2515,6 +2594,7 @@
     {
         "FinishedAt": 2006,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Epületgépész",
         "Students": [
             "Aradszki Árpád", 
@@ -2534,18 +2614,21 @@
     {
         "FinishedAt": 2006,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": "1/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "Multimédia-fejlesztő",
         "Students": [
             "Csatári Csaba", 
@@ -2570,6 +2653,7 @@
     {
         "FinishedAt": 2007,
         "Grade": { "Grade": "2/14", "Sub": "B" },
+        "Ofo": 1000000000000000,
         "Department": "Rendszerinformatikus",
         "Students": [
             "Árvai Zsolt", 
@@ -2589,12 +2673,14 @@
     {
         "FinishedAt": 2008,
         "Grade": { "Grade": "2/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     },
     {
         "FinishedAt": 2008,
         "Grade": { "Grade": "1/14", "Sub": "A" },
+        "Ofo": 1000000000000000,
         "Department": "",
         "Type": "TECHNICAL"
     }
