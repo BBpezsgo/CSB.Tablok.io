@@ -1,4 +1,7 @@
 [
+    "============================================================",
+    "=============== Tablók a beszkennelt képekből ==============",
+    "============================================================",
     {
         "Grade":
         { "Grade": 12, "Sub": "B" },
@@ -281,6 +284,9 @@
         "Department": 4,
         "Image": "img/tablos/12.B_2016-2020.jpg"
     },
+    "============================================================",
+    "= Tablók az emlékkönyvből: 'Az iskola végzős tanulói.docx' =",
+    "============================================================",
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1990,
@@ -2989,5 +2995,492 @@
             }
         ],
         "Type": "TECHNICAL"
+    },
+    "============================================================",
+    "======== Tablók egy random doc-ból: 'Osztályok.docx' =======",
+    "========= És egy táblázatból: 'Meglevo_tablok.xlsx' ========",
+    "============================================================",
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2009,
+        "Ofo": "Pataj Zsuzsanna",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2009,
+        "Ofo": "Pap Csaba",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2009,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2010,
+        "Ofo": "Tulkán Zsolt",
+        "Department": "Gépész Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2010,
+        "Ofo": "Halmosiné Kiss Erzsébet",
+        "Department": "Informatikai Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2010,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2011,
+        "Ofo": "Gáspár Piroska",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2011,
+        "Ofo": "Bertalan Zoltán",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2011,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2012,
+        "Ofo": "Pálfi István",
+        "Department": "Gépész"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2012,
+        "Ofo": "Krámer Judit",
+        "Department": "Informatikai Tagozat"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2012,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2013,
+        "Ofo": "Papp Csaba",
+        "Department": "Gépész"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2013,
+        "Ofo": "Murvai Mónika",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2013,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2014,
+        "Ofo": "Klucsics Sándor",
+        "Department": "Gépész Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2014,
+        "Ofo": "Tulkán Zsolt",
+        "Department": "Informatikai Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2014,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2015,
+        "Ofo": "Kiss Ferenc",
+        "Department": "Gépész Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2015,
+        "Ofo": "Fölker Csaba",
+        "Department": "Informatikai Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2015,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2016,
+        "Ofo": "Pálfi István",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2016,
+        "Ofo": "Csóti Marianna",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2016,
+        "Ofo": "Gáspár Piroska",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 13, "Sub": "C" },
+        "FinishedAt": 2016,
+        "Ofo": "Pataj Zsuzsanna",
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2017,
+        "Ofo": "Hrabovszki Ildikó",
+        "Department": "Gépész Szakmacsoport"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2017,
+        "Ofo": "Hugyecz Eszter",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2017,
+        "Ofo": "Murvai Mónika",
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2018,
+        "Ofo": "Tulkán Zsolt",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2018,
+        "Ofo": "Tusjak Brigitta",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2018,
+        "Ofo": "Varga Imre",
+        "Department": "Informatika Szakmacsoport"
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2019,
+        "Ofo": "Dóczi Zita",
+        "Department": "Gépész"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2019,
+        "Ofo": "Gajda Judit",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2019,
+        "Ofo": "Drotár János",
+        "Department": "Informatika Szakmacsoport"
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2020,
+        "Ofo": "Klucsics Sándor",
+        "Department": "Gépész"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2020,
+        "Ofo": "Priskin István",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2020,
+        "Ofo": -1,
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "D" },
+        "FinishedAt": 2020,
+        "Ofo": "Pálfi István",
+        "Department": "Rendészeti"
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2021,
+        "Ofo": "Virág Barbara Szilvia",
+        "Department": "Gépész Ágazat"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2021,
+        "Ofo": "Murvai Mónika",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2021,
+        "Ofo": "Földi Zsolt",
+        "Department": "Informatika"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "D" },
+        "FinishedAt": 2021,
+        "Ofo": -1,
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "E" },
+        "FinishedAt": 2021,
+        "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
+        "Department": "Rendészeti"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "F" },
+        "FinishedAt": 2021,
+        "Ofo": -1,
+        "Department": -1
+    },
+
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2022,
+        "Ofo": "Lendvai Sándor",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2022,
+        "Ofo": "Tusjak Brigitta",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2022,
+        "Ofo": "Tóthné Leelőssy Andrea",
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "D" },
+        "FinishedAt": 2022,
+        "Ofo": -1,
+        "Department": -1
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "E" },
+        "FinishedAt": 2022,
+        "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
+        "Department": "Rendészeti"
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "M" },
+        "FinishedAt": 2022,
+        "Ofo": "Barlabásné Nagy Csilla",
+        "Department": -1
+    },
+    "============================================================",
+    "Egy random táblázatból: 'Vegzos_osztalyba_jaro_tanulok.xlsx'",
+    "============================================================",
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2023,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [
+            "Bacsai Máté", 
+            "Balázs Nándor Mátyás", 
+            "Balogh András Dániel", 
+            "Bátonyi Máté", 
+            "Benedek Tamás", 
+            "Boncza Bence", 
+            "Borsos Károly", 
+            "Brezowski Boldizsár", 
+            "Csatlós Tamás", 
+            "Csontos Tibor", 
+            "Elekes László", 
+            "Feke Bence", 
+            "Geszner Csongor", 
+            "Hartmann Dániel Áron", 
+            "Kasik Gergely Attila", 
+            "Kis Zsolt Benedek", 
+            "Konyecsni Bálint", 
+            "Kökényesi Csaba", 
+            "László Rómeó István", 
+            "Marosán Zoltán", 
+            "Miklósi Bence", 
+            "Niedermayer György Gergő", 
+            "Paulik Tamás", 
+            "Sajgó Milán", 
+            "Szatmári Zalán", 
+            "Vantara Zsolt", 
+            "Varga Zoltán"
+        ]
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "B" },
+        "FinishedAt": 2023,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [
+            "Benyó András", 
+            "Budai Lili", 
+            "Dávid Ádám", 
+            "Emhő Nóra", 
+            "Fodor Ádám", 
+            "Gajdos László János", 
+            "Gulyás Alex", 
+            "Harmati Zoltán", 
+            "Jova Balázs", 
+            "Kincses Márk", 
+            "Komlódi Lénárd Zalán", 
+            "Krutek Bence", 
+            "Kürti Dávid Levente", 
+            "Makovej Márk Iván", 
+            "Martincsek Zsolt Bertold", 
+            "Márton Barnabás", 
+            "Medovarszki Attila", 
+            "Molnár Dániel", 
+            "Náfrádi Dávid", 
+            "Ottlakán Ottó", 
+            "Panyik Bálint", 
+            "Rakonczai Áron Gábor", 
+            "Szabó Ádám", 
+            "Szász Réka", 
+            "Tóth Károly", 
+            "Tóth Márton Csaba", 
+            "Uhrin Ottó Ákos", 
+            "Virág Dominik"
+        ]
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "C" },
+        "FinishedAt": 2023,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [
+            "Albert Viktor", 
+            "Bereczki Gábor Balázs", 
+            "Bürüsi Bence", 
+            "Czékmán Hunor", 
+            "Dancs Sándor", 
+            "Diviki Levente", 
+            "Frankó Árpád Attila", 
+            "Frankó Csaba Tibor", 
+            "Gubucz László Zoltán", 
+            "Gyuricza László Imre", 
+            "Hoffmann Ákos", 
+            "Hugyecz Viktor Dániel", 
+            "Kelemen Krisztián", 
+            "Kertész Péter", 
+            "Koczán Krisztián", 
+            "Krajcsó Zsombor", 
+            "Lischka Áron", 
+            "Molnár László Tamás", 
+            "Molnár Miklós Zoltán", 
+            "Nagy Nándor Róbert", 
+            "Nagy Norbert", 
+            "Nagy Teofil Marcell", 
+            "Nun József", 
+            "Opauszki Norbert", 
+            "Pipó Tamás Zalán", 
+            "Rideg Zalán", 
+            "Szabó Péter", 
+            "Szijjártó Tibor", 
+            "Szilágyi Dávid", 
+            "Takács Ákos", 
+            "Ungor Máté Sándor"
+        ]
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "D" },
+        "FinishedAt": 2023,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [
+            "Ancsin Balázs", 
+            "Balázs Anita Nikolett", 
+            "Balogh Gréta Anita", 
+            "Balogh Nóra", 
+            "Gresics Amina Lilla", 
+            "Hajdú Réka", 
+            "Herédi Tünde Gabriella", 
+            "Józsa Dávid", 
+            "Kincses Zita", 
+            "Kiss Leila Rebeka", 
+            "Lakatos Krisztofer", 
+            "Otrok Balázs", 
+            "Petka Szabolcs József", 
+            "Szikszai Richárd", 
+            "Szitás Gergő Erik", 
+            "Szűcs Bence Dávid", 
+            "Taját Emese", 
+            "Tallér Dorina", 
+            "Tóth Karolina", 
+            "Víg Gergő", 
+            "Zatkó László Gábor"
+        ]
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "E" },
+        "FinishedAt": 2023,
+        "Ofo": -1,
+        "Department": -1,
+        "Students": [
+            "Balázs Gergely", 
+            "Bartyik Viktória", 
+            "Bencsik Dániel", 
+            "Bene Dóra", 
+            "Boros Balázs", 
+            "Buka Diána", 
+            "Doszkocs Vivien", 
+            "Fábián Bálint", 
+            "Fekete István", 
+            "Fodor Patrik", 
+            "Kenesei Zoltán", 
+            "Kis Dominik", 
+            "Lévai Fanni", 
+            "Lukács Vanessza", 
+            "Makai Mihály", 
+            "Mári Márk Sándor", 
+            "Nyári Zsolt", 
+            "Sajti Ferenc", 
+            "Seifert Tamás", 
+            "Vozár Nimród"
+        ]
     }
 ]

@@ -5,7 +5,7 @@ export class DataBase {
     readonly teachers: Teacher[]
     readonly departments: string[]
 
-    constructor(tablos: RawTypes.Tablo[], teachers: Teacher[], departments: string[]) {
+    constructor(tablos: (RawTypes.Tablo|string)[], teachers: Teacher[], departments: string[]) {
         this.tablos = []
         this.teachers = teachers
         this.departments = departments
@@ -17,6 +17,8 @@ export class DataBase {
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]
+            if (typeof tablo === 'string') continue
+
             let processedClass: Class
             if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
                 processedClass = {
