@@ -1,12 +1,11 @@
-import { TabloProcessed } from "./database-processed-types"
-import { Tablo, Teacher, Name } from "./database-types"
+import { Tablo, Teacher, Name, RawTypes, Class } from "./database-types"
 
 export class DataBase {
-    readonly tablos: TabloProcessed[]
+    readonly tablos: Tablo[]
     readonly teachers: Teacher[]
     readonly departments: string[]
 
-    constructor(tablos: Tablo[], teachers: Teacher[], departments: string[]) {
+    constructor(tablos: RawTypes.Tablo[], teachers: Teacher[], departments: string[]) {
         this.tablos = []
         this.teachers = teachers
         this.departments = departments
@@ -18,70 +17,78 @@ export class DataBase {
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]
-            let processedTablo: TabloProcessed
+            let processedClass: Class
             if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
-                processedTablo = {
-                    Department: tablo.Department ? tablo.Department.toString() : null,
+                processedClass = {
                     StartedAt: tablo.StartedAt ?? 0,
                     FinishedAt: tablo.FinishedAt,
+                    Grade: tablo.Grade,
+
                     Ofo: null,
+                    OfoReference: null,
+
                     Students: tablo.Students ?? null,
                     Groups: tablo.Groups ?? null,
-                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
-                    Type: 'TECHNICAL',
-                    Grade: tablo.Grade,
-                    OfoReference: null,
+                    Type: tablo.Type ? 'TECHNICAL' : 'POSSIBLY_TECHNICAL',
+                    Department: tablo.Department ? tablo.Department.toString() : 'Ismeretlen',
                 }
+
+                if (typeof tablo.Department === 'number') 
+                { processedClass.Department = departments[tablo.Department] ?? 'Ismeretlen' }
+
             } else {
-                processedTablo = {
+                processedClass = {
                     StartedAt: tablo.StartedAt ?? 0,
                     FinishedAt: tablo.FinishedAt,
-                    Ofo: null,
-                    Students: tablo.Students ?? null,
-                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
-                    Type: 'SCHOOL',
                     Grade: tablo.Grade,
-                    OfoReference: null,
-                }
-            }
 
-            if (processedTablo.Type === 'TECHNICAL' && tablo.Type === 'TECHNICAL') {
-                if (typeof tablo.Department === 'string') {
-                    processedTablo.Department = tablo.Department
-                } else {
-                    processedTablo.Department = departments[tablo.Department ?? -1] ?? null
+                    Ofo: null,
+                    OfoReference: null,
+
+                    Students: tablo.Students ?? null,
+                    Type: 'SCHOOL',
                 }
             }
 
             if (tablo.Ofo) {
                 if (typeof tablo.Ofo === 'string') {
-                    processedTablo.OfoReference = null
-                    processedTablo.Ofo = tablo.Ofo.trim()
+                    processedClass.OfoReference = null
+                    processedClass.Ofo = tablo.Ofo.trim()
                 } else {
                     const ref: Teacher | undefined = teachers[tablo.Ofo ?? -1]
                     if (ref) {
-                        processedTablo.OfoReference = ref
-                        processedTablo.Ofo = ref.Name.ToString()
+                        processedClass.OfoReference = ref
+                        processedClass.Ofo = ref.Name.ToString()
                     } else {
-                        processedTablo.OfoReference = null
-                        processedTablo.Ofo = null
+                        processedClass.OfoReference = null
+                        processedClass.Ofo = null
                     }
                 }
             }
 
             if (!tablo.StartedAt && tablo.Grade.Grade) {
                 if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 9) {
-                    processedTablo.StartedAt = tablo.FinishedAt - (tablo.Grade.Grade - 8)
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, processedTablo)
+                    processedClass.StartedAt = tablo.FinishedAt - (tablo.Grade.Grade - 8)
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, tablo)
                 } else if (typeof tablo.Grade.Grade === 'string' && tablo.Grade.Grade.includes('/')) {
                     const n = Number.parseInt(tablo.Grade.Grade.split('/')[1])
-                    processedTablo.StartedAt = tablo.FinishedAt - (n - 8)
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, processedTablo)
+                    processedClass.StartedAt = tablo.FinishedAt - (n - 8)
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, tablo)
                 }
             }
             
+            const processedTablo: Tablo = {
+                ...processedClass,
+                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
+            }
             this.tablos.push(processedTablo)
         }
         this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)
+
+        this.AssignTabloIDs()
+    }
+
+    private AssignTabloIDs() {
+        for (let i = 0; i < this.tablos.length; i++) this.tablos[i].ID = i
     }
 }

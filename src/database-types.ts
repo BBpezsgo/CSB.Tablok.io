@@ -1,6 +1,43 @@
+export namespace RawTypes {
+    export interface BaseClass {
+        /** ie. 11 C */
+        Grade: Grade
 
-export type Teacher = {
-    ID: string
+        /** Year number */
+        StartedAt?: number
+        /** Year number */
+        FinishedAt: number
+
+        /** Ofo ID or name */
+        Ofo?: number | string
+    }
+
+    export interface SimpleClass extends BaseClass {
+        Type: 'SCHOOL'
+        Students?: string[]
+    }
+
+    export interface TechnicalClass extends BaseClass {
+        Type?: 'TECHNICAL'
+        /** Department ID */
+        Department?: number | string
+        Students?: string[]
+        Groups?: {
+            Students: string[]
+            Department: number | string
+        }[]
+    }
+
+    export type Class = TechnicalClass | SimpleClass
+
+    export type Tablo = Class & {
+        /** Image URL */
+        Image?: string
+    }
+}
+
+export interface Teacher {
+    ID: number
     Name: Name
 }
 
@@ -32,45 +69,48 @@ export class Name
     ToString(): string { return ((this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ')).trim() }
 }
 
-export type ClassBase = {
+export interface Grade {
+    /** ie. 11 */
+    Grade: number | string
+    /** ie. C */
+    Sub: string
+}
+
+export interface BaseClass {
+    /** ie. 11 C */
+    Grade: Grade
+
+    /** Year number */
+    StartedAt: number
     /** Year number */
     FinishedAt: number
-    /** ie. 11 C */
-    Grade: {
-        /** ie. 11 */
-        Grade: number | string
-        /** ie. C */
-        Sub: string
-    }
+
+    /** Ofo ID or name */
+    Ofo: string | null
+    /** Ofo name reference */
+    OfoReference: Teacher | null
 }
 
-export type Class = ClassSimple | ClassTechnical
-
-export type ClassSimple = ClassBase & {
-    /** Year number */
-    StartedAt: number | undefined
+export interface SimpleClass extends BaseClass {
     Type: 'SCHOOL'
-    /** Ofo ID */
-    Ofo: number | string | undefined
-    Students: string[] | undefined
+    Students: string[] | null
 }
 
-export type ClassTechnical = ClassBase & {
-    /** Year number */
-    StartedAt: number | undefined
-    Type: 'TECHNICAL' | undefined
-    /** Department ID */
-    Department: number | string
-    /** Ofo ID */
-    Ofo: number | string | undefined
-    Students: string[] | undefined
+export interface TechnicalClass extends BaseClass {
+    Type: 'TECHNICAL' | 'POSSIBLY_TECHNICAL'
+    Department: string | 'Ismeretlen'
+    Students: string[] | null
     Groups: {
         Students: string[]
-        Department: number | string
-    }[] | undefined
+        Department: string | number
+    }[] | null
 }
+
+export type Class = SimpleClass | TechnicalClass   
 
 export type Tablo = Class & {
     /** Image URL */
-    Image: string | undefined
+    Image?: string
+    /** Tablo index */
+    ID?: number
 }

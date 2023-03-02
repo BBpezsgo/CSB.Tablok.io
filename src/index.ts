@@ -3,6 +3,13 @@ import * as HTTP from './http'
 import * as Utilities from './utilities'
 import * as Checker from './checker'
 
+declare global {
+    interface Window {
+        OpenTabloModal: (id: number) => void
+        CloseTabloModal: () => void
+    }
+}
+
 async function DownloadDatabase() {
     // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
     const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
@@ -75,6 +82,19 @@ async function Main() {
             if (!Utilities.CompareString(teacher.Name.ToString(), input, 3, true)) { continue }
             teachersElement.appendChild(Utilities.Template('teacher', teacher))
         }
+    })
+
+    window.OpenTabloModal = window.OpenTabloModal || ((id) => {
+        const selectedTablo = Database.tablos[id]
+        Utilities.TemplateAsync('tablo-modal', selectedTablo).then(modal => {
+            modal.classList.add('show')
+            window.document.body.appendChild(modal)
+        })
+    })
+    window.CloseTabloModal = window.CloseTabloModal || (() => {
+        const modal = Utilities.TryGetElement('tablo-modal')
+        if (!modal) return
+        modal.remove()
     })
 }
 

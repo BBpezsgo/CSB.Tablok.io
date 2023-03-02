@@ -13,9 +13,8 @@ export function CheckDatabase(database: DataBase) {
     
     for (let i = 0; i < database.tablos.length; i++) {
         const tablo = database.tablos[i]
-        if (tablo.Type === 'TECHNICAL') if (typeof tablo.Department === 'number') if (database.departments[tablo.Department ?? -1] === undefined)
-        { console.warn(`Unknown department ${tablo.Department}`, tablo) }
-        if (tablo.Type === 'TECHNICAL') if (!tablo.Department) console.warn(`Unknown department ${tablo.Department}`, tablo)
+        if (tablo.Type === 'TECHNICAL' || tablo.Type === 'POSSIBLY_TECHNICAL')
+        { if (tablo.Department === 'Ismeretlen') console.warn(`Unknown department ${tablo.Department}`, tablo) }
         if (typeof tablo.Ofo === 'number') if (database.teachers[tablo.Ofo ?? -1] === undefined)
         { console.warn(`Unknown teacher ${tablo.Ofo}`, tablo) }
         if (!tablo.Ofo) console.warn(`Unknown teacher ${tablo.Ofo}`, tablo)

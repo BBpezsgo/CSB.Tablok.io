@@ -1,0 +1,11 @@
+<div id="tablo-modal" class="" onclick="if (event.srcElement === this) CloseTabloModal()">
+    <div>
+        <div id="tablo-modal-close" onclick="CloseTabloModal()">X</div>
+        <h3>Tabló részletei</h3>
+        <h1>{{Grade.Grade}}.{{Grade.Sub}} osztály</h1>
+        {{#if Department}}
+        <h2>{{Department}} szak</h2>
+        {{/if}}
+        <img src="{{Image}}">
+    </div>
+</div>

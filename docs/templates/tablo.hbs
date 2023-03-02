@@ -1,15 +1,12 @@
-<div class="tablo" style="background-image: url({{Image}});">
+<div class="tablo" style="background-image: url({{Image}});" onclick="OpenTabloModal({{ID}})">
     <div>
         <p>{{Grade.Grade}}.{{Grade.Sub}}</p>
+        {{#if Department}}
         <p>
-            {{#if DepartmentText}}
-            {{DepartmentText}}
-            {{else}}
-            ID-{{Department}}
-            {{/if}}
-            szak
+            {{Department}} szak
         </p>
+        {{/if}}
         <p>{{StartedAt}}-tól/től {{FinishedAt}}-ig</p>
-        <p>{{OfoText}}</p>
+        <p>{{Ofo}}</p>
     </div>
 </div>

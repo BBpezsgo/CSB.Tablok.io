@@ -26,10 +26,19 @@ export function Template(name: string, values: object) {
 export function TryGetElement(id: string) { return document.getElementById(id) }
 
 export function GetElement(id: string) {
-    const element =  TryGetElement(id)
+    const element = TryGetElement(id)
     if (!element)
     { throw new Error(`Element with id "${id}" not found`) }
     return element
+}
+
+export function GetImageElement(id: string) {
+    const element = TryGetElement(id)
+    if (!element)
+    { throw new Error(`Element with id "${id}" not found`) }
+    if (element.tagName.toLowerCase() !== 'img')
+    { throw new Error(`Element with id "${id}" is not <img>`) }
+    return element as HTMLImageElement
 }
 
 export function TryGetInputElement(id: string) {
