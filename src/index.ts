@@ -1,4 +1,4 @@
-import { DataBase, TabloProcessed } from "./database"
+import { DataBase } from "./database"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
 import * as Checker from './checker'

@@ -1,96 +1,5 @@
-// #region Type definitions
-
-export type Class = {
-    /** Year number */
-    FinishedAt: number
-    /** Year number */
-    StartedAt: number | undefined
-    /** ie. 11 C */
-    Grade: {
-        /** ie. 11 */
-        Grade: number | string
-        /** ie. C */
-        Sub: string
-    }
-    Type: 'SCHOOL' | 'TECHNICAL' | undefined
-    /** Department ID */
-    Department: number | string | undefined
-    /** Ofo ID */
-    Ofo: number | string | undefined
-    Students: string[] | undefined
-    Groups: {
-        Students: string[]
-        Department: number | string
-    }[] | undefined
-}
-
-export type Tablo = Class & {
-    /** Image URL */
-    Image: string | undefined
-}
-
-export type ClassProcessed = {
-    /** Year number */
-    FinishedAt: number
-    /** Year number */
-    StartedAt: number
-    /** ie. 11 C */
-    Grade: {
-        /** ie. 11 */
-        Grade: number | string
-        /** ie. C */
-        Sub: string
-    }
-    Type: 'SCHOOL' | 'TECHNICAL' | null
-    Department: string | null
-    Ofo: string | null
-    OfoReference: Teacher | null
-    Students: string[] | null
-    Groups: {
-        Students: string[]
-        Department: string | number
-    }[] | null
-}
-
-export type TabloProcessed = ClassProcessed & {
-    /** Image URL */
-    Image: string | undefined
-}
-
-export type Teacher = {
-    ID: string
-    Name: Name
-}
-
-export class Name
-{
-    Surname: string[]
-    Firstname: string[]
-
-    constructor(surname: string | string[] | null = null, firstname: string | string[] | null = null) {
-        this.Surname = []
-        this.Firstname = []
-
-        if (surname) {
-            if (typeof surname === 'string') {
-                this.Surname = [ surname ]
-            } else {
-                this.Surname = surname
-            }
-        }
-        if (firstname) {
-            if (typeof firstname === 'string') {
-                this.Firstname = [ firstname ]
-            } else {
-                this.Firstname = firstname
-            }
-        }
-    }
-    
-    ToString(): string { return ((this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ')).trim() }
-}
-
-// #endregion
+import { TabloProcessed } from "./database-processed-types"
+import { Tablo, Teacher, Name } from "./database-types"
 
 export class DataBase {
     readonly tablos: TabloProcessed[]
@@ -109,20 +18,34 @@ export class DataBase {
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]
-            let processedTablo: TabloProcessed = {
-                Department: tablo.Department ? tablo.Department.toString() : null,
-                StartedAt: tablo.StartedAt ?? 0,
-                FinishedAt: tablo.FinishedAt,
-                Ofo: null,
-                Students: tablo.Students ?? null,
-                Groups: tablo.Groups ?? null,
-                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
-                Type: tablo.Type ?? null,
-                Grade: tablo.Grade,
-                OfoReference: null,
+            let processedTablo: TabloProcessed
+            if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
+                processedTablo = {
+                    Department: tablo.Department ? tablo.Department.toString() : null,
+                    StartedAt: tablo.StartedAt ?? 0,
+                    FinishedAt: tablo.FinishedAt,
+                    Ofo: null,
+                    Students: tablo.Students ?? null,
+                    Groups: tablo.Groups ?? null,
+                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
+                    Type: 'TECHNICAL',
+                    Grade: tablo.Grade,
+                    OfoReference: null,
+                }
+            } else {
+                processedTablo = {
+                    StartedAt: tablo.StartedAt ?? 0,
+                    FinishedAt: tablo.FinishedAt,
+                    Ofo: null,
+                    Students: tablo.Students ?? null,
+                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
+                    Type: 'SCHOOL',
+                    Grade: tablo.Grade,
+                    OfoReference: null,
+                }
             }
 
-            if (tablo.Department) {
+            if (processedTablo.Type === 'TECHNICAL' && tablo.Type === 'TECHNICAL') {
                 if (typeof tablo.Department === 'string') {
                     processedTablo.Department = tablo.Department
                 } else {
