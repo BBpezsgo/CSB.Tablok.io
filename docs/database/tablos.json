@@ -35,8 +35,8 @@
     {
         "Grade":
         { "Grade": 0, "Sub": null },
-        "StartedAt": 0,
-        "FinishedAt": 0,
+        "StartedAt": 2010,
+        "FinishedAt": 2014,
         "Ofo": -1,
         "Department": 4,
         "Image": "img/tablos/InfosOsztaly_2010-2014.jpg"

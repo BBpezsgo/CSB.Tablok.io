@@ -36,12 +36,14 @@
     </div>
 
     <div class="navbar">
+        <!--
         <div class="links">
             <a class="navbar_items" href="./osztalyok.html">Osztályok</a>
             <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>
             <a class="navbar_items" href="./osztalyfonok.html">Osztályfőnökök</a>
             <a class="navbar_items" href="./index.html">Főoldal</a>
         </div>
+        -->
     </div>
 
     <div class="row">
@@ -50,7 +52,27 @@
                 <h2>Üdvözlöm a tablók oldalán!</h2>
             </div>
             <div class="kiscim">
-                <h3>A legfrissebb tablók</h3>
+                <h3>Szűrők</h3>
+                <fieldset style="display:inline-block">
+                    <legend>Végzős év</legend>
+                    <label for="filter-year-start">Kezdeti év:</label>
+                    <input id="filter-year-start" type="number" min="1986" max="2023" value="1986">
+                    <label for="filter-year-end">Végső év:</label>
+                    <input id="filter-year-end" type="number" min="1986" max="2023" value="2023">
+                </fieldset>
+                <fieldset style="display:inline-block">
+                    <legend>Osztály</legend>
+                    <label for="filter-grade">Évfolyam:</label>
+                    <input id="filter-grade" type="number" min="11" max="15" placeholder="12">
+                    <label for="filter-grade-sub">Osztály:</label>
+                    <input id="filter-grade-sub" type="text" maxlength="2" placeholder="C">
+                </fieldset>
+                <fieldset style="display:inline-block">
+                    <legend>Osztályfőnök</legend>
+                    <label for="filter-ofo"></label>
+                    <input id="filter-ofo" type="text" maxlength="64">
+                </fieldset>
+                <button onclick="Filter()">Keresés</button>
             </div>
             <div id="tablos-container">
                 Loading
@@ -66,6 +88,7 @@
     <script src="scripts/setup.js"></script>
     <script src="scripts/select-all.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/filter.js"></script>
     <script src="scripts/reveal.js"></script>
 </body>
 

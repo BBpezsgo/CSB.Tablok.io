@@ -11,7 +11,7 @@ export class DataBase {
         this.departments = departments
         
         // This converts objects into class instances
-        for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Firstname, teachers[i].Name.Surname)
+        for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
 
         // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
@@ -57,7 +57,7 @@ export class DataBase {
                     processedClass.OfoReference = null
                     processedClass.Ofo = tablo.Ofo.trim()
                 } else {
-                    const ref: Teacher | undefined = teachers[tablo.Ofo ?? -1]
+                    const ref: Teacher | null = this.GetTeacher(tablo.Ofo ?? -1)
                     if (ref) {
                         processedClass.OfoReference = ref
                         processedClass.Ofo = ref.Name.ToString()
@@ -88,6 +88,14 @@ export class DataBase {
         this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)
 
         this.AssignTabloIDs()
+    }
+
+    private GetTeacher(id: number) {
+        for (let i = 0; i < this.teachers.length; i++) {
+            const teacher = this.teachers[i]
+            if (teacher.ID === id) return teacher
+        }
+        return null
     }
 
     private AssignTabloIDs() {

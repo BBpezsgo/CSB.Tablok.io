@@ -7,6 +7,7 @@ declare global {
     interface Window {
         OpenTabloModal: (id: number) => void
         CloseTabloModal: () => void
+        Database: DataBase
     }
 }
 
@@ -32,6 +33,8 @@ async function Main() {
     }
 
     Checker.CheckDatabase(Database)
+
+    window.Database = Database
 
     // Get the container elements
     const tablosElement = Utilities.TryGetElement('tablos-container')
