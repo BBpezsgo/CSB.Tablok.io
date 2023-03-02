@@ -2185,7 +2185,7 @@
         "FinishedAt": 1996,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": "Mochnács Mihály",
-        "Students": [
+        "Groups": [
             {
                 "Department": "Gépgyártás-technológia",
                 "Students": [
@@ -2349,7 +2349,7 @@
         "FinishedAt": 1998,
         "Grade": { "Grade": 13, "Sub": "B" },
         "Ofo": "Halmosiné Kiss Erzsébet",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Bakonyi Imre", 
@@ -2411,7 +2411,7 @@
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": 36,
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Bencze János", 
@@ -2490,7 +2490,7 @@
         "FinishedAt": 2000,
         "Grade": { "Grade": 13, "Sub": "A" },
         "Ofo": "Kiss Ferenc",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Aszódi János", 
@@ -2651,7 +2651,7 @@
         "FinishedAt": 2003,
         "Grade": { "Grade": "2/14", "Sub": "B" },
         "Ofo": "Kovács Levente",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Benecz Tamás", 
@@ -2684,7 +2684,7 @@
         "FinishedAt": 2004,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Palotai Tibor",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Borek István", 
@@ -2741,7 +2741,7 @@
         "FinishedAt": 2005,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Tímár Károly",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Csikai Ferenc", 
@@ -2814,7 +2814,7 @@
         "FinishedAt": 2006,
         "Grade": { "Grade": "2/14", "Sub": "B" },
         "Ofo": "Szikora Zsolt",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Gál Zsolt", 
@@ -2848,7 +2848,7 @@
         "FinishedAt": 2007,
         "Grade": { "Grade": "1/14", "Sub": "A" },
         "Ofo": "Béládi Csaba",
-        "Students": [
+        "Groups": [
             {
                 "Students": [
                     "Boldizsár Gyula Attila", 
@@ -2934,7 +2934,7 @@
         "FinishedAt": 2008,
         "Grade": { "Grade": "2/14", "Sub": "A" },
         "Ofo": "Krámer Judit",
-        "Students": [            
+        "Groups": [            
             {
                 "Students": [
                     "Csulik László", 
@@ -2968,7 +2968,7 @@
         "FinishedAt": 2008,
         "Grade": { "Grade": "1/14", "Sub": "A" },
         "Ofo": "Tímár Károly",
-        "Students": [            
+        "Groups": [            
             {
                 "Students": [
                     "Görgényi László", 

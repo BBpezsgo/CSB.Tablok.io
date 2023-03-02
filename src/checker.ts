@@ -12,41 +12,44 @@ export function CheckDatabase(database: DataBase) {
     }
     
     for (let i = 0; i < database.tablos.length; i++) {
-        if (database.departments[database.tablos[i].Department ?? -1] === undefined)
-        { console.warn(`Unknown department ${database.tablos[i].Department}`, database.tablos[i]) }
-        if (database.teachers[database.tablos[i].Ofo ?? -1] === undefined)
-        { console.warn(`Unknown teacher ${database.tablos[i].Ofo}`, database.tablos[i]) }
-        if (!database.tablos[i].Image)
-        { console.warn(`Tablo without image`, database.tablos[i]) }
-        if (!database.tablos[i].FinishedAt)
-        { console.warn(`Tablo without finishing date`, database.tablos[i]) }
-        else if ((database.tablos[i].FinishedAt ?? 0) < 1950)
-        { console.warn(`Tablo with finishing date before 1950`, database.tablos[i]) }
-        if (!database.tablos[i].StartedAt)
-        { console.warn(`Tablo without starting date`, database.tablos[i]) }
-        else if ((database.tablos[i].StartedAt ?? 0) < 1950)
-        { console.warn(`Tablo with starting date before 1950`, database.tablos[i]) }
-        if (database.tablos[i].Grade.Grade == -1)
-        { console.warn(`Tablo without grade number`, database.tablos[i]) }
-        if (database.tablos[i].Grade.Grade == 0)
-        { console.warn(`Tablo without grade number`, database.tablos[i]) }
-        if (database.tablos[i].Grade.Sub === null || database.tablos[i].Grade.Sub == "")
-        { console.warn(`Tablo without sub-grade`, database.tablos[i]) }
+        const tablo = database.tablos[i]
+        if (typeof tablo.Department === 'number') if (database.departments[tablo.Department ?? -1] === undefined)
+        { console.warn(`Unknown department ${tablo.Department}`, tablo) }
+        if (!tablo.Department) console.warn(`Unknown department ${tablo.Department}`, tablo)
+        if (typeof tablo.Ofo === 'number') if (database.teachers[tablo.Ofo ?? -1] === undefined)
+        { console.warn(`Unknown teacher ${tablo.Ofo}`, tablo) }
+        if (!tablo.Ofo) console.warn(`Unknown teacher ${tablo.Ofo}`, tablo)
+        if (!tablo.Image)
+        { console.warn(`Tablo without image`, tablo) }
+        if (!tablo.FinishedAt)
+        { console.warn(`Tablo without finishing date`, tablo) }
+        else if ((tablo.FinishedAt ?? 0) < 1950)
+        { console.warn(`Tablo with finishing date before 1950`, tablo) }
+        if (!tablo.StartedAt)
+        { console.warn(`Tablo without starting date`, tablo) }
+        else if ((tablo.StartedAt ?? 0) < 1950)
+        { console.warn(`Tablo with starting date before 1950`, tablo) }
+        if (tablo.Grade.Grade == -1)
+        { console.warn(`Tablo without grade number`, tablo) }
+        if (tablo.Grade.Grade == 0)
+        { console.warn(`Tablo without grade number`, tablo) }
+        if (tablo.Grade.Sub === null || tablo.Grade.Sub == "")
+        { console.warn(`Tablo without sub-grade`, tablo) }
         for (let j = 0; j < database.tablos.length; j++) {
             if (i === j) continue
-            if (database.tablos[i].Image == database.tablos[j].Image && database.tablos[i].Image !== 'No Image')
-            { console.warn('Tablo image used more than once', database.tablos[i], database.tablos[j]) }
-            if (database.tablos[i].StartedAt && database.tablos[i].StartedAt == database.tablos[j].StartedAt)
+            if (tablo.Image == database.tablos[j].Image && tablo.Image !== 'No Image')
+            { console.warn('Tablo image used more than once', tablo, database.tablos[j]) }
+            if (tablo.StartedAt && tablo.StartedAt == database.tablos[j].StartedAt)
             {
-                if (database.tablos[i].Grade.Grade && database.tablos[j].Grade.Grade &&
-                    database.tablos[i].Grade.Sub && database.tablos[j].Grade.Sub &&
-                    database.tablos[i].Grade.Grade == database.tablos[j].Grade.Grade &&
-                    database.tablos[i].Grade.Sub == database.tablos[j].Grade.Sub) {
-                    console.warn(`Tablo conflict`, database.tablos[i], database.tablos[j])
+                if (tablo.Grade.Grade && database.tablos[j].Grade.Grade &&
+                    tablo.Grade.Sub && database.tablos[j].Grade.Sub &&
+                    tablo.Grade.Grade == database.tablos[j].Grade.Grade &&
+                    tablo.Grade.Sub == database.tablos[j].Grade.Sub) {
+                    console.warn(`Tablo conflict`, tablo, database.tablos[j])
                 }
-                if (database.tablos[i].Ofo && database.tablos[j].Ofo &&
-                    database.tablos[i].Ofo == database.tablos[j].Ofo && database.tablos[i].Ofo !== -1) {
-                    console.warn(`Same teacher at the same time`, database.tablos[i], database.tablos[j])
+                if (tablo.Ofo && database.tablos[j].Ofo &&
+                    tablo.Ofo == database.tablos[j].Ofo && tablo.Ofo !== '') {
+                    console.warn(`Same teacher at the same time`, tablo, database.tablos[j])
                 }
             }
         }

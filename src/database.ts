@@ -1,6 +1,6 @@
 // #region Type definitions
 
-export type Tablo = {
+export type Class = {
     /** Year number */
     FinishedAt: number
     /** Year number */
@@ -13,19 +13,48 @@ export type Tablo = {
         Sub: string
     }
     Type: 'SCHOOL' | 'TECHNICAL' | undefined
-    /** Image URL */
-    Image: string | undefined
     /** Department ID */
-    Department: number | undefined
+    Department: number | string | undefined
     /** Ofo ID */
-    Ofo: number | undefined
-    Students: Name[] | undefined
+    Ofo: number | string | undefined
+    Students: string[] | undefined
+    Groups: {
+        Students: string[]
+        Department: number | string
+    }[] | undefined
 }
 
-export type TabloProcessed = Tablo & {
-    OfoReference: Name
-    OfoText: string | null
-    DepartmentText: string | null
+export type Tablo = Class & {
+    /** Image URL */
+    Image: string | undefined
+}
+
+export type ClassProcessed = {
+    /** Year number */
+    FinishedAt: number
+    /** Year number */
+    StartedAt: number
+    /** ie. 11 C */
+    Grade: {
+        /** ie. 11 */
+        Grade: number | string
+        /** ie. C */
+        Sub: string
+    }
+    Type: 'SCHOOL' | 'TECHNICAL' | null
+    Department: string | null
+    Ofo: string | null
+    OfoReference: Teacher | null
+    Students: string[] | null
+    Groups: {
+        Students: string[]
+        Department: string | number
+    }[] | null
+}
+
+export type TabloProcessed = ClassProcessed & {
+    /** Image URL */
+    Image: string | undefined
 }
 
 export type Teacher = {
@@ -75,43 +104,60 @@ export class DataBase {
         
         // This converts objects into class instances
         for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Firstname, teachers[i].Name.Surname)
-        for (let i = 0; i < tablos.length; i++) {
-            const tablo = tablos[i]
-            if (tablo.Students) for (let j = 0; j < tablo.Students.length; j++) {
-                tablo.Students[j] = new Name(tablo.Students[j].Firstname, tablo.Students[j].Surname)
-            }
-            tablos[i] = tablo
-        }
 
         // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
         {
             const tablo = tablos[i]
+            let processedTablo: TabloProcessed = {
+                Department: tablo.Department ? tablo.Department.toString() : null,
+                StartedAt: tablo.StartedAt ?? 0,
+                FinishedAt: tablo.FinishedAt,
+                Ofo: null,
+                Students: tablo.Students ?? null,
+                Groups: tablo.Groups ?? null,
+                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
+                Type: tablo.Type ?? null,
+                Grade: tablo.Grade,
+                OfoReference: null,
+            }
+
+            if (tablo.Department) {
+                if (typeof tablo.Department === 'string') {
+                    processedTablo.Department = tablo.Department
+                } else {
+                    processedTablo.Department = departments[tablo.Department ?? -1] ?? null
+                }
+            }
+
+            if (tablo.Ofo) {
+                if (typeof tablo.Ofo === 'string') {
+                    processedTablo.OfoReference = null
+                    processedTablo.Ofo = tablo.Ofo.trim()
+                } else {
+                    const ref: Teacher | undefined = teachers[tablo.Ofo ?? -1]
+                    if (ref) {
+                        processedTablo.OfoReference = ref
+                        processedTablo.Ofo = ref.Name.ToString()
+                    } else {
+                        processedTablo.OfoReference = null
+                        processedTablo.Ofo = null
+                    }
+                }
+            }
 
             if (!tablo.StartedAt && tablo.Grade.Grade) {
-                if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 11) {
-                    tablo.StartedAt = tablo.FinishedAt - tablo.Grade.Grade
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade} = ${tablo.StartedAt}`, tablo)
+                if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 9) {
+                    processedTablo.StartedAt = tablo.FinishedAt - (tablo.Grade.Grade - 8)
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, processedTablo)
                 } else if (typeof tablo.Grade.Grade === 'string' && tablo.Grade.Grade.includes('/')) {
                     const n = Number.parseInt(tablo.Grade.Grade.split('/')[1])
-                    tablo.StartedAt = tablo.FinishedAt - n
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n} = ${tablo.StartedAt}`, tablo)
+                    processedTablo.StartedAt = tablo.FinishedAt - (n - 8)
+                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, processedTablo)
                 }
             }
             
-            this.tablos.push({
-                Department: tablo.Department,
-                FinishedAt: tablo.FinishedAt,
-                StartedAt: tablo.StartedAt,
-                Students: tablo.Students,
-                Ofo: tablo.Ofo,
-                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
-                Grade: tablo.Grade,
-                Type: tablo.Type,
-                DepartmentText: departments[tablo.Department ?? -1] ?? null,
-                OfoReference: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name : new Name(`Unknown Teacher ID ${tablo.Ofo}`),
-                OfoText: teachers[tablo.Ofo ?? -1] ? teachers[tablo.Ofo ?? -1].Name.ToString() : null,
-            })
+            this.tablos.push(processedTablo)
         }
         this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)
     }
