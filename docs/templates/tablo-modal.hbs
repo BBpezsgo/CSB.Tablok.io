@@ -6,6 +6,18 @@
         {{#if Department}}
         <h2>{{Department}} szak</h2>
         {{/if}}
+        {{#if Ofo}}
+        <h2>Osztályfőnök(ök):</h2>
+        <ul>
+            {{#each Ofo}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{/if}}
+        {{#if CurrentPrincipal}}
+        <h2>Igazgató:</h2>
+        <span>{{CurrentPrincipal.Name}}</span>
+        {{/if}}
         <img src="{{Image}}">
     </div>
 </div>

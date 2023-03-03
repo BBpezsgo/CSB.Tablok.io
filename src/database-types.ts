@@ -78,7 +78,17 @@ export interface Grade {
     Sub: string
 }
 
-export interface BaseClass {
+export interface Principal {
+    Name: string | null
+    From: number
+    To: number | 'STILL'
+}
+
+export interface SchoolStatusData {
+    CurrentPrincipal?: Principal
+}
+
+export interface BaseClass extends SchoolStatusData {
     /** ie. 11 C */
     Grade: Grade
 
@@ -117,4 +127,10 @@ export type Tablo = Class & {
     Image?: string
     /** Tablo index */
     ID?: number
+}
+
+export type BaseData = {
+    Principals: Principal[]
+    /** Year number */
+    StartYear: number
 }

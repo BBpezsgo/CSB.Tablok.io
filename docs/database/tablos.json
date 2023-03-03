@@ -3,19 +3,15 @@
     "=============== Tablók a beszkennelt képekből ==============",
     "============================================================",
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2009,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2013,
         "Ofo": "Murvai Mónika",
         "Department": -1,
         "Image": "img/tablos/12.B_2009-2013.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 13, "Sub": "C" },
-        "StartedAt": 2008,
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2013,
         "Ofo": "Varga Imre",
         "Department": -1,
@@ -26,18 +22,15 @@
         "Sources": [ "SCAN" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2010,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2014,
-        "Ofo": -1,
-        "Department": 0,
+        "Ofo": "Klucsics Sándor",
+        "Department": "Gépész Szakmacsoport",
         "Image": "img/tablos/12.A_2010-2014.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 0, "Sub": null },
+        "Grade": { "Grade": 0, "Sub": null },
         "StartedAt": 2010,
         "FinishedAt": 2014,
         "Ofo": -1,
@@ -46,18 +39,15 @@
         "Sources": [ "SCAN" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2011,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2015,
-        "Ofo": -1,
-        "Department": 0,
+        "Ofo": "Kiss Ferenc",
+        "Department": "Gépész Szakmacsoport",
         "Image": "img/tablos/12.A_2011-2015.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 0, "Sub": null },
+        "Grade": { "Grade": 0, "Sub": null },
         "StartedAt": 2011,
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
@@ -66,48 +56,39 @@
         "Sources": [ "SCAN" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2012,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2016,
         "Ofo": "Pálfi István",
         "Department": 0,
         "Image": "img/tablos/12.A_2012-2016.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2013,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2017,
         "Ofo": "Hrabovszki Ildikó",
-        "Department": 0,
+        "Department": "Gépész Szakmacsoport",
         "Image": "img/tablos/12.A_2013-2017.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "C" },
-        "StartedAt": 2013,
+        "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2017,
         "Ofo": "Murvai Mónika",
         "Department": 4,
         "Image": "img/tablos/12.C_2013-2017.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "C" },
-        "StartedAt": 2014,
+        "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2018,
         "Ofo": "Varga Imre",
-        "Department": 4,
+        "Department": "Informatika Szakmacsoport",
         "Image": "img/tablos/12.C_2014-2018.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 0, "Sub": null },
+        "Grade": { "Grade": 0, "Sub": null },
         "StartedAt": 2015,
         "FinishedAt": 2019,
         "Ofo": "Drotár János",
@@ -116,204 +97,197 @@
         "Sources": [ "SCAN" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "C" },
-        "StartedAt": 2012,
+        "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2016,
         "Ofo": "Gáspár Piroska",
         "Department": -1,
         "Image": "img/tablos/12.C_2012-2016.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2008,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2012,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": "Krámer Judit",
+        "Department": "Informatikai Tagozat",
         "Image": "img/tablos/12.B_2008-2012.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2005,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2009,
-        "Ofo": -1,
+        "Ofo": "Pap Csaba",
         "Department": -1,
         "Image": "img/tablos/12.B_2005-2009.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2006,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2010,
-        "Ofo": -1,
-        "Department": 0,
+        "Ofo": "Tulkán Zsolt",
+        "Department": "Gépész Szakmacsoport",
         "Image": "img/tablos/12.A_2006-2010.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade":
         { "Grade": 13, "Sub": "C" },
-        "StartedAt": 2005,
         "FinishedAt": 2010,
-        "Ofo": -1,
+        "Ofo": [ "Czepó Mihályné", "Csizmadia Judit" ],
         "Department": -1,
         "Image": "img/tablos/13.C_2005-2010.jpg",
         "Sources": [ "SCAN" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2007,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2011,
-        "Ofo": -1,
+        "Ofo": "Gáspár Piroska",
         "Department": 0,
         "Image": "img/tablos/12.A_2007-2011.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2007,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2011,
-        "Ofo": -1,
+        "Ofo": "Bertalan Zoltán",
         "Department": -1,
         "Image": "img/tablos/12.B_2007-2011.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2009,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2013,
-        "Ofo": "Pap Csaba",
-        "Department": -1,
+        "Ofo": "Pap Csaba | Papp Csaba",
+        "Department": "Gépész",
         "Image": "img/tablos/12.A_2009-2013.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2012,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2016,
-        "Ofo": -1,
+        "Ofo": "Csóti Marianna",
         "Department": -1,
         "Image": "img/tablos/12.B_2012-2016.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
+
     {
-        "Grade":
-        { "Grade": 12, "Sub": "A" },
-        "StartedAt": 2015,
+        "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2019,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": "Dóczi Zita",
+        "Department": "Gépész",
         "Image": "img/tablos/12.A_2015-2019.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2015,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2019,
-        "Ofo": -1,
+        "Ofo": "Gajda Judit",
         "Department": -1,
         "Image": "img/tablos/12.B_2015-2019.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "E" },
-        "StartedAt": 2018,
+        "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2022,
-        "Ofo": -1,
-        "Department": 3,
+        "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
+        "Department": "Rendészeti",
         "Image": "img/tablos/12.E_2018-2022.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "C" },
-        "StartedAt": 2018,
+        "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2022,
-        "Ofo": -1,
+        "Ofo": "Tóthné Leelőssy Andrea",
         "Department": -1,
         "Image": "img/tablos/12.C_2018-2022.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2017,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2021,
         "Ofo": "Murvai Mónika",
         "Department": -1,
         "Image": "img/tablos/12.B_2017-2021.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "E" },
-        "StartedAt": 2017,
+        "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2021,
-        "Ofo": -1,
-        "Department": 3,
+        "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
+        "Department": "Rendészeti",
         "Image": "img/tablos/12.E_2017-2021.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "D" },
-        "StartedAt": 2016,
+        "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2020,
-        "Ofo": -1,
-        "Department": 3,
+        "Ofo": "Pálfi István",
+        "Department": "Rendészeti",
         "Image": "img/tablos/12.D_2016-2020.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "C" },
-        "StartedAt": 2016,
+        "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2020,
         "Ofo": -1,
         "Department": -1,
         "Image": "img/tablos/12.C_2016-2020.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "D" },
-        "StartedAt": 2017,
+        "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2021,
         "Ofo": -1,
         "Department": 3,
         "Image": "img/tablos/12D_2017_2021.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2004,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2008,
-        "Ofo": -1,
+        "Ofo": "Dóczi Zita",
         "Department": -1,
         "Image": "img/tablos/12.B_2004-2008.jpg",
-        "Sources": [ "SCAN" ]
+        "Students": [
+            "Bugyi Dániel", 
+            "Butyka Szabolcs", 
+            "Csanda Zoltán", 
+            "Dombi Mihály", 
+            "Farkas Máté Tamás", 
+            "Gácsi Róbert", 
+            "Gálik Viktor János", 
+            "Győrfi Gergő", 
+            "Gyüre János", 
+            "Juhász Adrián", 
+            "Kazár Ildikó", 
+            "Kiss Tamás", 
+            "Kocsis Renáta", 
+            "Lázár Balázs Imre", 
+            "Likerecz Tibor", 
+            "Makai Bence", 
+            "Patai Zoltán", 
+            "Seres József", 
+            "Skorka Júlia Éva", 
+            "Szamosi Krisztián", 
+            "Szelezsán Tamás Péter", 
+            "Szente Károly Tamás", 
+            "Szentgróti Viktor Dávid", 
+            "Sztrehovszki Ákos", 
+            "Tóth Péter", 
+            "Trungel Marianna", 
+            "UrbánDániel", 
+            "Vincze Éva Nóra"
+        ],
+        "Type": "SCHOOL",
+        "Sources": [ "SCAN", "EMLEKKONYV" ]
     },
     {
-        "Grade":
-        { "Grade": 12, "Sub": "B" },
-        "StartedAt": 2016,
+        "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2020,
-        "Ofo": -1,
+        "Ofo": "Priskin István",
         "Department": 4,
         "Image": "img/tablos/12.B_2016-2020.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     "============================================================",
     "= Tablók az emlékkönyvből: 'Az iskola végzős tanulói.docx' =",
@@ -2023,43 +1997,6 @@
         "Sources": [ "EMLEKKONYV" ]
     },
     {
-        "FinishedAt": 2008,
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "Ofo": "Dóczi Zita",
-        "Students": [
-            "Bugyi Dániel", 
-            "Butyka Szabolcs", 
-            "Csanda Zoltán", 
-            "Dombi Mihály", 
-            "Farkas Máté Tamás", 
-            "Gácsi Róbert", 
-            "Gálik Viktor János", 
-            "Győrfi Gergő", 
-            "Gyüre János", 
-            "Juhász Adrián", 
-            "Kazár Ildikó", 
-            "Kiss Tamás", 
-            "Kocsis Renáta", 
-            "Lázár Balázs Imre", 
-            "Likerecz Tibor", 
-            "Makai Bence", 
-            "Patai Zoltán", 
-            "Seres József", 
-            "Skorka Júlia Éva", 
-            "Szamosi Krisztián", 
-            "Szelezsán Tamás Péter", 
-            "Szente Károly Tamás", 
-            "Szentgróti Viktor Dávid", 
-            "Sztrehovszki Ákos", 
-            "Tóth Péter", 
-            "Trungel Marianna", 
-            "UrbánDániel", 
-            "Vincze Éva Nóra"
-        ],
-        "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
         "FinishedAt": 1991,
         "Grade": { "Grade": 13, "Sub": "B" },
         "Ofo": "Nagyné Balázs Margit",
@@ -3125,13 +3062,6 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2009,
-        "Ofo": "Pap Csaba",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2009,
         "Ofo": -1,
@@ -3139,13 +3069,6 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
-    {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2010,
-        "Ofo": "Tulkán Zsolt",
-        "Department": "Gépész Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2010,
@@ -3162,20 +3085,6 @@
     },
 
     {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2011,
-        "Ofo": "Gáspár Piroska",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2011,
-        "Ofo": "Bertalan Zoltán",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2011,
         "Ofo": -1,
@@ -3191,13 +3100,6 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2012,
-        "Ofo": "Krámer Judit",
-        "Department": "Informatikai Tagozat",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2012,
         "Ofo": -1,
@@ -3206,20 +3108,6 @@
     },
 
     {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2013,
-        "Ofo": "Papp Csaba",
-        "Department": "Gépész",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2013,
-        "Ofo": "Murvai Mónika",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2013,
         "Ofo": -1,
@@ -3227,13 +3115,6 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
-    {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2014,
-        "Ofo": "Klucsics Sándor",
-        "Department": "Gépész Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2014,
@@ -3250,13 +3131,6 @@
     },
 
     {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2015,
-        "Ofo": "Kiss Ferenc",
-        "Department": "Gépész Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
@@ -3264,34 +3138,13 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2015,
         "Ofo": -1,
         "Department": -1,
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
-    {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2016,
-        "Ofo": "Pálfi István",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2016,
-        "Ofo": "Csóti Marianna",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2016,
-        "Ofo": "Gáspár Piroska",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
     {
         "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2016,
@@ -3301,23 +3154,9 @@
     },
 
     {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2017,
-        "Ofo": "Hrabovszki Ildikó",
-        "Department": "Gépész Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2017,
         "Ofo": "Hugyecz Eszter",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2017,
-        "Ofo": "Murvai Mónika",
         "Department": -1,
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
@@ -3336,28 +3175,7 @@
         "Department": -1,
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2018,
-        "Ofo": "Varga Imre",
-        "Department": "Informatika Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
 
-    {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2019,
-        "Ofo": "Dóczi Zita",
-        "Department": "Gépész",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2019,
-        "Ofo": "Gajda Judit",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2019,
@@ -3373,27 +3191,6 @@
         "Department": "Gépész",
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
-    {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2020,
-        "Ofo": "Priskin István",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2020,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "D" },
-        "FinishedAt": 2020,
-        "Ofo": "Pálfi István",
-        "Department": "Rendészeti",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -3403,31 +3200,10 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "B" },
-        "FinishedAt": 2021,
-        "Ofo": "Murvai Mónika",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2021,
         "Ofo": "Földi Zsolt",
         "Department": "Informatika",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "D" },
-        "FinishedAt": 2021,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "E" },
-        "FinishedAt": 2021,
-        "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
-        "Department": "Rendészeti",
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
@@ -3453,24 +3229,10 @@
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2022,
-        "Ofo": "Tóthné Leelőssy Andrea",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2022,
         "Ofo": -1,
         "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "E" },
-        "FinishedAt": 2022,
-        "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
-        "Department": "Rendészeti",
         "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {

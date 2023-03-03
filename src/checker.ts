@@ -65,7 +65,7 @@ export function CheckDatabase(database: DataBase) {
                         tablo.Ofo.forEach(ofo1 => {
                             otherTablo.Ofo?.forEach(ofo2 => {
                                 if (ofo1.trim() === ofo2.trim()) {
-                                    console.warn(`Same teacher at the same time`, tablo, otherTablo)
+                                    console.log(`Same teacher at the same time`, tablo, otherTablo)
                                 }
                             })
                         })

@@ -1,12 +1,14 @@
-import { Tablo, Teacher, Name, RawTypes, Class } from "./database-types"
+import { Tablo, RawTypes, Class, BaseData, SchoolStatusData } from "./database-types"
 
 export class DataBase {
     readonly tablos: Tablo[]
     readonly departments: string[]
+    readonly base: BaseData
 
-    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[]) {
+    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData) {
         this.tablos = []
         this.departments = departments
+        this.base = base
         
         // This converts objects into class instances
         // for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
@@ -17,9 +19,36 @@ export class DataBase {
             const tablo = tablos[i]
             if (typeof tablo === 'string') continue
 
+            let schoolStatusData: SchoolStatusData = {
+
+            }
+
+            let hasPrincipal = false
+            for (let j = 0; j < this.base.Principals.length; j++) {
+                const principal = this.base.Principals[j]
+                if (principal.From >= tablo.FinishedAt) continue
+
+                if (principal.To === 'STILL') {
+                    schoolStatusData.CurrentPrincipal = principal
+                    hasPrincipal = true
+                    break
+                }
+
+                if (principal.To <= tablo.FinishedAt) continue
+
+                schoolStatusData.CurrentPrincipal =  this.base.Principals[j+1]
+                hasPrincipal = true
+                break
+            }
+
+            if (!hasPrincipal)
+            console.warn('Year without principal', tablo.FinishedAt)
+
             let processedClass: Class
             if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
                 processedClass = {
+                    ...schoolStatusData,
+
                     StartedAt: tablo.StartedAt ?? 0,
                     FinishedAt: tablo.FinishedAt,
                     Grade: tablo.Grade,
@@ -40,6 +69,8 @@ export class DataBase {
 
             } else {
                 processedClass = {
+                    ...schoolStatusData,
+
                     StartedAt: tablo.StartedAt ?? 0,
                     FinishedAt: tablo.FinishedAt,
                     Grade: tablo.Grade,

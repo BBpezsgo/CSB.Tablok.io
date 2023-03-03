@@ -1,8 +1,25 @@
 export class DataBase {
     readonly tablos: Tablo[]
     readonly departments: string[]
+    readonly base: BaseData
 
     private AssignTabloIDs()
+}
+
+export type BaseData = {
+    Principals: Principal[]
+    /** Year number */
+    StartYear: number
+}
+
+export interface SchoolStatusData {
+    CurrentPrincipal?: Principal
+}
+
+export interface Principal {
+    Name: string | null
+    From: number
+    To: number | 'STILL'
 }
 
 export interface Teacher {
@@ -25,7 +42,7 @@ export interface Grade {
     Sub: string
 }
 
-export interface BaseClass {
+export interface BaseClass extends SchoolStatusData {
     /** ie. 11 C */
     Grade: Grade
 

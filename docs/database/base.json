@@ -1,0 +1,15 @@
+{
+    "Principals": [
+        {
+            "Name": "Maczik Mihály",
+            "From": 2008,
+            "To": "STILL"
+        },
+        {
+            "Name": null,
+            "From": 1986,
+            "To": 2008
+        }
+    ],
+    "StartYear": 1986
+}

@@ -14,9 +14,10 @@ declare global {
 async function DownloadDatabase() {
     // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
     const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
+    const base: any = JSON.parse(await HTTP.GetAsync('./database/base.json'))
     const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
 
-    return new DataBase(tablos, departments)
+    return new DataBase(tablos, departments, base)
 }
 
 /** Main function: this will be called when the document is loaded */
