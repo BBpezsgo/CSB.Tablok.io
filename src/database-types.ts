@@ -81,7 +81,7 @@ export interface Grade {
 export interface Principal {
     Name: string | null
     From: number
-    To: number | 'STILL'
+    To?: number
 }
 
 export interface SchoolStatusData {

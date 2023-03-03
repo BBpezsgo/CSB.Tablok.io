@@ -399,7 +399,8 @@
             "Vida Imre"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "1992_4A.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -603,7 +604,8 @@
             "Varga Mihály"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "1994_4B.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -637,7 +639,8 @@
             "Zsilák Edit"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "1995_4A.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -736,7 +739,8 @@
             "Zöldi István"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "1996_4A.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -840,7 +844,8 @@
             "Uhljár Károly"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "1997_12A.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -1338,7 +1343,8 @@
             "Zsigovics Anett"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "2001_12C.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "FinishedAt": 2002,
@@ -1569,7 +1575,8 @@
             "Zsiga Zsolt"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "2004_12A.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "FinishedAt": 2004,
@@ -1961,7 +1968,8 @@
             "Zleovszki Ákos"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Image": "2007_12C.jpg",
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "FinishedAt": 2008,
@@ -3197,7 +3205,8 @@
         "FinishedAt": 2021,
         "Ofo": "Virág Barbara Szilvia",
         "Department": "Gépész Ágazat",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Image": "2021_12A.jpg",
+        "Sources": [ "DOCS & EXCEL TABLE", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -3219,7 +3228,8 @@
         "FinishedAt": 2022,
         "Ofo": "Lendvai Sándor",
         "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Image": "2022_12A.jpg",
+        "Sources": [ "DOCS & EXCEL TABLE", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },

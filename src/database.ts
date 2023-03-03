@@ -9,6 +9,8 @@ export class DataBase {
         this.tablos = []
         this.departments = departments
         this.base = base
+
+        this.base.Principals = this.base.Principals.sort((a, b) => a.From - b.From)
         
         // This converts objects into class instances
         // for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
@@ -26,19 +28,13 @@ export class DataBase {
             let hasPrincipal = false
             for (let j = 0; j < this.base.Principals.length; j++) {
                 const principal = this.base.Principals[j]
-                if (principal.From >= tablo.FinishedAt) continue
+                if (!principal.To) principal.To = new Date(Date.now()).getFullYear()
 
-                if (principal.To === 'STILL') {
-                    schoolStatusData.CurrentPrincipal = principal
+                if (principal.From <= tablo.FinishedAt && principal.To > tablo.FinishedAt) {
+                    schoolStatusData.CurrentPrincipal =  this.base.Principals[j]
                     hasPrincipal = true
                     break
                 }
-
-                if (principal.To <= tablo.FinishedAt) continue
-
-                schoolStatusData.CurrentPrincipal =  this.base.Principals[j+1]
-                hasPrincipal = true
-                break
             }
 
             if (!hasPrincipal)

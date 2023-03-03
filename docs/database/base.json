@@ -2,13 +2,12 @@
     "Principals": [
         {
             "Name": "Maczik Mihály",
-            "From": 2008,
-            "To": "STILL"
+            "From": 2001
         },
         {
-            "Name": null,
+            "Name": "Gyulafalvi Ernő",
             "From": 1986,
-            "To": 2008
+            "To": 2001
         }
     ],
     "StartYear": 1986

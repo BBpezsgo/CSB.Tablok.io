@@ -61,6 +61,10 @@
     {{/if}}
 
     <td>
+        {{CurrentPrincipal.Name}}
+    </td>
+
+    <td>
         {{#if HasIssule}}
         <img style="cursor:pointer;user-select:none" src="./img/check/error.png" onclick="(()=>{const list=document.getElementById('issues-{{ID}}');if(list.style.display==='block')list.style.display='none';else list.style.display='block'})()">
         {{/if}}
