@@ -15,6 +15,18 @@ export function CheckDatabase(database: DataBase) {
     
     for (let i = 0; i < database.tablos.length; i++) {
         const tablo = database.tablos[i]
+        if (!tablo.Sources)
+        { console.warn('Tablo without source', tablo) }
+        else {
+            const verifiedSources = [ 'EMLEKKONYV', 'SCAN' ]
+            for (let i = 0; i < tablo.Sources.length; i++) {
+                const source = tablo.Sources[i]
+                if (!verifiedSources.includes(source)) {
+                    console.warn('Tablo with unverified source', tablo)
+                    break
+                }
+            }
+        }
         if (tablo.Type === 'TECHNICAL' || tablo.Type === 'POSSIBLY_TECHNICAL')
         { if (tablo.Department === 'Ismeretlen') console.warn(`Unknown department ${tablo.Department}`, tablo) }
         // if (typeof tablo.Ofo === 'number') if (database.teachers[tablo.Ofo ?? -1] === undefined)

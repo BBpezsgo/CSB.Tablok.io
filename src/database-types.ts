@@ -10,6 +10,8 @@ export namespace RawTypes {
 
         /** Ofo ID or name */
         Ofo?: number | string | string[]
+
+        Sources?: string[]
     }
 
     export interface SimpleClass extends BaseClass {
@@ -89,6 +91,8 @@ export interface BaseClass {
     Ofo: string[] | null
     /** Ofo name reference */
     OfoReference: Teacher | null
+
+    Sources?: string[]
 }
 
 export interface SimpleClass extends BaseClass {

@@ -31,6 +31,8 @@ export class DataBase {
                     Groups: tablo.Groups ?? null,
                     Type: tablo.Type ? 'TECHNICAL' : 'POSSIBLY_TECHNICAL',
                     Department: tablo.Department ? tablo.Department.toString() : 'Ismeretlen',
+
+                    Sources: tablo.Sources,
                 }
 
                 if (typeof tablo.Department === 'number') 
@@ -47,6 +49,8 @@ export class DataBase {
 
                     Students: tablo.Students ?? null,
                     Type: 'SCHOOL',
+
+                    Sources: tablo.Sources,
                 }
             }
 

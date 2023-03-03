@@ -9,7 +9,8 @@
         "FinishedAt": 2013,
         "Ofo": "Murvai Mónika",
         "Department": -1,
-        "Image": "img/tablos/12.B_2009-2013.jpg"
+        "Image": "img/tablos/12.B_2009-2013.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -21,7 +22,8 @@
         "Image": "img/tablos/13.C_2008-2003.jpg",
         "Other:": [
             "Angol nyelv előkészítő"
-        ]
+        ],
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -30,7 +32,8 @@
         "FinishedAt": 2014,
         "Ofo": -1,
         "Department": 0,
-        "Image": "img/tablos/12.A_2010-2014.jpg"
+        "Image": "img/tablos/12.A_2010-2014.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -39,7 +42,8 @@
         "FinishedAt": 2014,
         "Ofo": -1,
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2010-2014.jpg"
+        "Image": "img/tablos/InfosOsztaly_2010-2014.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -48,7 +52,8 @@
         "FinishedAt": 2015,
         "Ofo": -1,
         "Department": 0,
-        "Image": "img/tablos/12.A_2011-2015.jpg"
+        "Image": "img/tablos/12.A_2011-2015.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -57,7 +62,8 @@
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2011-2015.jpg"
+        "Image": "img/tablos/InfosOsztaly_2011-2015.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -66,7 +72,8 @@
         "FinishedAt": 2016,
         "Ofo": "Pálfi István",
         "Department": 0,
-        "Image": "img/tablos/12.A_2012-2016.jpg"
+        "Image": "img/tablos/12.A_2012-2016.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -75,7 +82,8 @@
         "FinishedAt": 2017,
         "Ofo": "Hrabovszki Ildikó",
         "Department": 0,
-        "Image": "img/tablos/12.A_2013-2017.jpg"
+        "Image": "img/tablos/12.A_2013-2017.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -84,7 +92,8 @@
         "FinishedAt": 2017,
         "Ofo": "Murvai Mónika",
         "Department": 4,
-        "Image": "img/tablos/12.C_2013-2017.jpg"
+        "Image": "img/tablos/12.C_2013-2017.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -93,7 +102,8 @@
         "FinishedAt": 2018,
         "Ofo": "Varga Imre",
         "Department": 4,
-        "Image": "img/tablos/12.C_2014-2018.jpg"
+        "Image": "img/tablos/12.C_2014-2018.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -102,7 +112,8 @@
         "FinishedAt": 2019,
         "Ofo": "Drotár János",
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2015-2019.jpg"
+        "Image": "img/tablos/InfosOsztaly_2015-2019.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -111,7 +122,8 @@
         "FinishedAt": 2016,
         "Ofo": "Gáspár Piroska",
         "Department": -1,
-        "Image": "img/tablos/12.C_2012-2016.jpg"
+        "Image": "img/tablos/12.C_2012-2016.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -120,7 +132,8 @@
         "FinishedAt": 2012,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2008-2012.jpg"
+        "Image": "img/tablos/12.B_2008-2012.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -129,7 +142,8 @@
         "FinishedAt": 2009,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2005-2009.jpg"
+        "Image": "img/tablos/12.B_2005-2009.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -138,7 +152,8 @@
         "FinishedAt": 2010,
         "Ofo": -1,
         "Department": 0,
-        "Image": "img/tablos/12.A_2006-2010.jpg"
+        "Image": "img/tablos/12.A_2006-2010.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -147,7 +162,8 @@
         "FinishedAt": 2010,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/13.C_2005-2010.jpg"
+        "Image": "img/tablos/13.C_2005-2010.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -156,7 +172,8 @@
         "FinishedAt": 2011,
         "Ofo": -1,
         "Department": 0,
-        "Image": "img/tablos/12.A_2007-2011.jpg"
+        "Image": "img/tablos/12.A_2007-2011.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -165,7 +182,8 @@
         "FinishedAt": 2011,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2007-2011.jpg"
+        "Image": "img/tablos/12.B_2007-2011.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -174,7 +192,8 @@
         "FinishedAt": 2013,
         "Ofo": "Pap Csaba",
         "Department": -1,
-        "Image": "img/tablos/12.A_2009-2013.jpg"
+        "Image": "img/tablos/12.A_2009-2013.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -183,7 +202,8 @@
         "FinishedAt": 2016,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2012-2016.jpg"
+        "Image": "img/tablos/12.B_2012-2016.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -192,7 +212,8 @@
         "FinishedAt": 2019,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.A_2015-2019.jpg"
+        "Image": "img/tablos/12.A_2015-2019.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -201,7 +222,8 @@
         "FinishedAt": 2019,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2015-2019.jpg"
+        "Image": "img/tablos/12.B_2015-2019.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -210,7 +232,8 @@
         "FinishedAt": 2022,
         "Ofo": -1,
         "Department": 3,
-        "Image": "img/tablos/12.E_2018-2022.jpg"
+        "Image": "img/tablos/12.E_2018-2022.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -219,7 +242,8 @@
         "FinishedAt": 2022,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.C_2018-2022.jpg"
+        "Image": "img/tablos/12.C_2018-2022.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -228,7 +252,8 @@
         "FinishedAt": 2021,
         "Ofo": "Murvai Mónika",
         "Department": -1,
-        "Image": "img/tablos/12.B_2017-2021.jpg"
+        "Image": "img/tablos/12.B_2017-2021.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -237,7 +262,8 @@
         "FinishedAt": 2021,
         "Ofo": -1,
         "Department": 3,
-        "Image": "img/tablos/12.E_2017-2021.jpg"
+        "Image": "img/tablos/12.E_2017-2021.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -246,7 +272,8 @@
         "FinishedAt": 2020,
         "Ofo": -1,
         "Department": 3,
-        "Image": "img/tablos/12.D_2016-2020.jpg"
+        "Image": "img/tablos/12.D_2016-2020.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -255,7 +282,8 @@
         "FinishedAt": 2020,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.C_2016-2020.jpg"
+        "Image": "img/tablos/12.C_2016-2020.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -264,7 +292,8 @@
         "FinishedAt": 2021,
         "Ofo": -1,
         "Department": 3,
-        "Image": "img/tablos/12D_2017_2021.jpg"
+        "Image": "img/tablos/12D_2017_2021.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -273,7 +302,8 @@
         "FinishedAt": 2008,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.B_2004-2008.jpg"
+        "Image": "img/tablos/12.B_2004-2008.jpg",
+        "Sources": [ "SCAN" ]
     },
     {
         "Grade":
@@ -282,7 +312,8 @@
         "FinishedAt": 2020,
         "Ofo": -1,
         "Department": 4,
-        "Image": "img/tablos/12.B_2016-2020.jpg"
+        "Image": "img/tablos/12.B_2016-2020.jpg",
+        "Sources": [ "SCAN" ]
     },
     "============================================================",
     "= Tablók az emlékkönyvből: 'Az iskola végzős tanulói.docx' =",
@@ -323,7 +354,8 @@
             "Varga Imre Zoltán", 
             "Vári Tamás"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -360,7 +392,8 @@
             "Tóth László", 
             "Vodila Zoltán"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -391,7 +424,8 @@
             "Varga Gábor", 
             "Vida Imre"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -429,7 +463,8 @@
             "Zolnai György", 
             "Zsíros Attila"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -474,7 +509,8 @@
             "Vagi Zoltán", 
             "Zelenyánszki Pál"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -516,7 +552,8 @@
             "Valuk Tibor", 
             "Zalai Csaba"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -553,7 +590,8 @@
             "Tripa Zoltán", 
             "Varga István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -590,7 +628,8 @@
             "Varga János", 
             "Varga Mihály"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -623,7 +662,8 @@
             "Zelenyánszki Péter", 
             "Zsilák Edit"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -653,7 +693,8 @@
             "Varga Zoltan", 
             "Vida Zoltán"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -684,7 +725,8 @@
             "Vaszkó Péter", 
             "Vozár János"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -719,7 +761,8 @@
             "Varga Tamás", 
             "Zöldi István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -751,7 +794,8 @@
             "Weber Károly", 
             "Zsóri Tibor"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -785,7 +829,8 @@
             "Vaszkó Ambrus", 
             "Zahorán Tibor"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -820,7 +865,8 @@
             "Túróczy Zoltán", 
             "Uhljár Károly"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -858,7 +904,8 @@
             "Vor István", 
             "Zsidó Norbert Ferenc"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -890,7 +937,8 @@
             "Tóth Ferenc", 
             "Vad Lajos"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -920,7 +968,8 @@
             "Tóth Gábor", 
             "Uhrin Tamás György"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -958,7 +1007,8 @@
             "Tokai Lajos", 
             "Tóth Anikó"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -996,7 +1046,8 @@
             "Varga Lajos", 
             "Vozár István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1999,
@@ -1026,7 +1077,8 @@
             "Uhrin Ákos", 
             "Zsiros Norbert"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1999,
@@ -1062,7 +1114,8 @@
             "Unyatyinszki Tamás", 
             "Zalai Éva"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2000,
@@ -1095,7 +1148,8 @@
             "Uhrin Zsolt", 
             "Varga Ádám"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2000,
@@ -1136,7 +1190,8 @@
             "Vári Sándor", 
             "Veres István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2000,
@@ -1175,7 +1230,8 @@
             "Szula János", 
             "Velő Katalin"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2001,
@@ -1216,7 +1272,8 @@
             "Vastag József", 
             "Viplak Vilmos"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2001,
@@ -1261,7 +1318,8 @@
             "Zahorán Csaba", 
             "Zsiros Tamás"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2001,
@@ -1305,7 +1363,8 @@
             "Walfisch József", 
             "Zsigovics Anett"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -1342,7 +1401,8 @@
             "Vörös Attila", 
             "Zsiga József"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -1384,7 +1444,8 @@
             "Vityaz Gábor", 
             "Zana Bernadett"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -1423,7 +1484,8 @@
             "Vad Tibor", 
             "Vincze Balázs"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2003,
@@ -1455,7 +1517,8 @@
             "VargaPál", 
             "Zemó László"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2003,
@@ -1494,7 +1557,8 @@
             "Varga Viktor", 
             "Zelenyánszki Gabriella"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2004,
@@ -1530,7 +1594,8 @@
             "Zsibrita Fecske János", 
             "Zsiga Zsolt"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2004,
@@ -1568,7 +1633,8 @@
             "Vári Donát Ferenc", 
             "Vári Péter Amadé"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2004,
@@ -1604,7 +1670,8 @@
             "Zielbauer Tamás", 
             "Zimonyi Péter"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2005,
@@ -1633,7 +1700,8 @@
             "Takács Imre", 
             "Takács Norbert"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2005,
@@ -1665,7 +1733,8 @@
             "Tóth Bence", 
             "Vanesa István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2005,
@@ -1696,7 +1765,8 @@
             "Szabó Ambrus", 
             "Székely Tamás Dávid"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2006,
@@ -1730,7 +1800,8 @@
             "Zsibrita Pál", 
             "Zsjak András"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2006,
@@ -1769,7 +1840,8 @@
             "Túsz Antal Gergő", 
             "Uhrin Balázs"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2006,
@@ -1808,7 +1880,8 @@
             "Varga Tibor", 
             "Vidiczki István"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -1840,7 +1913,8 @@
             "Ujvári Gábor", 
             "Veres Mihály"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -1877,7 +1951,8 @@
             "Vidó Lajos", 
             "Wieszner Vilmos"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -1911,7 +1986,8 @@
             "Váczi János", 
             "Zleovszki Ákos"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2008,
@@ -1943,7 +2019,8 @@
             "Tul- kán Ákos", 
             "Ungi Ferenc Gergő"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2008,
@@ -1979,7 +2056,8 @@
             "UrbánDániel", 
             "Vincze Éva Nóra"
         ],
-        "Type": "SCHOOL"
+        "Type": "SCHOOL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1991,
@@ -2009,7 +2087,8 @@
             "Túri Zoltán", 
             "Varga Imre Zoltán"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1992,
@@ -2036,7 +2115,8 @@
             "Tóth László", 
             "Vodilla Zoltán"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1993,
@@ -2064,7 +2144,8 @@
             "Varga Gábor", 
             "Vida Imre"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1993,
@@ -2090,7 +2171,8 @@
             "Zolnai György", 
             "Zsíros Attila"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1994,
@@ -2114,7 +2196,8 @@
             "Pecze Gábor", 
             "Tóth Attila Károly"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1994,
@@ -2139,7 +2222,8 @@
             "SarkadiAttila Sándor", 
             "Zalai Csaba"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1995,
@@ -2162,7 +2246,8 @@
             "Uhrin András", 
             "Varga István"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1995,
@@ -2185,7 +2270,8 @@
             "Tóth Károly", 
             "Varga Mihály"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1996,
@@ -2228,7 +2314,8 @@
                 ]
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1996,
@@ -2250,7 +2337,8 @@
             "Turák Csaba", 
             "Vida Zoltán"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1997,
@@ -2276,7 +2364,8 @@
             "Sztankó János", 
             "Varga Tamás"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1997,
@@ -2299,7 +2388,8 @@
             "Wéber Károly", 
             "Zsóri Tibor Zsolt"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1997,
@@ -2325,7 +2415,8 @@
             "Urbán János", 
             "Zahorán Tibor"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -2349,7 +2440,8 @@
             "Tar Csaba", 
             "Tobai János"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -2384,7 +2476,8 @@
                 "Department": "Épületgépész"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1998,
@@ -2411,7 +2504,8 @@
             "Tóth Ferenc", 
             "Vad Lajos"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1999,
@@ -2449,7 +2543,8 @@
                 "Department": "Gépésztechnikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1999,
@@ -2472,7 +2567,8 @@
             "Tokai Lajos", 
             "Tóth Anikó"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 1999,
@@ -2490,7 +2586,8 @@
             "Gulyás Adrián", 
             "Széll Balázs"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2000,
@@ -2523,7 +2620,8 @@
                 "Department": "Épületgépész"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2000,
@@ -2539,7 +2637,8 @@
             "Szilágyi Tamás Imre", 
             "Szöllősi Attila"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2001,
@@ -2553,7 +2652,8 @@
             "Kontra Zoltán", 
             "Sarus Tibor Norbert"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2001,
@@ -2575,7 +2675,8 @@
             "Tímár Károly", 
             "Zalai Éva"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -2591,7 +2692,8 @@
             "Nagy Kornél", 
             "Vigyikán György"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -2614,7 +2716,8 @@
             "Vári Sándor", 
             "Vincze Zsolt"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2002,
@@ -2631,7 +2734,8 @@
             "Varga Balázs", 
             "Veres István"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2003,
@@ -2651,7 +2755,8 @@
             "Túsz Mihály", 
             "Varga Csaba"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2003,
@@ -2684,7 +2789,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2004,
@@ -2719,7 +2825,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2004,
@@ -2741,7 +2848,8 @@
             "Vincze Balázs", 
             "Zolnai Ferenc"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2005,
@@ -2779,7 +2887,8 @@
                 "Department": "Multimédia-fejlesztő"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2005,
@@ -2794,7 +2903,8 @@
             "Ravasz Csaba", 
             "Rácz Tibor"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2006,
@@ -2814,7 +2924,8 @@
             "Virág Krisztián", 
             "Zsibrita-Fecske János"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2006,
@@ -2848,7 +2959,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -2889,7 +3001,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -2914,7 +3027,8 @@
             "Székely Tamás Dávid", 
             "Sztankó Szabolcs"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2007,
@@ -2934,7 +3048,8 @@
             "Szabó Árpád", 
             "Tóth Tamás Jácint"
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2008,
@@ -2968,7 +3083,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     {
         "FinishedAt": 2008,
@@ -2994,7 +3110,8 @@
                 "Department": "Rendszerinformatikus"
             }
         ],
-        "Type": "TECHNICAL"
+        "Type": "TECHNICAL",
+        "Sources": [ "EMLEKKONYV" ]
     },
     "============================================================",
     "======== Tablók egy random doc-ból: 'Osztályok.docx' =======",
@@ -3004,314 +3121,364 @@
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2009,
         "Ofo": "Pataj Zsuzsanna",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2009,
         "Ofo": "Pap Csaba",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2009,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2010,
         "Ofo": "Tulkán Zsolt",
-        "Department": "Gépész Szakmacsoport"
+        "Department": "Gépész Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2010,
         "Ofo": "Halmosiné Kiss Erzsébet",
-        "Department": "Informatikai Szakmacsoport"
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2010,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2011,
         "Ofo": "Gáspár Piroska",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2011,
         "Ofo": "Bertalan Zoltán",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2011,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2012,
         "Ofo": "Pálfi István",
-        "Department": "Gépész"
+        "Department": "Gépész",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2012,
         "Ofo": "Krámer Judit",
-        "Department": "Informatikai Tagozat"
+        "Department": "Informatikai Tagozat",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2012,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2013,
         "Ofo": "Papp Csaba",
-        "Department": "Gépész"
+        "Department": "Gépész",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2013,
         "Ofo": "Murvai Mónika",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2013,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2014,
         "Ofo": "Klucsics Sándor",
-        "Department": "Gépész Szakmacsoport"
+        "Department": "Gépész Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2014,
         "Ofo": "Tulkán Zsolt",
-        "Department": "Informatikai Szakmacsoport"
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2014,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2015,
         "Ofo": "Kiss Ferenc",
-        "Department": "Gépész Szakmacsoport"
+        "Department": "Gépész Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
-        "Department": "Informatikai Szakmacsoport"
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2015,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2016,
         "Ofo": "Pálfi István",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2016,
         "Ofo": "Csóti Marianna",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2016,
         "Ofo": "Gáspár Piroska",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2016,
         "Ofo": "Pataj Zsuzsanna",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2017,
         "Ofo": "Hrabovszki Ildikó",
-        "Department": "Gépész Szakmacsoport"
+        "Department": "Gépész Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2017,
         "Ofo": "Hugyecz Eszter",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2017,
         "Ofo": "Murvai Mónika",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2018,
         "Ofo": "Tulkán Zsolt",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2018,
         "Ofo": "Tusjak Brigitta",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2018,
         "Ofo": "Varga Imre",
-        "Department": "Informatika Szakmacsoport"
+        "Department": "Informatika Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2019,
         "Ofo": "Dóczi Zita",
-        "Department": "Gépész"
+        "Department": "Gépész",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2019,
         "Ofo": "Gajda Judit",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2019,
         "Ofo": "Drotár János",
-        "Department": "Informatika Szakmacsoport"
+        "Department": "Informatika Szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2020,
         "Ofo": "Klucsics Sándor",
-        "Department": "Gépész"
+        "Department": "Gépész",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2020,
         "Ofo": "Priskin István",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2020,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2020,
         "Ofo": "Pálfi István",
-        "Department": "Rendészeti"
+        "Department": "Rendészeti",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2021,
         "Ofo": "Virág Barbara Szilvia",
-        "Department": "Gépész Ágazat"
+        "Department": "Gépész Ágazat",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2021,
         "Ofo": "Murvai Mónika",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2021,
         "Ofo": "Földi Zsolt",
-        "Department": "Informatika"
+        "Department": "Informatika",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2021,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2021,
         "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
-        "Department": "Rendészeti"
+        "Department": "Rendészeti",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "F" },
         "FinishedAt": 2021,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2022,
         "Ofo": "Lendvai Sándor",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2022,
         "Ofo": "Tusjak Brigitta",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2022,
         "Ofo": "Tóthné Leelőssy Andrea",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2022,
         "Ofo": -1,
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2022,
         "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
-        "Department": "Rendészeti"
+        "Department": "Rendészeti",
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "M" },
         "FinishedAt": 2022,
         "Ofo": "Barlabásné Nagy Csilla",
-        "Department": -1
+        "Department": -1,
+        "Sources": [ "DOCS & EXCEL TABLE" ]
     },
     "============================================================",
     "Egy random táblázatból: 'Vegzos_osztalyba_jaro_tanulok.xlsx'",
@@ -3349,7 +3516,8 @@
             "Szatmári Zalán", 
             "Vantara Zsolt", 
             "Varga Zoltán"
-        ]
+        ],
+        "Sources": [ "DOCS" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -3385,7 +3553,8 @@
             "Tóth Márton Csaba", 
             "Uhrin Ottó Ákos", 
             "Virág Dominik"
-        ]
+        ],
+        "Sources": [ "DOCS" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -3424,7 +3593,8 @@
             "Szilágyi Dávid", 
             "Takács Ákos", 
             "Ungor Máté Sándor"
-        ]
+        ],
+        "Sources": [ "DOCS" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
@@ -3453,7 +3623,8 @@
             "Tóth Karolina", 
             "Víg Gergő", 
             "Zatkó László Gábor"
-        ]
+        ],
+        "Sources": [ "DOCS" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "E" },
@@ -3481,6 +3652,7 @@
             "Sajti Ferenc", 
             "Seifert Tamás", 
             "Vozár Nimród"
-        ]
+        ],
+        "Sources": [ "DOCS" ]
     }
 ]
