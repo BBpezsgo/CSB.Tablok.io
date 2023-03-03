@@ -7,7 +7,7 @@
         { "Grade": 12, "Sub": "B" },
         "StartedAt": 2009,
         "FinishedAt": 2013,
-        "Ofo": 1,
+        "Ofo": "Murvai Mónika",
         "Department": -1,
         "Image": "img/tablos/12.B_2009-2013.jpg"
     },
@@ -16,7 +16,7 @@
         { "Grade": 13, "Sub": "C" },
         "StartedAt": 2008,
         "FinishedAt": 2013,
-        "Ofo": 2,
+        "Ofo": "Varga Imre",
         "Department": -1,
         "Image": "img/tablos/13.C_2008-2003.jpg",
         "Other:": [
@@ -55,7 +55,7 @@
         { "Grade": 0, "Sub": null },
         "StartedAt": 2011,
         "FinishedAt": 2015,
-        "Ofo": 3,
+        "Ofo": "Fölker Csaba",
         "Department": 4,
         "Image": "img/tablos/InfosOsztaly_2011-2015.jpg"
     },
@@ -64,7 +64,7 @@
         { "Grade": 12, "Sub": "A" },
         "StartedAt": 2012,
         "FinishedAt": 2016,
-        "Ofo": 4,
+        "Ofo": "Pálfi István",
         "Department": 0,
         "Image": "img/tablos/12.A_2012-2016.jpg"
     },
@@ -73,7 +73,7 @@
         { "Grade": 12, "Sub": "A" },
         "StartedAt": 2013,
         "FinishedAt": 2017,
-        "Ofo": 5,
+        "Ofo": "Hrabovszki Ildikó",
         "Department": 0,
         "Image": "img/tablos/12.A_2013-2017.jpg"
     },
@@ -82,7 +82,7 @@
         { "Grade": 12, "Sub": "C" },
         "StartedAt": 2013,
         "FinishedAt": 2017,
-        "Ofo": 1,
+        "Ofo": "Murvai Mónika",
         "Department": 4,
         "Image": "img/tablos/12.C_2013-2017.jpg"
     },
@@ -91,7 +91,7 @@
         { "Grade": 12, "Sub": "C" },
         "StartedAt": 2014,
         "FinishedAt": 2018,
-        "Ofo": 2,
+        "Ofo": "Varga Imre",
         "Department": 4,
         "Image": "img/tablos/12.C_2014-2018.jpg"
     },
@@ -100,7 +100,7 @@
         { "Grade": 0, "Sub": null },
         "StartedAt": 2015,
         "FinishedAt": 2019,
-        "Ofo": 6,
+        "Ofo": "Drotár János",
         "Department": 4,
         "Image": "img/tablos/InfosOsztaly_2015-2019.jpg"
     },
@@ -109,7 +109,7 @@
         { "Grade": 12, "Sub": "C" },
         "StartedAt": 2012,
         "FinishedAt": 2016,
-        "Ofo": 7,
+        "Ofo": "Gáspár Piroska",
         "Department": -1,
         "Image": "img/tablos/12.C_2012-2016.jpg"
     },
@@ -172,7 +172,7 @@
         { "Grade": 12, "Sub": "A" },
         "StartedAt": 2009,
         "FinishedAt": 2013,
-        "Ofo": 8,
+        "Ofo": "Pap Csaba",
         "Department": -1,
         "Image": "img/tablos/12.A_2009-2013.jpg"
     },
@@ -226,7 +226,7 @@
         { "Grade": 12, "Sub": "B" },
         "StartedAt": 2017,
         "FinishedAt": 2021,
-        "Ofo": 1,
+        "Ofo": "Murvai Mónika",
         "Department": -1,
         "Image": "img/tablos/12.B_2017-2021.jpg"
     },
@@ -434,7 +434,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1993,
-        "Ofo": 36,
+        "Ofo": "Maczik Mihály",
         "Students": [
             "Aradi Árpád", 
             "Aradszki János", 
@@ -895,7 +895,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "A" },
-        "Ofo": 36,
+        "Ofo": "Maczik Mihály",
         "Students": [
             "Ancsin Viktor", 
             "Balogh István", 
@@ -2095,7 +2095,7 @@
     {
         "FinishedAt": 1994,
         "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": 36,
+        "Ofo": "Maczik Mihály",
         "Department": "Gépgyártás-technológus",
         "Students": [
             "Aradi Árpád", 
@@ -2416,7 +2416,7 @@
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": 36,
+        "Ofo": "Maczik Mihály",
         "Groups": [
             {
                 "Students": [

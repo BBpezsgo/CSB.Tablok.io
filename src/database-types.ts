@@ -9,7 +9,7 @@ export namespace RawTypes {
         FinishedAt: number
 
         /** Ofo ID or name */
-        Ofo?: number | string
+        Ofo?: number | string | string[]
     }
 
     export interface SimpleClass extends BaseClass {
@@ -86,7 +86,7 @@ export interface BaseClass {
     FinishedAt: number
 
     /** Ofo ID or name */
-    Ofo: string | null
+    Ofo: string[] | null
     /** Ofo name reference */
     OfoReference: Teacher | null
 }

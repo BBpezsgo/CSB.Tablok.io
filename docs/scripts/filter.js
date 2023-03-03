@@ -57,7 +57,7 @@ function Filter() {
                 hide()
                 continue
             }
-            if (!tablo.Ofo.toString().toLowerCase().includes(filters.ofo.trim().toLowerCase())) {
+            if (!tablo.Ofo.join(', ').toString().toLowerCase().includes(filters.ofo.trim().toLowerCase())) {
                 hide()
                 continue
             }

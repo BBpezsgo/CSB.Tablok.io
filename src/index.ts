@@ -14,10 +14,9 @@ declare global {
 async function DownloadDatabase() {
     // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
     const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
-    const teachers: any[] = JSON.parse(await HTTP.GetAsync('./database/teachers.json'))
     const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
 
-    return new DataBase(tablos, teachers, departments)
+    return new DataBase(tablos, departments)
 }
 
 /** Main function: this will be called when the document is loaded */
@@ -67,25 +66,13 @@ async function Main() {
         }
     }
     // If "teachersElement" exists, it fills up with some content
+    /*
     if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {
         const teacher = Database.teachers[i]
         teachersElement.appendChild(Utilities.Template('teacher', teacher))
     }
-
-    // Some search tests... This will be deleted (I hope)
-    if (teachersElement)
-    Utilities.GetElement('search').addEventListener('input', () => {
-        Utilities.ClearElement(teachersElement)
-        const input = Utilities.NormalizeString(Utilities.GetInputElement('search').value)
-        const teachersCopy = Database.teachers.slice()
-        teachersCopy.sort((a, b) => Utilities.LevenshteinDistance(Utilities.NormalizeString(a.Name.ToString()), input) - Utilities.LevenshteinDistance(Utilities.NormalizeString(b.Name.ToString()), input))
-        for (let i = 0; i < teachersCopy.length; i++) {
-            const teacher = teachersCopy[i]
-            if (!Utilities.CompareString(teacher.Name.ToString(), input, 3, true)) { continue }
-            teachersElement.appendChild(Utilities.Template('teacher', teacher))
-        }
-    })
+    */
 
     window.OpenTabloModal = window.OpenTabloModal || ((id) => {
         const selectedTablo = Database.tablos[id]

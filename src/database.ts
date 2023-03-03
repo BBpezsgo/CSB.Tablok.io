@@ -2,16 +2,14 @@ import { Tablo, Teacher, Name, RawTypes, Class } from "./database-types"
 
 export class DataBase {
     readonly tablos: Tablo[]
-    readonly teachers: Teacher[]
     readonly departments: string[]
 
-    constructor(tablos: (RawTypes.Tablo|string)[], teachers: Teacher[], departments: string[]) {
+    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[]) {
         this.tablos = []
-        this.teachers = teachers
         this.departments = departments
         
         // This converts objects into class instances
-        for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
+        // for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
 
         // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
@@ -54,17 +52,18 @@ export class DataBase {
 
             if (tablo.Ofo) {
                 if (typeof tablo.Ofo === 'string') {
-                    processedClass.OfoReference = null
-                    processedClass.Ofo = tablo.Ofo.trim()
-                } else {
+                    processedClass.Ofo = [ tablo.Ofo.trim() ]
+                } else if (typeof tablo.Ofo === 'number') {
+                    console.warn('No teacher specified', tablo.Ofo, tablo)
+                    /*
                     const ref: Teacher | null = this.GetTeacher(tablo.Ofo ?? -1)
                     if (ref) {
                         processedClass.OfoReference = ref
                         processedClass.Ofo = ref.Name.ToString()
-                    } else {
-                        processedClass.OfoReference = null
-                        processedClass.Ofo = null
                     }
+                    */
+                } else {
+                    processedClass.Ofo = tablo.Ofo
                 }
             }
 
@@ -81,7 +80,7 @@ export class DataBase {
             
             const processedTablo: Tablo = {
                 ...processedClass,
-                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : 'No Image',
+                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : undefined,
             }
             this.tablos.push(processedTablo)
         }
@@ -90,6 +89,7 @@ export class DataBase {
         this.AssignTabloIDs()
     }
 
+    /*
     private GetTeacher(id: number) {
         for (let i = 0; i < this.teachers.length; i++) {
             const teacher = this.teachers[i]
@@ -97,6 +97,7 @@ export class DataBase {
         }
         return null
     }
+    */
 
     private AssignTabloIDs() {
         for (let i = 0; i < this.tablos.length; i++) this.tablos[i].ID = i
