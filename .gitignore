@@ -4,5 +4,6 @@
 /dist
 /package-lock.json
 /Node
-out.json
-in.txt
+/test.js
+/out.json
+/in.txt
