@@ -7,7 +7,7 @@
         "FinishedAt": 2013,
         "Ofo": "Murvai Mónika",
         "Department": -1,
-        "Image": "img/tablos/12.B_2009-2013.jpg",
+        "Image": "2013_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -15,7 +15,7 @@
         "FinishedAt": 2013,
         "Ofo": "Varga Imre",
         "Department": -1,
-        "Image": "img/tablos/13.C_2008-2003.jpg",
+        "Image": "2013_13C.jpg",
         "Other:": [
             "Angol nyelv előkészítő"
         ],
@@ -26,7 +26,7 @@
         "FinishedAt": 2014,
         "Ofo": "Klucsics Sándor",
         "Department": "Gépész Szakmacsoport",
-        "Image": "img/tablos/12.A_2010-2014.jpg",
+        "Image": "2014_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -35,7 +35,7 @@
         "FinishedAt": 2014,
         "Ofo": -1,
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2010-2014.jpg",
+        "Image": "2014_.jpg",
         "Sources": [ "SCAN" ]
     },
     {
@@ -43,7 +43,7 @@
         "FinishedAt": 2015,
         "Ofo": "Kiss Ferenc",
         "Department": "Gépész Szakmacsoport",
-        "Image": "img/tablos/12.A_2011-2015.jpg",
+        "Image": "2015_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -52,7 +52,7 @@
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2011-2015.jpg",
+        "Image": "2015_.jpg",
         "Sources": [ "SCAN" ]
     },
     {
@@ -60,7 +60,7 @@
         "FinishedAt": 2016,
         "Ofo": "Pálfi István",
         "Department": 0,
-        "Image": "img/tablos/12.A_2012-2016.jpg",
+        "Image": "2016_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -68,7 +68,7 @@
         "FinishedAt": 2017,
         "Ofo": "Hrabovszki Ildikó",
         "Department": "Gépész Szakmacsoport",
-        "Image": "img/tablos/12.A_2013-2017.jpg",
+        "Image": "2017_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -76,7 +76,7 @@
         "FinishedAt": 2017,
         "Ofo": "Murvai Mónika",
         "Department": 4,
-        "Image": "img/tablos/12.C_2013-2017.jpg",
+        "Image": "2017_12C.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -84,7 +84,7 @@
         "FinishedAt": 2018,
         "Ofo": "Varga Imre",
         "Department": "Informatika Szakmacsoport",
-        "Image": "img/tablos/12.C_2014-2018.jpg",
+        "Image": "2018_12C.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -93,7 +93,7 @@
         "FinishedAt": 2019,
         "Ofo": "Drotár János",
         "Department": 4,
-        "Image": "img/tablos/InfosOsztaly_2015-2019.jpg",
+        "Image": "2019_.jpg",
         "Sources": [ "SCAN" ]
     },
     {
@@ -101,7 +101,7 @@
         "FinishedAt": 2016,
         "Ofo": "Gáspár Piroska",
         "Department": -1,
-        "Image": "img/tablos/12.C_2012-2016.jpg",
+        "Image": "2016_12C.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -109,7 +109,7 @@
         "FinishedAt": 2012,
         "Ofo": "Krámer Judit",
         "Department": "Informatikai Tagozat",
-        "Image": "img/tablos/12.B_2008-2012.jpg",
+        "Image": "2012_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -117,7 +117,7 @@
         "FinishedAt": 2009,
         "Ofo": "Pap Csaba",
         "Department": -1,
-        "Image": "img/tablos/12.B_2005-2009.jpg",
+        "Image": "2009_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -125,7 +125,7 @@
         "FinishedAt": 2010,
         "Ofo": "Tulkán Zsolt",
         "Department": "Gépész Szakmacsoport",
-        "Image": "img/tablos/12.A_2006-2010.jpg",
+        "Image": "2010_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -134,7 +134,7 @@
         "FinishedAt": 2010,
         "Ofo": [ "Czepó Mihályné", "Csizmadia Judit" ],
         "Department": -1,
-        "Image": "img/tablos/13.C_2005-2010.jpg",
+        "Image": "2010_13C.jpg",
         "Sources": [ "SCAN" ]
     },
     {
@@ -142,7 +142,7 @@
         "FinishedAt": 2011,
         "Ofo": "Gáspár Piroska",
         "Department": 0,
-        "Image": "img/tablos/12.A_2007-2011.jpg",
+        "Image": "2011_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -150,7 +150,7 @@
         "FinishedAt": 2011,
         "Ofo": "Bertalan Zoltán",
         "Department": -1,
-        "Image": "img/tablos/12.B_2007-2011.jpg",
+        "Image": "2011_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -158,7 +158,7 @@
         "FinishedAt": 2013,
         "Ofo": "Pap Csaba | Papp Csaba",
         "Department": "Gépész",
-        "Image": "img/tablos/12.A_2009-2013.jpg",
+        "Image": "2013_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -166,7 +166,7 @@
         "FinishedAt": 2016,
         "Ofo": "Csóti Marianna",
         "Department": -1,
-        "Image": "img/tablos/12.B_2012-2016.jpg",
+        "Image": "2016_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
 
@@ -175,7 +175,7 @@
         "FinishedAt": 2019,
         "Ofo": "Dóczi Zita",
         "Department": "Gépész",
-        "Image": "img/tablos/12.A_2015-2019.jpg",
+        "Image": "2019_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -183,7 +183,7 @@
         "FinishedAt": 2019,
         "Ofo": "Gajda Judit",
         "Department": -1,
-        "Image": "img/tablos/12.B_2015-2019.jpg",
+        "Image": "2019_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -191,7 +191,7 @@
         "FinishedAt": 2022,
         "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
         "Department": "Rendészeti",
-        "Image": "img/tablos/12.E_2018-2022.jpg",
+        "Image": "2022_12E.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -199,7 +199,7 @@
         "FinishedAt": 2022,
         "Ofo": "Tóthné Leelőssy Andrea",
         "Department": -1,
-        "Image": "img/tablos/12.C_2018-2022.jpg",
+        "Image": "2022_12C.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -207,7 +207,7 @@
         "FinishedAt": 2021,
         "Ofo": "Murvai Mónika",
         "Department": -1,
-        "Image": "img/tablos/12.B_2017-2021.jpg",
+        "Image": "2021_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -215,7 +215,7 @@
         "FinishedAt": 2021,
         "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
         "Department": "Rendészeti",
-        "Image": "img/tablos/12.E_2017-2021.jpg",
+        "Image": "2021_12E.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -223,7 +223,7 @@
         "FinishedAt": 2020,
         "Ofo": "Pálfi István",
         "Department": "Rendészeti",
-        "Image": "img/tablos/12.D_2016-2020.jpg",
+        "Image": "2020_12D.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -231,7 +231,7 @@
         "FinishedAt": 2020,
         "Ofo": -1,
         "Department": -1,
-        "Image": "img/tablos/12.C_2016-2020.jpg",
+        "Image": "2020_12C.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -239,7 +239,7 @@
         "FinishedAt": 2021,
         "Ofo": -1,
         "Department": 3,
-        "Image": "img/tablos/12D_2017_2021.jpg",
+        "Image": "2021_12D.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     {
@@ -247,7 +247,7 @@
         "FinishedAt": 2008,
         "Ofo": "Dóczi Zita",
         "Department": -1,
-        "Image": "img/tablos/12.B_2004-2008.jpg",
+        "Image": "2008_12B.jpg",
         "Students": [
             "Bugyi Dániel", 
             "Butyka Szabolcs", 
@@ -286,7 +286,7 @@
         "FinishedAt": 2020,
         "Ofo": "Priskin István",
         "Department": 4,
-        "Image": "img/tablos/12.B_2016-2020.jpg",
+        "Image": "2020_12B.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
     },
     "============================================================",
