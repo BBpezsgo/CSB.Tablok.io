@@ -5,7 +5,7 @@ export class DataBase {
     readonly departments: string[]
     readonly base: BaseData
 
-    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData) {
+    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, logs: boolean) {
         this.tablos = []
         this.departments = departments
         this.base = base
@@ -42,7 +42,7 @@ export class DataBase {
             }
 
             if (!hasPrincipal)
-            console.warn('Year without principal', tablo.FinishedAt)
+            if (logs) console.warn('Year without principal', tablo.FinishedAt)
 
             let processedClass: Class
             if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
@@ -89,7 +89,7 @@ export class DataBase {
                 if (typeof tablo.Ofo === 'string') {
                     processedClass.Ofo = [ tablo.Ofo.trim() ]
                 } else if (typeof tablo.Ofo === 'number') {
-                    console.warn('No teacher specified', tablo.Ofo, tablo)
+                    if (logs) console.warn('No teacher specified', tablo.Ofo, tablo)
                     /*
                     const ref: Teacher | null = this.GetTeacher(tablo.Ofo ?? -1)
                     if (ref) {
@@ -105,11 +105,11 @@ export class DataBase {
             if (!tablo.StartedAt && tablo.Grade.Grade) {
                 if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 9) {
                     processedClass.StartedAt = tablo.FinishedAt - (tablo.Grade.Grade - 8)
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, tablo)
+                    if (logs) console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, tablo)
                 } else if (typeof tablo.Grade.Grade === 'string' && tablo.Grade.Grade.includes('/')) {
                     const n = Number.parseInt(tablo.Grade.Grade.split('/')[1])
                     processedClass.StartedAt = tablo.FinishedAt - (n - 8)
-                    console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, tablo)
+                    if (logs) console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, tablo)
                 }
             }
             
@@ -119,7 +119,31 @@ export class DataBase {
             }
             this.tablos.push(processedTablo)
         }
-        this.tablos = this.tablos.sort((a, b) => b.FinishedAt - a.FinishedAt)
+        this.tablos = this.tablos.sort((a, b) => {
+            let result = b.FinishedAt - a.FinishedAt
+
+            if (result === 0) {
+                const subgrades = (grade: string) => {
+                    if (!grade) return 0
+
+                    if (grade.toUpperCase() === 'A') return 6
+                    if (grade.toUpperCase() === 'B') return 5
+                    if (grade.toUpperCase() === 'C') return 4
+                    if (grade.toUpperCase() === 'D') return 3
+                    if (grade.toUpperCase() === 'E') return 2
+                    if (grade.toUpperCase() === 'F') return 1
+
+                    return 0
+                }
+
+                const aGrade = subgrades(a.Grade.Sub)
+                const bGrade = subgrades(b.Grade.Sub)
+
+                return bGrade - aGrade
+            }
+
+            return result
+        })
 
         this.AssignTabloIDs()
     }

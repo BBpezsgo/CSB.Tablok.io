@@ -4,7 +4,7 @@ import * as HTTP from './http'
 import { compile } from './handlebars.js'
 
 export function CreateElement(htmlString: string): Element {
-    const div = document.createElement('div')
+    const div = document.createElement(htmlString.startsWith('<tr') ? 'tbody' : 'div')
     div.innerHTML = htmlString.trim()
     const result = div.firstElementChild
     if (!result) { throw new Error("wtf?") }

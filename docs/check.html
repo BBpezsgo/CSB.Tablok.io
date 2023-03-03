@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo - Check</title>
+    <style>
+        td, th {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        
+        table {
+            border: none;
+        }
+
+        th {
+            border-style: outset;
+        }
+
+        td {
+            border-style: solid;
+        }
+
+        tr>td:nth-child(7)>span:not(:last-child) {
+            border-right: 1px solid #000;
+            margin-right: 4px;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tbody id="tbody">
+            <tr>
+                <th style="display:none">Year</th>
+                <th style="width:16px">Grade</th>
+                <th style="width:16px">Sub-grade</th>
+                <th>Department</th>
+                <th>Have Image</th>
+                <th style="border:none;width:14px"></th>
+                <th>Ofo</th>
+                <th>Issues</th>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script src="scripts/select-all.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

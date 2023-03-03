@@ -1,0 +1,76 @@
+<tr>
+    <td style="display:none">
+        {{FinishedAt}}
+    </td>
+
+    {{#if Grade.Grade}}
+    <td>
+        {{Grade.Grade}}
+    </td>
+    {{else}}
+    <td style="background-color: #f008;"></td>
+    {{/if}}
+
+    {{#if Grade.Sub}}
+    <td>
+        {{Grade.Sub}}
+    </td>
+    {{else}}
+    <td style="background-color: #f008;"></td>
+    {{/if}}
+
+    {{#if UnknownDepartment}}
+    <td style="background-color: #f008;"></td>
+    {{else}}
+    {{#if Department}}
+    <td>{{Department}}</td>
+    {{else}}
+    <td style="border:none"></td>
+    {{/if}}
+    {{/if}}
+
+    {{#if Image}}
+    <td>
+        <a href="{{Image}}" target="_blank">{{Image}}</a>
+    {{else}}
+    <td style="background-color: #f008;">
+    {{/if}}
+    </td>
+
+    {{#if StudentCount}}
+    <td title="Student count">
+        <img style="display:inline-block;user-select:none" src="./img/check/group.png">
+        <span>{{StudentCount}}</span>
+    </td>
+    {{else}}
+    <td style="border:none"></td>
+    {{/if}}
+
+    {{#if Ofo}}
+    {{#if NoTeacher}}
+    <td style="background-color: #f008;"></td>
+    {{else}}
+    <td>
+        {{#each Ofo}}
+        <span>{{this}}</span>
+        {{/each}}
+    </td>
+    {{/if}}
+    {{else}}
+    <td style="background-color: #f008;"></td>
+    {{/if}}
+
+    <td>
+        {{#if HasIssule}}
+        <img style="cursor:pointer;user-select:none" src="./img/check/error.png" onclick="(()=>{const list=document.getElementById('issues-{{ID}}');if(list.style.display==='block')list.style.display='none';else list.style.display='block'})()">
+        {{/if}}
+        {{#if Unverified}}
+        <img style="user-select:none" src="./img/check/help.png" title="Unverified source">
+        {{/if}}
+        <ul id="issues-{{ID}}" style="display:none">
+            {{#each Issues}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </td>
+</tr>

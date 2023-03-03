@@ -129,6 +129,10 @@ export type Tablo = Class & {
     ID?: number
 }
 
+export type CheckedTablo = Tablo & {
+    Issues: string[]
+}
+
 export type BaseData = {
     Principals: Principal[]
     /** Year number */
