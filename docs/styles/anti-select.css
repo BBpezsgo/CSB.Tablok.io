@@ -1,2 +1,2 @@
 /* DON'T TOUCH IT!!! */
-*:not(input):not(textarea):not(select){cursor:default}
+*:not(input):not(textarea):not(select):not(.selectable){cursor:default}

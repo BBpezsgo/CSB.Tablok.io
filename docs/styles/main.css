@@ -99,7 +99,7 @@ input[type=submit]:active {
   border-radius: 3px;
   box-shadow: #0008 0px 0px 4px;
   transition: transform 500ms, box-shadow 500ms, border 500ms;
-  cursor: pointer;
+  cursor: pointer !important;
   border: 1px solid #fff0;
 }
 

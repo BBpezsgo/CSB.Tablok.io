@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="styles/reveal.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/tablo-modal.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" type="image/x-icon" href="https://www.nemesgszi.hu/components/images/favicon.png">
     <title>Tablók | Békéscsabai SZC Nemes Tihamér Technikum és Kollégium | GSZI |</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d70969805a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext" rel="stylesheet" type="screen">
+    <!--
     <style>
         #ofos {
             display: block;
@@ -68,6 +70,7 @@
             }
         }
     </style>
+    -->
 </head>
 <body>
     <div class="header" style="z-index: -1;">
@@ -85,8 +88,8 @@
 
     <div class="navbar">
         <div class="links">
-            <a class="navbar_items" href="./osztalyok.html">Osztályok</a>
-            <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>
+            <!--<a class="navbar_items" href="./osztalyok.html">Osztályok</a>
+            <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>-->
             <a class="navbar_items" href="./osztalyfonok.html">Osztályfőnökök</a>
             <a class="navbar_items" href="./index.html">Főoldal</a>
         </div>
@@ -97,24 +100,88 @@
     </div>
 
     <div class="row">
-    <!--Ezt majd egy ilyen felső navbarnak vagy egy oldalsó menünek tudom elképzelni-->
         <div class="body">
-            <div id="ofos">
-                <a>Gajda Judit</a> <!--Ezek majd átdobnak egy weblapra ahol fel lesznek sorolva, az osztályfőnökök, és a hozzájuk tartozó osztály/osztályok, és ott ha többosztálya volt akkor ez az ettől eddig tartó osztálya emez meg az emettől emeddig ide járt osztálya stb..-->
-                <a>Kósa Balázs</a> <!--vagy ha ezt az oldalon belül is meg tudjuk oldani nekem úgy is jó csak ahhoz nem értek XD-->
-                <a>Beszeda Beáta</a>
-                <a>Maczik Mihály András</a>
-            </div>
-    <!--Itt alapértelmezetten majd a legfrissebben ballagott osztályok legyenek szerintem-->
             <div class="main-title">
-                <h2>Legfrissebb ballagottjaink</h2>
+                <h2>Osztályfőnökeink</h2>
+            </div>
+            <div class="kiscim">
+                <h3>Szűrő</h3>
+                <style>
+                    ul#filter-ofo-suggestions {
+                        padding-left: 0px;
+                        border: 1px solid #444;
+                        list-style: none;
+                        display: block;
+                        position: absolute;
+                        width: 177px;
+                        z-index: 3;
+                        background-color: #fff;
+                        box-shadow: #0008 2px 2px 4px;
+                    }
+                    ul#filter-ofo-suggestions>li {
+                        cursor: pointer;
+                    }
+                    ul#filter-ofo-suggestions>li:not(:last-child) {
+                        border-bottom: 1px solid #666;
+                    }
+                    ul#filter-ofo-suggestions>li:hover {
+                        background-color: #0002;
+                    }
+                    ul#filter-ofo-suggestions>li:active {
+                        background-color: #0003;
+                    }
+
+                    #filter-ofo {
+                        text-transform: capitalize;
+                    }
+                </style>
+                <div style="display:inline-block">
+                    <input id="filter-ofo" type="text" maxlength="64" placeholder="Osztályfőnök neve" onkeyup="Filter()">
+                </div>
             </div>
             <div class="fokepek">
-                <img src="img/12D_2017_2021.jpg" style="max-width: 100%;" class="kep">
+                <style>
+                    ul#teachers-list {
+                        padding-left: 0px;
+                        list-style: none;
+                    }
+
+                    ul#teachers-list>li {
+                        border: 1px solid #888;
+                        margin: 8px;
+                        padding: 0px;
+                        display: inline-block;
+                        box-shadow: #0004 2px 2px 6px;
+                    }
+
+                    ul#teachers-list>li>p {
+                        background-color: #00BBFF;
+                        margin: 0px;
+                        font-size: large;
+                        font-weight: 1000;
+                        color: #fff;
+                        padding: 4px 8px;
+                    }
+
+                    ul#teachers-list>li>.teacher-ofo-assignments div {
+                        cursor: pointer !important;
+                    }
+
+                    ul#teachers-list>li>.teacher-ofo-assignments div:hover {
+                        text-decoration: underline;
+                    }
+                </style>
+                <ul id="teachers-list">
+                    
             </div>
         </div>
     </div>
     
+    <!-- Anti select -->
+    <p style="position:absolute; top: 0;">
+        <script src="scripts/anti-select.js" type="text/javascript"></script>
+    </p>
+
     <script>
         const modals = [
             document.getElementById('id01'),
@@ -128,8 +195,10 @@
             })
         }
     </script>
+    <script src="scripts/setup.js"></script>
     <script src="scripts/select-all.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/filter-teachers.js"></script>
     <script src="scripts/reveal.js"></script>
 </body>
 </html>

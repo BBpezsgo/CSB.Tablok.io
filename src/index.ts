@@ -7,7 +7,10 @@ declare global {
     interface Window {
         OpenTabloModal: (id: number) => void
         CloseTabloModal: () => void
+
         Database: DataBase
+
+        DisplayOfoSuggestion: (name: string) => void
     }
 }
 
@@ -46,7 +49,7 @@ async function Main() {
 
     // Get the container elements
     const tablosElement = Utilities.TryGetElement('tablos-container')
-    const teachersElement = Utilities.TryGetElement('teachers')
+    const teachersElement = Utilities.TryGetElement('teachers-list')
 
     // If "tablosElement" exists, it deletes its content
     if (tablosElement) Utilities.ClearElement(tablosElement)
@@ -79,13 +82,81 @@ async function Main() {
         }
     }
     // If "teachersElement" exists, it fills up with some content
-    /*
     if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {
         const teacher = Database.teachers[i]
         teachersElement.appendChild(Utilities.Template('teacher', teacher))
     }
-    */
+    (()=>{
+        const names: string[] = [ ]
+
+        for (let i = 0; i < Database.tablos.length; i++) {
+            const tablo = Database.tablos[i]
+            if (!tablo.Ofo) continue
+            for (let j = 0; j < tablo.Ofo.length; j++)
+            { if (!names.includes(tablo.Ofo[j])) names.push(tablo.Ofo[j]) }
+        }
+        names.sort()
+
+        const input = document.getElementById('filter-ofo') as HTMLInputElement
+        const list = document.getElementById('filter-ofo-suggestions') as HTMLElement
+
+        if (!input) return
+        if (!list) return
+
+        function CompareOfoSuggestion(a: string, b: string) {
+            const aNorm = Utilities.NormalizeString(a)
+            const bNorm = Utilities.NormalizeString(b)
+
+            if (a.startsWith(bNorm)) return 1
+            if (a.includes(bNorm)) return 2
+            return Utilities.LevenshteinDistance(aNorm, bNorm)
+        }
+
+        function UpdateSuggestions() {
+            list.innerHTML = ''
+            list.style.display = 'none'
+            const value = input.value.toLowerCase()
+            const normalizedValue = Utilities.NormalizeString(value)
+            if (value == '') return
+            const result: string[] = []
+            for (let nameOriginal of names) {
+                const name = nameOriginal.toLowerCase()
+                const compared = CompareOfoSuggestion(name, value)
+                if (compared < 3 || (compared < 20 && result.length < 8)) {
+                    result.push(nameOriginal)
+                }
+            }
+
+            result.sort((a, b) => CompareOfoSuggestion(a.toLowerCase(), value) - CompareOfoSuggestion(b.toLowerCase(), value))
+
+            for (let item of result) {
+                list.style.display = 'block'
+                const newItem = document.createElement('li')
+                newItem.setAttribute('onclick', 'DisplayOfoSuggestion(\'' + item + '\')')
+                let word = ''
+                if (item.toLowerCase().startsWith(normalizedValue)) {
+                    word += '<b class=selectable>' + item.substring(0, normalizedValue.length) + '</b>'
+                    word += item.substring(normalizedValue.length)
+                } else if (item.toLowerCase().includes(normalizedValue)) {
+                    const start = item.toLowerCase().indexOf(normalizedValue)
+                    word += item.substring(0, start)
+                    word += '<b class=selectable>' + item.substring(start, start + normalizedValue.length) + '</b>'
+                    word += item.substring(start + normalizedValue.length)
+                } else {
+                    word += item
+                }
+                newItem.innerHTML = word
+                list.appendChild(newItem)
+            }
+        }
+
+        input.addEventListener('keyup', UpdateSuggestions)
+        window.DisplayOfoSuggestion = (name: string) => {
+            input.value = name
+            UpdateSuggestions()
+        }
+    })()
 
     window.OpenTabloModal = window.OpenTabloModal || ((id) => {
         const selectedTablo = Database.tablos[id]

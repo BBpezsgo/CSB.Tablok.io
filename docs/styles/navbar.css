@@ -1,8 +1,7 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  /* flex: 54px; */
-  flex: 4px;
+  flex: 54px;
   flex-shrink: 0;
   flex-grow: 0;
   transition: flex 500ms;
@@ -16,7 +15,7 @@
     padding: 18px 20px;
     text-decoration: none;
     transition-duration: 200ms;
-    cursor: pointer;
+    cursor: pointer !important;
     height: 100%;
   }
   

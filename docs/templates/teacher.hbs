@@ -1,14 +1,10 @@
-<div style="border: 1px solid #888; margin: 8px; padding: 0px 8px; display: inline-block;">
-    <p>
-        ID: {{id}}
-    </p>
-    <p>
-        név:
-        {{#each name.surname}}
-        {{this}}
+<li id="teacher-{{ID}}">
+    <p>{{Name}}</p>
+    <div class="teacher-ofo-assignments">
+        {{#each OfoAssignment}}
+            <div onclick="OpenTabloModal({{TabloID}})" title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
+                {{From}} - {{To}}
+            </div>
         {{/each}}
-        {{#each name.firstname}}
-        {{this}}
-        {{/each}}
-    </p>
-</div>
+    </div>
+</li>

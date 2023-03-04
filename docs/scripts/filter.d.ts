@@ -2,6 +2,7 @@ export class DataBase {
     readonly tablos: Tablo[]
     readonly departments: string[]
     readonly base: BaseData
+    readonly teachers: Teacher[]
 
     private AssignTabloIDs()
 }
@@ -24,15 +25,15 @@ export interface Principal {
 
 export interface Teacher {
     ID: number
-    Name: Name
-}
-
-export class Name
-{
-    Surname: string[]
-    Firstname: string[]
-    
-    ToString(): string
+    Name: string
+    OfoAssignment: {
+        /** Year */
+        From: number
+        /** Year */
+        To: number
+        Class: Grade
+        TabloID: number
+    }[]
 }
 
 export interface Grade {

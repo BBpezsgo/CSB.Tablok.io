@@ -1,14 +1,16 @@
-import { Tablo, RawTypes, Class, BaseData, SchoolStatusData } from "./database-types"
+import { Tablo, RawTypes, Class, BaseData, SchoolStatusData, Teacher } from "./database-types"
 
 export class DataBase {
     readonly tablos: Tablo[]
     readonly departments: string[]
     readonly base: BaseData
+    readonly teachers: Teacher[]
 
     constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, logs: boolean) {
         this.tablos = []
         this.departments = departments
         this.base = base
+        this.teachers = []
 
         this.base.Principals = this.base.Principals.sort((a, b) => a.From - b.From)
         
@@ -96,6 +98,14 @@ export class DataBase {
                 } else {
                     processedClass.Ofo = tablo.Ofo
                 }
+
+                if (processedClass.Ofo) for (let ofo of processedClass.Ofo) {
+                    if (this.GetTeacher(ofo) === -1) this.teachers.push({
+                        ID: this.teachers.length,
+                        Name: ofo,
+                        OfoAssignment: [],
+                    })
+                }
             }
 
             if (!tablo.StartedAt && tablo.Grade.Grade) {
@@ -119,7 +129,7 @@ export class DataBase {
             let result = b.FinishedAt - a.FinishedAt
 
             if (result === 0) {
-                const subgrades = (grade: string) => {
+                const subgrades = (grade: string | null) => {
                     if (!grade) return 0
 
                     if (grade.toUpperCase() === 'A') return 6
@@ -141,18 +151,32 @@ export class DataBase {
             return result
         })
 
+        console.log(this.teachers)
+
         this.AssignTabloIDs()
+
+        for (let tablo of this.tablos) {
+            if (!tablo.Ofo || tablo.StartedAt === 0 || tablo.Grade.Grade === 0 || !tablo.Grade.Sub) continue
+            for (let ofo of tablo.Ofo) {
+                const ofoRef = this.GetTeacher(ofo)
+                if (ofoRef === -1) continue
+                this.teachers[ofoRef].OfoAssignment.push({
+                    From: tablo.StartedAt,
+                    To: tablo.FinishedAt,
+                    Class: tablo.Grade,
+                    TabloID: tablo.ID ?? -1,
+                })
+            }
+        }
+
+        this.teachers.sort((a, b) => a.Name.localeCompare(b.Name))
     }
 
-    /*
-    private GetTeacher(id: number) {
-        for (let i = 0; i < this.teachers.length; i++) {
-            const teacher = this.teachers[i]
-            if (teacher.ID === id) return teacher
-        }
-        return null
+    GetTeacher(name: string) {
+        for (let i = 0; i < this.teachers.length; i++)
+        { if (this.teachers[i].Name.toLowerCase().trim() === name.toLowerCase().trim()) return i }
+        return -1
     }
-    */
 
     private AssignTabloIDs() {
         for (let i = 0; i < this.tablos.length; i++) this.tablos[i].ID = i

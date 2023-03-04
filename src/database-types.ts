@@ -40,9 +40,18 @@ export namespace RawTypes {
 
 export interface Teacher {
     ID: number
-    Name: Name
+    Name: string
+    OfoAssignment: {
+        /** Year */
+        From: number
+        /** Year */
+        To: number
+        Class: Grade
+        TabloID: number
+    }[]
 }
 
+/*
 export class Name
 {
     Surname: string[]
@@ -70,12 +79,13 @@ export class Name
     
     ToString(): string { return ((this.Surname ?? []).join(' ') + ' ' + (this.Firstname ?? []).join(' ')).trim() }
 }
+*/
 
 export interface Grade {
     /** ie. 11 */
     Grade: number | string
     /** ie. C */
-    Sub: string
+    Sub: string | null
 }
 
 export interface Principal {

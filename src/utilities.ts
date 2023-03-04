@@ -57,8 +57,8 @@ export function ClearElement(element: HTMLElement) { if (!element) return; while
 
 /** @author Angelos Chalaris @link https://www.30secondsofcode.org/js/s/levenshtein-distance */
 export function LevenshteinDistance(s: string, t: string) {
-    if (!s.length) return t.length
-    if (!t.length) return s.length
+    if (!s) return t.length
+    if (!t) return s.length
     const arr = []
     for (let i = 0; i <= t.length; i++) {
       arr[i] = [i]
