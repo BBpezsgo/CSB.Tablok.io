@@ -29,8 +29,14 @@ function Filter() {
     if (filters.grade.grade.toString() !== 'NaN') haveFilter = true
     if (filters.grade.sub.trim().length > 0) haveFilter = true
     
-    console.log(haveFilter)
-    console.log(filters)
+    let noResult = haveFilter
+
+    const yearElements = document.getElementsByClassName('year-panel')
+    for (let i = 0; i < yearElements.length; i++) {
+        const element = yearElements.item(i)
+        if (!element) continue
+        element.style.display = ''
+    }
 
     for (let i = 0; i < database.tablos.length; i++) {
         const tablo = database.tablos[i]
@@ -39,7 +45,25 @@ function Filter() {
         element.style.display = 'unset'
         if (!haveFilter) continue
 
-        const hide = () => { element.style.display = 'none'; console.log(element) }
+        const hide = () => {
+            element.style.display = 'none'
+            const container = element.parentElement
+            if (!container) return
+
+            const prev = container.previousElementSibling
+            if (!prev) return
+
+            const childs = container.children
+            for (let i = 0; i < childs.length; i++) {
+                const element = childs.item(i)
+                if (!element) continue
+                if (element.style.display !== 'none') {
+                    prev.style.display = ''
+                    return
+                }
+            }
+            prev.style.display = 'none'
+        }
 
         if (filters.year.start > tablo.StartedAt) {
             hide()
@@ -70,5 +94,10 @@ function Filter() {
                 continue
             }
         }
+
+        noResult = false
     }
+
+    const noResultElement = document.getElementById('no-result')
+    if (noResultElement) noResultElement.style.display = noResult ? '' : 'none'
 }

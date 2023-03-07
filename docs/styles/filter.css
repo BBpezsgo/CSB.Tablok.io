@@ -1,0 +1,48 @@
+.kiscim {
+    background-color: #555;
+    color: #ddd;
+    padding: 16px 0;
+    box-shadow: #000 0px 0px 6px;
+}
+
+.kiscim fieldset {
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.kiscim input {
+    background-color: transparent;
+    padding: 1px 2px;
+    outline: 1px solid #fff8;
+    color: #fff;
+    border-radius: 2px;
+    transition: outline 100ms;
+    border: none;
+}
+
+.kiscim input:focus {
+    outline: 3px solid #00BBFF;
+}
+
+.kiscim button {
+    background-color: #00BBFF88;
+    padding: 4px 6px;
+    border: none;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+    transition: outline 100ms;
+    cursor: pointer !important;
+}
+
+.kiscim button:hover {
+    background-color: #00BBFFcc;
+    box-shadow: #0008 0px 0px 8px;
+}
+
+.kiscim button:active {
+    background-color: #00BBFF;
+    box-shadow: #0008 0px 0px 8px;
+}

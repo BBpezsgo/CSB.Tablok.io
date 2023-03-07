@@ -80,6 +80,7 @@ async function Main() {
             }
             container?.appendChild(newElement)
         }
+        tablosElement.appendChild(Utilities.Template('no-result', { }))
     }
     // If "teachersElement" exists, it fills up with some content
     if (teachersElement)
@@ -113,9 +114,13 @@ async function Main() {
             return Utilities.LevenshteinDistance(aNorm, bNorm)
         }
 
-        function UpdateSuggestions() {
+        function HideSuggestions() {
             list.innerHTML = ''
             list.style.display = 'none'
+        }
+
+        function UpdateSuggestions() {
+            HideSuggestions()
             const value = input.value.toLowerCase()
             const normalizedValue = Utilities.NormalizeString(value)
             if (value == '') return
@@ -152,9 +157,11 @@ async function Main() {
         }
 
         input.addEventListener('keyup', UpdateSuggestions)
+        input.addEventListener('blur', ()=>{setTimeout(HideSuggestions, 1000)})
+        input.addEventListener('focus', UpdateSuggestions)
         window.DisplayOfoSuggestion = (name: string) => {
             input.value = name
-            UpdateSuggestions()
+            HideSuggestions()
         }
     })()
 
@@ -187,7 +194,7 @@ async function Main() {
                     if ((position.top >= 0                 && position.bottom <= window.innerHeight) ||
                         (position.top < window.innerHeight && position.bottom >= 0)) {
                         if (!element.classList.contains('tablo-unloaded')) continue
-                        console.log('Loading image for element', element)
+                        // console.log('Loading image for element', element)
                         element.classList.remove('tablo-unloaded')
                         const tabloId = Number.parseInt(element.id.split('-')[1])
                         const tablo = Database.tablos[tabloId]
