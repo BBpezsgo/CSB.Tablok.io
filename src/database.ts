@@ -151,8 +151,6 @@ export class DataBase {
             return result
         })
 
-        console.log(this.teachers)
-
         this.AssignTabloIDs()
 
         for (let tablo of this.tablos) {
