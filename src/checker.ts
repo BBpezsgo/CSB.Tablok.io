@@ -2,6 +2,8 @@ import { DataBase } from "./database"
 import { CheckedTablo } from "./database-types"
 import * as Utilities from "./utilities"
 
+const OFFICAL_SOURCE = 'EXCEL TABLE (NEW)'
+
 export function CheckDatabase(database: DataBase, log: boolean) {
     /*
     for (let i = 0; i < database.teachers.length; i++) {
@@ -24,15 +26,16 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         {
             if (log) console.warn('Tablo without source', tablo)
             tablo.Issues.push('No source')
-        }
-        else {
-            const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)' ]
-            for (let i = 0; i < tablo.Sources.length; i++) {
-                const source = tablo.Sources[i]
-                if (!verifiedSources.includes(source)) {
-                    if (log) console.warn('Tablo with unverified source', tablo)
-                    tablo.Issues.push('Unverified source')
-                    break
+        } else {
+            if (!tablo.Sources.includes(OFFICAL_SOURCE)) {
+                const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)' ]
+                for (let i = 0; i < tablo.Sources.length; i++) {
+                    const source = tablo.Sources[i]
+                    if (!verifiedSources.includes(source)) {
+                        if (log) console.warn('Tablo with unverified source', tablo)
+                        tablo.Issues.push('Unverified source')
+                        break
+                    }
                 }
             }
         }
@@ -100,10 +103,11 @@ export function Main(database: DataBase) {
         let tablo = {
             ...original,
             HasIssule: true,
-            UnknownDepartment: original.Type!=='SCHOOL' ? original.Department==='Ismeretlen' : false,
+            UnknownDepartment: (original.Type !== 'SCHOOL') ? (original.Department === 'Ismeretlen') : false,
             Unverified: false,
             StudentCount: 0,
             NoTeacher: false,
+            OfficiallyVerified: original.Sources?.includes(OFFICAL_SOURCE) ?? false
         }
 
         if (tablo.Students) tablo.StudentCount = tablo.Students.length

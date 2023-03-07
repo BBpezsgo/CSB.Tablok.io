@@ -4,7 +4,7 @@
     </td>
 
     {{#if Grade.Grade}}
-    <td>
+    <td{{#if OfficiallyVerified}} style="background-color: #2928;"{{/if}}>
         {{Grade.Grade}}
     </td>
     {{else}}
@@ -12,7 +12,7 @@
     {{/if}}
 
     {{#if Grade.Sub}}
-    <td>
+    <td{{#if OfficiallyVerified}} style="background-color: #2928;"{{/if}}>
         {{Grade.Sub}}
     </td>
     {{else}}
@@ -23,7 +23,7 @@
     <td style="background-color: #f008;"></td>
     {{else}}
     {{#if Department}}
-    <td>{{Department}}</td>
+    <td{{#if OfficiallyVerified}} style="background-color: #2928;"{{/if}}>{{Department}}</td>
     {{else}}
     <td style="border:none"></td>
     {{/if}}
@@ -31,7 +31,7 @@
 
     {{#if Image}}
     <td>
-        <a href="{{Image}}" target="_blank">{{Image}}</a>
+        <a href="./img/tablos/{{Image}}" target="_blank">{{Image}}</a>
     {{else}}
     <td style="background-color: #f008;">
     {{/if}}
@@ -50,7 +50,7 @@
     {{#if NoTeacher}}
     <td style="background-color: #f008;"></td>
     {{else}}
-    <td>
+    <td{{#if OfficiallyVerified}} style="background-color: #2928;"{{/if}}>
         {{#each Ofo}}
         <span>{{this}}</span>
         {{/each}}
@@ -68,8 +68,10 @@
         {{#if HasIssule}}
         <img style="cursor:pointer;user-select:none" src="./img/check/error.png" onclick="(()=>{const list=document.getElementById('issues-{{ID}}');if(list.style.display==='block')list.style.display='none';else list.style.display='block'})()">
         {{/if}}
+        {{#if OfficiallyVerified}}{{else}}
         {{#if Unverified}}
         <img style="user-select:none" src="./img/check/help.png" title="Unverified source">
+        {{/if}}
         {{/if}}
         <ul id="issues-{{ID}}" style="display:none">
             {{#each Issues}}

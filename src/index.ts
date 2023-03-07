@@ -170,6 +170,40 @@ async function Main() {
         if (!modal) return
         modal.remove()
     })
+
+    if (tablosElement) {
+        setTimeout(() => {
+            const elements = document.querySelectorAll('.tablo') as NodeListOf<HTMLElement>
+            const unloadedTablos: string[] = []
+            for (let i = 0; i < elements.length; i++) unloadedTablos.push(elements.item(i).id)
+
+            const RefreshTablos = () => {
+                for (let i = 0; i < elements.length; i++) {
+                    const element = elements.item(i)
+                    if (!unloadedTablos.includes(element.id)) continue
+
+                    const position = element.getBoundingClientRect()
+                
+                    if ((position.top >= 0                 && position.bottom <= window.innerHeight) ||
+                        (position.top < window.innerHeight && position.bottom >= 0)) {
+                        if (!element.classList.contains('tablo-unloaded')) continue
+                        console.log('Loading image for element', element)
+                        element.classList.remove('tablo-unloaded')
+                        const tabloId = Number.parseInt(element.id.split('-')[1])
+                        const tablo = Database.tablos[tabloId]
+                        if (tablo.Image) element.style.backgroundImage = `url(img/tablos-lowres/${tablo.Image})`
+                    } else {
+                        if (element.classList.contains('tablo-unloaded')) continue
+                        element.style.backgroundImage = 'url(#)'
+                        element.classList.add('tablo-unloaded')
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', RefreshTablos)
+            RefreshTablos()
+        }, 1000)
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => { Main() })
