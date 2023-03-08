@@ -1,6 +1,7 @@
 import { DataBase } from "./database"
 import { CheckedTablo } from "./database-types"
 import * as Utilities from "./utilities"
+import * as HTTP from "./http"
 
 const OFFICAL_SOURCE = 'EXCEL TABLE (NEW)'
 
@@ -22,8 +23,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
             ...database.tablos[i],
             Issues: []
         }
-        if (!tablo.Sources)
-        {
+        if (!tablo.Sources) {
             if (log) console.warn('Tablo without source', tablo)
             tablo.Issues.push('No source')
         } else {
@@ -51,6 +51,16 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         }
         if (!tablo.Image)
         { if (log) console.warn(`Tablo without image`, tablo); tablo.Issues.push('No image') }
+        else {
+            if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image)
+                .then(code => {
+                    if (code === 200) return
+                    console.warn('Image does not have a low-res version', tablo.Image, 'HTTP ' + code)
+                })
+                .catch(error => {
+                    console.warn('Image does not have a low-res version', tablo.Image, error)
+                })
+        }
         if (!tablo.FinishedAt)
         { if (log) console.warn(`Tablo without finishing date`, tablo); tablo.Issues.push('No finishing year') }
         else if ((tablo.FinishedAt ?? 0) < 1950)

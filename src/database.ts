@@ -52,7 +52,6 @@ export class DataBase {
                     Grade: tablo.Grade,
 
                     Ofo: null,
-                    OfoReference: null,
 
                     Students: tablo.Students ?? null,
                     Groups: tablo.Groups ?? null,
@@ -74,7 +73,6 @@ export class DataBase {
                     Grade: tablo.Grade,
 
                     Ofo: null,
-                    OfoReference: null,
 
                     Students: tablo.Students ?? null,
                     Type: 'SCHOOL',
@@ -88,13 +86,6 @@ export class DataBase {
                     processedClass.Ofo = [ tablo.Ofo.trim() ]
                 } else if (typeof tablo.Ofo === 'number') {
                     if (logs) console.warn('No teacher specified', tablo.Ofo, tablo)
-                    /*
-                    const ref: Teacher | null = this.GetTeacher(tablo.Ofo ?? -1)
-                    if (ref) {
-                        processedClass.OfoReference = ref
-                        processedClass.Ofo = ref.Name.ToString()
-                    }
-                    */
                 } else {
                     processedClass.Ofo = tablo.Ofo
                 }

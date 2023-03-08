@@ -27,4 +27,18 @@ export function RequestAsync(url: string, method: 'GET' | 'POST', timeout: numbe
     catch (error: any) { reject(error); return }
 })}
 
+export function CheckUrl(url: string, timeout: number = 0): Promise<number> { return new Promise((resolve, reject) => {
+    const req = new XMLHttpRequest()
+    req.timeout = timeout
+    req.onreadystatechange = () => { if (req.readyState === 4) resolve(req.status) }
+    req.ontimeout = () => reject(new Error(`Request timeout, readyState: ${req.readyState}, status: ${req.status}`))
+    req.onerror = () => reject(new Error(`Request error, readyState: ${req.readyState}, status: ${req.status}`))
+
+    try { req.open('GET', url) }
+    catch (error: any) { reject(error); return }
+
+    try { req.send() }
+    catch (error: any) { reject(error); return }
+})}
+
 export type RequestError = Error | DOMException

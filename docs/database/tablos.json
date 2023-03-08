@@ -6,35 +6,26 @@
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2013,
         "Ofo": "Murvai Mónika",
-        "Department": -1,
+        "Department": "Informatikai szakmacsoport",
         "Image": "2013_12B.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2013,
         "Ofo": "Varga Imre",
-        "Department": -1,
+        "Department": "Informatikai szakmacsoport",
         "Image": "2013_13C.jpg",
-        "Sources": [ "SCAN" ],
+        "Sources": [ "SCAN", "EXCEL TABLE (NEW)" ],
         "Other": [ "Angol nyelv előkészítő" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2014,
         "Ofo": "Klucsics Sándor",
-        "Department": "Gépész Szakmacsoport",
+        "Department": "Gépészeti szakmacsoport",
         "Image": "2014_12A.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 0, "Sub": null },
-        "StartedAt": 2010,
-        "FinishedAt": 2014,
-        "Ofo": -1,
-        "Department": 4,
-        "Image": "2014_.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -43,15 +34,6 @@
         "Department": "Gépész Szakmacsoport",
         "Image": "2015_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
-    },
-    {
-        "Grade": { "Grade": 0, "Sub": null },
-        "StartedAt": 2011,
-        "FinishedAt": 2015,
-        "Ofo": "Fölker Csaba",
-        "Department": 4,
-        "Image": "2015_.jpg",
-        "Sources": [ "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -97,58 +79,60 @@
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2012,
         "Ofo": "Krámer Judit",
-        "Department": "Informatikai Tagozat",
+        "Department": "Informatikai szakmacsoport",
         "Image": "2012_12B.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2009,
         "Ofo": "Pap Csaba",
-        "Department": -1,
+        "Department": "Informatikai szakmacsoport",
         "Image": "2009_12B.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2010,
         "Ofo": "Tulkán Zsolt",
-        "Department": "Gépész Szakmacsoport",
+        "Department": "Gépészeti Szakmacsoport",
         "Image": "2010_12A.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
-        "Grade":
-        { "Grade": 13, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2010,
         "Ofo": [ "Czepó Mihályné", "Csizmadia Judit" ],
-        "Department": -1,
+        "Department": "Informatikai szakmacsoport",
         "Image": "2010_13C.jpg",
-        "Sources": [ "SCAN" ]
+        "Sources": [ "SCAN", "EXCEL TABLE (NEW)" ],
+        "Other": [
+            "Nyelvi előkészítő"
+        ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2011,
         "Ofo": "Gáspár Piroska",
-        "Department": 0,
+        "Department": "Gépészeti szakmacsoport",
         "Image": "2011_12A.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2011,
         "Ofo": "Bertalan Zoltán",
-        "Department": -1,
+        "Department": "Informatikai szakmacsoport",
         "Image": "2011_12B.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2013,
-        "Ofo": "Pap Csaba | Papp Csaba",
-        "Department": "Gépész",
+        "Ofo": "Papp Csaba",
+        "Department": "Gépészeti szakmacsoport",
         "Image": "2013_12A.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -179,9 +163,9 @@
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2022,
         "Ofo": [ "Szijjártó Sándor", "Sánta Hunor", "Bozsó Katalin" ],
-        "Department": "Rendészeti",
+        "Department": "Rendészet és közszolgálat ágazat",
         "Image": "2022_12E.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -203,9 +187,9 @@
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2021,
         "Ofo": [ "Petruska Gabriella", "Sullay Csaba" ],
-        "Department": "Rendészeti",
+        "Department": "Rendészet és Közszolgálat ágazat",
         "Image": "2021_12E.jpg",
-        "Sources": [ "SCAN", "DOCS & EXCEL TABLE" ]
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
@@ -235,7 +219,6 @@
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2008,
         "Ofo": "Dóczi Zita",
-        "Department": -1,
         "Image": "2008_12B.jpg",
         "Students": [
             "Bugyi Dániel", 
@@ -317,6 +300,7 @@
             "Varga Imre Zoltán", 
             "Vári Tamás"
         ],
+        "Image": "1990_4B.png",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -355,6 +339,8 @@
             "Tóth László", 
             "Vodila Zoltán"
         ],
+        "Department": "Épületgépész",
+        "Image": "1991_4B.png",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -388,6 +374,7 @@
             "Vida Imre"
         ],
         "Type": "SCHOOL",
+        "Department": "Gépgyártás-technológiai technikus szak",
         "Image": "1992_4A.jpg",
         "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
@@ -427,8 +414,10 @@
             "Zolnai György", 
             "Zsíros Attila"
         ],
+        "Image": "1992_4B.png",
+        "Department": "Épületgépészeti-technikusi szak",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -473,8 +462,10 @@
             "Vagi Zoltán", 
             "Zelenyánszki Pál"
         ],
+        "Image": "1993_4A.png",
+        "Department": "Gépgyártás-technológiai ágazat",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "SCAN" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -761,6 +752,8 @@
             "Weber Károly", 
             "Zsóri Tibor"
         ],
+        "Department": "Informatika és minőségbiztosítás szak",
+        "Image": "1996_4B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -905,6 +898,7 @@
             "Tóth Ferenc", 
             "Vad Lajos"
         ],
+        "Image": "1997_12C.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1957,8 +1951,9 @@
             "Zleovszki Ákos"
         ],
         "Type": "SCHOOL",
+        "Department": "Informatika Szakmacsoport",
         "Image": "2007_12C.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2008,
@@ -3055,15 +3050,18 @@
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2009,
         "Ofo": "Pataj Zsuzsanna",
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Department": "Gépészeti szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2009,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Ofo": [ "Béresné Juhász Ágnes", "Sarusi József" ],
+        "Department": "Informatikai szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
+        "Other": [
+            "Nyelvi előkészítő"
+        ]
     },
 
     {
@@ -3071,45 +3069,38 @@
         "FinishedAt": 2010,
         "Ofo": "Halmosiné Kiss Erzsébet",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2010,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2011,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Ofo": "Fölker Csaba",
+        "Department": "Informatikai szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
+        "Image": "2011_13C.jpg",
+        "Other": [
+            "Angol nyelvi előkészítő"
+        ]
     },
 
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2012,
         "Ofo": "Pálfi István",
-        "Department": "Gépész",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Department": "Gépészeti szakmacsoport",
+        "Image": "2012_12A.jpg",
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2012,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
-    },
-
-    {
-        "Grade": { "Grade": 12, "Sub": "C" },
-        "FinishedAt": 2013,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Ofo": [ "Béládi Csaba", "Hrabovszki Ildikó" ],
+        "Department": "Informatikai szakmacsoport",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
+        "Other": [
+            "Nyelvi előkészítő"
+        ]
     },
 
     {
@@ -3117,14 +3108,19 @@
         "FinishedAt": 2014,
         "Ofo": "Tulkán Zsolt",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Image": "2014_12B.jpg",
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
-        "Grade": { "Grade": 12, "Sub": "C" },
+        "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2014,
-        "Ofo": -1,
-        "Department": -1,
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Ofo": "Kocsondi Éva",
+        "Department": "Informatikai szakmacsoport",
+        "Image": "2014_13C.jpg",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
+        "Other": [
+            "Nyelvi előkészítő"
+        ]
     },
 
     {
@@ -3132,7 +3128,8 @@
         "FinishedAt": 2015,
         "Ofo": "Fölker Csaba",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
+        "Image": "2015_12B.jpg",
+        "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 13, "Sub": "C" },
@@ -3157,6 +3154,7 @@
         "FinishedAt": 2017,
         "Ofo": "Hugyecz Eszter",
         "Department": "Informatika ágazat",
+        "Image": "2017_12B.jpg",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
@@ -3189,6 +3187,7 @@
         "FinishedAt": 2020,
         "Ofo": "Klucsics Sándor",
         "Department": "Gépészet ágazat",
+        "Image": "2020_12A.jpg",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
@@ -3198,20 +3197,21 @@
         "Ofo": "Virág Barbara Szilvia",
         "Department": "Gépész Ágazat",
         "Image": "2021_12A.jpg",
-        "Sources": [ "DOCS & EXCEL TABLE", "SCAN" ]
+        "Sources": [ "DOCS & EXCEL TABLE", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2021,
         "Ofo": "Földi Zsolt",
         "Department": "Informatika",
-        "Sources": [ "DOCS & EXCEL TABLE" ]
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "F" },
         "FinishedAt": 2021,
         "Ofo": [ "Benkőné Balogh Szilvia", "Kovács Jánosné" ],
         "Department": "Rendészet és közszolgálat ágazat",
+        "Image": "2021_12F.jpg",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
@@ -3250,8 +3250,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2023,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": null,
+        "Department": null,
         "Students": [
             "Bacsai Máté", 
             "Balázs Nándor Mátyás", 
@@ -3286,8 +3286,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2023,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": null,
+        "Department": null,
         "Students": [
             "Benyó András", 
             "Budai Lili", 
@@ -3323,8 +3323,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2023,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": null,
+        "Department": null,
         "Students": [
             "Albert Viktor", 
             "Bereczki Gábor Balázs", 
@@ -3363,8 +3363,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2023,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": null,
+        "Department": null,
         "Students": [
             "Ancsin Balázs", 
             "Balázs Anita Nikolett", 
@@ -3393,8 +3393,8 @@
     {
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2023,
-        "Ofo": -1,
-        "Department": -1,
+        "Ofo": null,
+        "Department": null,
         "Students": [
             "Balázs Gergely", 
             "Bartyik Viktória", 

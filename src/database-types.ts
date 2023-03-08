@@ -8,25 +8,26 @@ export namespace RawTypes {
         /** Year number */
         FinishedAt: number
 
-        /** Ofo ID or name */
-        Ofo?: number | string | string[]
+        /** Ofo(s) name */
+        Ofo?: string | string[]
 
         Sources?: string[]
     }
 
     export interface SimpleClass extends BaseClass {
         Type: 'SCHOOL'
+        Department?: string
         Students?: string[]
     }
 
     export interface TechnicalClass extends BaseClass {
         Type?: 'TECHNICAL'
         /** Department ID */
-        Department?: number | string
+        Department?: string
         Students?: string[]
         Groups?: {
             Students: string[]
-            Department: number | string
+            Department: string
         }[]
     }
 
@@ -107,10 +108,8 @@ export interface BaseClass extends SchoolStatusData {
     /** Year number */
     FinishedAt: number
 
-    /** Ofo ID or name */
+    /** Ofos */
     Ofo: string[] | null
-    /** Ofo name reference */
-    OfoReference: Teacher | null
 
     Sources?: string[]
 }

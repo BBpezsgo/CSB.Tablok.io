@@ -52,10 +52,8 @@ export interface BaseClass extends SchoolStatusData {
     /** Year number */
     FinishedAt: number
 
-    /** Ofo ID or name */
+    /** Ofos */
     Ofo: string[] | null
-    /** Ofo name reference */
-    OfoReference: Teacher | null
 }
 
 export interface SimpleClass extends BaseClass {
