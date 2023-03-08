@@ -423,7 +423,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1993,
-        "Ofo": "Maczik Mihály",
+        "Ofo": [ "Galoviczné Hornok Anikó", "Maczik Mihály" ],
         "Students": [
             "Aradi Árpád", 
             "Aradszki János", 
@@ -464,9 +464,9 @@
             "Zelenyánszki Pál"
         ],
         "Image": "1993_4A.png",
-        "Department": "Gépgyártás-technológiai ágazat",
+        "Department": "Gépgyártás-technológiai technikusi szak",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -586,7 +586,8 @@
         ],
         "Type": "SCHOOL",
         "Image": "1994_4B.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Department": "Épületgépészeti technikusi szak",
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -620,8 +621,9 @@
             "Zsilák Edit"
         ],
         "Type": "SCHOOL",
+        "Department": "Gépgyártás-technológiai-számítástechnikai technikusi szak",
         "Image": "1995_4A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -721,7 +723,8 @@
         ],
         "Type": "SCHOOL",
         "Image": "1996_4A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Department": "Gépgyártás-technológia és számítástechnikai technikusi szak",
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -753,10 +756,10 @@
             "Weber Károly", 
             "Zsóri Tibor"
         ],
-        "Department": "Informatika és minőségbiztosítás szak",
+        "Department": "Informatika és minőségbiztosítási technikusi szak",
         "Image": "1996_4B.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -902,7 +905,8 @@
         ],
         "Image": "1997_12C.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Információ- és számítástechnikai  technikusi szak",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 1998,
