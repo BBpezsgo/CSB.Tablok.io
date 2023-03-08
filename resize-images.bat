@@ -1,2 +1,2 @@
 set PATH="C:\\Users\\banszkybalazsferenc\\Documents\\GitHub\\CSB.Tablok.io\\Node\\Node\\";%PATH%
-npm run build
+npm run resize-images
