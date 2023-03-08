@@ -40,7 +40,7 @@
     cursor: pointer;
     border-radius: 50%;
     transition: background 200ms outline 200ms;
-    position: fixed;
+    float: right;
     right: 35px;
     text-shadow: #fff 0px 0px 10px;
 }
