@@ -76,19 +76,15 @@ export class DataBase {
 
                     Students: tablo.Students ?? null,
                     Type: 'SCHOOL',
+                    Department: tablo.Department ? tablo.Department.toString() : undefined,
 
                     Sources: tablo.Sources,
                 }
             }
 
             if (tablo.Ofo) {
-                if (typeof tablo.Ofo === 'string') {
-                    processedClass.Ofo = [ tablo.Ofo.trim() ]
-                } else if (typeof tablo.Ofo === 'number') {
-                    if (logs) console.warn('No teacher specified', tablo.Ofo, tablo)
-                } else {
-                    processedClass.Ofo = tablo.Ofo
-                }
+                if (typeof tablo.Ofo === 'string') processedClass.Ofo = [ tablo.Ofo.trim() ]
+                else processedClass.Ofo = tablo.Ofo
 
                 if (processedClass.Ofo) for (let ofo of processedClass.Ofo) {
                     if (this.GetTeacher(ofo) === -1) this.teachers.push({

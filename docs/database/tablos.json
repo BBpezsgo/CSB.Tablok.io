@@ -251,7 +251,8 @@
             "Vincze Éva Nóra"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "SCAN", "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "SCAN", "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -826,8 +827,9 @@
             "Uhljár Károly"
         ],
         "Type": "SCHOOL",
+        "Department": "Gépipari minőségbiztosítás-számítástechnikai technikusi szak",
         "Image": "1997_12A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -1286,7 +1288,7 @@
     {
         "FinishedAt": 2001,
         "Grade": { "Grade": 12, "Sub": "C" },
-        "Ofo": "Tulkán Zsolt",
+        "Ofo": [ "Kovácsné Hajdú Ágnes", "Tulkán Zsolt" ],
         "Students": [
             "Bordács Róbert", 
             "Bukva Viktor", 
@@ -1326,8 +1328,9 @@
             "Zsigovics Anett"
         ],
         "Type": "SCHOOL",
+        "Department": "Informatikai szakmacsoport",
         "Image": "2001_12C.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2002,
@@ -1557,9 +1560,10 @@
             "Zsibrita Fecske János", 
             "Zsiga Zsolt"
         ],
+        "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
         "Image": "2004_12A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2004,
@@ -3136,8 +3140,9 @@
         "FinishedAt": 2015,
         "Ofo": "Czepó Mihályné",
         "Department": "Informatikai szakmacsoport",
-        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
-        ,"Other": [ "Nyelvi előkészítő" ]
+        "Image": "2015_13C.jpg",
+        "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
+        "Other": [ "Nyelvi előkészítő" ]
     },
 
     {
@@ -3145,6 +3150,7 @@
         "FinishedAt": 2016,
         "Ofo": "Pataj Zsuzsanna",
         "Department": "Informatikai szakmacsoport",
+        "Image": "2016_13C.jpg",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
         "Other": [ "Nyelvi előkészítő" ]
     },

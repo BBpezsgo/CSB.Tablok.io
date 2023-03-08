@@ -116,6 +116,7 @@ export interface BaseClass extends SchoolStatusData {
 
 export interface SimpleClass extends BaseClass {
     Type: 'SCHOOL'
+    Department?: string
     Students: string[] | null
 }
 
