@@ -17,7 +17,9 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         }
     }
     */
-    
+
+    const departments: Map<string, number> = new Map<string, number>()  
+
     for (let i = 0; i < database.tablos.length; i++) {
         let tablo: CheckedTablo = {
             ...database.tablos[i],
@@ -100,8 +102,18 @@ export function CheckDatabase(database: DataBase, log: boolean) {
                 }
             }
         }
+        if (tablo.Department) {
+            if (departments.has(tablo.Department)) {
+                departments.set(tablo.Department, (departments.get(tablo.Department) ?? 0) + 1)
+            } else {
+                departments.set(tablo.Department, 1)
+            }
+        }
+
         database.tablos[i] = tablo
     }
+
+    departments.forEach((value, key) => { if (value < 10) console.log(`Department "${key}" only exists ${value} times`) })
 }
 
 export function Main(database: DataBase) {

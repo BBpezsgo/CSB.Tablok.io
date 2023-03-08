@@ -31,7 +31,7 @@
 
     {{#if Image}}
     <td>
-        <a href="./img/tablos/{{Image}}" target="_blank">{{Image}}</a>
+        <a href="./img/tablos/{{Image}}" target="_blank">{{Image}} {{#if IsScanned}}{{else}}<img style="user-select:none" src="./img/check/error.png" title="This image is not scanned">{{/if}}</a>
     {{else}}
     <td style="background-color: #f008;">
     {{/if}}

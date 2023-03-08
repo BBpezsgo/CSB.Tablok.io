@@ -109,6 +109,7 @@ export class DataBase {
             const processedTablo: Tablo = {
                 ...processedClass,
                 Image: tablo.Image ? encodeURI(tablo.Image.trim()) : undefined,
+                IsScanned: tablo.Image ? ((tablo.NotScanned === true) ? false : true) : undefined,
             }
             this.tablos.push(processedTablo)
         }

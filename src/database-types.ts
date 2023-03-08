@@ -36,6 +36,7 @@ export namespace RawTypes {
     export type Tablo = Class & {
         /** Image URL */
         Image?: string
+        NotScanned?: true
     }
 }
 
@@ -137,6 +138,7 @@ export type Tablo = Class & {
     Image?: string
     /** Tablo index */
     ID?: number
+    IsScanned?: boolean
 }
 
 export type CheckedTablo = Tablo & {

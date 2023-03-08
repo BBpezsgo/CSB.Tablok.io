@@ -61,6 +61,7 @@ async function Main() {
         for (let i = 0; i < Database.tablos.length; i++) {
             const tablo = Database.tablos[i]
             if (!tablo.Image) continue
+            if (!tablo.IsScanned) continue
 
             if (lastYearPanel === 0) {
                 tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
