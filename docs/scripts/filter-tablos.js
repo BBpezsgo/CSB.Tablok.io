@@ -1,6 +1,11 @@
 // @ts-nocheck
 
-function Filter() {
+function Filter(iteration = 0) {
+    if (iteration >= 2) {
+        if (window.RefreshTablos) window.RefreshTablos()
+        return
+    }
+
     /** @type {import('./filter').DataBase} */
     const database = window.Database
 
@@ -100,4 +105,6 @@ function Filter() {
 
     const noResultElement = document.getElementById('no-result')
     if (noResultElement) noResultElement.style.display = noResult ? '' : 'none'
+
+    Filter(iteration + 1)
 }

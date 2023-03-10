@@ -11,6 +11,8 @@ declare global {
         Database: DataBase
 
         DisplayOfoSuggestion: (name: string) => void
+
+        RefreshTablos: () => void
     }
 }
 
@@ -208,6 +210,7 @@ async function Main() {
                 }
             }
 
+            window.RefreshTablos = RefreshTablos
             window.addEventListener('scroll', RefreshTablos)
             RefreshTablos()
         }, 1000)
