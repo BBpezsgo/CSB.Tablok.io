@@ -65,23 +65,24 @@ async function Main() {
             if (!tablo.Image) continue
             if (!tablo.IsScanned) continue
 
-            if (lastYearPanel === 0) {
-                tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
-                lastYearPanel = tablo.FinishedAt
-            } else if (tablo.FinishedAt - lastYearPanel < -3) {
-                tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
-                lastYearPanel = tablo.FinishedAt
-            }
-        
-            const newElement = Utilities.Template('tablo', tablo)
-            if (false && tablo.Image) {
-                const img = new Image()
-                img.onload = () => { newElement.style.height = (img.height / newElement.clientWidth) + 'px' }
-                img.src = tablo.Image ?? ''
-            }
-            container?.appendChild(newElement)
+            HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image)
+                .then(code => {
+                    if (code !== 200) return
+
+                    if (lastYearPanel === 0) {
+                        tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
+                        container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                        lastYearPanel = tablo.FinishedAt
+                    } else if (tablo.FinishedAt - lastYearPanel < -3) {
+                        tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
+                        container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                        lastYearPanel = tablo.FinishedAt
+                    }
+                
+                    const newElement = Utilities.Template('tablo', tablo)
+                    container?.appendChild(newElement)
+                })
+                .catch(() => { })
         }
         tablosElement.appendChild(Utilities.Template('no-result', { }))
     }
