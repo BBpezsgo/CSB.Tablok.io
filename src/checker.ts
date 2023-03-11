@@ -41,7 +41,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
                 }
             }
         }
-        if (tablo.Type === 'TECHNICAL' || tablo.Type === 'POSSIBLY_TECHNICAL') if (tablo.Department === 'Ismeretlen') {
+        if (tablo.Department === 'Ismeretlen' || !tablo.Department) {
             if (log) console.warn(`Unknown department ${tablo.Department}`, tablo)
             tablo.Issues.push(`Unknown department ${tablo.Department}`)
         }
