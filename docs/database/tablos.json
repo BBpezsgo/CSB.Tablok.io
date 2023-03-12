@@ -301,7 +301,7 @@
             "Varga Imre Zoltán", 
             "Vári Tamás"
         ],
-        "Image": "1990_4B.png",
+        "Image": "1990_4B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -341,7 +341,7 @@
             "Vodila Zoltán"
         ],
         "Department": "Épületgépész",
-        "Image": "1991_4B.png",
+        "Image": "1991_4B.jpg",
         "NotScanned": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
@@ -416,7 +416,7 @@
             "Zolnai György", 
             "Zsíros Attila"
         ],
-        "Image": "1992_4B.png",
+        "Image": "1992_4B.jpg",
         "NotScanned": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
@@ -465,7 +465,7 @@
             "Vagi Zoltán", 
             "Zelenyánszki Pál"
         ],
-        "Image": "1993_4A.png",
+        "Image": "1993_4A.jpg",
         "Department": "Gépgyártás-Technológiai Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
@@ -510,7 +510,7 @@
             "Valuk Tibor", 
             "Zalai Csaba"
         ],
-        "Image": "1993_4B.png",
+        "Image": "1993_4B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -549,7 +549,7 @@
             "Tripa Zoltán", 
             "Varga István"
         ],
-        "Image": "1994_4A.png",
+        "Image": "1994_4A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -657,7 +657,7 @@
             "Varga Zoltan", 
             "Vida Zoltán"
         ],
-        "Image": "1995_4B.png",
+        "Image": "1995_4B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -690,7 +690,7 @@
             "Vaszkó Péter", 
             "Vozár János"
         ],
-        "Image": "1995_4C.png",
+        "Image": "1995_4C.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -801,7 +801,7 @@
             "Vaszkó Ambrus", 
             "Zahorán Tibor"
         ],
-        "Image": "1996_4C.png",
+        "Image": "1996_4C.jpg",
         "Department": "Informatika és Számítástechnika",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN" ]
@@ -880,7 +880,7 @@
             "Vor István", 
             "Zsidó Norbert Ferenc"
         ],
-        "Image": "1997_4B.png",
+        "Image": "1997_4B.jpg",
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN" ]
@@ -948,7 +948,7 @@
             "Tóth Gábor", 
             "Uhrin Tamás György"
         ],
-        "Image": "1998_12A.png",
+        "Image": "1998_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -988,7 +988,6 @@
             "Tokai Lajos", 
             "Tóth Anikó"
         ],
-        "Image": "1998_12B.png",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1028,7 +1027,6 @@
             "Varga Lajos", 
             "Vozár István"
         ],
-        "Image": "1998_12C.png",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1060,7 +1058,7 @@
             "Uhrin Ákos", 
             "Zsiros Norbert"
         ],
-        "Image": "1999_12A.png",
+        "Image": "1999_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1098,7 +1096,7 @@
             "Unyatyinszki Tamás", 
             "Zalai Éva"
         ],
-        "Image": "1999_12B.png",
+        "Image": "1999_12B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1133,7 +1131,7 @@
             "Uhrin Zsolt", 
             "Varga Ádám"
         ],
-        "Image": "2000_12A.png",
+        "Image": "2000_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1176,7 +1174,7 @@
             "Vári Sándor", 
             "Veres István"
         ],
-        "Image": "2000_12B.png",
+        "Image": "2000_12B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1217,7 +1215,7 @@
             "Szula János", 
             "Velő Katalin"
         ],
-        "Image": "2000_12C.png",
+        "Image": "2000_12C.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1260,7 +1258,7 @@
             "Vastag József", 
             "Viplak Vilmos"
         ],
-        "Image": "2001_12A.png",
+        "Image": "2001_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1307,7 +1305,7 @@
             "Zahorán Csaba", 
             "Zsiros Tamás"
         ],
-        "Image": "2001_12B.png",
+        "Image": "2001_12B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1698,6 +1696,7 @@
             "Takács Imre", 
             "Takács Norbert"
         ],
+        "Image": "2005_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1710,7 +1709,7 @@
             "Dina Anna", 
             "Földi Imre Elek", 
             "Gál Zoltán", 
-            "Hajdu Péter", 
+            "Hajdú Péter", 
             "Kepenyes Csaba", 
             "Kisari Norbert", 
             "Kocsor Gábor", 
@@ -1746,7 +1745,7 @@
             "Gál Zsolt", 
             "Gombos Gergő", 
             "Gyebrovszky Zoltán", 
-            "Hajdu Mihály", 
+            "Hajdú Mihály", 
             "Hallai Attila", 
             "Józsi Sándor", 
             "Kapusi József", 
@@ -1763,6 +1762,7 @@
             "Szabó Ambrus", 
             "Székely Tamás Dávid"
         ],
+        "Image": "2005_12C.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1838,6 +1838,7 @@
             "Túsz Antal Gergő", 
             "Uhrin Balázs"
         ],
+        "Image": "2006_12B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1878,6 +1879,7 @@
             "Varga Tibor", 
             "Vidiczki István"
         ],
+        "Image": "2006_12C.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1911,6 +1913,7 @@
             "Ujvári Gábor", 
             "Veres Mihály"
         ],
+        "Image": "2007_12A.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
@@ -1949,6 +1952,7 @@
             "Vidó Lajos", 
             "Wieszner Vilmos"
         ],
+        "Image": "2007_12B.jpg",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV" ]
     },
