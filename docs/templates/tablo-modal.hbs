@@ -1,23 +1,28 @@
 <div id="tablo-modal" class="" onclick="if (event.srcElement === this) CloseTabloModal()">
     <div>
         <div id="tablo-modal-close" onclick="CloseTabloModal()">X</div>
-        <h3>Tabló részletei</h3>
-        <h1>{{Grade.Grade}}.{{Grade.Sub}} osztály</h1>
-        {{#if Department}}
-        <h2>{{Department}} szak</h2>
-        {{/if}}
+        <div style="margin-top:40px;padding-bottom:2px;background-color:#999;border-radius:4px;overflow:hidden">
+            <h1 style="background-color:#00BBFF;color:#fff;border-radius:4px;box-shadow:#0006 0px 0px 8px;margin-top:0px">{{Grade.Grade}}.{{Grade.Sub}} osztály</h1>
+            {{#if Department}}
+            <h2 style="color:#fff">{{Department}} szak</h2>
+            {{/if}}
+        </div>
         {{#if Ofo}}
-        <h2>Osztályfőnök(ök):</h2>
-        <ul>
-            {{#each Ofo}}
-            <li>{{this}}</li>
-            {{/each}}
-        </ul>
+        <div style="border:1px solid #888;margin:16px 32px;border-radius:4px;padding:0 8px;box-shadow:#0004 1px 1px 4px">
+            <h2>Osztályfőnök(ök):</h2>
+            <ul>
+                {{#each Ofo}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
         {{/if}}
         {{#if CurrentPrincipal}}
-        <h2>Igazgató:</h2>
-        <span>{{CurrentPrincipal.Name}}</span>
+        <div style=";border:1px solid #888;margin:16px 32px;border-radius:4px;padding:0 8px 12px 8px;box-shadow:#0004 1px 1px 4px">
+            <h2>Igazgató:</h2>
+            <span>{{CurrentPrincipal.Name}}</span>
+        </div>
         {{/if}}
-        <img src="img/tablos/{{Image}}">
+        <img src="img/tablos/{{Image}}" style="border:1px solid #888;border-radius:4px;box-shadow:#0004 1px 1px 4px">
     </div>
 </div>
