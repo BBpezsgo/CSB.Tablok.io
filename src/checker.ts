@@ -51,18 +51,20 @@ export function CheckDatabase(database: DataBase, log: boolean) {
             if (log) console.warn(`Unknown teacher ${tablo.Ofo}`, tablo)
             tablo.Issues.push(`Unknown teacher ${tablo.Ofo}`)
         }
-        if (!tablo.Image)
+        if (!tablo.IsCube) { if (!tablo.Image)
         { if (log) console.warn(`Tablo without image`, tablo); tablo.Issues.push('No image') }
         else {
-            if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image)
+            if (!tablo.IsCube) if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image)
                 .then(code => {
                     if (code === 200) return
+                    if (!tablo.IsCube)
                     console.warn('Image does not have a low-res version', tablo.Image, 'HTTP ' + code)
                 })
                 .catch(error => {
+                    if (!tablo.IsCube)
                     console.warn('Image does not have a low-res version', tablo.Image, error)
                 })
-        }
+        }}
         if (!tablo.FinishedAt)
         { if (log) console.warn(`Tablo without finishing date`, tablo); tablo.Issues.push('No finishing year') }
         else if ((tablo.FinishedAt ?? 0) < 1950)
@@ -80,7 +82,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         for (let j = 0; j < database.tablos.length; j++) {
             if (i === j) continue
             const otherTablo = database.tablos[j]
-            if (tablo.Image == otherTablo.Image && tablo.Image !== 'No Image' && tablo.Image)
+            if (!tablo.IsCube && !otherTablo.IsCube) if (tablo.Image == otherTablo.Image && tablo.Image !== 'No Image' && tablo.Image)
             { if (log) console.warn('Tablo image used more than once', tablo, otherTablo); tablo.Issues.push('Image used more than once') }
             if (tablo.StartedAt && tablo.StartedAt == otherTablo.StartedAt)
             {

@@ -47,7 +47,7 @@ function Filter(iteration = 0) {
         const tablo = database.tablos[i]
         const element = document.getElementById('tablo-' + tablo.ID)        
         if (!element) continue
-        element.style.display = 'unset'
+        element.style.display = ''
         if (!haveFilter) continue
 
         const hide = () => {

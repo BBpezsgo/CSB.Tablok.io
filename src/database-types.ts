@@ -33,11 +33,13 @@ export namespace RawTypes {
 
     export type Class = TechnicalClass | SimpleClass
 
-    export type Tablo = Class & {
-        /** Image URL */
-        Image?: string
-        NotScanned?: true
-    }
+    export type BasicTablo = { /** Image URL */ Image?: string; IsCube: undefined }
+    export type CubeTablo = { /** Cube image URLs */ Cube: string[]; IsCube: true }
+
+    export type Tablo =
+        Class &
+        (BasicTablo | CubeTablo)
+        & { NotScanned?: true }
 }
 
 export interface Teacher {
@@ -133,9 +135,10 @@ export interface TechnicalClass extends BaseClass {
 
 export type Class = SimpleClass | TechnicalClass   
 
-export type Tablo = Class & {
-    /** Image URL */
-    Image?: string
+export type BasicTablo = {/** Image URL */ Image?: string; IsCube: false }
+export type CubeTablo = {/** Cube image URLs */ Cube: string[]; IsCube: true }
+
+export type Tablo = Class & (BasicTablo | CubeTablo) & {
     /** Tablo index */
     ID?: number
     IsScanned?: boolean

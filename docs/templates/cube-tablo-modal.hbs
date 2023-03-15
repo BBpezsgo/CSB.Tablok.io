@@ -1,0 +1,122 @@
+<div id="tablo-modal" style="width:100%" class="" onclick="if (event.srcElement === this) CloseTabloModal()">
+    <div style="width:100%">
+        <div id="tablo-modal-close" onclick="CloseTabloModal()">X</div>
+        <div style="margin-top:40px;padding-bottom:2px;background-color:#999;border-radius:4px;overflow:hidden">
+            <h1 style="background-color:#00BBFF;color:#fff;border-radius:4px;box-shadow:#0006 0px 0px 8px;margin-top:0px">{{Grade.Grade}}.{{Grade.Sub}} osztály</h1>
+            {{#if Department}}
+            <h2 style="color:#fff">{{Department}} szak</h2>
+            {{/if}}
+        </div>
+        {{#if Ofo}}
+        <div style="border:1px solid #888;margin:16px 32px;border-radius:4px;padding:0 8px;box-shadow:#0004 1px 1px 4px">
+            <h2>Osztályfőnök(ök):</h2>
+            <ul>
+                {{#each Ofo}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/if}}
+        {{#if CurrentPrincipal}}
+        <div style="border:1px solid #888;margin:16px 32px;border-radius:4px;padding:0 8px 12px 8px;box-shadow:#0004 1px 1px 4px">
+            <h2>Igazgató:</h2>
+            <span>{{CurrentPrincipal.Name}}</span>
+        </div>
+        {{/if}}
+        <div class="cube-tablo-modal" style="border:1px solid #888;border-radius:4px;box-shadow:#0004 1px 1px 4px">
+            <style>
+                * {
+                    --image-1: url("./img/tablos/2008_12A/bottom1.jpg");
+                    --image-2: url("./img/tablos/2008_12A/bottom2.jpg");
+                    --image-3: url("./img/tablos/2008_12A/bottom3.jpg");
+                    --image-4: url("./img/tablos/2008_12A/top1.jpg");
+                    --image-5: url("./img/tablos/2008_12A/top2.jpg");
+                    --image-6: url("./img/tablos/2008_12A/top3.jpg");
+
+                    --size: 20em;
+                }
+
+                .cube-tablo-modal {
+                    width: 100%;
+                    height: 600px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                }
+
+                .cube-tablo-modal .cube-container {
+                    width: var(--size);
+                    height: var(--size);
+                    text-align: center;
+                    perspective: 45em;
+                }
+
+                .cube-tablo-modal .cube {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transform-style: preserve-3d;
+                }
+
+                .cube-tablo-modal .cube-side {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    border: 1px solid black;
+                    background-position: center;
+                    background-size: cover;
+                    transition: 200ms filter;
+                }
+
+                .cube-tablo-modal .cube-side:hover {
+                    filter: brightness(1.2);
+                }
+
+                .cube-tablo-modal .cube-side:nth-child(1) {
+                    transform: rotateY(0deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-1);
+                }
+                .cube-tablo-modal .cube-side:nth-child(2) {
+                    transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-2);
+                }
+                .cube-tablo-modal .cube-side:nth-child(3) {
+                    transform: rotateY(180deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-3);
+                }
+                .cube-tablo-modal .cube-side:nth-child(4) {
+                    transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-4);
+                }
+                .cube-tablo-modal .cube-side:nth-child(5) {
+                    transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-5);
+                }
+                .cube-tablo-modal .cube-side:nth-child(6) {
+                    transform: rotateX(90deg) translateZ(calc(var(--size) / 2));
+                    background-image: var(--image-6);
+                }
+
+                .cube-tablo-modal .cube {
+                    transition: transform 100ms linear;
+                }
+
+                .cube-tablo-modal .cube:hover {
+                    
+                }
+            </style>
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="cube-side"></div>
+                    <div class="cube-side"></div>
+                    <div class="cube-side"></div>
+                    <div class="cube-side"></div>
+                    <div class="cube-side"></div>
+                    <div class="cube-side"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

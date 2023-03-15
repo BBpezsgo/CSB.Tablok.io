@@ -106,12 +106,21 @@ export class DataBase {
                 }
             }
             
-            const processedTablo: Tablo = {
-                ...processedClass,
-                Image: tablo.Image ? encodeURI(tablo.Image.trim()) : undefined,
-                IsScanned: tablo.Image ? ((tablo.NotScanned === true) ? false : true) : undefined,
+            if (tablo.IsCube) {
+                this.tablos.push({
+                    ...processedClass,
+                    Cube: tablo.Cube,
+                    IsScanned: (tablo.NotScanned === true) ? false : true,
+                    IsCube: true,
+                })
+            } else {
+                this.tablos.push({
+                    ...processedClass,
+                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : undefined,
+                    IsScanned: tablo.Image ? ((tablo.NotScanned === true) ? false : true) : undefined,
+                    IsCube: false,
+                })
             }
-            this.tablos.push(processedTablo)
         }
         this.tablos = this.tablos.sort((a, b) => {
             let result = b.FinishedAt - a.FinishedAt

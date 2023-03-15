@@ -1,9 +1,6 @@
 const sharp = require('sharp')
 const fs = require('fs')
 
-const WIDTH = 400
-const HEIGHT = 300
-
 /**
  * @param {string} input
  * @param {string} output
@@ -13,7 +10,7 @@ const HEIGHT = 300
 function ResizeImage(input, output, width, height) {
     return new Promise((resolve, reject) => {
         sharp(input)
-            .resize(WIDTH, HEIGHT)
+            .resize(width, height)
             .toFile(output, (error, info) => {
                 if (error) { reject(error); return }
                 resolve(info)
@@ -54,10 +51,13 @@ function GetSizeText(bytes) {
     { return bytes + suffix }
 }
 
-async function ResizeImages() {
-    const inputFolder = './docs/img/tablos/'
-    const outputFolder = './docs/img/tablos-lowres/'
-
+/**
+ * @param {number} width
+ * @param {number} height
+ * @param {fs.PathLike} inputFolder
+ * @param {fs.PathLike} outputFolder
+ */
+async function ResizeImages(inputFolder, outputFolder, width, height) {
     console.log('Input folder', inputFolder)
     console.log('Output folder', outputFolder)
 
@@ -95,7 +95,7 @@ async function ResizeImages() {
         if (!file.toLocaleLowerCase().endsWith('jpg')) continue
         inputSizeSum += fs.statSync(inputFolder + file).size
         console.log('Resize images' + '\t' + `${Math.round(((i + 1) / inputFiles.length) * 100)}%` + '\t' + file)
-        await ResizeImage(inputFolder + file, outputFolder + file, WIDTH, HEIGHT)
+        await ResizeImage(inputFolder + file, outputFolder + file, width, height)
             .then(info => {
                 outputSizeSum += info.size
             })
@@ -107,4 +107,9 @@ async function ResizeImages() {
     console.log('Total size reduced from', GetSizeText(inputSizeSum), 'to', GetSizeText(outputSizeSum), `(reduced ${Math.round((1 - (outputSizeSum / inputSizeSum)) * 100)}%)`)
 }
 
-ResizeImages()
+(async () => {
+    await ResizeImages('./docs/img/tablos/', './docs/img/tablos-lowres/', 400, 300)
+    
+    console.log('Resize custom images ...')
+    await ResizeImages('./docs/img/tablos/2008_12A/', './docs/img/tablos-lowres/2008_12A/', 150, 150)
+})()

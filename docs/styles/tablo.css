@@ -1,0 +1,51 @@
+.tablo {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-shadow: #000 0px 0px 8px;
+  background-color: #888;
+  font-weight: 1000;
+  font-size: 24px;
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: black; */
+  overflow: hidden;
+  text-overflow: clip;
+  height: 350px;
+  border-radius: 3px;
+  box-shadow: #0008 0px 0px 4px;
+  transition: transform 500ms, box-shadow 500ms, border 500ms, opacity 500ms;
+  cursor: pointer !important;
+  border: 1px solid #fff0;
+}
+
+.tablo * {
+  pointer-events: none;
+}
+
+.tablo.tablo-unloaded {
+  opacity: 0%;
+}
+
+
+.tablo>div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: -24px;
+  opacity: 0;
+  transition: opacity 200ms;
+  background-color: #0008;
+}
+
+.tablo:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: #0006 0px 0px 16px;
+  border: 1px solid #ffff;
+}
+
+.tablo:hover>div {
+  opacity: 1;
+}

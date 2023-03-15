@@ -3480,5 +3480,20 @@
             "Vozár Nimród"
         ],
         "Sources": [ "DOCS" ]
+    },
+    {
+        "Grade": { "Grade": 12, "Sub": "A" },
+        "FinishedAt": 2008,
+        "Ofo": "Kocsondi Éva",
+        "Cube": [
+            "2008_12A/top1.jpg",
+            "2008_12A/top2.jpg",
+            "2008_12A/top3.jpg",
+            "2008_12A/bottom1.jpg",
+            "2008_12A/bottom2.jpg",
+            "2008_12A/bottom3.jpg"
+        ],
+        "IsCube": true,
+        "Sources": [ "SCAN" ]
     }
 ]

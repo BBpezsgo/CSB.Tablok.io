@@ -1,0 +1,94 @@
+<div id="tablo-{{ID}}" class="cube-tablo tablo-unloaded" onclick="OpenTabloModal({{ID}})">
+    <style>
+        * {
+            --image-1: url("#");
+            --image-2: url("#");
+            --image-3: url("#");
+            --image-4: url("#");
+            --image-5: url("#");
+            --image-6: url("#");
+
+            --size: 10em;
+        }
+
+        .cube-tablo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .cube-tablo .cube-container {
+            width: var(--size);
+            height: var(--size);
+            text-align: center;
+            perspective: 45em;
+        }
+
+        .cube-tablo .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .cube-tablo .cube-side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid black;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cube-tablo .cube-side:nth-child(1) {
+            transform: rotateY(0deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-1);
+        }
+        .cube-tablo .cube-side:nth-child(2) {
+            transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-2);
+        }
+        .cube-tablo .cube-side:nth-child(3) {
+            transform: rotateY(180deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-3);
+        }
+        .cube-tablo .cube-side:nth-child(4) {
+            transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-4);
+        }
+        .cube-tablo .cube-side:nth-child(5) {
+            transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-5);
+        }
+        .cube-tablo .cube-side:nth-child(6) {
+            transform: rotateX(90deg) translateZ(calc(var(--size) / 2));
+            background-image: var(--image-6);
+        }
+
+        .cube-tablo .cube {
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+    </style>
+    <div class="cube-container">
+        <div class="cube">
+            <div class="cube-side"></div>
+            <div class="cube-side"></div>
+            <div class="cube-side"></div>
+            <div class="cube-side"></div>
+            <div class="cube-side"></div>
+            <div class="cube-side"></div>
+        </div>
+    </div>
+    <div>
+        <p>{{Grade.Grade}}.{{Grade.Sub}}</p>
+        {{#if Department}}
+        <p>
+            {{Department}} szak
+        </p>
+        {{/if}}
+        <p>{{StartedAt}}-tól/től {{FinishedAt}}-ig</p>
+        <p>{{Ofo}}</p>
+    </div>
+</div>

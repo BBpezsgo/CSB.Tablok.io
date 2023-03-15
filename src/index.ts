@@ -62,6 +62,36 @@ async function Main() {
         let lastYearPanel: number = 0
         for (let i = 0; i < Database.tablos.length; i++) {
             const tablo = Database.tablos[i]
+
+            if (tablo.IsCube) {
+                if (lastYearPanel === 0) {
+                    tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
+                    container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                    lastYearPanel = tablo.FinishedAt
+                } else if (tablo.FinishedAt - lastYearPanel < -3) {
+                    tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
+                    container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                    lastYearPanel = tablo.FinishedAt
+                }
+
+                const cubeTablo = {
+                    ...tablo,
+                    CubeImages: {
+                        'image0': tablo.Cube[0],
+                        'image1': tablo.Cube[1],
+                        'image2': tablo.Cube[2],
+                        'image3': tablo.Cube[3],
+                        'image4': tablo.Cube[4],
+                        'image5': tablo.Cube[5],
+                    }
+                }
+            
+                const newElement = Utilities.Template('cube-tablo', cubeTablo)
+                container?.appendChild(newElement)
+
+                continue
+            }
+
             if (!tablo.Image) continue
             if (!tablo.IsScanned) continue
 
@@ -169,14 +199,124 @@ async function Main() {
         }
     })()
 
+    let TabloTimer: null | NodeJS.Timer = null
+
     window.OpenTabloModal = window.OpenTabloModal || ((id) => {
+        if (TabloTimer) {
+            clearInterval(TabloTimer)
+            TabloTimer = null
+        }
+
         const selectedTablo = Database.tablos[id]
-        Utilities.TemplateAsync('tablo-modal', selectedTablo).then(modal => {
-            modal.classList.add('show')
-            window.document.body.appendChild(modal)
-        })
+        if (selectedTablo.IsCube) {
+            Utilities.TemplateAsync('cube-tablo-modal', selectedTablo).then(modal => {
+                modal.classList.add('show')
+                window.document.body.appendChild(modal)
+
+                const cubeContainer = document.getElementById('tablo-modal')?.getElementsByClassName('cube-tablo-modal')[0] as HTMLElement | undefined
+                const cube = document.getElementById('tablo-modal')?.getElementsByClassName('cube')[0] as HTMLElement | undefined
+                if (!cube || !cubeContainer) return
+
+                const CubeRotation = {
+                    X: 0,
+                    Y: 0,
+                    Z: 0,
+                }
+
+                const FixedCubeRotations = [
+                    { //
+                        X: 0,
+                        Y: 0,
+                        Z: 0,
+                    },
+                    { //
+                        X: 0,
+                        Y: 270,
+                        Z: 0,
+                    },
+                    { //
+                        X: 0,
+                        Y: 180,
+                        Z: 0,
+                    },
+                    { //
+                        X: 0,
+                        Y: 90,
+                        Z: 0,
+                    },
+                    { //
+                        X: 90,
+                        Y: 0,
+                        Z: 0,
+                    },
+                    { //
+                        X: 270,
+                        Y: 0,
+                        Z: 0,
+                    },
+                ]
+                let SelectedSideIndex = -1
+
+                const cubeSides = cube.getElementsByTagName('div')
+                cubeSides.item(0)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 0, 50)
+                    console.log(0)
+                })
+                cubeSides.item(1)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 1, 50)
+                    console.log(1)
+                })
+                cubeSides.item(2)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 2, 50)
+                    console.log(2)
+                })
+                cubeSides.item(3)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 3, 50)
+                    console.log(3)
+                })
+                cubeSides.item(4)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 4, 50)
+                    console.log(4)
+                })
+                cubeSides.item(5)?.addEventListener('click', () => {
+                    setTimeout(() => SelectedSideIndex = 5, 50)
+                    console.log(5)
+                })
+
+                cubeContainer.addEventListener('click', () => { SelectedSideIndex = -1 })
+
+                TabloTimer = setInterval(() => {
+                    if (SelectedSideIndex === -1) {
+                        CubeRotation.X = CubeRotation.X + 1
+                        CubeRotation.Y = CubeRotation.Y + 1
+                        CubeRotation.Z = CubeRotation.Z + 1
+                    } else {
+                        const DiffDeg = function(degA: number, degB: number) {
+                            const mod = (a: number, n: number) => { return a - Math.floor(a / n) * n} 
+                            return mod((degA - degB + 180), 360) - 180
+                        }
+
+                        CubeRotation.X = CubeRotation.X - (DiffDeg(CubeRotation.X, FixedCubeRotations[SelectedSideIndex].X) * 0.2)
+                        CubeRotation.Y = CubeRotation.Y - (DiffDeg(CubeRotation.Y, FixedCubeRotations[SelectedSideIndex].Y) * 0.2)
+                        CubeRotation.Z = CubeRotation.Z - (DiffDeg(CubeRotation.Z, FixedCubeRotations[SelectedSideIndex].Z) * 0.2)
+                    }
+
+                    cube.style.transform = `rotateX(${CubeRotation.X}deg) rotateY(${CubeRotation.Y}deg)  rotateZ(${CubeRotation.Z}deg)`
+                }, 100)
+            })
+        } else {
+            Utilities.TemplateAsync('tablo-modal', selectedTablo).then(modal => {
+                modal.classList.add('show')
+                window.document.body.appendChild(modal)
+            })
+        }
     })
     window.CloseTabloModal = window.CloseTabloModal || (() => {
+        if (TabloTimer) {
+            clearInterval(TabloTimer)
+            TabloTimer = null
+        }
+
         const modal = Utilities.TryGetElement('tablo-modal')
         if (!modal) return
         modal.remove()
@@ -184,29 +324,69 @@ async function Main() {
 
     if (tablosElement) {
         setTimeout(() => {
-            const elements = document.querySelectorAll('.tablo') as NodeListOf<HTMLElement>
+            const tabloElements = document.querySelectorAll('.tablo') as NodeListOf<HTMLElement>
             const unloadedTablos: string[] = []
-            for (let i = 0; i < elements.length; i++) unloadedTablos.push(elements.item(i).id)
+            for (let i = 0; i < tabloElements.length; i++) unloadedTablos.push(tabloElements.item(i).id)
+            
+            const tabloCubeElements = document.querySelectorAll('.cube-tablo') as NodeListOf<HTMLElement>
+            for (let i = 0; i < tabloCubeElements.length; i++) unloadedTablos.push(tabloCubeElements.item(i).id)
 
             const RefreshTablos = () => {
-                for (let i = 0; i < elements.length; i++) {
-                    const element = elements.item(i)
-                    if (!unloadedTablos.includes(element.id)) continue
+                for (let i = 0; i < tabloElements.length; i++) {
+                    const tabloElement = tabloElements.item(i)
+                    if (!unloadedTablos.includes(tabloElement.id)) continue
 
-                    const position = element.getBoundingClientRect()
+                    const position = tabloElement.getBoundingClientRect()
+
+                    const isVisible = (position.top >= 0 && position.bottom <= window.innerHeight) || (position.top < window.innerHeight && position.bottom >= 0)
                 
-                    if ((position.top >= 0                 && position.bottom <= window.innerHeight) ||
-                        (position.top < window.innerHeight && position.bottom >= 0)) {
-                        if (!element.classList.contains('tablo-unloaded')) continue
-                        // console.log('Loading image for element', element)
-                        element.classList.remove('tablo-unloaded')
-                        const tabloId = Number.parseInt(element.id.split('-')[1])
+                    if (isVisible) {
+                        if (!tabloElement.classList.contains('tablo-unloaded')) continue
+                        tabloElement.classList.remove('tablo-unloaded')
+                        const tabloId = Number.parseInt(tabloElement.id.split('-')[1])
                         const tablo = Database.tablos[tabloId]
-                        if (tablo.Image) element.style.backgroundImage = `url(img/tablos-lowres/${tablo.Image})`
+                        if (!tablo.IsCube) if (tablo.Image) tabloElement.style.backgroundImage = `url(img/tablos-lowres/${tablo.Image})`
                     } else {
-                        if (element.classList.contains('tablo-unloaded')) continue
-                        element.style.backgroundImage = 'url(#)'
-                        element.classList.add('tablo-unloaded')
+                        if (tabloElement.classList.contains('tablo-unloaded')) continue
+                        tabloElement.style.backgroundImage = 'url(#)'
+                        tabloElement.classList.add('tablo-unloaded')
+                    }
+                }
+                
+                for (let i = 0; i < tabloCubeElements.length; i++) {
+                    const tabloElement = tabloCubeElements.item(i)
+                    if (!unloadedTablos.includes(tabloElement.id)) continue
+
+                    const position = tabloElement.getBoundingClientRect()
+
+                    const isVisible = (position.top >= 0 && position.bottom <= window.innerHeight) || (position.top < window.innerHeight && position.bottom >= 0)
+                
+                    if (isVisible) {
+                        if (!tabloElement.classList.contains('tablo-unloaded')) continue
+                        tabloElement.classList.remove('tablo-unloaded')
+
+                        const tabloId = Number.parseInt(tabloElement.id.split('-')[1])
+                        const tablo = Database.tablos[tabloId]
+                        if (tablo.IsCube) {
+                            const sideElements = tabloElement.getElementsByClassName('cube-side') as HTMLCollectionOf<HTMLElement>
+                            for (let i = 0; i < tablo.Cube.length; i++) {
+                                if (i >= sideElements.length) break
+                                const sideElement = sideElements.item(i)
+                                if (!sideElement) continue
+                                const image = tablo.Cube[i]
+                                sideElement.style.backgroundImage = `url(img/tablos-lowres/${image})`
+                            }
+                        }
+                    } else {
+                        if (tabloElement.classList.contains('tablo-unloaded')) continue
+                        tabloElement.classList.add('tablo-unloaded')
+                        
+                        const sideElements = tabloElement.getElementsByClassName('cube-side') as HTMLCollectionOf<HTMLElement>
+                        for (let i = 0; i < sideElements.length; i++) {
+                            const sideElement = sideElements.item(i)
+                            if (!sideElement) continue
+                            sideElement.style.backgroundImage = `url(#)`
+                        }
                     }
                 }
             }
