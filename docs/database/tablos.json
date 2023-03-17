@@ -1824,6 +1824,7 @@
         ],
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
+        "Image": "2006_12A.jpg",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -3127,6 +3128,7 @@
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2009,
         "Ofo": "Pataj Zsuzsanna",
+        "Image": "2009_12A.jpg",
         "Department": "Gépészeti Szakmacsoport",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
