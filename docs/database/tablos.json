@@ -303,7 +303,8 @@
         ],
         "Image": "1990_4B.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Épületgépészeti Technikus",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -340,11 +341,11 @@
             "Tóth László", 
             "Vodila Zoltán"
         ],
-        "Department": "Épületgépész",
+        "Department": "Épületgépészeti Technikus",
         "Image": "1991_4B.jpg",
         "NotScanned": true,
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -378,7 +379,7 @@
         "Type": "SCHOOL",
         "Department": "Gépgyártás-Technológiai Technikus",
         "Image": "1992_4A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -420,7 +421,7 @@
         "NotScanned": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -511,8 +512,9 @@
             "Zalai Csaba"
         ],
         "Image": "1993_4B.jpg",
+        "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -551,7 +553,8 @@
         ],
         "Image": "1994_4A.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Gépgyártás-Technológiai Technikus",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -596,7 +599,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 1995,
-        "Ofo": "dr. Ibos Gyula",
+        "Ofo": "Dr. Ibos Gyula",
         "Students": [
             "Alberti Zoltán", 
             "Arányi Attila", 
@@ -658,13 +661,14 @@
             "Vida Zoltán"
         ],
         "Image": "1995_4B.jpg",
+        "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 1995,
-        "Ofo": [ "Kocsis Márta", "Sanusi József" ],
+        "Ofo": [ "Kocsis Márta", "Sarusi József" ],
         "Students": [
             "Bognár Zoltán", 
             "Csipke Krisztina", 
@@ -691,8 +695,9 @@
             "Vozár János"
         ],
         "Image": "1995_4C.jpg",
+        "Department": "Információ- és Számítástechnikai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -729,7 +734,6 @@
         ],
         "Type": "SCHOOL",
         "Image": "1996_4A.jpg",
-        "NotScanned": true,
         "Department": "Gépgyártás-Technológia és Számítástechnikai Technikus",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
@@ -802,9 +806,9 @@
             "Zahorán Tibor"
         ],
         "Image": "1996_4C.jpg",
-        "Department": "Informatika és Számítástechnika",
+        "Department": "Információ- és Számítástechnikai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -847,7 +851,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 1997,
-        "Ofo": "Halmosine Kiss Erzsébet",
+        "Ofo": "Halmosiné Kiss Erzsébet",
         "Students": [
             "Bakonyi Imre", 
             "Balog Róbert", 
@@ -883,7 +887,7 @@
         "Image": "1997_4B.jpg",
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -949,8 +953,9 @@
             "Uhrin Tamás György"
         ],
         "Image": "1998_12A.jpg",
+        "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 1998,
@@ -989,12 +994,13 @@
             "Tóth Anikó"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "C" },
-        "Ofo": "Pap Csaba",
+        "Ofo": "Papp Csaba",
         "Students": [
             "Bálint Károly", 
             "Bellágh Attila", 
@@ -1028,7 +1034,8 @@
             "Vozár István"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 1999,
@@ -1060,12 +1067,13 @@
         ],
         "Image": "1999_12A.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Gépészeti Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 1999,
         "Grade": { "Grade": 12, "Sub": "B" },
-        "Ofo": "dr. Ibos Gyula",
+        "Ofo": "Dr. Ibos Gyula",
         "Students": [
             "Andrusik Viktor", 
             "Babós András", 
@@ -1098,7 +1106,8 @@
         ],
         "Image": "1999_12B.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2000,
@@ -1132,8 +1141,9 @@
             "Varga Ádám"
         ],
         "Image": "2000_12A.jpg",
+        "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2000,
@@ -1176,7 +1186,8 @@
         ],
         "Image": "2000_12B.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2000,
@@ -1216,8 +1227,9 @@
             "Velő Katalin"
         ],
         "Image": "2000_12C.jpg",
+        "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2001,
@@ -1260,7 +1272,8 @@
         ],
         "Image": "2001_12A.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Gépészeti Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2001,
@@ -1307,7 +1320,8 @@
         ],
         "Image": "2001_12B.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Informatikai Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2001,
@@ -1393,7 +1407,8 @@
         ],
         "Image": "2002_12A.jpg",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Gépészeti Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2002,
@@ -1436,8 +1451,9 @@
             "Zana Bernadett"
         ],
         "Image": "2002_12B.jpg",
+        "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2002,
@@ -1476,8 +1492,9 @@
             "Vad Tibor", 
             "Vincze Balázs"
         ],
+        "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2003,
@@ -1510,7 +1527,8 @@
             "Zemó László"
         ],
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Department": "Gépészeti Szakmacsoport",
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2003,
@@ -1549,8 +1567,9 @@
             "Varga Viktor", 
             "Zelenyánszki Gabriella"
         ],
+        "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2004,
@@ -1627,8 +1646,9 @@
             "Vári Donát Ferenc", 
             "Vári Péter Amadé"
         ],
+        "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2004,
@@ -1665,9 +1685,10 @@
             "Zimonyi Péter"
         ],
         "Image": "2004_12.C.jpg",
+        "Department": "Informatikai Szakmacsoport",
         "NotScanned": true,
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
         "FinishedAt": 2005,
@@ -2032,6 +2053,15 @@
             "Ungi Ferenc Gergő"
         ],
         "Department": "Gépészeti Szakmacsoport",
+        "Cube": [
+            "2008_12A/top1.jpg",
+            "2008_12A/top2.jpg",
+            "2008_12A/top3.jpg",
+            "2008_12A/bottom1.jpg",
+            "2008_12A/bottom2.jpg",
+            "2008_12A/bottom3.jpg"
+        ],
+        "IsCube": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
@@ -3170,7 +3200,6 @@
         "Ofo": "Kocsondi Éva",
         "Department": "Informatikai Szakmacsoport",
         "Image": "2014_13C.jpg",
-        "NotScanned": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
         "Other": [
             "Nyelvi előkészítő"
@@ -3480,20 +3509,5 @@
             "Vozár Nimród"
         ],
         "Sources": [ "DOCS" ]
-    },
-    {
-        "Grade": { "Grade": 12, "Sub": "A" },
-        "FinishedAt": 2008,
-        "Ofo": "Kocsondi Éva",
-        "Cube": [
-            "2008_12A/top1.jpg",
-            "2008_12A/top2.jpg",
-            "2008_12A/top3.jpg",
-            "2008_12A/bottom1.jpg",
-            "2008_12A/bottom2.jpg",
-            "2008_12A/bottom3.jpg"
-        ],
-        "IsCube": true,
-        "Sources": [ "SCAN" ]
     }
 ]
