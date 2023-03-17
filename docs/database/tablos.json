@@ -661,6 +661,7 @@
             "Vida Zoltán"
         ],
         "Image": "1995_4B.jpg",
+        "NotScanned": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -885,6 +886,7 @@
             "Zsidó Norbert Ferenc"
         ],
         "Image": "1997_4B.jpg",
+        "NotScanned": true,
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
@@ -953,6 +955,7 @@
             "Uhrin Tamás György"
         ],
         "Image": "1998_12A.jpg",
+        "NotScanned": true,
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -995,6 +998,8 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
+        "Image": "1998_12B.jpg",
+        "NotScanned": true,
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -1035,6 +1040,8 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
+        "Image": "1998_12C.jpg",
+        "NotScanned": true,
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -1406,6 +1413,7 @@
             "Zsiga József"
         ],
         "Image": "2002_12A.jpg",
+        "NotScanned": true,
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -1718,6 +1726,7 @@
             "Takács Norbert"
         ],
         "Image": "2005_12A.jpg",
+        "NotScanned": true,
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -3328,6 +3337,7 @@
         "FinishedAt": 2022,
         "Ofo": [ "Borbola Tímea", "Hoffmann Péter" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
+        "Image": "2022_12D.jpg",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
