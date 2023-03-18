@@ -200,6 +200,8 @@ async function Main() {
     let TabloTimer: null | NodeJS.Timer = null
 
     window.OpenTabloModal = window.OpenTabloModal || ((id) => {
+        window.document.body.classList.add('tablo-showing')
+
         if (TabloTimer) {
             clearInterval(TabloTimer)
             TabloTimer = null
@@ -310,6 +312,8 @@ async function Main() {
         }
     })
     window.CloseTabloModal = window.CloseTabloModal || (() => {
+        window.document.body.classList.remove('tablo-showing')
+
         if (TabloTimer) {
             clearInterval(TabloTimer)
             TabloTimer = null

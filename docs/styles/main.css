@@ -81,3 +81,10 @@ input[type=submit]:active {
   transition: background-color 100ms, box-shadow 10ms;
   box-shadow: #0006 0px 0px 3px;
 }
+
+body > *:not(.modal):not(#tablo-modal) {
+  transition: filter 300ms;
+}
+body.tablo-showing > *:not(.modal):not(#tablo-modal) {
+  filter: blur(6px);
+}

@@ -53,10 +53,18 @@ function CreateElement(htmlString) {
 async function Setup() {
     const modal1 = await GetAsync('./modals/creators.html')
     const modal2 = await GetAsync('./modals/feedback.html')
+    const modalScript =
+        "<script>" +
+            "const modals=[document.getElementById('id01'),document.getElementById('id02')];" +
+            "window.onclick=(event)=>{" +
+                "modals.forEach(modal=>{if(event.target==modal)modal.style.display='none'});" +
+                "document.body.classList.remove('tablo-showing')" +
+            "}" +
+        "</script>"
 
     document.body.append(CreateElement(modal1))
     document.body.append(CreateElement(modal2))
-    document.body.append(CreateElement("<script>const modals=[document.getElementById('id01'),document.getElementById('id02'),]window.onclick=function(event){modals.forEach(modal=>{if(event.target==modal){modal.style.display='none'}})}</script>"))
+    document.body.append(CreateElement(modalScript))
 }
 
 document.body.onload = (e) => { Setup() }
