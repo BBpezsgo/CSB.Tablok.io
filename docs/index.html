@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/tablo-container.css">
     <link rel="stylesheet" href="styles/tablo.css">
     <link rel="stylesheet" href="styles/tablo-cube.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="icon" type="image/x-icon" href="https://www.nemesgszi.hu/components/images/favicon.png">
     <title>Tablók | Békéscsabai SZC Nemes Tihamér Technikum és Kollégium | GSZI |</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -74,41 +75,46 @@
             </div>
             <div class="kiscim">
                 <h3>Szűrők</h3>
-                <fieldset style="display:inline-block">
-                    <legend>Végzős év</legend>
+                <div class="input-group" style="display:inline-block">
+                    <h4>Végzős év</h4>
 
-                    <p>
-                        <input id="filter-year-start" type="number" min="1986" max="2023" value="1986" disabled>
-                        <label for="filter-year-start">-tól/től</label>
-                        <input id="filter-year-end" type="number" min="1986" max="2023" value="2023" disabled>
-                        <label for="filter-year-end">-ig</label>
-                    </p> 
+                    <div>
+                        <p>
+                            <input id="filter-year-start" class="filter-input-info" style="width:50px" type="number" min="1986" max="2023" value="1986" disabled>
+                            <label for="filter-year-start">-tól/től</label>
+                            <input id="filter-year-end" class="filter-input-info" style="width:50px" type="number" min="1986" max="2023" value="2023" disabled>
+                            <label for="filter-year-end">-ig</label>
+                        </p> 
 
-                    <style>
-                        #year-slider-range {
-                            font-size: 0.8em;
-                        }
-                        #year-slider-range > .ui-slider-range {
-                            background-color: #00BBFF;
-                        }
-                        #year-slider-range > .ui-slider-handle {
-                            border-radius: 50%;
-                        }
-                    </style>
-                    <div id="year-slider-range"></div>
-                </fieldset>
+                        <style>
+                            #year-slider-range {
+                                font-size: 0.8em;
+                            }
+                            #year-slider-range > .ui-slider-range {
+                                background-color: #00BBFF;
+                            }
+                            #year-slider-range > .ui-slider-handle {
+                                border-radius: 50%;
+                            }
+                        </style>
+                        <div id="year-slider-range"></div>
+                    </div>
+                </div>
                 <style>
                     #filter-grade-sub {
                         text-transform: uppercase;
                     }
                 </style>
-                <fieldset style="display:inline-block">
-                    <legend>Osztály</legend>
-                    <label for="filter-grade">Évfolyam:</label>
-                    <input id="filter-grade" type="number" min="12" max="15" placeholder="12" style="width:48px">
-                    <label for="filter-grade-sub">Osztály:</label>
-                    <input id="filter-grade-sub" type="text" maxlength="2" placeholder="C" style="width:32px">
-                </fieldset>
+                <div class="input-group" style="display:inline-block">
+                    <h4>Osztály</h4>
+
+                    <div>
+                        <label for="filter-grade">Évfolyam:</label>
+                        <input id="filter-grade" type="number" min="12" max="15" placeholder="12" style="width:48px">
+                        <label for="filter-grade-sub">Osztály:</label>
+                        <input id="filter-grade-sub" type="text" maxlength="2" placeholder="C" style="width:32px">
+                    </div>
+                </div>
                 <style>
                     ul#filter-ofo-suggestions {
                         padding-left: 0px;
@@ -141,14 +147,16 @@
                         text-transform: capitalize;
                     }
                 </style>
-                <fieldset style="display:inline-block">
-                    <legend>Osztályfőnök</legend>
-                    <label for="filter-ofo"></label>
-                    <input autocomplete="off" id="filter-ofo" type="text" maxlength="64" placeholder="Osztályfőnök neve">
-                    <ul id="filter-ofo-suggestions" style="display:none">
+                <div class="input-group" style="display:inline-block">
+                    <h4>Osztályfőnök</h4>
+                    <div>
+                        <label for="filter-ofo"></label>
+                        <input autocomplete="off" id="filter-ofo" type="text" maxlength="64" placeholder="Osztályfőnök neve">
+                        <ul id="filter-ofo-suggestions" style="display:none">
 
-                    </ul>
-                </fieldset>
+                        </ul>
+                    </div>
+                </div>
                 <button onclick="Filter()">Keresés</button>
             </div>
             <div id="tablos-container">

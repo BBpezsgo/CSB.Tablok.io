@@ -58,11 +58,11 @@ export function CheckDatabase(database: DataBase, log: boolean) {
                 .then(code => {
                     if (code === 200) return
                     if (!tablo.IsCube)
-                    console.warn('Image does not have a low-res version', tablo.Image, 'HTTP ' + code)
+                    if (log) console.warn('Image does not have a low-res version', tablo.Image, 'HTTP ' + code)
                 })
                 .catch(error => {
                     if (!tablo.IsCube)
-                    console.warn('Image does not have a low-res version', tablo.Image, error)
+                    if (log) console.warn('Image does not have a low-res version', tablo.Image, error)
                 })
         }}
         if (!tablo.FinishedAt)
@@ -115,7 +115,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         database.tablos[i] = tablo
     }
 
-    departments.forEach((value, key) => { if (value < 10) console.log(`Department "${key}" only exists ${value} times`) })
+    if (log) departments.forEach((value, key) => { if (value < 10) console.log(`Department "${key}" only exists ${value} times`) })
 }
 
 export function Main(database: DataBase) {

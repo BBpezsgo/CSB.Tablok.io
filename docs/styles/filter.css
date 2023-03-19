@@ -5,31 +5,52 @@
     box-shadow: #000 0px 0px 6px;
 }
 
-.kiscim fieldset {
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+.kiscim .input-group {
+    margin: 8px;
+}
+
+.kiscim .input-group > div:first-of-type {
+    border: #fff solid 2px;
+    border-top-width: 4px;
+    box-shadow:
+        #000 1px 1px 0px,
+        #000 2px 2px 0px;
+    padding: 8px 10px 10px 10px;
+    margin-top: 0px;
+}
+
+.kiscim .input-group > h4:first-of-type {
+    margin: 0px 0px 0px 0px;
+    color: #fff;
 }
 
 .kiscim input {
     background-color: transparent;
     padding: 1px 2px;
-    outline: 1px solid #fff8;
-    color: #fff;
-    border-radius: 2px;
-    transition: outline 100ms;
     border: none;
+    border-bottom: 2px solid #fff8;
+    color: #fff;
+    transition: outline 100ms;
+}
+
+.kiscim input[disabled] {
+    border-bottom-color: #fff4;
 }
 
 .kiscim input:focus {
-    outline: 3px solid #00BBFF;
+    border-bottom: 2px solid #00BBFF;
+    outline: none;
 }
 
 .kiscim button {
-    background-color: #00BBFF88;
+    background-color: #666;
+    box-shadow:
+        #000 1px 1px 0px,
+        #000 2px 2px 0px,
+        #000 3px 3px 0px,
+        #000 4px 4px 0px;
+    border: 2px solid #000;
     padding: 4px 6px;
-    border: none;
     font-size: 22px;
     font-weight: bolder;
     color: #fff;
@@ -38,11 +59,18 @@
 }
 
 .kiscim button:hover {
-    background-color: #00BBFFcc;
-    box-shadow: #0008 0px 0px 8px;
+    box-shadow:
+        #00BBFF 1px 1px 0px,
+        #00BBFF 2px 2px 0px,
+        #00BBFF 3px 3px 0px,
+        #00BBFF 4px 4px 0px;
+    border-color: #00BBFF;
+    color: #fff;
 }
 
 .kiscim button:active {
-    background-color: #00BBFF;
-    box-shadow: #0008 0px 0px 8px;
+    border-color: #00BBFF;
+    box-shadow: #00BBFF 1px 1px 0px;
+    color: #fff;
+    transform: translate(3px, 3px);
 }

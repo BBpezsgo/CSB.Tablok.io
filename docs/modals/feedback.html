@@ -1,16 +1,14 @@
 <div id="id02" class="modal">
-    <div class="modal-content animate">
-        <div class="imgcontainer">
-            <span onclick="
-                try{document.getElementById('upload-done').style.display='none';}catch(e){}
-                try{document.getElementById('form-upload').style.display='none';}catch(e){}
-                try{document.getElementById('form-description').style.display='none';}catch(e){}
-                try{document.getElementById('id02').style.display='none';}catch(e){}
-                document.body.classList.remove('tablo-showing')
-                " class="close" title="Bezár"></span>
-        </div>
+    <div>
+        <div class="modal-close" onclick="
+                try{document.getElementById('upload-done').style.display='none';}catch(e){};
+                try{document.getElementById('form-upload').style.display='none';}catch(e){};
+                try{document.getElementById('form-description').style.display='none';}catch(e){};
+                try{document.getElementById('id02').style.display='none';}catch(e){};
+                document.body.classList.remove('tablo-showing');
+                " title="Bezár">X</div>
 
-        <div class="container" style="font-size: 20px;">
+        <div class="container" style="font-size: 20px; margin-top: 40px; height: 250px;">
             <iframe src="./modals/feedback.iframe.html"></iframe>
         </div>
     </div>

@@ -1,8 +1,14 @@
-<div id="id01" class="modal">
-    <div class="modal-content animate">
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none';document.body.classList.remove('tablo-showing')" class="close" title="Bezár"></span>
-        </div>
+<div id="id01" class="modal" onclick="
+    if (event.target !== this) return;
+    document.getElementById('id01').style.display='none';
+    document.body.classList.remove('tablo-showing');
+    ">
+    <div>
+        <div class="modal-close" onclick="
+            if (event.target !== this) return;
+            document.getElementById('id01').style.display='none';
+            document.body.classList.remove('tablo-showing');
+            " title="Bezár">X</div>
 
         <div class="container" style="font-size: 20px;">
             <h3>Készítők <span style="opacity: .5;">(11.C)</span></h3>

@@ -1,44 +1,39 @@
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: #333;
   flex: 54px;
   flex-shrink: 0;
   flex-grow: 0;
   transition: flex 500ms;
 }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-    transition-duration: 200ms;
-    cursor: pointer !important;
-    height: 100%;
-  }
-  
-  .navbar a.right {
-    float: right;
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
 
-  .navbar a:active {
-    background-color: #afafaf;
-    color: black;
-  }
-
-.mobileMenuToggleButton {
-  visibility: hidden;
+.navbar a {
+  background-color: #333;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  transition-duration: 200ms;
+  cursor: pointer !important;
+  height: 100%;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 700px) {
-  .mobileMenuToggleButton {
-    visibility: visible;
-  }
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #000;
+  transform: translateY(-4px);
+  box-shadow: #000 0px 4px 0px;
+}
+
+.navbar a:active {
+  transform: translateY(-2px);
+  box-shadow: #000 0px 2px 0px;
+  color: #000;
 }

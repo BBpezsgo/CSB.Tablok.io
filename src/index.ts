@@ -210,7 +210,6 @@ async function Main() {
         const selectedTablo = Database.tablos[id]
         if (selectedTablo.IsCube) {
             Utilities.TemplateAsync('cube-tablo-modal', selectedTablo).then(modal => {
-                modal.classList.add('show')
                 window.document.body.appendChild(modal)
 
                 const cubeContainer = document.getElementById('tablo-modal')?.getElementsByClassName('cube-tablo-modal')[0] as HTMLElement | undefined
@@ -306,7 +305,6 @@ async function Main() {
             })
         } else {
             Utilities.TemplateAsync('tablo-modal', selectedTablo).then(modal => {
-                modal.classList.add('show')
                 window.document.body.appendChild(modal)
             })
         }

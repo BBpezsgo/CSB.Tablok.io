@@ -8,59 +8,72 @@
     z-index: 500;
     text-align: center;
     padding: 10px;
-    display: none;
-}
-
-#tablo-modal.show {
-    display: block;
 }
 
 #tablo-modal>div {
+    box-shadow: #fff 0px 0px 3px;
     background-color: #fff;
     padding: 8px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     max-height: 100%;
-    overflow-y: auto;
-    border-radius: 8px;
-    border: 6px solid #00BBFF;
+    overflow-y: scroll;
+    animation: tablo-modal-animation 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 #tablo-modal>div img {
     width: 100%;
 }
 
-#tablo-modal>div>#tablo-modal-close {
-    background-color: #0000;
+#tablo-modal #tablo-modal-close {
+    background-color: #fff;
     display: inline-block;
     padding: 3px 8px;
+    margin: 0px 6px 0px 0px;
     font-weight: 1000;
     color: #000;
+    border: 2px solid #000;
     cursor: pointer;
-    border-radius: 50%;
-    transition: background 200ms outline 200ms;
     float: right;
-    right: 35px;
-    text-shadow: #fff 0px 0px 10px;
+    box-shadow:
+        #000 1px 1px 0px,
+        #000 2px 2px 0px,
+        #000 3px 3px 0px,
+        #000 4px 4px 0px;
 }
 
-#tablo-modal>div>#tablo-modal-close:hover,
-#tablo-modal>div>#tablo-modal-close:active {
-    background-color: #0004;
+#tablo-modal #tablo-modal-close:hover {
+    box-shadow:
+        #c7003c 1px 1px 0px,
+        #c7003c 2px 2px 0px,
+        #c7003c 3px 3px 0px,
+        #c7003c 4px 4px 0px;
+    color: #c7003c;
+    border-color: #c7003c;
 }
 
-#tablo-modal>div>#tablo-modal-close:hover:active {
-    background-color: #0008;
-}
-
-#tablo-modal>div>#tablo-modal-close:active {
-    outline: 1px solid #0008;
+#tablo-modal #tablo-modal-close:hover:active,
+#tablo-modal #tablo-modal-close:active {
+    transform: translate(3px, 3px);
+    box-shadow: #c7003c 1px 1px 0px;
 }
 
 #tablo-modal>div ul {
     list-style: none;
     padding-left: 0px;
+}
+
+@keyframes tablo-modal-animation {
+    from {
+        transform: scale(.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -73,5 +86,21 @@
         max-height: 100%;
         border-radius: unset;
         border: none;
+        overflow-x: hidden;
+        width: 100%;
+        animation: none;
+        padding-top: 4px;
+    }
+
+    body.tablo-showing > *:not(.modal):not(#tablo-modal) {
+        filter: none;
+    }
+
+    body.tablo-showing {
+        overflow: hidden;
+    }
+
+    #tablo-modal #tablo-modal-close {
+        margin: 0px 6px 0px 0px;
     }
 }

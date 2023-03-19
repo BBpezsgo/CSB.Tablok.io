@@ -1,3 +1,87 @@
+<style>
+    #feedback-form-desc {
+        width: 100%;
+        height: 70px;
+        resize: none;
+    }
+
+    #feedback-upload-button {
+        border: 2px solid #000;
+        box-shadow: 
+            #000 1px 1px 0px,
+            #000 2px 2px 0px,
+            #000 3px 3px 0px,
+            #000 4px 4px 0px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+    #feedback-upload-button:hover {
+        color: #0eb833;
+        border: 2px solid #0eb833;
+        box-shadow: 
+            #0eb833 1px 1px 0px,
+            #0eb833 2px 2px 0px,
+            #0eb833 3px 3px 0px,
+            #0eb833 4px 4px 0px;
+    }
+
+    #feedback-upload-button:active {
+        color: #0eb833;
+        border: 2px solid #0eb833;
+        box-shadow: 
+            #0eb833 1px 1px 0px;
+        transform: translate(3px, 3px);
+    }
+
+    #feedback-form-desc {
+        border: 1px solid #000;
+        box-shadow:
+            #000 1px 1px 0px,
+            #000 2px 2px 0px;
+    }
+
+    #feedback-form-desc:focus {
+        outline: none;
+    }
+
+    #feedback-back {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 16px;
+        display: block;
+    }
+
+    #feedback-back[disabled] {
+        color: #888;
+        border: 2px solid #888;
+        box-shadow: 
+            #888 1px 1px 0px,
+            #888 2px 2px 0px,
+            #888 3px 3px 0px,
+            #888 4px 4px 0px;
+    }
+
+    #feedback-back:not([disabled]) {
+        border: 2px solid #000;
+        box-shadow: 
+            #000 1px 1px 0px,
+            #000 2px 2px 0px,
+            #000 3px 3px 0px,
+            #000 4px 4px 0px;
+        cursor: pointer;
+    }
+
+    #feedback-back:not([disabled]):active {
+        border: 2px solid #000;
+        box-shadow: 
+            #000 1px 1px 0px;
+        transform: translate(3px, 3px);
+        cursor: pointer;
+    }
+</style>
 <div id="feedback-upload-form">
     <h3>Visszajelzés küldése</h3>
     <p>
@@ -8,7 +92,7 @@
             <textarea required maxlength="1024" id="feedback-form-desc" name="desc"
                 placeholder="Visszajelzés szövege"></textarea>
         </div>
-        <input class="btn btn-primary" type="submit" value="Feltölt">
+        <input id="feedback-upload-button" class="btn btn-primary" type="submit" value="Feltölt">
     </form>
 </div>
 <div id="feedback-upload-done" style="display: none;">
@@ -18,19 +102,27 @@
         <img width="32" height="32" src="../img/spinner.gif" style="display: inline-block;">
         Feltöltés...
     </div>
+    <button onclick="
+        ELEMENTS['upload-done'].style.display = 'none';
+        ELEMENTS['form-upload'].style.display = 'block';
+        ELEMENTS['form-description'].value = '';
+    " id="feedback-back" disabled>Vissza</button>
 </div>
 <script>
     const ELEMENTS = {
         'form-description': document.getElementById('feedback-form-desc'),
         'upload-spinner': document.getElementById('feedback-upload-spinner'),
         'form-upload': document.getElementById('feedback-upload-form'),
-        'upload-done': document.getElementById('feedback-upload-done')
+        'upload-done': document.getElementById('feedback-upload-done'),
+        /** @type {HTMLButtonElement} */
+        'back': document.getElementById('feedback-back')
     }
 
     function Feedback() {
         const title = 'Visszajelzés'
         const desc = ELEMENTS["form-description"].value
         const spinner = ELEMENTS["upload-spinner"]
+        ELEMENTS['back'].disabled = true
 
         var xhr = new XMLHttpRequest()
         xhr.onreadystatechange = function () {
@@ -43,6 +135,7 @@
             }
             if (xhr.readyState == 4) {
                 spinner.style.display = 'none'
+                ELEMENTS['back'].disabled = false
             } else {
                 spinner.style.display = 'block'
             }
