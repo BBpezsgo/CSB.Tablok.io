@@ -4,7 +4,8 @@
         "serve": "webpack serve",
         "resize-images": "node resize-images.js",
         "png-to-jpeg": "node png-to-jpeg.js",
-        "delete-pngs": "node delete-pngs.js"
+        "delete-pngs": "node delete-pngs.js",
+        "feedbacks": "node feedbacks.js"
     },
     "devDependencies": {
         "png-to-jpeg": "^1.0.1",
