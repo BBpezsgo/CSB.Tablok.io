@@ -998,8 +998,6 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Image": "1998_12B.jpg",
-        "NotScanned": true,
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
