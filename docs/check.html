@@ -27,6 +27,31 @@
             margin-right: 4px;
             padding-right: 8px;
         }
+
+        .toggler {
+            display: inline-block;
+            cursor: pointer;
+            background-image: url('img/check/box.png');
+            width: 16px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .toggler::before {
+            display: inline-block;
+            content: '>';
+            color: #690;
+            font-weight: 1000;
+            position: relative;
+            top: -4px;
+            left: 3px;
+        }
+
+        .toggler.toggler-show::before {
+            transform: rotate(90deg);
+        }
     </style>
 </head>
 <body>
@@ -49,5 +74,23 @@
     
     <script src="scripts/select-all.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script>
+        function ToggleSub(ID, TogglerID) {
+            const element = document.getElementById(ID)
+            const toggler = document.getElementById(TogglerID)
+            if (element.style.display === 'none')
+            {
+                element.style.display = ''
+                toggler.classList.add('toggler-show')
+                toggler.classList.remove('toggler-hide')
+            }
+            else
+            {
+                element.style.display = 'none'
+                toggler.classList.remove('toggler-show')
+                toggler.classList.add('toggler-hide')
+            }
+        }
+    </script>
 </body>
 </html>

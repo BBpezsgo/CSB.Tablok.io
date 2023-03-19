@@ -304,7 +304,39 @@
         "Image": "1990_4B.jpg",
         "Type": "SCHOOL",
         "Department": "Épületgépészeti Technikus",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": {
+            "FinishedAt": 1991,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Nagyné Balázs Margit",
+            "Department": "Épületgépész",
+            "Students": [
+                "Andrej Zoltán", 
+                "Balogh József Zoltán", 
+                "Bereczki Zoltán", 
+                "Debreczeni Zoltán Imre", 
+                "Emhó Mihály", 
+                "Erdéli Géza", 
+                "Fabulya Attila", 
+                "Fekete Sándor", 
+                "Fodor Gábor", 
+                "Gulykás János", 
+                "Hajnal Zoltán", 
+                "Hodászi István Róbert", 
+                "Kertész Olivér Attila", 
+                "Kiss Tibor", 
+                "Orosz Tamás", 
+                "Petri Zoltán Mátyás", 
+                "Pocsai Tibor Gyula", 
+                "Sobester Zsolt Sándor", 
+                "Szücs Tibor László", 
+                "Túri Zoltán", 
+                "Varga Imre Zoltán"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -345,7 +377,36 @@
         "Image": "1991_4B.jpg",
         "NotScanned": true,
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1992,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Szabó Sándor",
+            "Department": "Épületgépész",
+            "Students": [
+                "Babcsák János", 
+                "Bócsik László", 
+                "Hankó Zsolt", 
+                "Horváth Gábor", 
+                "István Mihály", 
+                "Kéri János", 
+                "Komáromi Mihály", 
+                "Kóra Zsolt", 
+                "Kulcsár Szilárd", 
+                "Kun György", 
+                "Medovarszki Pál", 
+                "Nádházi Zoltán", 
+                "Németh Sándor", 
+                "Péli Zoltán János", 
+                "Susánszky Ádám", 
+                "Szász Sándor Róbert", 
+                "Tóth László", 
+                "Vodilla Zoltán"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -379,7 +440,37 @@
         "Type": "SCHOOL",
         "Department": "Gépgyártás-Technológiai Technikus",
         "Image": "1992_4A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1993,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Mochnács Mihály",
+            "Department": "Gépgyártás-Technológus",
+            "Students": [
+                "Barna János", 
+                "Beharóczki Zoltán", 
+                "Burda Szilárd", 
+                "Daczi László", 
+                "Erdős Attila", 
+                "Farkas Szabolcs", 
+                "Hudák Péter", 
+                "Jámbor Zsolt Tamás", 
+                "Krizsán Attila Pál", 
+                "Kvasz Tibor", 
+                "Lantos Lajos", 
+                "Makai Csaba", 
+                "Pluhár György Attila", 
+                "Szabó István", 
+                "Szász István", 
+                "Szilvási Szilárd Zsolt", 
+                "Varga Ambrus", 
+                "Varga Gábor", 
+                "Vida Imre"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -421,7 +512,35 @@
         "NotScanned": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1993,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Halmosi Mártonné",
+            "Department": "Épületgépész",
+            "Students": [
+                "Erdei Szabolcs", 
+                "Hajnal Tibor", 
+                "Hankó Tamás", 
+                "Kis István", 
+                "Krajcsovicz Zoltán", 
+                "Lukács Attila", 
+                "Magyar Mihály Zsolt", 
+                "Mihály Tamás", 
+                "Pengő Csaba Zsolt", 
+                "Tari Zoltán", 
+                "Tóth János", 
+                "Tuska Zoltán", 
+                "Varga Sándor Zsolt", 
+                "Vaszkán János", 
+                "Vida Ferenc", 
+                "Zolnai György", 
+                "Zsíros Attila"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -469,7 +588,33 @@
         "Image": "1993_4A.jpg",
         "Department": "Gépgyártás-Technológiai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1994,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Maczik Mihály",
+            "Department": "Gépgyártás-Technológus",
+            "Students": [
+                "Aradi Árpád", 
+                "Aradszki János Zoltán", 
+                "Balog Csaba", 
+                "Bánhegyi Zsolt", 
+                "Bencsik Krisztián", 
+                "Bittiner Marcell Ákos", 
+                "Daru Zoltán", 
+                "Drimba Norbert", 
+                "Fekete Zoltán", 
+                "Lakatos István", 
+                "Mikó Tamás Géza", 
+                "Nagy Balázs", 
+                "Parászka Tibor", 
+                "Pecze Gábor", 
+                "Tóth Attila Károly"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -514,7 +659,34 @@
         "Image": "1993_4B.jpg",
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1994,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Keliger Istvánné",
+            "Department": "Épületgépész",
+            "Students": [
+                "Árkus György László", 
+                "Bagó Lajos Zoltán", 
+                "Bánhidi József", 
+                "Csiaki Tamás", 
+                "Csiernik Tamás", 
+                "Harangozó Zsolt", 
+                "Hegyi Mihály", 
+                "Jordanits Zsolt Árpád", 
+                "Kiss Krisztián András", 
+                "Kovács Péter", 
+                "Molnár Attila", 
+                "Nagy Karolin", 
+                "Ollár Tamás", 
+                "Pacsika Zsolt József", 
+                "SarkadiAttila Sándor", 
+                "Zalai Csaba"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -554,7 +726,32 @@
         "Image": "1994_4A.jpg",
         "Type": "SCHOOL",
         "Department": "Gépgyártás-Technológiai Technikus",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1995,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Papp Béla",
+            "Department": "Gépgyártás-Technológus",
+            "Students": [
+                "Gyomai Zoltán", 
+                "Hrabovszki Erik", 
+                "Kiss Ákos", 
+                "Klotz Attila György", 
+                "Kovács János", 
+                "Kovács Krisztián", 
+                "Köleséri István", 
+                "Laurinyecz Attila Róbert", 
+                "Laurinyecz Zita", 
+                "Nagy József", 
+                "Papp János", 
+                "Szász Tibor Géza", 
+                "Uhrin András", 
+                "Varga István"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -594,7 +791,32 @@
         "Type": "SCHOOL",
         "Image": "1994_4B.jpg",
         "Department": "Épületgépészeti Technikus",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1995,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Kiss Ferenc",
+            "Department": "Épületgépész",
+            "Students": [
+                "Antal Richárd", 
+                "Czeglédi László", 
+                "Czégény Roland Károly", 
+                "Czikkely Attila", 
+                "Krucsó Zsolt", 
+                "Mórocz Attila Zoltán", 
+                "Pap Róbert", 
+                "Pauló Levente Lóránt", 
+                "Restye László", 
+                "Skita Róbert", 
+                "Somi Attila", 
+                "Tóth István", 
+                "Tóth Károly", 
+                "Varga Mihály"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -630,7 +852,52 @@
         "Type": "SCHOOL",
         "Department": "Gépgyártás-Technológiai-Számítástechnikai Technikus",
         "Image": "1995_4A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1996,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Mochnács Mihály",
+            "Groups": [
+                {
+                    "Department": "Gépgyártás-Technológia",
+                    "Students": [
+                        "Arányi Attila", 
+                        "Bánszki Szilvia", 
+                        "Barányi Zsolt", 
+                        "Baukó Tamás", 
+                        "Boros László", 
+                        "Dékány Attila", 
+                        "Felföldi Attila", 
+                        "Horváth Gergely Mihály", 
+                        "Pintér Zoltán", 
+                        "Rá gyánszki Krisztián", 
+                        "Veres Antal", 
+                        "Zelenyánszki Péter", 
+                        "Zsilák Edit"
+                    ]
+                },
+                {
+                    "Department": "Információ-és Számítástechnika",
+                    "Students": [
+                        "Bognár Zoltán", 
+                        "Csipke Krisztina", 
+                        "Darvas Kornél", 
+                        "Galló Erika", 
+                        "Kávási Norbert", 
+                        "Kovács Beáta", 
+                        "Nagy Zoltán", 
+                        "Ódor Balázs", 
+                        "Pásztor István", 
+                        "Plavecz Péter", 
+                        "Surányi Zsolt", 
+                        "Vaszkó Péter"
+                    ]
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -664,7 +931,31 @@
         "NotScanned": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1996,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Börner Istvánné",
+            "Department": "Épületgépész",
+            "Students": [
+                "Ancsin István Balázs", 
+                "Bagi Attila", 
+                "Bakai Zsolt", 
+                "Farkas Pál", 
+                "Horváth Endre", 
+                "Leszkó Csaba", 
+                "Márki István", 
+                "Marosvölgyi Zoltán", 
+                "Petrovszki Róbert", 
+                "Tarsoly Csaba", 
+                "Tóth Lajos", 
+                "Turák Csaba", 
+                "Vida Zoltán"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -722,7 +1013,7 @@
             "Kovács Csaba", 
             "Kovács Róbert", 
             "Lengyel Gyula", 
-            "Le zsák Tibor", 
+            "Lezsák Tibor", 
             "Nagy György", 
             "Onódi Zsolt", 
             "Papp Tibor", 
@@ -736,7 +1027,35 @@
         "Type": "SCHOOL",
         "Image": "1996_4A.jpg",
         "Department": "Gépgyártás-Technológia és Számítástechnikai Technikus",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1997,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Sarusi Ildikó",
+            "Department": "Gépgyártás-Technológia",
+            "Students": [
+                "Blaskó Zoltán", 
+                "Botyánszki Miklós", 
+                "Darabos Pál", 
+                "Flinta István", 
+                "Geszner József", 
+                "Gyebnár Zoltán", 
+                "Kára Péter Imre", 
+                "Kondacs Tamás", 
+                "Kovács Csaba", 
+                "Lengyel Gyula", 
+                "Lezsák Tibor", 
+                "Nagy György", 
+                "Papp Tibor", 
+                "Szabó Gábor", 
+                "Sznida Tamás", 
+                "Sztankó János", 
+                "Varga Tamás"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -772,7 +1091,32 @@
         "Image": "1996_4B.jpg",
         "NotScanned": true,
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1997,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Béládi Csaba",
+            "Department": "Gépipari Minőségbiztosítás-Számítástechnika",
+            "Students": [
+                "Bohák János", 
+                "Fehér László", 
+                "Flinta János", 
+                "Horváth Gábor", 
+                "Pesztránszki Zsigmond", 
+                "Sándor Zsolt", 
+                "Sánta Mihály", 
+                "Szebeni Zoltán", 
+                "Toldi Péter György", 
+                "Varga Tamás", 
+                "Vass Dániel", 
+                "Vígh Róbert", 
+                "Wéber Károly", 
+                "Zsóri Tibor Zsolt"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -809,7 +1153,35 @@
         "Image": "1996_4C.jpg",
         "Department": "Információ- és Számítástechnikai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1997,
+            "Grade": { "Grade": 13, "Sub": "C" },
+            "Ofo": "† Nagy János",
+            "Department": "Információ-és Számítástechnika",
+            "Students": [
+                "Balla András", 
+                "Elek Imre", 
+                "Fehér Zoltán", 
+                "Frankó Tibor", 
+                "Horváth Péter", 
+                "Korponai János", 
+                "Kovács László", 
+                "László József", 
+                "Papp János", 
+                "Pilán Csaba", 
+                "Szabó Levente", 
+                "Szegedi Péter", 
+                "Szilágyi Attila Tamás", 
+                "Tokaji Tibor", 
+                "Treczker Miklós László", 
+                "Urbán János", 
+                "Zahorán Tibor"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "A" },
@@ -847,7 +1219,33 @@
         "Type": "SCHOOL",
         "Department": "Gépipari Minőségbiztosítás-Számítástechnikai Technikus",
         "Image": "1997_12A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": {
+            "FinishedAt": 1998,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Galoviczné Hornok Anikó",
+            "Department": "Gépipari Minőségbiztosítás- Számítástechnika",
+            "Students": [
+                "Boér Gábor", 
+                "Csepregi Csaba András", 
+                "Farkas Attila", 
+                "Kovács Sándor Gábor", 
+                "Molnár György", 
+                "Pántya Gábor", 
+                "Patkás János", 
+                "Pogonyi Ist ván János", 
+                "Potocska Zsolt", 
+                "Sajti Roland", 
+                "Stadler Erik", 
+                "Szabó Lajos", 
+                "Szekeres Norbert", 
+                "Tar Csaba", 
+                "Tobai János"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -889,7 +1287,44 @@
         "NotScanned": true,
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1998,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Halmosiné Kiss Erzsébet",
+            "Groups": [
+                {
+                    "Students": [
+                        "Bakonyi Imre", 
+                        "Balog Róbert", 
+                        "Gérus Sándor", 
+                        "Hévizi János", 
+                        "Ipacs Attila", 
+                        "Kiss Norbert", 
+                        "Nyiri József", 
+                        "Paluska Zsolt", 
+                        "Séllei Zoltán", 
+                        "Szatmári Gábor", 
+                        "Szín Zoltán Lajos", 
+                        "Volent László", 
+                        "Vozár István"
+                    ],
+                    "Department": "Mechatronika"
+                },
+                {
+                    "Students": [
+                        "Börner Miklós András", 
+                        "Palotai István Sándor", 
+                        "Süli Bertalan", 
+                        "Tóth Tamás"
+                    ],
+                    "Department": "Épületgépész"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -924,7 +1359,36 @@
         "Image": "1997_12C.jpg",
         "Type": "SCHOOL",
         "Department": "Információ- és Számítástechnikai Technikus",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1998,
+            "Grade": { "Grade": 13, "Sub": "C" },
+            "Ofo": "Tulkán Zsolt",
+            "Department": "Információ- és Számítástechnika",
+            "Students": [
+                "Árgyelán Krisztián", 
+                "Báló Sándor", 
+                "Dobos László", 
+                "Filadelfi András", 
+                "Gáspár Csaba István", 
+                "Jámbor István", 
+                "Kató Róbert Imre", 
+                "Kesjár András", 
+                "Kiszel Anikó", 
+                "Kupás Imre", 
+                "Puskás Balázs", 
+                "Samu József", 
+                "Schwalm Dániel", 
+                "Skobrics Balázs", 
+                "Szitás Zsolt", 
+                "Takács László", 
+                "Tóth Ferenc", 
+                "Vad Lajos"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 1998,
@@ -958,7 +1422,47 @@
         "NotScanned": true,
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 1999,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Maczik Mihály",
+            "Groups": [
+                {
+                    "Students": [
+                        "Bencze János", 
+                        "Holecska László", 
+                        "Kis József", 
+                        "Kmotricza Igor Mihály", 
+                        "Kovács Zoltán", 
+                        "Laczó György", 
+                        "Szentesi Szabolcs"
+                    ],
+                    "Department": "Épületgépész"
+                },
+                {
+                    "Students": [
+                        "Ancsin Viktor", 
+                        "Balogh István", 
+                        "Ébellai Géza", 
+                        "Erdei Gyula", 
+                        "Laczkó László", 
+                        "Nagy Sándor", 
+                        "Rideg Miklós", 
+                        "Sebestyén István Anyagvizsgáló és minőségbiztosítási technikus: Besztercei Zsolt Ádám", 
+                        "Geisel József", 
+                        "Farkas Brigitta", 
+                        "Kacsala Gábor", 
+                        "Tóth Gábor", 
+                        "Uhrin Tamás György"
+                    ],
+                    "Department": "Gépésztechnikus"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 1998,
@@ -998,7 +1502,32 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": {
+            "FinishedAt": 1999,
+            "Grade": { "Grade": 13, "Sub": "B" },
+            "Ofo": "Gáspár Piroska",
+            "Department": "Számítástechnikai Programozó és Szoftverüzemeltető",
+            "Students": [
+                "Csarnai Gábor", 
+                "Hrivnák Andrea Erzsébet", 
+                "Illés Gyula", 
+                "Juhász Ferenc", 
+                "Mészáros János", 
+                "Molnár Ildikó", 
+                "Molnár Katalin Krisztina", 
+                "Polgári Ferenc", 
+                "Puskás Edit", 
+                "Szaszák Csaba", 
+                "Szopkó Tibor", 
+                "Szentesi Erika", 
+                "Tokai Lajos", 
+                "Tóth Anikó"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 1998,
@@ -1040,7 +1569,27 @@
         "Department": "Informatikai Szakmacsoport",
         "Image": "1998_12C.jpg",
         "NotScanned": true,
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": {
+            "FinishedAt": 1999,
+            "Grade": { "Grade": 13, "Sub": "C" },
+            "Ofo": "Pap Csaba",
+            "Department": "Ipari Informatikai Technikus",
+            "Students": [
+                "Belicza János Zsolt", 
+                "Bellágh Attila", 
+                "Bojtos Péter Pál", 
+                "Fekete Viktor Iván", 
+                "Finna Sándor", 
+                "Folcz József", 
+                "Galó Gábor", 
+                "Gulyás Adrián", 
+                "Széll Balázs"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 1999,
@@ -1073,7 +1622,42 @@
         "Image": "1999_12A.jpg",
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2000,
+            "Grade": { "Grade": 13, "Sub": "A" },
+            "Ofo": "Kiss Ferenc",
+            "Groups": [
+                {
+                    "Students": [
+                        "Aszódi János", 
+                        "Boldog István Ferenc", 
+                        "Czvalinga Ákos Pál", 
+                        "Deák Katalin", 
+                        "Dohány Gergely", 
+                        "Erdődi Sándor", 
+                        "Kiss András Károly", 
+                        "Kovalovszki Imre", 
+                        "Lapis Zoltán", 
+                        "Pataki István", 
+                        "Szekeres Sándor"
+                    ],
+                    "Department": "Anyagvizsgáló és minőségbiztosítási technikus"
+                },
+                {
+                    "Students": [
+                        "Czégény Attila", 
+                        "Dékány Zsigmond", 
+                        "Németh István", 
+                        "Zsiros Norbert"
+                    ],
+                    "Department": "Épületgépész"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 1999,
@@ -1112,7 +1696,31 @@
         "Image": "1999_12B.jpg",
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2001,
+            "Grade": { "Grade": "2/14", "Sub": "B" },
+            "Ofo": "† Nagy János",
+            "Department": "Rendszerinformatikus",
+            "Students": [
+                "Babós András", 
+                "Balogh Lajos", 
+                "Bánszki András", 
+                "Csiaki András", 
+                "Jenei Károly", 
+                "Pásztor Magdolna", 
+                "Pintér Vince", 
+                "Podobni Róbert", 
+                "Stúber Tamás Géza", 
+                "Szabó Tamás", 
+                "Szelcsányi Gábor", 
+                "Tímár Károly", 
+                "Zalai Éva"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2000,
@@ -1148,7 +1756,25 @@
         "Image": "2000_12A.jpg",
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2002,
+            "Grade": { "Grade": 14, "Sub": "A" },
+            "Ofo": "Palotai Tibor",
+            "Department": "Gépgyártás-Technológus",
+            "Students": [
+                "Dénes Sándor", 
+                "Gáspár Károly", 
+                "Horányi Dániel", 
+                "Lászlóffy Arnold", 
+                "Mezőfi Róbert", 
+                "Nagy Kornél", 
+                "Vigyikán György"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2000,
@@ -1192,7 +1818,32 @@
         "Image": "2000_12B.jpg",
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": {
+            "FinishedAt": 2002,
+            "Grade": { "Grade": 14, "Sub": "B" },
+            "Ofo": "Kovács Levente",
+            "Department": "Rendszerinformatikus",
+            "Students": [
+                "Bálint Péter", 
+                "Bene István Zsolt", 
+                "Elek Krisztián", 
+                "Gál Zoltán", 
+                "Honfi Péter", 
+                "Krizsán László", 
+                "Mórocz László Mátyás", 
+                "Nagy László", 
+                "Petrovszki Péter Pál", 
+                "Sályi Attila", 
+                "Tornyi Krisztián", 
+                "Turna Szabolcs", 
+                "Vári Sándor", 
+                "Vincze Zsolt"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2000,
@@ -1278,7 +1929,29 @@
         "Image": "2001_12A.jpg",
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2003,
+            "Grade": { "Grade": "2/14", "Sub": "A" },
+            "Ofo": "Petrovszki István",
+            "Department": "Gépipari Mérnökasszisztens",
+            "Students": [
+                "Annaházi Lóránt", 
+                "Balázs Péter", 
+                "Balog Dániel", 
+                "Borbély István", 
+                "Csuka Sándor", 
+                "Farkas Attila", 
+                "Kiss Sándor", 
+                "Korbel Tamás", 
+                "Matyelka András", 
+                "Túsz Mihály", 
+                "Varga Csaba"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2001,
@@ -1326,7 +1999,42 @@
         "Image": "2001_12B.jpg",
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2003,
+            "Grade": { "Grade": "2/14", "Sub": "B" },
+            "Ofo": "Kovács Levente",
+            "Groups": [
+                {
+                    "Students": [
+                        "Benecz Tamás", 
+                        "Kajári Gábor Miklós", 
+                        "Mészáros Norbert Gábor", 
+                        "Virág Attila"
+                    ],
+                    "Department": "Műszaki Informatikus"
+                },
+                {
+                    "Students": [
+                        "Ancsin Pál", 
+                        "Focht Árpád", 
+                        "Gerencsér Ferenc", 
+                        "Hrabovszki Péter Bálint", 
+                        "Létai Mihály", 
+                        "Márki István", 
+                        "Papp Lajos", 
+                        "Rusznák István", 
+                        "Szabó Péter", 
+                        "Szatmári Balázs", 
+                        "Zahorán Csaba"
+                    ],
+                    "Department": "Rendszerinformatikus"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2001,
@@ -1414,7 +2122,44 @@
         "NotScanned": true,
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2004,
+            "Grade": { "Grade": "2/14", "Sub": "A" },
+            "Ofo": "Palotai Tibor",
+            "Groups": [
+                {
+                    "Students": [
+                        "Borek István", 
+                        "Hidvégi Gábor", 
+                        "Lászlóffy Arnold", 
+                        "Mihály Ferenc", 
+                        "Mihály László", 
+                        "Morár Péter Dániel", 
+                        "Pusztai Tamás", 
+                        "Rajki Csaba", 
+                        "Serbán György", 
+                        "Uhrin Zsolt", 
+                        "Váradi Lajos"
+                    ],
+                    "Department": "Épületgépész technikus"
+                },
+                {
+                    "Students": [
+                        "Győri Attila", 
+                        "Győri Krisztián", 
+                        "Németi Norbert", 
+                        "Stella Péter", 
+                        "Szekeres András", 
+                        "Tóth Róbert"
+                    ],
+                    "Department": "Rendszerinformatikus"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2002,
@@ -1500,7 +2245,31 @@
         ],
         "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2004,
+            "Grade": { "Grade": "2/14", "Sub": "B" },
+            "Ofo": "Krámer Judit",
+            "Department": "Multimédia-Fejlesztő",
+            "Students": [
+                "Bordács Róbert", 
+                "Fekete Balázs", 
+                "Gyüre Márton", 
+                "Kis Gábor", 
+                "Kispéter Zsolt", 
+                "Kolarovszki Adrienn", 
+                "Kugyelka Attila", 
+                "Molnár Márta", 
+                "Püski László", 
+                "Tóth László", 
+                "Váróczy László", 
+                "Vincze Balázs", 
+                "Zolnai Ferenc"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2003,
@@ -1534,7 +2303,48 @@
         ],
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation": 
+        {
+            "FinishedAt": 2005,
+            "Grade": { "Grade": "2/14", "Sub": "A" },
+            "Ofo": "Tímár Károly",
+            "Groups": [
+                {
+                    "Students": [
+                        "Csikai Ferenc", 
+                        "Fekete János", 
+                        "Gellai László", 
+                        "Jánoska Gábor", 
+                        "Kincses Mihály", 
+                        "Komlósi Sándor", 
+                        "Kovalovszki Lajos", 
+                        "Perecz György Krisztián", 
+                        "Sovány Ágnes", 
+                        "Szűcs Mihály", 
+                        "Varga Pál"
+                    ],
+                    "Department": "Épületgépész-technikus"
+                },
+                {
+                    "Students": [
+                        "Asztalos Dóra", 
+                        "Bélteki Lajos", 
+                        "Kis Béla", 
+                        "Kotroczó Zsuzsanna", 
+                        "Pengő Tamás László", 
+                        "Pribelszky Péter", 
+                        "Obetkó Györgyi", 
+                        "Szabó Tibor", 
+                        "Zelenyánszki Gabriella"
+                    ],
+                    "Department": "Multimédia-Fejlesztő"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2003,
@@ -1614,7 +2424,29 @@
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
         "Image": "2004_12A.jpg",
-        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2006,
+            "Grade": { "Grade": "2/14", "Sub": "A" },
+            "Ofo": "Kiss Ferenc",
+            "Department": "Épületgépész",
+            "Students": [
+                "Aradszki Árpád", 
+                "Géczi Gábor", 
+                "Kovács Tibor", 
+                "Kucsara Gergő", 
+                "Mihaiescu János", 
+                "Pallagi István", 
+                "Sebestyén János", 
+                "Torma Balázs", 
+                "Valaczkai Zoltán", 
+                "Virág Krisztián", 
+                "Zsibrita-Fecske János"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2004,
@@ -1761,7 +2593,34 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2007,
+            "Grade": { "Grade": "2/14", "Sub": "A" },
+            "Ofo": "Kiss Norbert",
+            "Department": "Multimédia-Fejlesztő",
+            "Students": [
+                "Csatári Csaba", 
+                "Farkas Tibor", 
+                "Gubis Krisztián Pál", 
+                "Gulácsi Péter", 
+                "Gyebrovszky Zoltán", 
+                "Kapusi József", 
+                "Kecskés Attila Tibor", 
+                "Kovács Géza", 
+                "Kun Tibor", 
+                "Máriás András", 
+                "Mucsi Gyula", 
+                "Nagy Attila", 
+                "Pap László", 
+                "Stúber Hajnalka Éva", 
+                "Székely Tamás Dávid", 
+                "Sztankó Szabolcs"
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2005,
@@ -1832,7 +2691,50 @@
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
         "Image": "2006_12A.jpg",
-        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
+        "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
+
+        "FurtherEducation":  {
+            "FinishedAt": 2007,
+            "Grade": { "Grade": "1/14", "Sub": "A" },
+            "Ofo": "Béládi Csaba",
+            "Groups": [
+                {
+                    "Students": [
+                        "Boldizsár Gyula Attila", 
+                        "Borbély György", 
+                        "Csóti György", 
+                        "Grósz Csaba", 
+                        "Lustyik Gábor", 
+                        "Markos Tamás", 
+                        "Podmaniczki Gergely", 
+                        "Rómer Péter", 
+                        "Sárközi Tamás Márk", 
+                        "Tobai Mihály", 
+                        "Zelenyánszki Tamás", 
+                        "Zsibrita Pál"
+                    ],
+                    "Department": "Épületgépész"
+                },
+                {
+                    "Students": [
+                        "Behán Attila", 
+                        "Csatári Lajos", 
+                        "Ficza Gergő Tamás", 
+                        "Kelemen Zoltán", 
+                        "Kisari Norbert", 
+                        "Majoros Péter", 
+                        "Máté Gábor", 
+                        "Petrovszki Tamás Róbert", 
+                        "Pleskó Pál", 
+                        "Szurovecz Zsolt", 
+                        "Varga Tibor"
+                    ],
+                    "Department": "Rendszerinformatikus"
+                }
+            ],
+            "Type": "TECHNICAL",
+            "Sources": [ "EMLEKKONYV" ]
+        }
     },
     {
         "FinishedAt": 2006,
@@ -2074,570 +2976,6 @@
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
-        "FinishedAt": 1991,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Nagyné Balázs Margit",
-        "Department": "Épületgépész",
-        "Students": [
-            "Andrej Zoltán", 
-            "Balogh József Zoltán", 
-            "Bereczki Zoltán", 
-            "Debreczeni Zoltán Imre", 
-            "Emhó Mihály", 
-            "Erdéli Géza", 
-            "Fabulya Attila", 
-            "Fekete Sándor", 
-            "Fodor Gábor", 
-            "Gulykás János", 
-            "Hajnal Zoltán", 
-            "Hodászi István Róbert", 
-            "Kertész Olivér Attila", 
-            "Kiss Tibor", 
-            "Orosz Tamás", 
-            "Petri Zoltán Mátyás", 
-            "Pocsai Tibor Gyula", 
-            "Sobester Zsolt Sándor", 
-            "Szücs Tibor László", 
-            "Túri Zoltán", 
-            "Varga Imre Zoltán"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1992,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Szabó Sándor",
-        "Department": "Épületgépész",
-        "Students": [
-            "Babcsák János", 
-            "Bócsik László", 
-            "Hankó Zsolt", 
-            "Horváth Gábor", 
-            "István Mihály", 
-            "Kéri János", 
-            "Komáromi Mihály", 
-            "Kóra Zsolt", 
-            "Kulcsár Szilárd", 
-            "Kun György", 
-            "Medovarszki Pál", 
-            "Nádházi Zoltán", 
-            "Németh Sándor", 
-            "Péli Zoltán János", 
-            "Susánszky Ádám", 
-            "Szász Sándor Róbert", 
-            "Tóth László", 
-            "Vodilla Zoltán"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1993,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Mochnács Mihály",
-        "Department": "Gépgyártás-Technológus",
-        "Students": [
-            "Barna János", 
-            "Beharóczki Zoltán", 
-            "Burda Szilárd", 
-            "Daczi László", 
-            "Erdős Attila", 
-            "Farkas Szabolcs", 
-            "Hudák Péter", 
-            "Jámbor Zsolt Tamás", 
-            "Krizsán Attila Pál", 
-            "Kvasz Tibor", 
-            "Lantos Lajos", 
-            "Makai Csaba", 
-            "Pluhár György Attila", 
-            "Szabó István", 
-            "Szász István", 
-            "Szilvási Szilárd Zsolt", 
-            "Varga Ambrus", 
-            "Varga Gábor", 
-            "Vida Imre"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1993,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Halmosi Mártonné",
-        "Department": "Épületgépész",
-        "Students": [
-            "Erdei Szabolcs", 
-            "Hajnal Tibor", 
-            "Hankó Tamás", 
-            "Kis István", 
-            "Krajcsovicz Zoltán", 
-            "Lukács Attila", 
-            "Magyar Mihály Zsolt", 
-            "Mihály Tamás", 
-            "Pengő Csaba Zsolt", 
-            "Tari Zoltán", 
-            "Tóth János", 
-            "Tuska Zoltán", 
-            "Varga Sándor Zsolt", 
-            "Vaszkán János", 
-            "Vida Ferenc", 
-            "Zolnai György", 
-            "Zsíros Attila"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1994,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Maczik Mihály",
-        "Department": "Gépgyártás-Technológus",
-        "Students": [
-            "Aradi Árpád", 
-            "Aradszki János Zoltán", 
-            "Balog Csaba", 
-            "Bánhegyi Zsolt", 
-            "Bencsik Krisztián", 
-            "Bittiner Marcell Ákos", 
-            "Daru Zoltán", 
-            "Drimba Norbert", 
-            "Fekete Zoltán", 
-            "Lakatos István", 
-            "Mikó Tamás Géza", 
-            "Nagy Balázs", 
-            "Parászka Tibor", 
-            "Pecze Gábor", 
-            "Tóth Attila Károly"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1994,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Keliger Istvánné",
-        "Department": "Épületgépész",
-        "Students": [
-            "Árkus György László", 
-            "Bagó Lajos Zoltán", 
-            "Bánhidi József", 
-            "Csiaki Tamás", 
-            "Csiernik Tamás", 
-            "Harangozó Zsolt", 
-            "Hegyi Mihály", 
-            "Jordanits Zsolt Árpád", 
-            "Kiss Krisztián András", 
-            "Kovács Péter", 
-            "Molnár Attila", 
-            "Nagy Karolin", 
-            "Ollár Tamás", 
-            "Pacsika Zsolt József", 
-            "SarkadiAttila Sándor", 
-            "Zalai Csaba"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1995,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Papp Béla",
-        "Department": "Gépgyártás-Technológus",
-        "Students": [
-            "Gyomai Zoltán", 
-            "Hrabovszki Erik", 
-            "Kiss Ákos", 
-            "Klotz Attila György", 
-            "Kovács János", 
-            "Kovács Krisztián", 
-            "Köleséri István", 
-            "Laurinyecz Attila Róbert", 
-            "Laurinyecz Zita", 
-            "Nagy József", 
-            "Papp János", 
-            "Szász Tibor Géza", 
-            "Uhrin András", 
-            "Varga István"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1995,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Kiss Ferenc",
-        "Department": "Épületgépész",
-        "Students": [
-            "Antal Richárd", 
-            "Czeglédi László", 
-            "Czégény Roland Károly", 
-            "Czikkely Attila", 
-            "Krucsó Zsolt", 
-            "Mórocz Attila Zoltán", 
-            "Pap Róbert", 
-            "Pauló Levente Lóránt", 
-            "Restye László", 
-            "Skita Róbert", 
-            "Somi Attila", 
-            "Tóth István", 
-            "Tóth Károly", 
-            "Varga Mihály"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1996,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Mochnács Mihály",
-        "Groups": [
-            {
-                "Department": "Gépgyártás-Technológia",
-                "Students": [
-                    "Arányi Attila", 
-                    "Bánszki Szilvia", 
-                    "Barányi Zsolt", 
-                    "Baukó Tamás", 
-                    "Boros László", 
-                    "Dékány Attila", 
-                    "Felföldi Attila", 
-                    "Horváth Gergely Mihály", 
-                    "Pintér Zoltán", 
-                    "Rá gyánszki Krisztián", 
-                    "Veres Antal", 
-                    "Zelenyánszki Péter", 
-                    "Zsilák Edit"
-                ]
-            },
-            {
-                "Department": "Információ-és Számítástechnika",
-                "Students": [
-                    "Bognár Zoltán", 
-                    "Csipke Krisztina", 
-                    "Darvas Kornél", 
-                    "Galló Erika", 
-                    "Kávási Norbert", 
-                    "Kovács Beáta", 
-                    "Nagy Zoltán", 
-                    "Ódor Balázs", 
-                    "Pásztor István", 
-                    "Plavecz Péter", 
-                    "Surányi Zsolt", 
-                    "Vaszkó Péter"
-                ]
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1996,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Börner Istvánné",
-        "Department": "Épületgépész",
-        "Students": [
-            "Ancsin István Balázs", 
-            "Bagi Attila", 
-            "Bakai Zsolt", 
-            "Farkas Pál", 
-            "Horváth Endre", 
-            "Leszkó Csaba", 
-            "Márki István", 
-            "Marosvölgyi Zoltán", 
-            "Petrovszki Róbert", 
-            "Tarsoly Csaba", 
-            "Tóth Lajos", 
-            "Turák Csaba", 
-            "Vida Zoltán"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1997,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Sarusi Ildikó",
-        "Department": "Gépgyártás-Technológia",
-        "Students": [
-            "Blaskó Zoltán", 
-            "Botyánszki Miklós", 
-            "Darabos Pál", 
-            "Flinta István", 
-            "Geszner József", 
-            "Gyebnár Zoltán", 
-            "Kára Péter Imre", 
-            "Kondacs Tamás", 
-            "Kovács Csaba", 
-            "Lengyel Gyula", 
-            "Lezsák Tibor", 
-            "Nagy György", 
-            "Papp Tibor", 
-            "Szabó Gábor", 
-            "Sznida Tamás", 
-            "Sztankó János", 
-            "Varga Tamás"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1997,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Béládi Csaba",
-        "Department": "Gépipari Minőségbiztosítás-Számítástechnika",
-        "Students": [
-            "Bohák János", 
-            "Fehér László", 
-            "Flinta János", 
-            "Horváth Gábor", 
-            "Pesztránszki Zsigmond", 
-            "Sándor Zsolt", 
-            "Sánta Mihály", 
-            "Szebeni Zoltán", 
-            "Toldi Péter György", 
-            "Varga Tamás", 
-            "Vass Dániel", 
-            "Vígh Róbert", 
-            "Wéber Károly", 
-            "Zsóri Tibor Zsolt"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1997,
-        "Grade": { "Grade": 13, "Sub": "C" },
-        "Ofo": "† Nagy János",
-        "Department": "Információ-és Számítástechnika",
-        "Students": [
-            "Balla András", 
-            "Elek Imre", 
-            "Fehér Zoltán", 
-            "Frankó Tibor", 
-            "Horváth Péter", 
-            "Korponai János", 
-            "Kovács László", 
-            "László József", 
-            "Papp János", 
-            "Pilán Csaba", 
-            "Szabó Levente", 
-            "Szegedi Péter", 
-            "Szilágyi Attila Tamás", 
-            "Tokaji Tibor", 
-            "Treczker Miklós László", 
-            "Urbán János", 
-            "Zahorán Tibor"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1998,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Galoviczné Hornok Anikó",
-        "Department": "Gépipari Minőségbiztosítás- Számítástechnika",
-        "Students": [
-            "Boér Gábor", 
-            "Csepregi Csaba András", 
-            "Farkas Attila", 
-            "Kovács Sándor Gábor", 
-            "Molnár György", 
-            "Pántya Gábor", 
-            "Patkás János", 
-            "Pogonyi Ist ván János", 
-            "Potocska Zsolt", 
-            "Sajti Roland", 
-            "Stadler Erik", 
-            "Szabó Lajos", 
-            "Szekeres Norbert", 
-            "Tar Csaba", 
-            "Tobai János"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1998,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Halmosiné Kiss Erzsébet",
-        "Groups": [
-            {
-                "Students": [
-                    "Bakonyi Imre", 
-                    "Balog Róbert", 
-                    "Gérus Sándor", 
-                    "Hévizi János", 
-                    "Ipacs Attila", 
-                    "Kiss Norbert", 
-                    "Nyiri József", 
-                    "Paluska Zsolt", 
-                    "Séllei Zoltán", 
-                    "Szatmári Gábor", 
-                    "Szín Zoltán Lajos", 
-                    "Volent László", 
-                    "Vozár István"
-                ],
-                "Department": "Mechatronika"
-            },
-            {
-                "Students": [
-                    "Börner Miklós András", 
-                    "Palotai István Sándor", 
-                    "Süli Bertalan", 
-                    "Tóth Tamás"
-                ],
-                "Department": "Épületgépész"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1998,
-        "Grade": { "Grade": 13, "Sub": "C" },
-        "Ofo": "Tulkán Zsolt",
-        "Department": "Információ- és Számítástechnika",
-        "Students": [
-            "Árgyelán Krisztián", 
-            "Báló Sándor", 
-            "Dobos László", 
-            "Filadelfi András", 
-            "Gáspár Csaba István", 
-            "Jámbor István", 
-            "Kató Róbert Imre", 
-            "Kesjár András", 
-            "Kiszel Anikó", 
-            "Kupás Imre", 
-            "Puskás Balázs", 
-            "Samu József", 
-            "Schwalm Dániel", 
-            "Skobrics Balázs", 
-            "Szitás Zsolt", 
-            "Takács László", 
-            "Tóth Ferenc", 
-            "Vad Lajos"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1999,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Maczik Mihály",
-        "Groups": [
-            {
-                "Students": [
-                    "Bencze János", 
-                    "Holecska László", 
-                    "Kis József", 
-                    "Kmotricza Igor Mihály", 
-                    "Kovács Zoltán", 
-                    "Laczó György", 
-                    "Szentesi Szabolcs"
-                ],
-                "Department": "Épületgépész"
-            },
-            {
-                "Students": [
-                    "Ancsin Viktor", 
-                    "Balogh István", 
-                    "Ébellai Géza", 
-                    "Erdei Gyula", 
-                    "Laczkó László", 
-                    "Nagy Sándor", 
-                    "Rideg Miklós", 
-                    "Sebestyén István Anyagvizsgáló és minőségbiztosítási technikus: Besztercei Zsolt Ádám", 
-                    "Geisel József", 
-                    "Farkas Brigitta", 
-                    "Kacsala Gábor", 
-                    "Tóth Gábor", 
-                    "Uhrin Tamás György"
-                ],
-                "Department": "Gépésztechnikus"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1999,
-        "Grade": { "Grade": 13, "Sub": "B" },
-        "Ofo": "Gáspár Piroska",
-        "Department": "Számítástechnikai Programozó és Szoftverüzemeltető",
-        "Students": [
-            "Csarnai Gábor", 
-            "Hrivnák Andrea Erzsébet", 
-            "Illés Gyula", 
-            "Juhász Ferenc", 
-            "Mészáros János", 
-            "Molnár Ildikó", 
-            "Molnár Katalin Krisztina", 
-            "Polgári Ferenc", 
-            "Puskás Edit", 
-            "Szaszák Csaba", 
-            "Szopkó Tibor", 
-            "Szentesi Erika", 
-            "Tokai Lajos", 
-            "Tóth Anikó"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 1999,
-        "Grade": { "Grade": 13, "Sub": "C" },
-        "Ofo": "Pap Csaba",
-        "Department": "Ipari Informatikai Technikus",
-        "Students": [
-            "Belicza János Zsolt", 
-            "Bellágh Attila", 
-            "Bojtos Péter Pál", 
-            "Fekete Viktor Iván", 
-            "Finna Sándor", 
-            "Folcz József", 
-            "Galó Gábor", 
-            "Gulyás Adrián", 
-            "Széll Balázs"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2000,
-        "Grade": { "Grade": 13, "Sub": "A" },
-        "Ofo": "Kiss Ferenc",
-        "Groups": [
-            {
-                "Students": [
-                    "Aszódi János", 
-                    "Boldog István Ferenc", 
-                    "Czvalinga Ákos Pál", 
-                    "Deák Katalin", 
-                    "Dohány Gergely", 
-                    "Erdődi Sándor", 
-                    "Kiss András Károly", 
-                    "Kovalovszki Imre", 
-                    "Lapis Zoltán", 
-                    "Pataki István", 
-                    "Szekeres Sándor"
-                ],
-                "Department": "Anyagvizsgáló és minőségbiztosítási technikus"
-            },
-            {
-                "Students": [
-                    "Czégény Attila", 
-                    "Dékány Zsigmond", 
-                    "Németh István", 
-                    "Zsiros Norbert"
-                ],
-                "Department": "Épületgépész"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
         "FinishedAt": 2000,
         "Grade": { "Grade": "2/14", "Sub": "C" },
         "Ofo": "† Nagy János ",
@@ -2670,70 +3008,6 @@
         "Sources": [ "EMLEKKONYV" ]
     },
     {
-        "FinishedAt": 2001,
-        "Grade": { "Grade": "2/14", "Sub": "B" },
-        "Ofo": "† Nagy János",
-        "Department": "Rendszerinformatikus",
-        "Students": [
-            "Babós András", 
-            "Balogh Lajos", 
-            "Bánszki András", 
-            "Csiaki András", 
-            "Jenei Károly", 
-            "Pásztor Magdolna", 
-            "Pintér Vince", 
-            "Podobni Róbert", 
-            "Stúber Tamás Géza", 
-            "Szabó Tamás", 
-            "Szelcsányi Gábor", 
-            "Tímár Károly", 
-            "Zalai Éva"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2002,
-        "Grade": { "Grade": 14, "Sub": "A" },
-        "Ofo": "Palotai Tibor",
-        "Department": "Gépgyártás-Technológus",
-        "Students": [
-            "Dénes Sándor", 
-            "Gáspár Károly", 
-            "Horányi Dániel", 
-            "Lászlóffy Arnold", 
-            "Mezőfi Róbert", 
-            "Nagy Kornél", 
-            "Vigyikán György"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2002,
-        "Grade": { "Grade": 14, "Sub": "B" },
-        "Ofo": "Kovács Levente",
-        "Department": "Rendszerinformatikus",
-        "Students": [
-            "Bálint Péter", 
-            "Bene István Zsolt", 
-            "Elek Krisztián", 
-            "Gál Zoltán", 
-            "Honfi Péter", 
-            "Krizsán László", 
-            "Mórocz László Mátyás", 
-            "Nagy László", 
-            "Petrovszki Péter Pál", 
-            "Sályi Attila", 
-            "Tornyi Krisztián", 
-            "Turna Szabolcs", 
-            "Vári Sándor", 
-            "Vincze Zsolt"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
         "FinishedAt": 2002,
         "Grade": { "Grade": 14, "Sub": "C" },
         "Ofo": "Szikora Zsolt",
@@ -2752,159 +3026,6 @@
         "Sources": [ "EMLEKKONYV" ]
     },
     {
-        "FinishedAt": 2003,
-        "Grade": { "Grade": "2/14", "Sub": "A" },
-        "Ofo": "Petrovszki István",
-        "Department": "Gépipari Mérnökasszisztens",
-        "Students": [
-            "Annaházi Lóránt", 
-            "Balázs Péter", 
-            "Balog Dániel", 
-            "Borbély István", 
-            "Csuka Sándor", 
-            "Farkas Attila", 
-            "Kiss Sándor", 
-            "Korbel Tamás", 
-            "Matyelka András", 
-            "Túsz Mihály", 
-            "Varga Csaba"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2003,
-        "Grade": { "Grade": "2/14", "Sub": "B" },
-        "Ofo": "Kovács Levente",
-        "Groups": [
-            {
-                "Students": [
-                    "Benecz Tamás", 
-                    "Kajári Gábor Miklós", 
-                    "Mészáros Norbert Gábor", 
-                    "Virág Attila"
-                ],
-                "Department": "Műszaki Informatikus"
-            },
-            {
-                "Students": [
-                    "Ancsin Pál", 
-                    "Focht Árpád", 
-                    "Gerencsér Ferenc", 
-                    "Hrabovszki Péter Bálint", 
-                    "Létai Mihály", 
-                    "Márki István", 
-                    "Papp Lajos", 
-                    "Rusznák István", 
-                    "Szabó Péter", 
-                    "Szatmári Balázs", 
-                    "Zahorán Csaba"
-                ],
-                "Department": "Rendszerinformatikus"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2004,
-        "Grade": { "Grade": "2/14", "Sub": "A" },
-        "Ofo": "Palotai Tibor",
-        "Groups": [
-            {
-                "Students": [
-                    "Borek István", 
-                    "Hidvégi Gábor", 
-                    "Lászlóffy Arnold", 
-                    "Mihály Ferenc", 
-                    "Mihály László", 
-                    "Morár Péter Dániel", 
-                    "Pusztai Tamás", 
-                    "Rajki Csaba", 
-                    "Serbán György", 
-                    "Uhrin Zsolt", 
-                    "Váradi Lajos"
-                ],
-                "Department": "Épületgépész technikus"
-            },
-            {
-                "Students": [
-                    "Győri Attila", 
-                    "Győri Krisztián", 
-                    "Németi Norbert", 
-                    "Stella Péter", 
-                    "Szekeres András", 
-                    "Tóth Róbert"
-                ],
-                "Department": "Rendszerinformatikus"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2004,
-        "Grade": { "Grade": "2/14", "Sub": "B" },
-        "Ofo": "Krámer Judit",
-        "Department": "Multimédia-Fejlesztő",
-        "Students": [
-            "Bordács Róbert", 
-            "Fekete Balázs", 
-            "Gyüre Márton", 
-            "Kis Gábor", 
-            "Kispéter Zsolt", 
-            "Kolarovszki Adrienn", 
-            "Kugyelka Attila", 
-            "Molnár Márta", 
-            "Püski László", 
-            "Tóth László", 
-            "Váróczy László", 
-            "Vincze Balázs", 
-            "Zolnai Ferenc"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2005,
-        "Grade": { "Grade": "2/14", "Sub": "A" },
-        "Ofo": "Tímár Károly",
-        "Groups": [
-            {
-                "Students": [
-                    "Csikai Ferenc", 
-                    "Fekete János", 
-                    "Gellai László", 
-                    "Jánoska Gábor", 
-                    "Kincses Mihály", 
-                    "Komlósi Sándor", 
-                    "Kovalovszki Lajos", 
-                    "Perecz György Krisztián", 
-                    "Sovány Ágnes", 
-                    "Szűcs Mihály", 
-                    "Varga Pál"
-                ],
-                "Department": "Épületgépész-technikus"
-            },
-            {
-                "Students": [
-                    "Asztalos Dóra", 
-                    "Bélteki Lajos", 
-                    "Kis Béla", 
-                    "Kotroczó Zsuzsanna", 
-                    "Pengő Tamás László", 
-                    "Pribelszky Péter", 
-                    "Obetkó Györgyi", 
-                    "Szabó Tibor", 
-                    "Zelenyánszki Gabriella"
-                ],
-                "Department": "Multimédia-Fejlesztő"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
         "FinishedAt": 2005,
         "Grade": { "Grade": "2/14", "Sub": "B" },
         "Ofo": "Kovács Sándor",
@@ -2916,27 +3037,6 @@
             "Perei István", 
             "Ravasz Csaba", 
             "Rácz Tibor"
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2006,
-        "Grade": { "Grade": "2/14", "Sub": "A" },
-        "Ofo": "Kiss Ferenc",
-        "Department": "Épületgépész",
-        "Students": [
-            "Aradszki Árpád", 
-            "Géczi Gábor", 
-            "Kovács Tibor", 
-            "Kucsara Gergő", 
-            "Mihaiescu János", 
-            "Pallagi István", 
-            "Sebestyén János", 
-            "Torma Balázs", 
-            "Valaczkai Zoltán", 
-            "Virág Krisztián", 
-            "Zsibrita-Fecske János"
         ],
         "Type": "TECHNICAL",
         "Sources": [ "EMLEKKONYV" ]
@@ -2972,74 +3072,6 @@
                 ],
                 "Department": "Rendszerinformatikus"
             }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2007,
-        "Grade": { "Grade": "1/14", "Sub": "A" },
-        "Ofo": "Béládi Csaba",
-        "Groups": [
-            {
-                "Students": [
-                    "Boldizsár Gyula Attila", 
-                    "Borbély György", 
-                    "Csóti György", 
-                    "Grósz Csaba", 
-                    "Lustyik Gábor", 
-                    "Markos Tamás", 
-                    "Podmaniczki Gergely", 
-                    "Rómer Péter", 
-                    "Sárközi Tamás Márk", 
-                    "Tobai Mihály", 
-                    "Zelenyánszki Tamás", 
-                    "Zsibrita Pál"
-                ],
-                "Department": "Épületgépész"
-            },
-            {
-                "Students": [
-                    "Behán Attila", 
-                    "Csatári Lajos", 
-                    "Ficza Gergő Tamás", 
-                    "Kelemen Zoltán", 
-                    "Kisari Norbert", 
-                    "Majoros Péter", 
-                    "Máté Gábor", 
-                    "Petrovszki Tamás Róbert", 
-                    "Pleskó Pál", 
-                    "Szurovecz Zsolt", 
-                    "Varga Tibor"
-                ],
-                "Department": "Rendszerinformatikus"
-            }
-        ],
-        "Type": "TECHNICAL",
-        "Sources": [ "EMLEKKONYV" ]
-    },
-    {
-        "FinishedAt": 2007,
-        "Grade": { "Grade": "2/14", "Sub": "A" },
-        "Ofo": "Kiss Norbert",
-        "Department": "Multimédia-Fejlesztő",
-        "Students": [
-            "Csatári Csaba", 
-            "Farkas Tibor", 
-            "Gubis Krisztián Pál", 
-            "Gulácsi Péter", 
-            "Gyebrovszky Zoltán", 
-            "Kapusi József", 
-            "Kecskés Attila Tibor", 
-            "Kovács Géza", 
-            "Kun Tibor", 
-            "Máriás András", 
-            "Mucsi Gyula", 
-            "Nagy Attila", 
-            "Pap László", 
-            "Stúber Hajnalka Éva", 
-            "Székely Tamás Dávid", 
-            "Sztankó Szabolcs"
         ],
         "Type": "TECHNICAL",
         "Sources": [ "EMLEKKONYV" ]

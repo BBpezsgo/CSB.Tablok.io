@@ -12,6 +12,8 @@ export namespace RawTypes {
         Ofo?: string | string[]
 
         Sources?: string[]
+
+        FurtherEducation?: Class
     }
 
     export interface SimpleClass extends BaseClass {
@@ -51,7 +53,7 @@ export interface Teacher {
         /** Year */
         To: number
         Class: Grade
-        TabloID: number
+        TabloID?: number
     }[]
 }
 
@@ -115,6 +117,8 @@ export interface BaseClass extends SchoolStatusData {
     Ofo: string[] | null
 
     Sources?: string[]
+
+    FurtherEducation?: Class
 }
 
 export interface SimpleClass extends BaseClass {

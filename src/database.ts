@@ -6,6 +6,121 @@ export class DataBase {
     readonly base: BaseData
     readonly teachers: Teacher[]
 
+    private ProcessClass(raw: RawTypes.Class, logs: boolean = false): Class {
+        let schoolStatusData: SchoolStatusData = {
+
+        }
+
+        let hasPrincipal = false
+        for (let j = 0; j < this.base.Principals.length; j++) {
+            const principal = this.base.Principals[j]
+            if (!principal.To) principal.To = new Date(Date.now()).getFullYear()
+
+            if (principal.From <= raw.FinishedAt && principal.To > raw.FinishedAt) {
+                schoolStatusData.CurrentPrincipal =  this.base.Principals[j]
+                hasPrincipal = true
+                break
+            }
+        }
+
+        if (!hasPrincipal)
+        if (logs) console.warn('Year without principal', raw.FinishedAt)
+
+        const hasDepartment = raw.Type === 'TECHNICAL' || raw.Type === undefined
+
+        let processedClass: Class = hasDepartment ? {
+            ...schoolStatusData,
+
+            StartedAt: raw.StartedAt ?? 0,
+            FinishedAt: raw.FinishedAt,
+            Grade: raw.Grade,
+
+            Ofo: null,
+
+            Students: raw.Students ?? null,
+            Groups: raw.Groups ?? null,
+            Type: raw.Type ? 'TECHNICAL' : 'POSSIBLY_TECHNICAL',
+            Department: raw.Department ? raw.Department.toString() : 'Ismeretlen',
+
+            Sources: raw.Sources,
+
+            FurtherEducation: (raw.FurtherEducation) ? this.ProcessClass(raw.FurtherEducation, logs) : undefined,
+        } : {
+            ...schoolStatusData,
+
+            StartedAt: raw.StartedAt ?? 0,
+            FinishedAt: raw.FinishedAt,
+            Grade: raw.Grade,
+
+            Ofo: null,
+
+            Students: raw.Students ?? null,
+            Type: 'SCHOOL',
+            Department: raw.Department ? raw.Department.toString() : undefined,
+
+            Sources: raw.Sources,
+            
+            FurtherEducation: (raw.FurtherEducation) ? this.ProcessClass(raw.FurtherEducation, logs) : undefined,
+        }
+
+        if (raw.Ofo) {
+            if (typeof raw.Ofo === 'string') processedClass.Ofo = [ raw.Ofo.trim() ]
+            else processedClass.Ofo = raw.Ofo
+
+            for (let ofo of processedClass.Ofo) {
+                if (this.GetTeacher(ofo) === -1) this.teachers.push({
+                    ID: this.teachers.length,
+                    Name: ofo,
+                    OfoAssignment: [],
+                })
+            }
+        }
+
+        if (raw.FurtherEducation && processedClass.FurtherEducation) if (raw.FurtherEducation.Ofo) {
+            if (typeof raw.FurtherEducation.Ofo === 'string') processedClass.FurtherEducation.Ofo = [ raw.FurtherEducation.Ofo.trim() ]
+            else processedClass.FurtherEducation.Ofo = raw.FurtherEducation.Ofo
+
+            for (let ofo of processedClass.FurtherEducation.Ofo) {
+                if (this.GetTeacher(ofo) === -1) this.teachers.push({
+                    ID: this.teachers.length,
+                    Name: ofo,
+                    OfoAssignment: [],
+                })
+            }
+        }
+
+        if (!raw.StartedAt && raw.Grade.Grade) {
+            if (typeof raw.Grade.Grade === 'number' && raw.Grade.Grade >= 9) {
+                processedClass.StartedAt = raw.FinishedAt - (raw.Grade.Grade - 8)
+                if (logs) console.log(`Tablo without starting date, calculating from grade number: ${raw.FinishedAt} - ${raw.Grade.Grade - 8} = ${raw.StartedAt}`, raw)
+            } else if (typeof raw.Grade.Grade === 'string' && raw.Grade.Grade.includes('/')) {
+                const n = Number.parseInt(raw.Grade.Grade.split('/')[1])
+                processedClass.StartedAt = raw.FinishedAt - (n - 8)
+                if (logs) console.log(`Tablo without starting date, calculating from grade number: ${raw.FinishedAt} - ${n - 8} = ${raw.StartedAt}`, raw)
+            }
+        }
+        
+        return processedClass
+    }
+
+    private ProcessTablo(raw: RawTypes.Tablo, logs: boolean = false): Tablo {
+        if (raw.IsCube) {
+            return {
+                ...this.ProcessClass(raw, logs),
+                Cube: raw.Cube,
+                IsScanned: (raw.NotScanned === true) ? false : true,
+                IsCube: true,
+            }
+        } else {
+            return {
+                ...this.ProcessClass(raw, logs),
+                Image: raw.Image ? encodeURI(raw.Image.trim()) : undefined,
+                IsScanned: raw.Image ? ((raw.NotScanned === true) ? false : true) : undefined,
+                IsCube: false,
+            }
+        }
+    }
+
     constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, logs: boolean) {
         this.tablos = []
         this.departments = departments
@@ -20,107 +135,9 @@ export class DataBase {
         // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
         {
-            const tablo = tablos[i]
-            if (typeof tablo === 'string') continue
-
-            let schoolStatusData: SchoolStatusData = {
-
-            }
-
-            let hasPrincipal = false
-            for (let j = 0; j < this.base.Principals.length; j++) {
-                const principal = this.base.Principals[j]
-                if (!principal.To) principal.To = new Date(Date.now()).getFullYear()
-
-                if (principal.From <= tablo.FinishedAt && principal.To > tablo.FinishedAt) {
-                    schoolStatusData.CurrentPrincipal =  this.base.Principals[j]
-                    hasPrincipal = true
-                    break
-                }
-            }
-
-            if (!hasPrincipal)
-            if (logs) console.warn('Year without principal', tablo.FinishedAt)
-
-            let processedClass: Class
-            if (tablo.Type === 'TECHNICAL' || tablo.Type === undefined) {
-                processedClass = {
-                    ...schoolStatusData,
-
-                    StartedAt: tablo.StartedAt ?? 0,
-                    FinishedAt: tablo.FinishedAt,
-                    Grade: tablo.Grade,
-
-                    Ofo: null,
-
-                    Students: tablo.Students ?? null,
-                    Groups: tablo.Groups ?? null,
-                    Type: tablo.Type ? 'TECHNICAL' : 'POSSIBLY_TECHNICAL',
-                    Department: tablo.Department ? tablo.Department.toString() : 'Ismeretlen',
-
-                    Sources: tablo.Sources,
-                }
-
-                if (typeof tablo.Department === 'number') 
-                { processedClass.Department = departments[tablo.Department] ?? 'Ismeretlen' }
-
-            } else {
-                processedClass = {
-                    ...schoolStatusData,
-
-                    StartedAt: tablo.StartedAt ?? 0,
-                    FinishedAt: tablo.FinishedAt,
-                    Grade: tablo.Grade,
-
-                    Ofo: null,
-
-                    Students: tablo.Students ?? null,
-                    Type: 'SCHOOL',
-                    Department: tablo.Department ? tablo.Department.toString() : undefined,
-
-                    Sources: tablo.Sources,
-                }
-            }
-
-            if (tablo.Ofo) {
-                if (typeof tablo.Ofo === 'string') processedClass.Ofo = [ tablo.Ofo.trim() ]
-                else processedClass.Ofo = tablo.Ofo
-
-                if (processedClass.Ofo) for (let ofo of processedClass.Ofo) {
-                    if (this.GetTeacher(ofo) === -1) this.teachers.push({
-                        ID: this.teachers.length,
-                        Name: ofo,
-                        OfoAssignment: [],
-                    })
-                }
-            }
-
-            if (!tablo.StartedAt && tablo.Grade.Grade) {
-                if (typeof tablo.Grade.Grade === 'number' && tablo.Grade.Grade >= 9) {
-                    processedClass.StartedAt = tablo.FinishedAt - (tablo.Grade.Grade - 8)
-                    if (logs) console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${tablo.Grade.Grade - 8} = ${tablo.StartedAt}`, tablo)
-                } else if (typeof tablo.Grade.Grade === 'string' && tablo.Grade.Grade.includes('/')) {
-                    const n = Number.parseInt(tablo.Grade.Grade.split('/')[1])
-                    processedClass.StartedAt = tablo.FinishedAt - (n - 8)
-                    if (logs) console.log(`Tablo without starting date, calculating from grade number: ${tablo.FinishedAt} - ${n - 8} = ${tablo.StartedAt}`, tablo)
-                }
-            }
-            
-            if (tablo.IsCube) {
-                this.tablos.push({
-                    ...processedClass,
-                    Cube: tablo.Cube,
-                    IsScanned: (tablo.NotScanned === true) ? false : true,
-                    IsCube: true,
-                })
-            } else {
-                this.tablos.push({
-                    ...processedClass,
-                    Image: tablo.Image ? encodeURI(tablo.Image.trim()) : undefined,
-                    IsScanned: tablo.Image ? ((tablo.NotScanned === true) ? false : true) : undefined,
-                    IsCube: false,
-                })
-            }
+            const raw = tablos[i]
+            if (typeof raw === 'string') continue
+            this.tablos.push(this.ProcessTablo(raw, logs))
         }
         this.tablos = this.tablos.sort((a, b) => {
             let result = b.FinishedAt - a.FinishedAt
@@ -151,16 +168,29 @@ export class DataBase {
         this.AssignTabloIDs()
 
         for (let tablo of this.tablos) {
-            if (!tablo.Ofo || tablo.StartedAt === 0 || tablo.Grade.Grade === 0 || !tablo.Grade.Sub) continue
-            for (let ofo of tablo.Ofo) {
-                const ofoRef = this.GetTeacher(ofo)
-                if (ofoRef === -1) continue
-                this.teachers[ofoRef].OfoAssignment.push({
-                    From: tablo.StartedAt,
-                    To: tablo.FinishedAt,
-                    Class: tablo.Grade,
-                    TabloID: tablo.ID ?? -1,
-                })
+            if (tablo.Ofo && tablo.StartedAt !== 0 && tablo.Grade.Grade !== 0 && tablo.Grade.Sub) {
+                for (let ofo of tablo.Ofo) {
+                    const ofoRef = this.GetTeacher(ofo)
+                    if (ofoRef === -1) continue
+                    this.teachers[ofoRef].OfoAssignment.push({
+                        From: tablo.StartedAt,
+                        To: tablo.FinishedAt,
+                        Class: tablo.Grade,
+                        TabloID: tablo.ID ?? undefined,
+                    })
+                }
+            }
+
+            if (tablo.FurtherEducation) if (tablo.FurtherEducation.Ofo && tablo.FurtherEducation.StartedAt !== 0 && tablo.FurtherEducation.Grade.Grade !== 0 && tablo.FurtherEducation.Grade.Sub) {
+                for (let ofo of tablo.FurtherEducation.Ofo) {
+                    const ofoRef = this.GetTeacher(ofo)
+                    if (ofoRef === -1) continue
+                    this.teachers[ofoRef].OfoAssignment.push({
+                        From: tablo.FurtherEducation.StartedAt,
+                        To: tablo.FurtherEducation.FinishedAt,
+                        Class: tablo.FurtherEducation.Grade,
+                    })
+                }
             }
         }
 

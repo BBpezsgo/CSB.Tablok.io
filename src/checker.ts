@@ -1,5 +1,5 @@
 import { DataBase } from "./database"
-import { CheckedTablo } from "./database-types"
+import { BaseClass, CheckedTablo, Class, Tablo } from "./database-types"
 import * as Utilities from "./utilities"
 import * as HTTP from "./http"
 
@@ -41,6 +41,20 @@ export function CheckDatabase(database: DataBase, log: boolean) {
                 }
             }
         }
+
+        if (tablo.FurtherEducation) {
+            if (tablo.Students && tablo.FurtherEducation.Students) for (const student of tablo.FurtherEducation.Students) {
+                if (!tablo.Students.includes(student))
+                { if (log) console.warn(`Unexpected student "${student}" in further education`, tablo) }
+            }
+            if (tablo.FurtherEducation.FinishedAt <= tablo.FinishedAt)
+            { if (log) console.warn(`Further education can't be finished before base class (base: ${tablo.FinishedAt}, sub: ${tablo.FurtherEducation.FinishedAt})`, tablo) }
+            if (tablo.FurtherEducation.Grade.Sub !== tablo.Grade.Sub)
+            { if (log) console.warn(`Different subgrade in further education?`, tablo) }
+            if (tablo.FurtherEducation.Grade.Grade <= tablo.Grade.Grade)
+            { if (log) console.warn(`Further education can't be finished with smaller grade number than base class (base: ${tablo.Grade.Grade}, sub: ${tablo.Grade.Grade})`, tablo) }
+        }
+
         if (tablo.Department === 'Ismeretlen' || !tablo.Department) {
             if (log) console.warn(`Unknown department ${tablo.Department}`, tablo)
             tablo.Issues.push(`Unknown department ${tablo.Department}`)
@@ -118,68 +132,98 @@ export function CheckDatabase(database: DataBase, log: boolean) {
     if (log) departments.forEach((value, key) => { if (value < 10) console.log(`Department "${key}" only exists ${value} times`) })
 }
 
+function ProcessTablo(base: Tablo) {
+    const original = base as CheckedTablo
+    let tablo = {
+        ...original,
+        HasIssule: true,
+        UnknownDepartment: (original.Type !== 'SCHOOL') ? (original.Department === 'Ismeretlen') : false,
+        Unverified: false,
+        StudentCount: 0,
+        NoTeacher: false,
+        OfficiallyVerified: original.Sources?.includes(OFFICAL_SOURCE) ?? false
+    }
+
+    if (tablo.Students) tablo.StudentCount = tablo.Students.length
+    if (tablo.Type !== 'SCHOOL') if (tablo.Groups) {
+        for (let i = 0; i < tablo.Groups.length; i++) {
+            const group = tablo.Groups[i]
+            tablo.StudentCount += group.Students.length
+        }
+    }
+
+    for (let j = tablo.Issues.length-1; j >= 0; j--) {
+        const issue = tablo.Issues[j]
+
+        if (issue === 'Unverified source') {
+            tablo.Unverified = true
+            tablo.Issues.splice(j, 1)
+            continue
+        }
+
+        if (issue === 'No image') {
+            tablo.Issues.splice(j, 1)
+            continue
+        }
+
+        if (issue === 'Unknown teacher null') {
+            tablo.Issues.splice(j, 1)
+            tablo.NoTeacher = true
+            continue
+        }
+
+        if (issue === 'No grade number') {
+            tablo.Issues.splice(j, 1)
+            continue
+        }
+
+        if (issue === 'No sub-grade') {
+            tablo.Issues.splice(j, 1)
+            continue
+        }
+
+        if (issue.startsWith('Unknown department')) {
+            tablo.Issues.splice(j, 1)
+            tablo.UnknownDepartment = true
+            continue
+        }
+    }
+
+    tablo.HasIssule = tablo.Issues.length > 0
+
+    return tablo
+}
+
+function ProcessSubTablo(base: Class) {
+    const original = base
+    let tablo = {
+        ...original,
+        HasIssule: false,
+        UnknownDepartment: (original.Type !== 'SCHOOL') ? (original.Department === 'Ismeretlen') : false,
+        Unverified: false,
+        StudentCount: 0,
+        NoTeacher: false,
+        OfficiallyVerified: original.Sources?.includes(OFFICAL_SOURCE) ?? false,
+        ID: null as string | null
+    }
+
+    if (tablo.Students) tablo.StudentCount = tablo.Students.length
+    if (tablo.Type !== 'SCHOOL') if (tablo.Groups) {
+        for (let i = 0; i < tablo.Groups.length; i++) {
+            const group = tablo.Groups[i]
+            tablo.StudentCount += group.Students.length
+        }
+    }
+
+    return tablo
+}
+
 export function Main(database: DataBase) {
     const tbody = Utilities.GetElement('tbody')
     let yearRow: HTMLElement|null = null
     let year: number|null = null
     for (let i = 0; i < database.tablos.length; i++) {
-        const original = database.tablos[i] as CheckedTablo
-        let tablo = {
-            ...original,
-            HasIssule: true,
-            UnknownDepartment: (original.Type !== 'SCHOOL') ? (original.Department === 'Ismeretlen') : false,
-            Unverified: false,
-            StudentCount: 0,
-            NoTeacher: false,
-            OfficiallyVerified: original.Sources?.includes(OFFICAL_SOURCE) ?? false
-        }
-
-        if (tablo.Students) tablo.StudentCount = tablo.Students.length
-        if (tablo.Type !== 'SCHOOL') if (tablo.Groups) {
-            for (let i = 0; i < tablo.Groups.length; i++) {
-                const group = tablo.Groups[i]
-                tablo.StudentCount += group.Students.length
-            }
-        }
-
-        for (let j = tablo.Issues.length-1; j >= 0; j--) {
-            const issue = tablo.Issues[j]
-
-            if (issue === 'Unverified source') {
-                tablo.Unverified = true
-                tablo.Issues.splice(j, 1)
-                continue
-            }
-
-            if (issue === 'No image') {
-                tablo.Issues.splice(j, 1)
-                continue
-            }
-
-            if (issue === 'Unknown teacher null') {
-                tablo.Issues.splice(j, 1)
-                tablo.NoTeacher = true
-                continue
-            }
-
-            if (issue === 'No grade number') {
-                tablo.Issues.splice(j, 1)
-                continue
-            }
-
-            if (issue === 'No sub-grade') {
-                tablo.Issues.splice(j, 1)
-                continue
-            }
-
-            if (issue.startsWith('Unknown department')) {
-                tablo.Issues.splice(j, 1)
-                tablo.UnknownDepartment = true
-                continue
-            }
-        }
-
-        tablo.HasIssule = tablo.Issues.length > 0
+        const tablo = ProcessTablo(database.tablos[i])
 
         if (yearRow === null || year === null) {
             year = tablo.FinishedAt
@@ -191,5 +235,18 @@ export function Main(database: DataBase) {
         }
 
         tbody.appendChild(Utilities.Template('check/row', tablo))
+        tbody.appendChild(Utilities.Template('check/students-row', tablo))
+
+        if (tablo.FurtherEducation) {
+            const subclass = ProcessSubTablo(tablo.FurtherEducation)
+            subclass.ID = tablo.ID + '-sub'
+
+            const subrow = Utilities.Template('check/subrow', subclass)
+            subrow.id = `subrow-${tablo.ID}`
+            subrow.style.display = 'none'
+            tbody.appendChild(subrow)
+
+            tbody.appendChild(Utilities.Template('check/students-row', subclass))
+        }
     }
 }

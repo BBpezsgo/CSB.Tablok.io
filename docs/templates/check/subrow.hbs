@@ -6,9 +6,6 @@
     {{#if Grade.Grade}}
     <td{{#if OfficiallyVerified}} style="background-color: #2928;"{{/if}}>
         {{Grade.Grade}}
-        {{#if FurtherEducation}}
-            <div id="subrow-toggle-{{ID}}" class="toggler toggler-hide" onclick="ToggleSub('subrow-{{ID}}', 'subrow-toggle-{{ID}}')"></div>
-        {{/if}}
     </td>
     {{else}}
     <td style="background-color: #f008;"></td>
@@ -39,7 +36,7 @@
     {{#if IsCube}}
         <td>Cube
     {{else}}
-    <td style="background-color: #f008;">
+    <td>
     {{/if}}
     {{/if}}
     </td>

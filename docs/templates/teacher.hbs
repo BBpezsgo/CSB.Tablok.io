@@ -2,7 +2,7 @@
     <p>{{Name}}</p>
     <div class="teacher-ofo-assignments">
         {{#each OfoAssignment}}
-            <div onclick="OpenTabloModal({{TabloID}})" title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
+            <div{{#if TabloID}} onclick="OpenTabloModal({{TabloID}})"{{/if}} title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
                 {{From}} - {{To}}
             </div>
         {{/each}}
