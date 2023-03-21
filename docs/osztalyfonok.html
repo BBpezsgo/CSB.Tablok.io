@@ -163,11 +163,15 @@
                         padding: 4px 8px;
                     }
 
-                    ul#teachers-list>li>.teacher-ofo-assignments div {
+                    ul#teachers-list>li>.teacher-ofo-assignments div:not(.tablo-assigment-unavaliable) {
                         cursor: pointer !important;
                     }
 
-                    ul#teachers-list>li>.teacher-ofo-assignments div:hover {
+                    ul#teachers-list>li>.teacher-ofo-assignments div.tablo-assigment-unavaliable {
+                        opacity: 60%;
+                    }
+
+                    ul#teachers-list>li>.teacher-ofo-assignments div:not(.tablo-assigment-unavaliable):hover {
                         text-decoration: underline;
                     }
                 </style>
@@ -201,5 +205,6 @@
     <script src="scripts/scripts.js"></script>
     <script src="scripts/filter-teachers.js"></script>
     <script src="scripts/reveal.js"></script>
+    <script src="scripts/hash.js"></script>
 </body>
 </html>

@@ -13,11 +13,19 @@
   overflow: hidden;
   text-overflow: clip;
   height: 350px;
-  border-radius: 3px;
-  box-shadow: #0008 0px 0px 4px;
-  transition: transform 500ms, box-shadow 500ms, border 500ms, opacity 500ms;
+  transition: opacity 300ms;
   cursor: pointer !important;
-  border: 1px solid #fff0;
+  box-shadow:
+    #000 inset 1px 0px 2px,
+    #000 inset 0px 1px 2px,
+    #000 inset -1px 0px 2px,
+    #000 inset 0px -1px 2px,
+    #000 1px 1px 0px,
+    #000 2px 2px 0px,
+    #000 3px 3px 0px,
+    #000 4px 4px 0px;
+  transform: translate(-4px, -4px);
+  border: #000 2px solid;
 }
 
 .cube-tablo * {
@@ -29,11 +37,11 @@
 }
 
 .cube-tablo>div:last-child {
+  transition: opacity 100ms;
   height: 100%;
   width: 100%;
   position: absolute;
   opacity: 0;
-  transition: opacity 200ms;
   background-color: #0008;
 }
 
@@ -42,8 +50,24 @@
 }
 
 .cube-tablo:hover {
-  transform: scale(1.05);
-  z-index: 1;
-  box-shadow: #0006 0px 0px 16px;
-  border: 1px solid #ffff;
+  box-shadow:
+    #000 inset 1px 0px 2px,
+    #000 inset 0px 1px 2px,
+    #000 inset -1px 0px 2px,
+    #000 inset 0px -1px 2px,
+    #00BBFF 1px 1px 0px,
+    #00BBFF 2px 2px 0px,
+    #00BBFF 3px 3px 0px,
+    #00BBFF 4px 4px 0px;
+  border: #00BBFF 2px solid;
+}
+
+.cube-tablo:hover:active {
+  box-shadow:
+    #000 inset 1px 0px 2px,
+    #000 inset 0px 1px 2px,
+    #000 inset -1px 0px 2px,
+    #000 inset 0px -1px 2px,
+    #00BBFF 1px 1px 0px;
+  transform: translate(-1px, -1px);
 }

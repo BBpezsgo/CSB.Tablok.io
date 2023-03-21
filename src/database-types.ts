@@ -54,6 +54,7 @@ export interface Teacher {
         To: number
         Class: Grade
         TabloID?: number
+        TabloReadableID?: string
     }[]
 }
 
@@ -88,7 +89,7 @@ export class Name
 */
 
 export interface Grade {
-    /** ie. 11 */
+    /** ie. 12 or 2/14 */
     Grade: number | string
     /** ie. C */
     Sub: string | null
@@ -146,6 +147,9 @@ export type Tablo = Class & (BasicTablo | CubeTablo) & {
     /** Tablo index */
     ID?: number
     IsScanned?: boolean
+
+    /** YEAR_GRADE_SUBGRADE */
+    IDReadable: string
 }
 
 export type CheckedTablo = Tablo & {

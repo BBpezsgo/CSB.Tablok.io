@@ -31,6 +31,15 @@
     border-bottom: 2px solid #fff8;
     color: #fff;
     transition: outline 100ms;
+    cursor: text !important;
+}
+
+.kiscim input[type=text] {
+    font-size: 16px;
+}
+
+.kiscim input[type=number] {
+    font-size: 16px;
 }
 
 .kiscim input[disabled] {
@@ -56,6 +65,7 @@
     color: #fff;
     transition: outline 100ms;
     cursor: pointer !important;
+    margin: 0px 4px;
 }
 
 .kiscim button:hover {

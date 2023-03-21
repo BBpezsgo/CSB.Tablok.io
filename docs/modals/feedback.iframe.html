@@ -97,10 +97,13 @@
 </div>
 <div id="feedback-upload-done" style="display: none;">
     <i class="fas fa-check-circle" style="font-size: 32px; display: inline; color: #0eb833;"></i>
-    <h2 style="display: inline;">Köszönjük a visszajelzést!</h2>
+    <h2 style="display: inline;">Köszönjük a visszajelzésétt!</h2>
     <div id="feedback-upload-spinner">
         <img width="32" height="32" src="../img/spinner.gif" style="display: inline-block;">
         Feltöltés...
+    </div>
+    <div id="feedback-upload-done-text" style="display:none">
+        A visszajelzés feltöltve!
     </div>
     <button onclick="
         ELEMENTS['upload-done'].style.display = 'none';
@@ -114,6 +117,7 @@
         'upload-spinner': document.getElementById('feedback-upload-spinner'),
         'form-upload': document.getElementById('feedback-upload-form'),
         'upload-done': document.getElementById('feedback-upload-done'),
+        'upload-done-text': document.getElementById('feedback-upload-done-text'),
         /** @type {HTMLButtonElement} */
         'back': document.getElementById('feedback-back')
     }
@@ -122,7 +126,10 @@
         const title = 'Visszajelzés'
         const desc = ELEMENTS["form-description"].value
         const spinner = ELEMENTS["upload-spinner"]
+        const doneText = ELEMENTS["upload-done-text"]
+
         ELEMENTS['back'].disabled = true
+        doneText.style.display = 'none'
 
         var xhr = new XMLHttpRequest()
         xhr.onreadystatechange = function () {
@@ -135,9 +142,11 @@
             }
             if (xhr.readyState == 4) {
                 spinner.style.display = 'none'
+                doneText.style.display = 'block'
                 ELEMENTS['back'].disabled = false
             } else {
                 spinner.style.display = 'block'
+                doneText.style.display = 'none'
             }
         }
         xhr.open("POST", 'https://api.trello.com/1/cards/?idList=63ccefc1b6b3b4019949e079&token=84de6f5cbc9e3fb5df77596358352cc839e1dea58d8dbb0857919f39b6143acf&key=16160910964e82904e57646c84c9fb69&name=' + title + '&desc=' + desc, true)

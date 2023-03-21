@@ -10,12 +10,8 @@ function Filter(iteration = 0) {
     const database = window.Database
 
     const filters =  {
-        year: {
-            /** @type {number} */
-            start: document.getElementById('filter-year-start').valueAsNumber,
-            /** @type {number} */
-            end: document.getElementById('filter-year-end').valueAsNumber,
-        },
+        /** @type {number} */
+        year: document.getElementById('filter-year').valueAsNumber,
         grade: {
             /** @type {number} */
             grade: document.getElementById('filter-grade').valueAsNumber,
@@ -28,8 +24,7 @@ function Filter(iteration = 0) {
 
     let haveFilter = false
 
-    if (filters.year.start !== 1986) haveFilter = true
-    if (filters.year.end !== 2023) haveFilter = true
+    if (filters.year.toString() !== 'NaN') haveFilter = true
     if (filters.ofo.trim().length > 0) haveFilter = true
     if (filters.grade.grade.toString() !== 'NaN') haveFilter = true
     if (filters.grade.sub.trim().length > 0) haveFilter = true
@@ -70,17 +65,12 @@ function Filter(iteration = 0) {
             prev.style.display = 'none'
         }
 
-        if (filters.year.start > tablo.StartedAt) {
+        if (filters.year) if (filters.year !== tablo.FinishedAt) {
             hide()
             continue
         }
 
-        if (filters.year.end < tablo.FinishedAt) {
-            hide()
-            continue
-        }
-
-        if (filters.grade.grade.toString() !== 'NaN') if (tablo.Grade.Grade.toString() !== filters.grade.grade.toString().trim()) {
+        if (filters.grade.grade) if (tablo.Grade.Grade.toString() !== filters.grade.grade.toString().trim()) {
             hide()
             continue
         }
@@ -94,7 +84,7 @@ function Filter(iteration = 0) {
                 hide()
                 continue
             }
-            if (!tablo.Ofo.join(', ').toString().toLowerCase().includes(filters.ofo.trim().toLowerCase())) {
+            if (!tablo.Ofo.join(',').toLowerCase().includes(filters.ofo.trim().toLowerCase())) {
                 hide()
                 continue
             }
@@ -107,4 +97,26 @@ function Filter(iteration = 0) {
     if (noResultElement) noResultElement.style.display = noResult ? '' : 'none'
 
     Filter(iteration + 1)
+}
+
+function ResetFilter() {
+    const elements =  {
+        /** @type {HTMLInputElement} */
+        year: document.getElementById('filter-year'),
+        grade: {
+            /** @type {HTMLInputElement} */
+            grade: document.getElementById('filter-grade'),
+            /** @type {HTMLInputElement} */
+            sub: document.getElementById('filter-grade-sub'),
+        },
+        /** @type {HTMLInputElement} */
+        ofo: document.getElementById('filter-ofo'),
+    }
+
+    elements.year.value = ''
+    elements.grade.grade.value = ''
+    elements.grade.sub.value = ''
+    elements.ofo.value = ''
+
+    Filter()
 }

@@ -3,6 +3,8 @@ import * as HTTP from './http'
 import * as Utilities from './utilities'
 import * as Checker from './checker'
 
+const LOWRES_IMAGE_FORMAT = 'webp'
+
 declare global {
     interface Window {
         OpenTabloModal: (id: number) => void
@@ -13,6 +15,8 @@ declare global {
         DisplayOfoSuggestion: (name: string) => void
 
         RefreshTablos: () => void
+
+        HashManager: any
     }
 }
 
@@ -96,7 +100,7 @@ async function Main() {
             if (!tablo.IsScanned) continue
 
             try {
-                if (await HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image) !== 200) continue
+                if (await HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)) !== 200) continue
             } catch (error) { continue }
 
             if (lastYearPanel === 0) {
@@ -322,6 +326,34 @@ async function Main() {
         modal.remove()
     })
 
+    if (tablosElement) if (window.location.hash.startsWith('#tablo_')) {
+
+        const hashParts = window.location.hash.split('_')
+        let year = null
+        let grade = null
+        let sub = null
+
+        console.log('Load page with tablo opened: ', window.location.hash)
+        console.log('Load page with tablo opened: ', hashParts)
+
+        if (hashParts.length === 4) {
+            year = Number.parseInt(hashParts[1])
+            grade = hashParts[2].replace('-', '/')
+            sub = hashParts[3]
+        }
+
+        console.log('Load page with tablo opened: ', year, grade, sub)
+
+        for (const tablo of Database.tablos) {
+            if (tablo.FinishedAt !== year) continue
+            if (tablo.Grade.Grade.toString() !== grade) continue
+            if (tablo.Grade.Sub !== sub) continue
+            if (!tablo.ID) continue
+            window.OpenTabloModal(tablo.ID)
+            break
+        }
+    }
+
     if (tablosElement) {
         setTimeout(() => {
             const tabloElements = document.querySelectorAll('.tablo') as NodeListOf<HTMLElement>
@@ -345,7 +377,7 @@ async function Main() {
                         tabloElement.classList.remove('tablo-unloaded')
                         const tabloId = Number.parseInt(tabloElement.id.split('-')[1])
                         const tablo = Database.tablos[tabloId]
-                        if (!tablo.IsCube) if (tablo.Image) tabloElement.style.backgroundImage = `url(img/tablos-lowres/${tablo.Image})`
+                        if (!tablo.IsCube) if (tablo.Image) tabloElement.style.backgroundImage = `url(img/tablos-lowres/${tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)})`
                     } else {
                         if (tabloElement.classList.contains('tablo-unloaded')) continue
                         tabloElement.style.backgroundImage = 'url(#)'
@@ -374,7 +406,7 @@ async function Main() {
                                 const sideElement = sideElements.item(i)
                                 if (!sideElement) continue
                                 const image = tablo.Cube[i]
-                                sideElement.style.backgroundImage = `url(img/tablos-lowres/${image})`
+                                sideElement.style.backgroundImage = `url(img/tablos-lowres/${image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)})`
                             }
                         }
                     } else {

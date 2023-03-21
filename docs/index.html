@@ -20,30 +20,20 @@
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="icon" type="image/x-icon" href="https://www.nemesgszi.hu/components/images/favicon.png">
     <title>Tablók | Békéscsabai SZC Nemes Tihamér Technikum és Kollégium | GSZI |</title>
+    <meta name="description" content="Békéscsabai SZC Nemes Tihamér Technikum és Kollégium tablói.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d70969805a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
-        
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-    $(() => {
-        $( "#year-slider-range" ).slider({
-            range: true,
-            min: 1986,
-            max: 2023,
-            values: [ 1986, 2023 ],
-            slide: (event, ui) => {
-                document.getElementById('filter-year-start').value = ui.values[0]
-                document.getElementById('filter-year-end').value = ui.values[1]
-            }
-        })
-    })
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <div id="sticky-navbar" style="opacity:0%;pointer-events:none">
+        <div class="links">
+            <a class="navbar_items navbar-button" href="./osztalyfonok.html">Osztályfőnökök</a>
+            <a class="navbar_items navbar-button" href="./index.html">Főoldal</a>
+        </div>
+    </div>
 
     <div class="header" style="z-index: -1;">
         <div class="headerfade" style="z-index: -1;"></div>
@@ -52,21 +42,21 @@
         </div>
     </div>
     <div class="header-btns">
-        <a      class="header-btn" style="background-image: url(img/bug.svg)"      href="./check.html"></a>
-        <button class="header-btn" style="background-image: url(img/info.svg)"     onclick="document.getElementById('id01').style.display='block';document.body.classList.add('tablo-showing')"></button>
-        <button class="header-btn" style="background-image: url(img/feedback.svg)" onclick="document.getElementById('id02').style.display='block';document.body.classList.add('tablo-showing')"></button>
-        <a href="https://www.nemesgszi.hu/" id="logo-gszi"><img src="https://www.nemesgszi.hu/components/images/logo.png" width="85" alt="GSZI Logó"></a>
-        <a href="https://bszc.hu" id="logo-bszc"><img src="https://www.nemesgszi.hu/components/images/logo_bszc.png" width="85" alt="BSZC Logó"></a>
+        <a      class="header-btn" style="background-image: url(img/bug.svg)"      href="./check.html" aria-label="Adatellenőrző oldal"></a>
+        <button class="header-btn" style="background-image: url(img/info.svg)"     onclick="document.getElementById('id01').style.display='block';document.body.classList.add('tablo-showing')" aria-label="Készítők megjelenítése"></button>
+        <button class="header-btn" style="background-image: url(img/feedback.svg)" onclick="document.getElementById('id02').style.display='block';document.body.classList.add('tablo-showing')" aria-label="Visszajelzés küldése"></button>
+        <a href="https://www.nemesgszi.hu/" id="logo-gszi"><img src="./img/logo_gszi.png" width="85" alt="GSZI Logó"></a>
+        <a href="https://bszc.hu" id="logo-bszc"><img src="./img/logo_bszc.png" width="85" alt="BSZC Logó"></a>
     </div>
 
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <div class="links">
-            <!--<a class="navbar_items" href="./osztalyok.html">Osztályok</a>
-            <a class="navbar_items" href="./evfolyamok.html">Évfolyamok</a>-->
-            <a class="navbar_items" href="./osztalyfonok.html">Osztályfőnökök</a>
-            <a class="navbar_items" href="./index.html">Főoldal</a>
+            <a class="navbar_items navbar-button" href="./osztalyfonok.html">Osztályfőnökök</a>
+            <a class="navbar_items navbar-button" href="./index.html">Főoldal</a>
         </div>
     </div>
+
+    <script>window.addEventListener('DOMContentLoaded',()=>{const stickyNavbar=document.getElementById('sticky-navbar');const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{const rect=navbar.getBoundingClientRect();const visible=(rect.top+rect.height<0);stickyNavbar.style.opacity=visible?'100%':'0%';stickyNavbar.style.pointerEvents=visible?'all':'none';})})</script>
 
     <div class="row">
         <div class="body">
@@ -75,89 +65,78 @@
             </div>
             <div class="kiscim">
                 <h3>Szűrők</h3>
-                <div class="input-group" style="display:inline-block">
-                    <h4>Végzős év</h4>
+                <div>
+                    <div class="input-group" style="display:inline-block">
+                        <h4>Végzős év</h4>
 
-                    <div>
-                        <p>
-                            <input id="filter-year-start" class="filter-input-info" style="width:50px" type="number" min="1986" max="2023" value="1986" disabled>
-                            <label for="filter-year-start">-tól/től</label>
-                            <input id="filter-year-end" class="filter-input-info" style="width:50px" type="number" min="1986" max="2023" value="2023" disabled>
-                            <label for="filter-year-end">-ig</label>
-                        </p> 
+                        <div>
+                            <p title="Melyik évben végzett az osztály?">
+                                <input id="filter-year" class="filter-input-info" style="width:60px" type="number" min="1990" max="2023">
+                                <label for="filter-year">-ban/ben végzett</label>
+                            </p>
+                        </div>
+                    </div>
+                    <style>
+                        #filter-grade-sub {
+                            text-transform: uppercase;
+                        }
+                    </style>
+                    <div class="input-group" style="display:inline-block">
+                        <h4>Osztály</h4>
 
-                        <style>
-                            #year-slider-range {
-                                font-size: 0.8em;
-                            }
-                            #year-slider-range > .ui-slider-range {
-                                background-color: #00BBFF;
-                            }
-                            #year-slider-range > .ui-slider-handle {
-                                border-radius: 50%;
-                            }
-                        </style>
-                        <div id="year-slider-range"></div>
+                        <div>
+                            <label for="filter-grade" title="Melyik évfolyamon végzett az osztály? (pl. 12)">Évfolyam:</label>
+                            <input id="filter-grade" title="Melyik évfolyamon végzett az osztály? (pl. 12)" type="number" min="11" max="15" style="width:48px">
+                            <label for="filter-grade-sub" title="Milyen betűjelzése volt az osztálynak? (pl. C)">Osztály:</label>
+                            <input id="filter-grade-sub" title="Milyen betűjelzése volt az osztálynak? (pl. C)" type="text" maxlength="3" style="width:48px">
+                        </div>
+                    </div>
+                    <style>
+                        ul#filter-ofo-suggestions {
+                            padding-left: 0px;
+                            border: 1px solid #444;
+                            list-style: none;
+                            display: block;
+                            position: absolute;
+                            width: 177px;
+                            z-index: 3;
+                            background-color: #fff;
+                            box-shadow: #0008 2px 2px 4px;
+
+                            background-color: #555;
+                            color: #eee;
+                        }
+                        ul#filter-ofo-suggestions>li {
+                            cursor: pointer;
+                        }
+                        ul#filter-ofo-suggestions>li:not(:last-child) {
+                            border-bottom: 1px solid #666;
+                        }
+                        ul#filter-ofo-suggestions>li:hover {
+                            background-color: #0002;
+                        }
+                        ul#filter-ofo-suggestions>li:active {
+                            background-color: #0003;
+                        }
+
+                        #filter-ofo {
+                            text-transform: capitalize;
+                        }
+                    </style>
+                    <div class="input-group" style="display:inline-block">
+                        <h4>Osztályfőnök</h4>
+                        <div>
+                            <input autocomplete="off" title="Ki volt az osztály osztályfőnöke?" id="filter-ofo" type="text" maxlength="64" placeholder="Osztályfőnök neve">
+                            <ul id="filter-ofo-suggestions" style="display:none">
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <style>
-                    #filter-grade-sub {
-                        text-transform: uppercase;
-                    }
-                </style>
-                <div class="input-group" style="display:inline-block">
-                    <h4>Osztály</h4>
-
-                    <div>
-                        <label for="filter-grade">Évfolyam:</label>
-                        <input id="filter-grade" type="number" min="12" max="15" placeholder="12" style="width:48px">
-                        <label for="filter-grade-sub">Osztály:</label>
-                        <input id="filter-grade-sub" type="text" maxlength="2" placeholder="C" style="width:32px">
-                    </div>
+                <div>
+                    <button onclick="ResetFilter()" title="A keresési paraméterek (évszám/osztályfőnök/osztály) kitörlése">Visszaállítás</button>
+                    <button onclick="Filter()" title="Tablók keresése a paraméterek alapján">Keresés</button>
                 </div>
-                <style>
-                    ul#filter-ofo-suggestions {
-                        padding-left: 0px;
-                        border: 1px solid #444;
-                        list-style: none;
-                        display: block;
-                        position: absolute;
-                        width: 177px;
-                        z-index: 3;
-                        background-color: #fff;
-                        box-shadow: #0008 2px 2px 4px;
-
-                        background-color: #555;
-                        color: #eee;
-                    }
-                    ul#filter-ofo-suggestions>li {
-                        cursor: pointer;
-                    }
-                    ul#filter-ofo-suggestions>li:not(:last-child) {
-                        border-bottom: 1px solid #666;
-                    }
-                    ul#filter-ofo-suggestions>li:hover {
-                        background-color: #0002;
-                    }
-                    ul#filter-ofo-suggestions>li:active {
-                        background-color: #0003;
-                    }
-
-                    #filter-ofo {
-                        text-transform: capitalize;
-                    }
-                </style>
-                <div class="input-group" style="display:inline-block">
-                    <h4>Osztályfőnök</h4>
-                    <div>
-                        <label for="filter-ofo"></label>
-                        <input autocomplete="off" id="filter-ofo" type="text" maxlength="64" placeholder="Osztályfőnök neve">
-                        <ul id="filter-ofo-suggestions" style="display:none">
-
-                        </ul>
-                    </div>
-                </div>
-                <button onclick="Filter()">Keresés</button>
             </div>
             <div id="tablos-container">
                 Loading
@@ -175,6 +154,7 @@
     <script src="scripts/scripts.js"></script>
     <script src="scripts/filter-tablos.js"></script>
     <script src="scripts/reveal.js"></script>
+    <script src="scripts/hash.js"></script>
 </body>
 
 </html>

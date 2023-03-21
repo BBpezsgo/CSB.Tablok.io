@@ -2,9 +2,15 @@
     <p>{{Name}}</p>
     <div class="teacher-ofo-assignments">
         {{#each OfoAssignment}}
-            <div{{#if TabloID}} onclick="OpenTabloModal({{TabloID}})"{{/if}} title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
+        {{#if TabloID}}
+            <div onclick="window.HashManager.UpdateHistory('tablo_{{TabloReadableID}}');OpenTabloModal({{TabloID}})" title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
                 {{From}} - {{To}}
             </div>
+        {{else}}
+            <div class="tablo-assigment-unavaliable" title="Ekkor volt a(z) {{Class.Grade}}.{{Class.Sub}} osztály osztályfőnöke">
+                {{From}} - {{To}}
+            </div>
+        {{/if}}
         {{/each}}
     </div>
 </li>

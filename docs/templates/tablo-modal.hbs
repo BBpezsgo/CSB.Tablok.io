@@ -1,6 +1,6 @@
-<div id="tablo-modal" class="" onclick="if (event.srcElement === this) CloseTabloModal()">
+<div id="tablo-modal" onclick="if(event.srcElement===this){CloseTabloModal();window.HashManager.RemoveHash()}">
     <div>
-        <div id="tablo-modal-close" onclick="CloseTabloModal()">X</div>
+        <div id="tablo-modal-close" onclick="CloseTabloModal();window.HashManager.RemoveHash()">X</div>
         <div style="margin-top:40px;padding-bottom:2px;background-color:#999;border-radius:4px;overflow:hidden">
             <h1 style="background-color:#00BBFF;color:#fff;border-radius:4px;box-shadow:#0006 0px 0px 8px;margin-top:0px">{{Grade.Grade}}.{{Grade.Sub}} osztály</h1>
             {{#if Department}}

@@ -4,6 +4,7 @@ import * as Utilities from "./utilities"
 import * as HTTP from "./http"
 
 const OFFICAL_SOURCE = 'EXCEL TABLE (NEW)'
+const LOWRES_IMAGE_FORMAT = 'webp'
 
 export function CheckDatabase(database: DataBase, log: boolean) {
     /*
@@ -68,7 +69,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         if (!tablo.IsCube) { if (!tablo.Image)
         { if (log) console.warn(`Tablo without image`, tablo); tablo.Issues.push('No image') }
         else {
-            if (!tablo.IsCube) if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image)
+            if (!tablo.IsCube) if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT))
                 .then(code => {
                     if (code === 200) return
                     if (!tablo.IsCube)
@@ -125,6 +126,9 @@ export function CheckDatabase(database: DataBase, log: boolean) {
                 departments.set(tablo.Department, 1)
             }
         }
+
+        if (encodeURIComponent(tablo.IDReadable) !== tablo.IDReadable)
+        { console.warn(`Invalid IDReadable value "${tablo.IDReadable}"`) }
 
         database.tablos[i] = tablo
     }

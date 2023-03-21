@@ -110,6 +110,7 @@ export class DataBase {
                 Cube: raw.Cube,
                 IsScanned: (raw.NotScanned === true) ? false : true,
                 IsCube: true,
+                IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }
         } else {
             return {
@@ -117,6 +118,7 @@ export class DataBase {
                 Image: raw.Image ? encodeURI(raw.Image.trim()) : undefined,
                 IsScanned: raw.Image ? ((raw.NotScanned === true) ? false : true) : undefined,
                 IsCube: false,
+                IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }
         }
     }
@@ -177,6 +179,7 @@ export class DataBase {
                         To: tablo.FinishedAt,
                         Class: tablo.Grade,
                         TabloID: tablo.ID ?? undefined,
+                        TabloReadableID: `${tablo.FinishedAt}_${tablo.Grade.Grade.toString().replace('/', '-')}_${tablo.Grade.Sub}`,
                     })
                 }
             }
