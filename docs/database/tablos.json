@@ -129,7 +129,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2013,
-        "Ofo": "Papp Csaba",
+        "Ofo": "Pap Csaba",
         "Department": "Gépészeti Szakmacsoport",
         "Image": "2013_12A.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
@@ -1532,7 +1532,7 @@
     {
         "FinishedAt": 1998,
         "Grade": { "Grade": 12, "Sub": "C" },
-        "Ofo": "Papp Csaba",
+        "Ofo": "Pap Csaba",
         "Students": [
             "Bálint Károly", 
             "Bellágh Attila", 
