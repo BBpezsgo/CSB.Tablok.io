@@ -60,6 +60,8 @@ async function Main() {
     // If "tablosElement" exists, it deletes its content
     if (tablosElement) Utilities.ClearElement(tablosElement)
 
+    const MAX_YEAR_DIFFERENCE = 2
+
     // If "tablosElement" exists, it fills up with some content
     if (tablosElement) {
         let container: HTMLElement | null = null
@@ -72,7 +74,7 @@ async function Main() {
                     tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
                     container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
                     lastYearPanel = tablo.FinishedAt
-                } else if (tablo.FinishedAt - lastYearPanel < -3) {
+                } else if (Math.abs(tablo.FinishedAt - lastYearPanel) >= MAX_YEAR_DIFFERENCE) {
                     tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
                     container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
                     lastYearPanel = tablo.FinishedAt
@@ -107,7 +109,7 @@ async function Main() {
                 tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
                 container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
                 lastYearPanel = tablo.FinishedAt
-            } else if (tablo.FinishedAt - lastYearPanel < -3) {
+            } else if (Math.abs(tablo.FinishedAt - lastYearPanel) >= MAX_YEAR_DIFFERENCE) {
                 tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
                 container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
                 lastYearPanel = tablo.FinishedAt
