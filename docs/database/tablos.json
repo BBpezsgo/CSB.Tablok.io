@@ -194,7 +194,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2020,
-        "Ofo": "Pálfi István",
+        "Ofo": [ "Pálfi István", "Tomka Ágnes", "Raffai András" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2020_12D.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
@@ -210,7 +210,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2021,
-        "Ofo": [ "Raffai András", "Szíjjártó Sándor" ],
+        "Ofo": [ "Raffai András", "Szíjjártó Sándor", "Halmosiné Kiss Erzsébet" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2021_12D.jpg",
         "Sources": [ "SCAN", "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
