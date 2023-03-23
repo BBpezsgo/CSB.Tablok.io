@@ -108,7 +108,7 @@ export class DataBase {
             return {
                 ...this.ProcessClass(raw, logs),
                 Cube: raw.Cube,
-                IsScanned: (raw.NotScanned === true) ? false : true,
+                BadQuality: raw.BadQuality,
                 IsCube: true,
                 IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }
@@ -116,7 +116,7 @@ export class DataBase {
             return {
                 ...this.ProcessClass(raw, logs),
                 Image: raw.Image ? encodeURI(raw.Image.trim()) : undefined,
-                IsScanned: raw.Image ? ((raw.NotScanned === true) ? false : true) : undefined,
+                BadQuality: raw.Image ? (raw.BadQuality) : undefined,
                 IsCube: false,
                 IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }

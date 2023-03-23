@@ -375,7 +375,7 @@
         ],
         "Department": "Épületgépészeti Technikus",
         "Image": "1991_4B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
@@ -509,7 +509,7 @@
             "Zsíros Attila"
         ],
         "Image": "1992_4B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
@@ -928,7 +928,7 @@
             "Vida Zoltán"
         ],
         "Image": "1995_4B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
@@ -1089,7 +1089,7 @@
         ],
         "Department": "Informatika és Minőségbiztosítási Technikus",
         "Image": "1996_4B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
@@ -1284,7 +1284,7 @@
             "Zsidó Norbert Ferenc"
         ],
         "Image": "1997_4B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
@@ -1419,7 +1419,7 @@
             "Uhrin Tamás György"
         ],
         "Image": "1998_12A.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Department": "Gépészeti Szakmacsoport",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
@@ -1502,6 +1502,7 @@
         ],
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
+        "Image": "1998_12B.jpg",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
         "FurtherEducation": {
@@ -1568,7 +1569,7 @@
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
         "Image": "1998_12C.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
         "FurtherEducation": {
@@ -2119,7 +2120,7 @@
             "Zsiga József"
         ],
         "Image": "2002_12A.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
@@ -2245,6 +2246,7 @@
         ],
         "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
+        "Image": "2002_12C.jpg",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
         "FurtherEducation":  {
@@ -2303,6 +2305,7 @@
         ],
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
+        "Image": "2003_12A.jpg",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
         "FurtherEducation": 
@@ -2486,6 +2489,7 @@
         ],
         "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
+        "Image": "2004_12B.jpg",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -2524,7 +2528,7 @@
         ],
         "Image": "2004_12.C.jpg",
         "Department": "Informatikai Szakmacsoport",
-        "NotScanned": true,
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
@@ -2556,7 +2560,7 @@
             "Takács Norbert"
         ],
         "Image": "2005_12A.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Department": "Gépészeti Szakmacsoport",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -3177,7 +3181,7 @@
         "Ofo": [ "Béresné Juhász Ágnes", "Sarusi József" ],
         "Department": "Informatikai Szakmacsoport",
         "Image": "2009_13C.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
         "Other": [
             "Nyelvi előkészítő"
@@ -3190,7 +3194,7 @@
         "Ofo": "Halmosiné Kiss Erzsébet",
         "Department": "Informatikai Szakmacsoport",
         "Image": "2010_12.B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
@@ -3220,7 +3224,7 @@
         "Ofo": [ "Béládi Csaba", "Hrabovszki Ildikó" ],
         "Department": "Informatikai Szakmacsoport",
         "Image": "2012_13C.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ],
         "Other": [
             "Nyelvi előkészítő"
@@ -3290,7 +3294,7 @@
         "Ofo": "Tulkán Zsolt",
         "Department": "Gépészeti Szakmacsoport",
         "Image": "2018_12A.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -3298,7 +3302,7 @@
         "FinishedAt": 2018,
         "Ofo": "Tusjak Brigitta",
         "Image": "2018_12B.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Department": "Informatikai Szakmacsoport",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
@@ -3335,7 +3339,7 @@
         "Ofo": "Földi Zsolt",
         "Department": "Informatikai Szakmacsoport",
         "Image": "2021_12C.jpg",
-        "NotScanned": true,
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -3360,6 +3364,8 @@
         "FinishedAt": 2022,
         "Ofo": "Tusjak Brigitta",
         "Department": "Informatikai Szakmacsoport",
+        "Image": "2022_12B.jpg",
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -3375,6 +3381,8 @@
         "FinishedAt": 2022,
         "Ofo": "Barlabásné Nagy Csilla",
         "Department": "Speciális Gép- és Járműgyártás Ágazat",
+        "Image": "2022_12M.jpg",
+        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     "============================================================",

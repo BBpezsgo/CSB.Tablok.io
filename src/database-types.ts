@@ -41,7 +41,7 @@ export namespace RawTypes {
     export type Tablo =
         Class &
         (BasicTablo | CubeTablo)
-        & { NotScanned?: true }
+        & { BadQuality?: true }
 }
 
 export interface Teacher {
@@ -146,7 +146,7 @@ export type CubeTablo = {/** Cube image URLs */ Cube: string[]; IsCube: true }
 export type Tablo = Class & (BasicTablo | CubeTablo) & {
     /** Tablo index */
     ID?: number
-    IsScanned?: boolean
+    BadQuality?: boolean
 
     /** YEAR_GRADE_SUBGRADE */
     IDReadable: string

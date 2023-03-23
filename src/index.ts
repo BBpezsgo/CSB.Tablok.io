@@ -97,7 +97,7 @@ async function Main() {
             }
 
             if (!tablo.Image) continue
-            if (!tablo.IsScanned) continue
+            if (tablo.BadQuality) continue
 
             try {
                 if (await HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)) !== 200) continue

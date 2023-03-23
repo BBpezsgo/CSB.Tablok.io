@@ -31,7 +31,7 @@
 
     {{#if Image}}
     <td>
-        <a href="./img/tablos/{{Image}}" target="_blank">{{Image}} {{#if IsScanned}}{{else}}<img style="user-select:none" src="./img/check/error.png" title="This image is not scanned">{{/if}}</a>
+        <a href="./img/tablos/{{Image}}" target="_blank">{{Image}} {{#if BadQuality}}<img style="user-select:none" src="./img/check/error.png" title="Bad quality">{{/if}}</a>
     {{else}}
     {{#if IsCube}}
         <td>Cube
