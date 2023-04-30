@@ -2,6 +2,7 @@ import { DataBase } from "./database"
 import * as HTTP from './http'
 import * as Utilities from './utilities'
 import * as Checker from './checker'
+import * as Versions from './versions'
 
 const LOWRES_IMAGE_FORMAT = 'webp'
 
@@ -25,8 +26,9 @@ async function DownloadDatabase(logs: boolean) {
     const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
     const base: any = JSON.parse(await HTTP.GetAsync('./database/base.json'))
     const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
+    const versions: any[] = JSON.parse(await HTTP.GetAsync('./database/versions.json'))
 
-    return new DataBase(tablos, departments, base, logs)
+    return new DataBase(tablos, departments, base, versions, logs)
 }
 
 /** Main function: this will be called when the document is loaded */
@@ -50,6 +52,9 @@ async function Main() {
 
     if (filename === 'check.html') {
         Checker.Main(Database)
+        return
+    } else if (filename === 'version.html') {
+        Versions.Main(Database)
         return
     }
 

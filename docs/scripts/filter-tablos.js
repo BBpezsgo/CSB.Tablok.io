@@ -1,15 +1,19 @@
 // @ts-nocheck
 
-function Filter(iteration = 0) {
-    if (iteration >= 2) {
-        if (window.RefreshTablos) window.RefreshTablos()
-        return
+function GetElements() {
+    return {
+        year: document.getElementById('filter-year'),
+        grade: {
+            grade: document.getElementById('filter-grade'),
+            sub: document.getElementById('filter-grade-sub'),
+        },
+        ofo: document.getElementById('filter-ofo'),
+        student: document.getElementById('filter-student'),
     }
+}
 
-    /** @type {import('./filter').DataBase} */
-    const database = window.Database
-
-    const filters =  {
+function GetElementValues() {
+    return {
         /** @type {number} */
         year: document.getElementById('filter-year').valueAsNumber,
         grade: {
@@ -20,12 +24,34 @@ function Filter(iteration = 0) {
         },
         /** @type {string} */
         ofo: document.getElementById('filter-ofo').value,
+        /** @type {string} */
+        student: document.getElementById('filter-student').value,
     }
+}
+
+/**
+ * @param {string} v
+ */
+function NormalizeString(v) {
+    return v.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
+function Filter(iteration = 0) {
+    if (iteration >= 2) {
+        if (window.RefreshTablos) window.RefreshTablos()
+        return
+    }
+
+    /** @type {import('./filter').DataBase} */
+    const database = window.Database
+
+    const filters = GetElementValues()
 
     let haveFilter = false
 
     if (filters.year.toString() !== 'NaN') haveFilter = true
     if (filters.ofo.trim().length > 0) haveFilter = true
+    if (filters.student.trim().length > 0) haveFilter = true
     if (filters.grade.grade.toString() !== 'NaN') haveFilter = true
     if (filters.grade.sub.trim().length > 0) haveFilter = true
     
@@ -90,6 +116,26 @@ function Filter(iteration = 0) {
             }
         }
 
+        if (filters.student && filters.student.trim().length > 0) {
+            if (!tablo.Students) {
+                hide()
+                continue
+            }
+            const normalizedFilterStudent = NormalizeString(filters.student.trim().toLowerCase())
+            let studentFound = false
+            for (let j = 0; j < tablo.Students.length; j++) {
+                const student = NormalizeString(tablo.Students[j].trim().toLowerCase())
+                if (student.includes(normalizedFilterStudent)) {
+                    studentFound = true
+                    break
+                }
+            }
+            if (!studentFound) {
+                hide()
+                continue
+            }
+        }
+
         noResult = false
     }
 
@@ -100,23 +146,13 @@ function Filter(iteration = 0) {
 }
 
 function ResetFilter() {
-    const elements =  {
-        /** @type {HTMLInputElement} */
-        year: document.getElementById('filter-year'),
-        grade: {
-            /** @type {HTMLInputElement} */
-            grade: document.getElementById('filter-grade'),
-            /** @type {HTMLInputElement} */
-            sub: document.getElementById('filter-grade-sub'),
-        },
-        /** @type {HTMLInputElement} */
-        ofo: document.getElementById('filter-ofo'),
-    }
+    const elements = GetElements()
 
     elements.year.value = ''
     elements.grade.grade.value = ''
     elements.grade.sub.value = ''
     elements.ofo.value = ''
+    elements.student.value = ''
 
     Filter()
 }

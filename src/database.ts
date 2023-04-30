@@ -5,6 +5,7 @@ export class DataBase {
     readonly departments: string[]
     readonly base: BaseData
     readonly teachers: Teacher[]
+    readonly versions: any[]
 
     private ProcessClass(raw: RawTypes.Class, logs: boolean = false): Class {
         let schoolStatusData: SchoolStatusData = {
@@ -123,16 +124,21 @@ export class DataBase {
         }
     }
 
-    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, logs: boolean) {
+    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, versions: any[], logs: boolean) {
         this.tablos = []
         this.departments = departments
         this.base = base
         this.teachers = []
+        this.versions = []
 
         this.base.Principals = this.base.Principals.sort((a, b) => a.From - b.From)
         
-        // This converts objects into class instances
-        // for (let i = 0; i < this.teachers.length; i++) teachers[i].Name = new Name(teachers[i].Name.Surname, teachers[i].Name.Firstname)
+        for (let i = 0; i < versions.length; i++) {
+            const version = versions[i]
+            this.versions.push(version)
+        }
+        try { this.versions.sort((a, b) => Date.parse(b.date) - Date.parse(a.date)) }
+        catch (error) { console.error(error) }
 
         // Some data processing stuff
         for (let i = 0; i < tablos.length; i++)
