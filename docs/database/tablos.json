@@ -3538,7 +3538,7 @@
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2023,
         "Ofo": "Dóczi Zita",
-        "Department": null,
+        "Department": "Gépészeti Szakmacsoport",
         "Image": "2023_12A.jpg",
         "Students": [
             "Bacsai Máté", 
@@ -3575,7 +3575,7 @@
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2023,
         "Ofo": "Szabó Viktor",
-        "Department": null,
+        "Department": "Informatikai Szakmacsoport",
         "Image": "2023_12B.jpg",
         "Students": [
             "Benyó András", 
@@ -3613,7 +3613,7 @@
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2023,
         "Ofo": [ "Gajda Judit", "Tipi Henriett" ],
-        "Department": null,
+        "Department": "Informatikai Szakmacsoport",
         "Image": "2023_12C.jpg",
         "Students": [
             "Albert Viktor", 
@@ -3654,7 +3654,7 @@
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2023,
         "Ofo": null,
-        "Department": null,
+        "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2023_12D.jpg",
         "Students": [
             "Ancsin Balázs", 
@@ -3685,7 +3685,7 @@
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2023,
         "Ofo": null,
-        "Department": null,
+        "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2023_12E.jpg",
         "Students": [
             "Balázs Gergely", 
