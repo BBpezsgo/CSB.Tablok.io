@@ -2595,6 +2595,8 @@
             "Tóth Bence", 
             "Vanesa István"
         ],
+        "Image": "2005_12B.jpg",
+        "BadQuality": true,
         "Type": "SCHOOL",
         "Department": "Informatikai Szakmacsoport",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
@@ -3391,8 +3393,9 @@
     {
         "Grade": { "Grade": 12, "Sub": "A" },
         "FinishedAt": 2023,
-        "Ofo": null,
+        "Ofo": "Dóczi Zita",
         "Department": null,
+        "Image": "2023_12A.jpg",
         "Students": [
             "Bacsai Máté", 
             "Balázs Nándor Mátyás", 
@@ -3427,8 +3430,9 @@
     {
         "Grade": { "Grade": 12, "Sub": "B" },
         "FinishedAt": 2023,
-        "Ofo": null,
+        "Ofo": "Szabó Viktor",
         "Department": null,
+        "Image": "2023_12B.jpg",
         "Students": [
             "Benyó András", 
             "Budai Lili", 
@@ -3464,8 +3468,9 @@
     {
         "Grade": { "Grade": 12, "Sub": "C" },
         "FinishedAt": 2023,
-        "Ofo": null,
+        "Ofo": [ "Gajda Judit", "Tipi Henriett" ],
         "Department": null,
+        "Image": "2023_12C.jpg",
         "Students": [
             "Albert Viktor", 
             "Bereczki Gábor Balázs", 
@@ -3506,6 +3511,7 @@
         "FinishedAt": 2023,
         "Ofo": null,
         "Department": null,
+        "Image": "2023_12D.jpg",
         "Students": [
             "Ancsin Balázs", 
             "Balázs Anita Nikolett", 
@@ -3536,6 +3542,7 @@
         "FinishedAt": 2023,
         "Ofo": null,
         "Department": null,
+        "Image": "2023_12E.jpg",
         "Students": [
             "Balázs Gergely", 
             "Bartyik Viktória", 

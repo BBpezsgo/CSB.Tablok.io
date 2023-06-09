@@ -31,7 +31,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
             tablo.Issues.push('No source')
         } else {
             if (!tablo.Sources.includes(OFFICAL_SOURCE)) {
-                const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)' ]
+                const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)', 'DOCS' ]
                 for (let i = 0; i < tablo.Sources.length; i++) {
                     const source = tablo.Sources[i]
                     if (!verifiedSources.includes(source)) {

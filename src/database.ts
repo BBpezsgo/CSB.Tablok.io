@@ -203,7 +203,7 @@ export class DataBase {
             }
         }
 
-        this.teachers.sort((a, b) => a.Name.localeCompare(b.Name))
+        this.teachers.sort((a, b) => a.Name.replace('† ', '').localeCompare(b.Name.replace('† ', '')))
     }
 
     GetTeacher(name: string) {
