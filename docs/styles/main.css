@@ -93,3 +93,12 @@ body.tablo-showing > *:not(.modal):not(#tablo-modal) {
 body.tablo-showing {
   overflow: hidden;
 }
+
+.warning {
+    border: 4px solid #ffd900;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    margin: 4px 4px 16px 4px;
+    background-color: #ffd90025;
+    font-weight: bold;
+}
