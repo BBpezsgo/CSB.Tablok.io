@@ -1109,6 +1109,7 @@
         "Department": "Épületgépészeti Technikus",
         "Image": "1991_4B.jpg",
         "BadQuality": true,
+        "ShowAnyway": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ],
 
@@ -1243,6 +1244,7 @@
         ],
         "Image": "1992_4B.jpg",
         "BadQuality": true,
+        "ShowAnyway": true,
         "Department": "Épületgépészeti Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
@@ -2018,6 +2020,7 @@
         ],
         "Image": "1997_4B.jpg",
         "BadQuality": true,
+        "ShowAnyway": true,
         "Department": "Mechatronikai Technikus",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "SCAN", "EXCEL TABLE (NEW)" ],
@@ -3259,9 +3262,10 @@
             "Zielbauer Tamás", 
             "Zimonyi Péter"
         ],
-        "Image": "2004_12.C.jpg",
+        "Image": "2004_12C.jpg",
         "Department": "Informatikai Szakmacsoport",
         "BadQuality": true,
+        "ShowAnyway": true,
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
     },
@@ -3993,7 +3997,7 @@
         "FinishedAt": 2010,
         "Ofo": "Halmosiné Kiss Erzsébet",
         "Department": "Informatikai Szakmacsoport",
-        "Image": "2010_12.B.jpg",
+        "Image": "2010_12B.jpg",
         "Students": [
             "Balog Balázs",
             "Bucsek Roland",
@@ -4026,6 +4030,7 @@
             "Varga Attila"
         ],
         "BadQuality": true,
+        "ShowAnyway": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
 
@@ -4395,6 +4400,7 @@
             "Vezsenyi Viktor"
         ],
         "BadQuality": true,
+        "ShowAnyway": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -4427,6 +4433,7 @@
             "Zoltán Olivér"
         ],
         "BadQuality": true,
+        "ShowAnyway": true,
         "Department": "Informatikai Szakmacsoport",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
@@ -4762,7 +4769,7 @@
             "Vantara Zsolt", 
             "Varga Zoltán"
         ],
-        "Sources": [ "DOCS" ]
+        "Sources": [ "DOCS", "VERIFIED_SOURCE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "B" },
@@ -4800,7 +4807,7 @@
             "Uhrin Ottó Ákos", 
             "Virág Dominik"
         ],
-        "Sources": [ "DOCS" ]
+        "Sources": [ "DOCS", "VERIFIED_SOURCE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "C" },
@@ -4841,12 +4848,12 @@
             "Takács Ákos", 
             "Ungor Máté Sándor"
         ],
-        "Sources": [ "DOCS" ]
+        "Sources": [ "DOCS", "VERIFIED_SOURCE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2023,
-        "Ofo": null,
+        "Ofo": [ "Hugyecz Eszter", "Kovács Ferenc" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2023_12D.jpg",
         "Students": [
@@ -4872,12 +4879,12 @@
             "Víg Gergő", 
             "Zatkó László Gábor"
         ],
-        "Sources": [ "DOCS" ]
+        "Sources": [ "DOCS", "VERIFIED_SOURCE" ]
     },
     {
         "Grade": { "Grade": 12, "Sub": "E" },
         "FinishedAt": 2023,
-        "Ofo": null,
+        "Ofo": [ "Drotár János", "Martikán-Hajnal Mónika" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2023_12E.jpg",
         "Students": [
@@ -4902,6 +4909,6 @@
             "Seifert Tamás", 
             "Vozár Nimród"
         ],
-        "Sources": [ "DOCS" ]
+        "Sources": [ "DOCS", "VERIFIED_SOURCE" ]
     }
 ]

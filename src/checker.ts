@@ -31,7 +31,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
             tablo.Issues.push('No source')
         } else {
             if (!tablo.Sources.includes(OFFICAL_SOURCE)) {
-                const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)', 'DOCS' ]
+                const verifiedSources = [ 'EMLEKKONYV', 'SCAN', 'EXCEL TABLE (NEW)', 'DOCS', 'VERIFIED_SOURCE' ]
                 for (let i = 0; i < tablo.Sources.length; i++) {
                     const source = tablo.Sources[i]
                     if (!verifiedSources.includes(source)) {
@@ -231,11 +231,11 @@ export function Main(database: DataBase) {
 
         if (yearRow === null || year === null) {
             year = tablo.FinishedAt
-            yearRow = tbody.appendChild(Utilities.CreateElement(`<tr><th colspan=6>${year}</th></tr>`)) as HTMLElement
+            yearRow = tbody.appendChild(Utilities.CreateElement(`<tr><th colspan=8>${year}</th></tr>`)) as HTMLElement
         }
         else if (year !== tablo.FinishedAt) {
             year = tablo.FinishedAt
-            yearRow = tbody.appendChild(Utilities.CreateElement(`<tr><th colspan=6>${year}</th></tr>`)) as HTMLElement
+            yearRow = tbody.appendChild(Utilities.CreateElement(`<tr><th colspan=8>${year}</th></tr>`)) as HTMLElement
         }
 
         tbody.appendChild(Utilities.Template('check/row', tablo))

@@ -118,39 +118,19 @@
                     transform: rotateX(360deg) rotateY(360deg);
                 }
             }
-
-            .cube {
-                animation: rotate 20s infinite linear;
-            }
-
-            .cube:hover {
-                animation-play-state: paused;
-            }
         </style>
         <div class="cube-inputs">
             <input type="range" min="0" max="360" step="5" value="150" oninput="UpdateCube()">
             <input type="range" min="0" max="360" step="5" value="315" oninput="UpdateCube()">
             <input type="range" min="0" max="360" step="5" value="180" oninput="UpdateCube()">
-            <script>
-                function UpdateCube() {
-                    const x = document.querySelector('.cube-inputs>input:nth-child(1)').valueAsNumber
-                    const y = document.querySelector('.cube-inputs>input:nth-child(2)').valueAsNumber
-                    const z = document.querySelector('.cube-inputs>input:nth-child(3)').valueAsNumber
-                    
-                    document.querySelector('.cube-values>p:nth-child(1)').innerHTML = 'X: ' + x
-                    document.querySelector('.cube-values>p:nth-child(2)').innerHTML = 'Y: ' + y
-                    document.querySelector('.cube-values>p:nth-child(3)').innerHTML = 'Z: ' + z
-
-                    document.getElementsByClassName('cube')[0].style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`
-                }
-            </script>
         </div>
         <div class="cube-values">
             <p>X:</p>
             <p>Y:</p>
             <p>Z:</p>
+            <p></p>
         </div>
-        <div class="cube-container">
+        <div class="cube-container" id="cube-container">
             <input class="radio-button" type="radio" name="cube-gallery" checked>
             <input class="radio-button" type="radio" name="cube-gallery">
             <input class="radio-button" type="radio" name="cube-gallery">
@@ -166,6 +146,79 @@
                 <div class="cube-side"></div>
             </div>
         </div>
+        <script>
+            const cubeContainer = document.getElementById('cube-container')
+            
+            /** @type {HTMLInputElement[]} */
+            const inputs = [
+                document.querySelector('.cube-inputs>input:nth-child(1)'),
+                document.querySelector('.cube-inputs>input:nth-child(2)'),
+                document.querySelector('.cube-inputs>input:nth-child(3)')
+            ]
+            
+            /** @type {HTMLElement[]} */
+            const labels = [
+                document.querySelector('.cube-values>p:nth-child(1)'),
+                document.querySelector('.cube-values>p:nth-child(2)'),
+                document.querySelector('.cube-values>p:nth-child(3)'),
+                document.querySelector('.cube-values>p:nth-child(4)')
+            ]
+
+            const cubeRotation = {
+                x: 0,
+                y: 0,
+                z: 0,
+            }
+
+            function UpdateCube() {
+                cubeRotation.x = inputs[0].valueAsNumber
+                cubeRotation.y = inputs[1].valueAsNumber
+                cubeRotation.z = inputs[2].valueAsNumber
+                UpdateCubeRotation()
+            }
+
+            function UpdateCubeRotation() {
+                const x = cubeRotation.x
+                const y = cubeRotation.y
+                const z = cubeRotation.z
+
+                labels[0].innerHTML = 'X: ' + x
+                labels[1].innerHTML = 'Y: ' + y
+                labels[2].innerHTML = 'Z: ' + z
+
+                document.getElementsByClassName('cube')[0].style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`
+            }
+
+            function NormalizeRotation() {
+                cubeRotation.x = (cubeRotation.x + 360) % 360
+                cubeRotation.y = (cubeRotation.y + 360) % 360
+                cubeRotation.z = (cubeRotation.z + 360) % 360
+            }
+
+            var isDown = false;
+            cubeContainer.addEventListener('mousedown', function(e) {
+                isDown = true;
+            }, true);
+
+            document.addEventListener('mouseup', function() {
+                isDown = false;
+            }, true);
+
+            document.addEventListener('mousemove', function(event) {
+                event.preventDefault()
+                if (!isDown) return
+                
+                cubeRotation.x = cubeRotation.x - event.movementY
+                cubeRotation.y = cubeRotation.y + event.movementX
+
+                NormalizeRotation()
+                UpdateCubeRotation()
+
+                labels[3].innerText = Math.sin(cubeRotation.x)
+            }, true);
+
+            UpdateCubeRotation()
+        </script>
     </div>
 </body>
 </html>

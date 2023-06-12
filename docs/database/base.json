@@ -5,9 +5,14 @@
             "From": 2001
         },
         {
+            "Name": "Mochnács Mihály",
+            "From": 1999,
+            "To": 2000
+        },
+        {
             "Name": "Gyulafalvi Ernő",
             "From": 1986,
-            "To": 2001
+            "To": 1998
         }
     ],
     "StartYear": 1986

@@ -17,7 +17,7 @@ export class DataBase {
             const principal = this.base.Principals[j]
             if (!principal.To) principal.To = new Date(Date.now()).getFullYear()
 
-            if (principal.From <= raw.FinishedAt && principal.To > raw.FinishedAt) {
+            if (principal.From <= raw.FinishedAt && principal.To >= raw.FinishedAt) {
                 schoolStatusData.CurrentPrincipal =  this.base.Principals[j]
                 hasPrincipal = true
                 break
@@ -110,6 +110,7 @@ export class DataBase {
                 ...this.ProcessClass(raw, logs),
                 Cube: raw.Cube,
                 BadQuality: raw.BadQuality,
+                ShowAnyway: raw.ShowAnyway,
                 IsCube: true,
                 IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }
@@ -118,6 +119,7 @@ export class DataBase {
                 ...this.ProcessClass(raw, logs),
                 Image: raw.Image ? encodeURI(raw.Image.trim()) : undefined,
                 BadQuality: raw.Image ? (raw.BadQuality) : undefined,
+                ShowAnyway: raw.ShowAnyway,
                 IsCube: false,
                 IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
             }
