@@ -884,7 +884,7 @@
     {
         "Grade": { "Grade": 12, "Sub": "D" },
         "FinishedAt": 2021,
-        "Ofo": [ "Raffai András", "Szíjjártó Sándor", "Halmosiné Kiss Erzsébet" ],
+        "Ofo": [ "Raffai András", "Szíjjártó Sándor", "Kiss Erzsébet" ],
         "Department": "Rendészet és Közszolgálat Ágazat",
         "Image": "2021_12D.jpg",
         "Students": [
@@ -3122,6 +3122,7 @@
             "Varga Viktor", 
             "Zelenyánszki Gabriella"
         ],
+        "Image": "2003_12B.jpg",
         "Department": "Informatikai Szakmacsoport",
         "Type": "SCHOOL",
         "Sources": [ "EMLEKKONYV", "EXCEL TABLE (NEW)" ]
@@ -4432,8 +4433,6 @@
             "Varju Tamás",
             "Zoltán Olivér"
         ],
-        "BadQuality": true,
-        "ShowAnyway": true,
         "Department": "Informatikai Szakmacsoport",
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
@@ -4574,7 +4573,6 @@
             "Varga Patrik Zoltán",
             "Vizi Márk"
         ],
-        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
@@ -4675,7 +4673,6 @@
             "Varga Bence",
             "Varga Zoltán"
         ],
-        "BadQuality": true,
         "Sources": [ "DOCS & EXCEL TABLE", "EXCEL TABLE (NEW)" ]
     },
     {
