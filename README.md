@@ -127,7 +127,7 @@ Egy tablóhoz több elem tartozik, hogy működjön:
         "Grade": { "Grade": 13, "Sub": "C" },
         "FinishedAt": 2025,
         "Ofo": "Dávidné Kovalcsik Gabriella",
-        "Department": "Rendszerinformatikus",
+        "Department": "Informatikai Szakmacsoport szak",
         "Image": "2025_13C.jpg",
         "Students": [
             "Nincs",
