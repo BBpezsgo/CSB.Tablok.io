@@ -148,6 +148,7 @@ export type Tablo = Class & (BasicTablo | CubeTablo) & {
     ID?: number
     BadQuality?: boolean
     ShowAnyway?: boolean
+    Color?: string
 
     /** YEAR_GRADE_SUBGRADE */
     IDReadable: string

@@ -1,3 +1,5 @@
+// @ts-check
+
 const sharp = require('sharp')
 const fs = require('fs')
 
@@ -62,29 +64,23 @@ function GetSizeText(bytes) {
  * @param {fs.PathLike} outputFolder
  */
 async function ResizeImages(inputFolder, outputFolder, width, height) {
-    console.log('Input folder', inputFolder)
-    console.log('Output folder', outputFolder)
-
     const inputFolderExists = fs.existsSync(inputFolder)
     const outputFolderExists = fs.existsSync(outputFolder)
 
-    console.log('Input folder exists', inputFolderExists)
-    console.log('Output folder exists', outputFolderExists)
-
     if (!inputFolderExists) {
-        console.log('No input folder, closing ...')
+        console.error(`Mappa nem létezik: ${inputFolder}`)
         return
     }
 
     if (!outputFolderExists) {
-        console.log('Create', outputFolder)
+        console.log(`Mappa létrehozása: ${outputFolder}`)
         fs.mkdirSync(outputFolder, { recursive: true })
     }
 
     const inputFiles = fs.readdirSync(inputFolder)
     const outputFiles = fs.readdirSync(outputFolder)
 
-    console.log('Delete old files', outputFiles.length)
+    console.log(`Régi képek törlése (${outputFiles.length} db)`)
     for (let i = 0; i < outputFiles.length; i++) {
         const file = outputFiles[i]
         if (!file.toLocaleLowerCase().endsWith('jpg')) continue
@@ -98,7 +94,7 @@ async function ResizeImages(inputFolder, outputFolder, width, height) {
         const file = inputFiles[i]
         if (!file.toLocaleLowerCase().endsWith('jpg')) continue
         inputSizeSum += fs.statSync(inputFolder + file).size
-        console.log('Resize images' + '\t' + `${Math.round(((i + 1) / inputFiles.length) * 100)}%` + '\t' + file)
+        console.log(`${Math.round(((i + 1) / inputFiles.length) * 100)}%` + '\t' + file)
         await ResizeImage(inputFolder + file, outputFolder + file.replace('.jpg', '.webp'), width, height)
             .then(info => {
                 outputSizeSum += info.size
@@ -108,12 +104,15 @@ async function ResizeImages(inputFolder, outputFolder, width, height) {
             })
     }
 
-    console.log('Total size reduced from', GetSizeText(inputSizeSum), 'to', GetSizeText(outputSizeSum), `(reduced ${Math.round((1 - (outputSizeSum / inputSizeSum)) * 100)}%)`)
+    console.log(`Teljes méret ${GetSizeText(inputSizeSum)}-ról ${GetSizeText(outputSizeSum)}-ra csökkent`)
 }
 
 (async () => {
+    console.log('Képek optimalizálása ...')
     await ResizeImages('./docs/img/tablos/', './docs/img/tablos-lowres/', 400, 300)
     
-    console.log('Resize custom images ...')
+    console.log('Egyedi képek optimalizálása ...')
     await ResizeImages('./docs/img/tablos/2008_12A/', './docs/img/tablos-lowres/2008_12A/', 150, 150)
+
+    console.log('Kész!')
 })()

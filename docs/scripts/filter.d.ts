@@ -1,6 +1,5 @@
 export class DataBase {
     readonly tablos: Tablo[]
-    readonly departments: string[]
     readonly base: BaseData
     readonly teachers: Teacher[]
 

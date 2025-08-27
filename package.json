@@ -1,13 +1,10 @@
 {
     "scripts": {
         "build": "webpack",
-        "serve": "webpack serve",
-        "compress-images": "node compress-images.js",
-        "png-to-jpeg": "node png-to-jpeg.js",
-        "delete-pngs": "node delete-pngs.js",
-        "feedbacks": "node feedbacks.js"
+        "serve": "webpack serve"
     },
     "devDependencies": {
+        "@types/sharp": "^0.31.1",
         "png-to-jpeg": "^1.0.1",
         "sharp": "^0.31.3",
         "ts-loader": "^9.4.2",

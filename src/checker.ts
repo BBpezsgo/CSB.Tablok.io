@@ -1,7 +1,6 @@
 import { DataBase } from "./database"
-import { BaseClass, CheckedTablo, Class, Tablo } from "./database-types"
+import { CheckedTablo, Class, Tablo } from "./database-types"
 import * as Utilities from "./utilities"
-import * as HTTP from "./http"
 
 const OFFICAL_SOURCE = 'EXCEL TABLE (NEW)'
 const LOWRES_IMAGE_FORMAT = 'webp'
@@ -46,7 +45,7 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         if (tablo.FurtherEducation) {
             if (tablo.Students && tablo.FurtherEducation.Students) for (const student of tablo.FurtherEducation.Students) {
                 if (!tablo.Students.includes(student))
-                { if (log) console.warn(`Unexpected student "${student}" in further education`, tablo) }
+                { if (log) console.warn(`Unexpected student ${student} in further education`, tablo) }
             }
             if (tablo.FurtherEducation.FinishedAt <= tablo.FinishedAt)
             { if (log) console.warn(`Further education can't be finished before base class (base: ${tablo.FinishedAt}, sub: ${tablo.FurtherEducation.FinishedAt})`, tablo) }
@@ -69,11 +68,11 @@ export function CheckDatabase(database: DataBase, log: boolean) {
         if (!tablo.IsCube) { if (!tablo.Image)
         { if (log) console.warn(`Tablo without image`, tablo); tablo.Issues.push('No image') }
         else {
-            if (!tablo.IsCube) if (log) HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT))
-                .then(code => {
-                    if (code === 200) return
+            if (!tablo.IsCube) if (log) fetch('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT))
+                .then(res => {
+                    if (res.ok) return
                     if (!tablo.IsCube)
-                    if (log) console.warn('Image does not have a low-res version', tablo.Image, 'HTTP ' + code)
+                    if (log) console.warn('Image does not have a low-res version', tablo.Image, `HTTP ${res.status} ${res.statusText}`)
                 })
                 .catch(error => {
                     if (!tablo.IsCube)
@@ -222,7 +221,7 @@ function ProcessSubTablo(base: Class) {
     return tablo
 }
 
-export function Main(database: DataBase) {
+export async function Main(database: DataBase) {
     const tbody = Utilities.GetElement('tbody')
     let yearRow: HTMLElement|null = null
     let year: number|null = null
@@ -238,19 +237,19 @@ export function Main(database: DataBase) {
             yearRow = tbody.appendChild(Utilities.CreateElement(`<tr><th colspan=8>${year}</th></tr>`)) as HTMLElement
         }
 
-        tbody.appendChild(Utilities.Template('check/row', tablo))
-        tbody.appendChild(Utilities.Template('check/students-row', tablo))
+        tbody.appendChild(await Utilities.TemplateAsync('check/row', tablo))
+        tbody.appendChild(await Utilities.TemplateAsync('check/students-row', tablo))
 
         if (tablo.FurtherEducation) {
             const subclass = ProcessSubTablo(tablo.FurtherEducation)
             subclass.ID = tablo.ID + '-sub'
 
-            const subrow = Utilities.Template('check/subrow', subclass)
+            const subrow = await Utilities.TemplateAsync('check/subrow', subclass)
             subrow.id = `subrow-${tablo.ID}`
             subrow.style.display = 'none'
             tbody.appendChild(subrow)
 
-            tbody.appendChild(Utilities.Template('check/students-row', subclass))
+            tbody.appendChild(await Utilities.TemplateAsync('check/students-row', subclass))
         }
     }
 }

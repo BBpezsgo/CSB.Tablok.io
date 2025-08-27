@@ -1,7 +1,6 @@
-// Some basic utilities
-
-import * as HTTP from './http'
 import { compile } from './handlebars.js'
+
+const _templates: Record<string, (values: object) => string> = {}
 
 export function CreateElement(htmlString: string): Element {
     const div = document.createElement(htmlString.startsWith('<tr') ? 'tbody' : 'div')
@@ -12,14 +11,8 @@ export function CreateElement(htmlString: string): Element {
 }
 
 export async function TemplateAsync(name: string, values: object) {
-    const hbs = await HTTP.GetAsync('./templates/' + name + '.hbs')
-    const html = compile(hbs)(values)
-    return CreateElement(html) as HTMLElement
-}
-
-export function Template(name: string, values: object) {
-    const hbs = HTTP.Get('./templates/' + name + '.hbs')
-    const html = compile(hbs)(values)
+    const template = _templates[name] ??= compile(await fetch('./templates/' + name + '.hbs').then(v => v.text()))
+    const html = template(values)
     return CreateElement(html) as HTMLElement
 }
 

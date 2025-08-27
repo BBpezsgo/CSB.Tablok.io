@@ -2,7 +2,6 @@ import { Tablo, RawTypes, Class, BaseData, SchoolStatusData, Teacher } from "./d
 
 export class DataBase {
     readonly tablos: Tablo[]
-    readonly departments: string[]
     readonly base: BaseData
     readonly teachers: Teacher[]
     readonly versions: any[]
@@ -104,7 +103,7 @@ export class DataBase {
         return processedClass
     }
 
-    private ProcessTablo(raw: RawTypes.Tablo, logs: boolean = false): Tablo {
+    private ProcessTablo(raw: RawTypes.Tablo, colors: Record<string, string>, logs: boolean = false): Tablo {
         if (raw.IsCube) {
             return {
                 ...this.ProcessClass(raw, logs),
@@ -122,13 +121,13 @@ export class DataBase {
                 ShowAnyway: raw.ShowAnyway,
                 IsCube: false,
                 IDReadable: `${raw.FinishedAt}_${raw.Grade.Grade.toString().replace('/', '-')}_${raw.Grade.Sub}`,
+                Color: raw.Image ? colors[raw.Image] : undefined,
             }
         }
     }
 
-    constructor(tablos: (RawTypes.Tablo|string)[], departments: string[], base: BaseData, versions: any[], logs: boolean) {
+    constructor(tablos: (RawTypes.Tablo|string)[], colors: Record<string, string>, base: BaseData, versions: any[], logs: boolean) {
         this.tablos = []
-        this.departments = departments
         this.base = base
         this.teachers = []
         this.versions = []
@@ -147,7 +146,7 @@ export class DataBase {
         {
             const raw = tablos[i]
             if (typeof raw === 'string') continue
-            this.tablos.push(this.ProcessTablo(raw, logs))
+            this.tablos.push(this.ProcessTablo(raw, colors, logs))
         }
         this.tablos = this.tablos.sort((a, b) => {
             let result = b.FinishedAt - a.FinishedAt

@@ -49,25 +49,35 @@
         }
         #versions > div > p {
             font-size: 24px;
+            text-align: left;
+            margin: 16px;
         }
         #versions > div > hr {
             margin: 0px 16px;
             border-style: solid;
         }
+        #versions > div > h3 {
+            display: flex;
+            padding: 0px 16px;
+        }
         #versions > div > h3 > .title-label {
-            color: #00BBFF;
-            text-shadow:
-                #000 1px 1px 1px,
-                #000 2px 2px 1px;
+            color: #000;
             font-weight: 1000;
             font-size: 24px;
+            text-align: left;
+            vertical-align: text-top;
+            flex: 1;
         }
         #versions > div > h3 > .date-label {
-            color: #000;
-            text-shadow: none;
+            color: #00BBFF;
             font-weight: 600;
             font-size: 24px;
+            text-align: right;
+            vertical-align: text-top;
+            flex: 0;
+            text-wrap-mode: nowrap;
         }
+    
     </style>
 </head>
 

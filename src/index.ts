@@ -1,5 +1,4 @@
 import { DataBase } from "./database"
-import * as HTTP from './http'
 import * as Utilities from './utilities'
 import * as Checker from './checker'
 import * as Versions from './versions'
@@ -23,12 +22,12 @@ declare global {
 
 async function DownloadDatabase(logs: boolean) {
     // Download the raw JSON data (HTTP.GetAsync), and then process it (JSON.parse)
-    const tablos: any[] = JSON.parse(await HTTP.GetAsync('./database/tablos.json'))
-    const base: any = JSON.parse(await HTTP.GetAsync('./database/base.json'))
-    const departments: string[] = JSON.parse(await HTTP.GetAsync('./database/departments.json'))
-    const versions: any[] = JSON.parse(await HTTP.GetAsync('./database/versions.json'))
+    const tablos: any[] = await fetch('./database/tablos.json').then(v => v.json())
+    const colors: Record<string, string> = await fetch('./database/colors.json').then(v => v.json())
+    const base: any = await fetch('./database/base.json').then(v => v.json())
+    const versions: any[] = await fetch('./database/versions.json').then(v => v.json())
 
-    return new DataBase(tablos, departments, base, versions, logs)
+    return new DataBase(tablos, colors, base, versions, logs)
 }
 
 /** Main function: this will be called when the document is loaded */
@@ -51,10 +50,10 @@ async function Main() {
     window.Database = Database
 
     if (filename === 'check.html') {
-        Checker.Main(Database)
+        await Checker.Main(Database)
         return
     } else if (filename === 'version.html') {
-        Versions.Main(Database)
+        await Versions.Main(Database)
         return
     }
 
@@ -76,12 +75,12 @@ async function Main() {
 
             if (tablo.IsCube) {
                 if (lastYearPanel === 0) {
-                    tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                    container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                    tablosElement.appendChild(await Utilities.TemplateAsync('year-panel', { year: tablo.FinishedAt }))
+                    container = tablosElement.appendChild(await Utilities.TemplateAsync('tablo-container', {}))
                     lastYearPanel = tablo.FinishedAt
                 } else if (Math.abs(tablo.FinishedAt - lastYearPanel) >= MAX_YEAR_DIFFERENCE) {
-                    tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                    container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                    tablosElement.appendChild(await Utilities.TemplateAsync('year-panel', { year: tablo.FinishedAt }))
+                    container = tablosElement.appendChild(await Utilities.TemplateAsync('tablo-container', {}))
                     lastYearPanel = tablo.FinishedAt
                 }
 
@@ -97,40 +96,39 @@ async function Main() {
                     }
                 }
             
-                const newElement = Utilities.Template('cube-tablo', cubeTablo)
+                const newElement = await Utilities.TemplateAsync('cube-tablo', cubeTablo)
                 container?.appendChild(newElement)
 
                 continue
             }
 
             if (!tablo.Image) continue
-            if (tablo.BadQuality && !tablo.ShowAnyway) continue
-
-            try {
-                if (await HTTP.CheckUrl('./img/tablos-lowres/' + tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)) !== 200) continue
-            } catch (error) { continue }
+            // TODO: Display note about bad quality
+            //if (tablo.BadQuality && !tablo.ShowAnyway) continue
 
             if (lastYearPanel === 0) {
-                tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                tablosElement.appendChild(await Utilities.TemplateAsync('year-panel', { year: tablo.FinishedAt }))
+                container = tablosElement.appendChild(await Utilities.TemplateAsync('tablo-container', {}))
                 lastYearPanel = tablo.FinishedAt
             } else if (Math.abs(tablo.FinishedAt - lastYearPanel) >= MAX_YEAR_DIFFERENCE) {
-                tablosElement.appendChild(Utilities.Template('year-panel', { year: tablo.FinishedAt }))
-                container = tablosElement.appendChild(Utilities.Template('tablo-container', {}))
+                tablosElement.appendChild(await Utilities.TemplateAsync('year-panel', { year: tablo.FinishedAt }))
+                container = tablosElement.appendChild(await Utilities.TemplateAsync('tablo-container', {}))
                 lastYearPanel = tablo.FinishedAt
             }
         
-            const newElement = Utilities.Template('tablo', tablo)
+            const newElement = await Utilities.TemplateAsync('tablo', tablo)
             container?.appendChild(newElement)
         }
-        tablosElement.appendChild(Utilities.Template('no-result', { }))
+        tablosElement.appendChild(await Utilities.TemplateAsync('no-result', { }))
     }
+
     // If "teachersElement" exists, it fills up with some content
     if (teachersElement)
     for (let i = 0; i < Database.teachers.length; i++) {
         const teacher = Database.teachers[i]
-        teachersElement.appendChild(Utilities.Template('teacher', teacher))
+        teachersElement.appendChild(await Utilities.TemplateAsync('teacher', teacher))
     }
+
     (()=>{
         const names: string[] = [ ]
 
@@ -208,7 +206,7 @@ async function Main() {
         }
     })()
 
-    let TabloTimer: null | NodeJS.Timer = null
+    let TabloTimer: null | NodeJS.Timeout = null
 
     window.OpenTabloModal = window.OpenTabloModal || ((id) => {
         window.document.body.classList.add('tablo-showing')

@@ -1,5 +1,10 @@
 [
     {
+        "date": "2025. 8. 27.",
+        "title": "Hibajavítások és finomítások",
+        "desc": "Rosz minőségű tablók megjelenítése, optimalizálás és domináns színek használata a tablók betöltésekor"
+    },
+    {
         "date": "2023. 6. 27.",
         "title": "2022_12M kép javítása"
     },
@@ -31,32 +36,16 @@
         "desc": "Új szűrő érhető el a főoldalon, amivel diák nevére rá lehet keresni."
     },
     {
-        "date": "2023. 1. 16.",
-        "title": "A project kezdete"
+        "date": "2023. 4. 30.",
+        "title": "Publikálás"
     },
     {
-        "date": "2023. 1. 25.",
-        "title": "Prototipus"
+        "date": "2023. 3. 19.",
+        "title": "Az oldal stílusának újragondolása"
     },
     {
-        "date": "2023. 2. 15.",
-        "title": "Évszámok jobb oldalt",
-        "desc": "A tablók csoportosítása évszámokkal a könnyebb eligazodás érdekében"
-    },
-    {
-        "date": "2023. 3. 1.",
-        "title": "Adatrögzítés",
-        "desc": "A legtöbb adat ekkor került rögzítésre"
-    },
-    {
-        "date": "2023. 3. 3.",
-        "title": "Normalizálás",
-        "desc": "Duplikált adatok kijavítása és az adatok rendezése"
-    },
-    {
-        "date": "2023. 2. 20.",
-        "title": "Weboldal javítás",
-        "desc": "A tesztelésre használt elemek törlése, az oldal végleges formájának kialakítása"
+        "date": "2023. 3. 15.",
+        "title": "2008-as 12.A osztály tablójának megvalósítása"
     },
     {
         "date": "2023. 3. 8.",
@@ -64,15 +53,31 @@
         "desc": "Minden tabló fényképéről készült egy alacsony minőségű változat, így a weboldal gyorsabban tölt be"
     },
     {
-        "date": "2023. 3. 15.",
-        "title": "2008-as 12.A osztály tablójának megvalósítása"
+        "date": "2023. 3. 3.",
+        "title": "Normalizálás",
+        "desc": "Duplikált adatok kijavítása és az adatok rendezése"
     },
     {
-        "date": "2023. 3. 19.",
-        "title": "Az oldal stílusának újragondolása"
+        "date": "2023. 3. 1.",
+        "title": "Adatrögzítés",
+        "desc": "A legtöbb adat ekkor került rögzítésre"
     },
     {
-        "date": "2023. 4. 30.",
-        "title": "Publikálás"
+        "date": "2023. 2. 20.",
+        "title": "Weboldal javítás",
+        "desc": "A tesztelésre használt elemek törlése, az oldal végleges formájának kialakítása"
+    },
+    {
+        "date": "2023. 2. 15.",
+        "title": "Évszámok jobb oldalt",
+        "desc": "A tablók csoportosítása évszámokkal a könnyebb eligazodás érdekében"
+    },
+    {
+        "date": "2023. 1. 25.",
+        "title": "Prototípus"
+    },
+    {
+        "date": "2023. 1. 16.",
+        "title": "A project kezdete"
     }
 ]
