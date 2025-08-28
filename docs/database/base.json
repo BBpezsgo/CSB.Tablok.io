@@ -1,8 +1,13 @@
 {
     "Principals": [
         {
-            "Name": "Maczik Mihály",
-            "From": 2001
+            "Name": "Fölker Csaba",
+            "From": 2024
+        },
+        {
+            "Name": "Maczik Mihály András",
+            "From": 2001,
+            "To": 2024
         },
         {
             "Name": "Mochnács Mihály",
