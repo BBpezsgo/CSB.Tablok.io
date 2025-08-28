@@ -1,7 +1,8 @@
 // @ts-check
 
 const sharp = require('sharp')
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
 
 /**
  * @param {string} input
@@ -92,10 +93,11 @@ async function ResizeImages(inputFolder, outputFolder, width, height) {
 
     for (let i = 0; i < inputFiles.length; i++) {
         const file = inputFiles[i]
-        if (!file.toLocaleLowerCase().endsWith('jpg')) continue
+        const ext = path.extname(file).toLowerCase()
+        if (ext !== '.png' && ext !== '.jpg' &&ext !== '.jpeg') continue
         inputSizeSum += fs.statSync(inputFolder + file).size
         console.log(`${Math.round(((i + 1) / inputFiles.length) * 100)}%` + '\t' + file)
-        await ResizeImage(inputFolder + file, outputFolder + file.replace('.jpg', '.webp'), width, height)
+        await ResizeImage(inputFolder + file, outputFolder + file.replace(ext, '.webp'), width, height)
             .then(info => {
                 outputSizeSum += info.size
             })

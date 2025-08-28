@@ -382,7 +382,7 @@ async function Main() {
                         tabloElement.classList.remove('tablo-unloaded')
                         const tabloId = Number.parseInt(tabloElement.id.split('-')[1])
                         const tablo = Database.tablos[tabloId]
-                        if (!tablo.IsCube) if (tablo.Image) tabloElement.style.backgroundImage = `url(./img/tablos-lowres/${tablo.Image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)})`
+                        if (!tablo.IsCube) if (tablo.Image) tabloElement.style.backgroundImage = `url(./img/tablos-lowres/${tablo.Image.replace(tablo.Image.split('.')[1], LOWRES_IMAGE_FORMAT)})`
                     } else {
                         if (tabloElement.classList.contains('tablo-unloaded')) continue
                         tabloElement.style.backgroundImage = 'url(#)'
@@ -411,7 +411,7 @@ async function Main() {
                                 const sideElement = sideElements.item(i)
                                 if (!sideElement) continue
                                 const image = tablo.Cube[i]
-                                sideElement.style.backgroundImage = `url(./img/tablos-lowres/${image.replace('.jpg', '.' + LOWRES_IMAGE_FORMAT)})`
+                                sideElement.style.backgroundImage = `url(./img/tablos-lowres/${image.replace(image.split('.')[1], LOWRES_IMAGE_FORMAT)})`
                             }
                         }
                     } else {
