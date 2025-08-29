@@ -1,7 +1,7 @@
 // @ts-check
 
 const sharp = require('sharp')
-const fs = require('fs');
+const fs = require('fs')
 
 /**
  * @param {string} filename
